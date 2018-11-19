@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Multiple Monitors on A Hugo website</title>
+    <link>/tags/multiple-monitors/</link>
+    <description>Recent content in Multiple Monitors on A Hugo website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 19 Feb 2009 14:37:28 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/multiple-monitors/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Commerce Thursday</title>
+      <link>/2009/02/commerce-thursday-2/</link>
+      <pubDate>Thu, 19 Feb 2009 14:37:28 +0000</pubDate>
+      
+      <guid>/2009/02/commerce-thursday-2/</guid>
+      <description>In keeping with my hit or miss tradition of recommending crap that you should buy, here&amp;rsquo;s my next installment of Commerce Thursday&amp;hellip; roll the theme music.
+The first two items are software. At some point in the future I&amp;rsquo;ll do an in depth discussion on how my use of multiple monitors makes me happy, if not more productive. In the meantime, here are two multi-monitor pieces of software that are NOT open source or free but you should go spend your hard earned dollars on them.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.51" />
+
+
+<title>Starting an EC2 Machine Then Setting Up a Socks Proxy... From R! - A Hugo website</title>
+<meta property="og:title" content="Starting an EC2 Machine Then Setting Up a Socks Proxy... From R! - A Hugo website">
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="https://github.com/rstudio/blogdown">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/rstudio">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">3 min read</span>
+    
+
+    <h1 class="article-title">Starting an EC2 Machine Then Setting Up a Socks Proxy... From R!</h1>
+
+    
+    <span class="article-date">2010/07/16</span>
+    
+
+    <div class="article-content">
+      <p><a href="https://www.cerebralmastication.com/wp-content/uploads/2010/07/firewallkat.jpg"><img src="https://www.cerebralmastication.com/wp-content/uploads/2010/07/firewallkat.jpg" alt="" />
+</a>I do some work from home, some work from an office in Chicago and some work on the road. It&rsquo;s not uncommon for me to want to tunnel all my web traffic through a VPN tunnel. In one of my previous blog posts I <a href="https://www.cerebralmastication.com/2009/11/using-amazon-ec2-to-thwart-crappy-internal-it-services/">alluded to using Amazon EC2 as a way to get around your corporate IT</a> mind control voyeurs service providers. This tunneling method is one of the 5 or so ways I have used EC2 to set up a tunnel. I used to fire these tunnels up manually using the <a href="https://console.aws.amazon.com">Amazon AWS Management Console</a> then opening a shell prompt and entering:</p>
+
+<blockquote>
+
+>     
+>     ssh -i ~/MyPersonalKey.pem -D 9999 root@ec2-184-73-41-72.compute-1.amazonaws.com
+> 
+> 
+</blockquote>
+
+<p>the -i switch tells ssh to use my RSA identity file stored in ~/MyPersonalKey.pem</p>
+
+<p>the machine name (ec2-184-73-41-72.compute-1.amazonaws.com) I get from the AWS Management Console</p>
+
+<p>the -D is the magic. -D opens an dynamic port forwarding tunnel between my Linux box and the EC2 machine. This is, for all intent and purposes, an encrypted SOCKS4 proxy on port 9999 of localhost. Then I just have to change my proxy settings in Firefox to use use a SOCKS host.</p>
+
+<p>Now that&rsquo;s all pretty easy. And I like easy. But it&rsquo;s not easy ENOUGH. You see, I&rsquo;m lazy. I&rsquo;m not just lazy in the &ldquo;I&rsquo;ll do it mañana&rdquo; sort of way, but in the &ldquo;I&rsquo;m too damn lazy to click my mouse 5 times&rdquo; way.</p>
+
+<p>So I want this easier. Well, I can make the proxy settings in Firefox easier through the use of the <a href="https://addons.mozilla.org/en-US/firefox/addon/1557/">Quick Proxy extension for Firefox</a>. That&rsquo;s a good start. It turns on and off the proxy with a single mouse click. But I still have to go into the AWS management web site, fire up a machine then log in via SSH. Let&rsquo;s make that part easier!</p>
+
+<p>While it&rsquo;s not simple to install and configure, the EC2 command line tools are going to be required in order to make a script that fires up EC2 and then connects to the instance with ssh. I struggled getting the tools to run until I found <a href="http://linuxsysadminblog.com/2009/06/howto-get-started-with-amazon-ec2-api-tools/">this tutorial</a>.</p>
+
+<p>Your file locations and names may be different than the tutorial. Change appropriately. I followed the tutorial instructions but I created a key named ec2ApiTools which will come in handy later.</p>
+
+<p>After you get the EC2 tool up and running and you can do something like list the available AMIs without an error you can stop with the tutorial. I&rsquo;ve been doing a lot of shell scripting lately so I said to myself, &ldquo;Self, let&rsquo;s script the ssh connection in R!&rdquo; For the record, I always end my impredicative in an explanation point which I verbally pronounce as, &ldquo;BANG!&rdquo; As a result, when I talk to myself it sounds like two 10 year old boys playing cops and robbers. Anyhow, I did script it with R using Rscript. Because I&rsquo;m a man who listens to myself.</p>
+
+<p>And since you were kind enough to slog through my channeling the drunken ghost of James Joyce, here&rsquo;s my script:</p>
+
+<p>[gist id=&ldquo;478930&rdquo;]</p>
+
+<p>If you&rsquo;re reading this in an RSS reader of for some other reason don&rsquo;t see an R script above, <a href="http://gist.github.com/478930#file_start_ec2_instance_ssh.r">here&rsquo;s your link</a>.</p>
+
+<p>The only two EC2 API commands I use in the script are  <em>ec2-run-instances</em> which starts the instance and <em>ec2-describe-instances</em> which gives me a list of running instances and their details.The rest of the script is simply parsing the output and figuring out which instances was started last.</p>
+
+<p>I&rsquo;ve now set up a launcher panel item that starts the script. Then when I see the xterm window come up I click the little red button in the lower right corner of my browser which switches on the Firefox proxy. Then I&rsquo;m safe to surf <a href="http://www.sofmag.com/">Soldier of Fortune Magazine</a> without the interference of my corp firewall.</p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+

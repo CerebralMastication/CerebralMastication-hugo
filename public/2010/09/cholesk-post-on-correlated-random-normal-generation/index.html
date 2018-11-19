@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.51" />
+
+
+<title>Third, and Hopefully Final, Post on Correlated Random Normal Generation (Cholesky Edition) - A Hugo website</title>
+<meta property="og:title" content="Third, and Hopefully Final, Post on Correlated Random Normal Generation (Cholesky Edition) - A Hugo website">
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="https://github.com/rstudio/blogdown">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/rstudio">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">Third, and Hopefully Final, Post on Correlated Random Normal Generation (Cholesky Edition)</h1>
+
+    
+    <span class="article-date">2010/09/02</span>
+    
+
+    <div class="article-content">
+      <p>[caption id=&ldquo;attachment_825&rdquo; align=&ldquo;alignleft&rdquo; width=&ldquo;250&rdquo; caption=&ldquo;André-Louis Cholesky is my homeboy&rdquo;]<a href="http://www.sabix.org/bulletin/b39/vie.html"><img src="https://www.cerebralmastication.com/wp-content/uploads/2010/09/39-cholesky-250x300.jpg" alt="" />
+</a>[/caption]</p>
+
+<p>When I did a <a href="https://www.cerebralmastication.com/2010/08/stochastic-simulation-with-copulas-in-r/">brief post three days ago</a> I had no plans on writing two more posts on correlated random number generation. But I&rsquo;ve gotten a couple of emails, a few comments, and some Twitter feedback. In response to my first post, <a href="https://www.cerebralmastication.com/2010/08/stochastic-simulation-with-copulas-in-r/comment-page-1/#comment-5068">Gappy, calls me out</a> and says, &ldquo;the way mensches do multivariate (log)normal variates is via Cholesky. It’s simple, instructive, and fast.&ldquo;  And I think we&rsquo;re all smart enough to read through Mr. Gappy&rsquo;s comment and see that he&rsquo;s saying I&rsquo;m a complicated, opaque, and slow, גוי‎. My wife called and said his list would be more accurate if he added &lsquo;emotionally detached.&rsquo; I have no idea what she means.</p>
+
+<p>At any rate, in response to Gappy&rsquo;s comment, here is the third verse (same as the first). The crux of the change is the following lines:</p>
+
+<pre><code>&lt;blockquote&gt;
+# shift the mean of ourData to zero
+ourData0 &lt;- as.data.frame(sweep(ourData,2,colMeans(ourData),&quot;-&quot;))
+
+#Cholesky Decomposition of the covariance matrix
+C &lt;- chol(nearPD(cov(ourData0))$mat)
+
+#create a matrix of random standard normals
+Z &lt;- matrix(rnorm(n * ncol(ourData)), ncol(ourData))
+
+#multiply the standard normals by the transpose of the Cholesky
+X &lt;- t(C) %*% Z
+
+myDraws &lt;- data.frame(as.matrix(t(X)))
+names(myDraws) &lt;- names(ourData)
+
+# we still need to shift the means of the samples.
+
+# shift the mean of the draws over to match the starting data
+myDraws &lt;- as.data.frame(sweep(myDraws,2,colMeans(ourData),&quot;+&quot;))
+
+&lt;/blockquote&gt;
+</code></pre>
+
+<p><em>**Edit: **When I first publishes this example, I didn&rsquo;t shift the means prior to taking the cov(). I&rsquo;ve sense corrected that.  Also thanks to @fdaapproved on Twitter who pointed out that I can replace the loop above with myDraws &lt;- as.data.frame(sweep(t(X),2,colMeans(ourData),&ldquo;+&rdquo;))</em></p>
+
+<p>This method, which uses Cholesky decomposition, is how I initially learned to create correlated random draws. I think this method is comparable to the mvrnorm() method. mvrnorm() is handy because it wraps everything above in one single line of code. But the above method is reliant only on the Matrix package and that&rsquo;s only for the nearPD() function. If you are familiar with the guts of the mvrnorm() function and the chol() function, I&rsquo;d love for you to comment on any technical differences. I looked briefly at the code for both and quickly realized my matrix math was rusty enough that it was going to take a while for me to sort through the code.</p>
+
+<p>If you want the whole script you can find it embedded below <a href="http://gist.github.com/562567">and on Github</a>.</p>
+
+<p>[gist id=&ldquo;562567&rdquo;]</p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+

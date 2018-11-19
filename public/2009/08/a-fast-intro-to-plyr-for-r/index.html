@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.51" />
+
+
+<title>A Fast Intro to PLYR for R - A Hugo website</title>
+<meta property="og:title" content="A Fast Intro to PLYR for R - A Hugo website">
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="https://github.com/rstudio/blogdown">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/rstudio">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">4 min read</span>
+    
+
+    <h1 class="article-title">A Fast Intro to PLYR for R</h1>
+
+    
+    <span class="article-date">2009/08/27</span>
+    
+
+    <div class="article-content">
+      <p><img src="https://www.cerebralmastication.com/wp-content/uploads/2009/08/pliers.jpg" alt="pliers" />
+I&rsquo;m not dead yet! Although it has been rumored that I am. The new job is going great and I&rsquo;m thrilled to be with a new firm doing interesting work alongside smart people. It makes me seem smarter by simple association.</p>
+
+<p>There&rsquo;s been a lot going on recently in the R user community. There was an<a href="http://en.oreilly.com/oscon2009/public/schedule/detail/10432"> R flash mob of Stack Overflow</a> which resulted in a noticeable increase in the number of <a href="http://stackoverflow.com/questions/tagged/r">R questions and answers</a> in SO. I&rsquo;ve been blown away by the quality of the <a href="http://stackoverflow.com/questions/tagged?tagnames=r&amp;sort=stats&amp;pagesize=50">participants</a>. There has also been increased quality discussions on Twitter which are being <a href="http://twitter.com/#search?q=%23rstats">tagged with #rstats</a>. These changes in the community have <a href="http://www.iq.harvard.edu/blog/sss/archives/2009/08/the_changing_na.shtml">not gone unnoticed</a>.</p>
+
+<p>Recently I posted a question about how to do a &lsquo;group by&rsquo; in a regression with R. I had a way I had been doing this but I was suspicious there was a better way. <a href="http://stackoverflow.com/questions/1169539/linear-regression-and-group-by-in-r/1214432#1214432">One of the answers</a> proposed using the PLYR package. I think I had seen the plyr package a few times but never really understood it. Although I didn&rsquo;t select this as my top answer, it prompted me to look into PLYR more. What I discovered was really interesting.</p>
+
+<p>The <a href="http://had.co.nz/plyr/">PLYR package </a>is a tool for doing split-apply-combine (SAC) procedures. I&rsquo;m very fluent in SQL so the best analogy for me was the GROUP BY statement in SQL. PLYR adds very little new functionality to R. What it does do is take the process of SAC and make it cleaner, more tidy and easier. I think I&rsquo;m not the only one who wants a clean and tidy SAC. Here&rsquo;s a quick example of making some summary stats using PLYR:</p>
+
+<pre><code># install.packages(&quot;plyr&quot;) #run this if you don't have the package already
+ library(plyr)
+
+#make some example data
+dd&lt;-data.frame(matrix(rnorm(216),72,3),c(rep(&quot;A&quot;,24),rep(&quot;B&quot;,24),rep(&quot;C&quot;,24)),c(rep(&quot;J&quot;,36),rep(&quot;K&quot;,36)))
+colnames(dd) &lt;- c(&quot;v1&quot;, &quot;v2&quot;, &quot;v3&quot;, &quot;dim1&quot;, &quot;dim2&quot;)
+
+#ddply is the plyr function
+ddply(dd, c(&quot;dim1&quot;,&quot;dim2&quot;), function(df)mean(df$v1))
+</code></pre>
+
+<p>result:</p>
+
+<blockquote>
+
+>     
+>         dim1 dim2          V1
+>         1    A    J  0.02554362
+>         2    B    J -0.15839675
+>         3    B    K -0.06077399
+>         4    C    K -0.02326776
+> 
+> 
+</blockquote>
+
+<p>PLYR functions have a neat naming convention. The first two letters of the function tells the input and output data types, respectively. The one I use the most is ddply which takes a data frame in and spits out a data frame.  Let me see if I can explain what ddply is doing. The first argument, dd, is the input data frame. The next argument is the &ldquo;group by&rdquo; variables. Since I want to group by two variables I send them as a vector (that&rsquo;s what the c() bit does). What threw me for a loop initially was the third argument, the function. What I found myself trying (unsuccessfully) was just using mean(v1) as the third argument. If I did that, R would spit at me and bring the marital status of my parents into question. I discovered that the problem was the ddply function was splitting the data by my &lsquo;group by&rsquo; variables and then it wanted to pass each of the resulting data frames to a function. So what does it mean to pass a data frame to mean(v1)? Yeah, it means Jack Crap, that&rsquo;s what it means. So in one of the PLYR examples I saw they were using these inline functions. The idea behind function(df)mean(df$v1) is to create a function to which we can pass a data frame and get out a meaningful result. The subset (or split) of the data gets passed to the function and that subset is then known as df. mean(df$v1) calculates the mean of v1 and returns an answer. ddply holds on to the answers of each split and then reassembles them all in the end. Slick, ey?</p>
+
+<p>As with most things in R the idea can be extended to a vector of functions in order to perform many operations on each split:</p>
+
+<pre><code>ddply(dd, c(&quot;dim1&quot;,&quot;dim2&quot;), function(df)c(mean(df$v1),mean(df$v2),mean(df$v3),sd(df$v1),sd(df$v2),sd(df$v3)))
+</code></pre>
+
+<p>The result looks like this:</p>
+
+<blockquote>
+
+>     
+>     dim1 dim2          V1        V2         V3        V4        V5       V6
+>     1    A    J  0.02554362 0.3400250  0.1206980 0.9326424 1.0044120 1.100762
+>     2    B    J -0.15839675 0.3662559 -0.1784193 0.7447807 0.8752162 1.105258
+>     3    B    K -0.06077399 0.5184403 -0.2076024 1.0385107 1.0609706 1.153153
+>     4    C    K -0.02326776 0.2639328  0.1352895 0.7940938 0.9025207 1.072460
+> 
+> 
+</blockquote>
+
+<p>Pretty nifty.</p>
+
+<p>The author of PLYR is Hadley Wickham who is also the man behind <a href="http://had.co.nz/ggplot2/">GGPLOT2</a>. If you like PLYR or GGPLOT2 then you should immediately <a href="http://www.amazon.com/gp/product/0387981403?ie=UTF8&amp;tag=hadlwick-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0387981403">buy Hadley&rsquo;s GGPLOT2 book on Amazon</a>. But be sure and use the link on this site or the link on <a href="http://had.co.nz/ggplot2/book/">Hadley&rsquo;s site </a>so he can get Amazon associate payment. The authors I have talked to told me they get more from the Associate program than they get from publishing royalties.</p>
+
+<p>My father is a retired pilot turned crop farmer. He ALWAYS carries a pair of pliers in a nylon pouch on his belt. I can see that Hadley&rsquo;s PLRY package is going to become my proverbial &lsquo;belt pliers.&rsquo;</p>
+
+<p>Of course if I wrote an R package I&rsquo;d have to name it <a href="http://www.paratech.us/html/FET/Crw/CrwSRB/ParatechNFSRB.htm">Super RamBar</a>, cause that&rsquo;s just how I roll.</p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+

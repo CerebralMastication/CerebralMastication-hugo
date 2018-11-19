@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.51" />
+
+
+<title>Connecting to SQL Server from R using RJDBC - A Hugo website</title>
+<meta property="og:title" content="Connecting to SQL Server from R using RJDBC - A Hugo website">
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="https://github.com/rstudio/blogdown">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/rstudio">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">Connecting to SQL Server from R using RJDBC</h1>
+
+    
+    <span class="article-date">2010/09/22</span>
+    
+
+    <div class="article-content">
+      <p><a href="https://www.cerebralmastication.com/wp-content/uploads/2010/09/sql_server_2008_logo.png"><img src="https://www.cerebralmastication.com/wp-content/uploads/2010/09/sql_server_2008_logo-300x187.png" alt="" />
+</a>A few months ago I switched my laptop from Windows to Ubuntu Linux. I had been connecting to my corporate SQL Server database using RODBC on Windows so I attempted to get ODBC connectivity up and running on Ubuntu. ODBC on Ubuntu turned into an exercise in futility. I spent many hours over many days and never was able to connect from R on Ubuntu to my corp SQL Server.</p>
+
+<p><a href="http://www.fosstrading.com/">Joshua Ulrich</a> was kind enough to help me out by pointing me to <a href="http://www.rforge.net/RJDBC/">RJDBC</a> which scared me a little (I&rsquo;m easily spooked) because it involves Java. The only thing I know about Java is every time I touch it I <a href="http://stackoverflow.com/questions/3311940/r-rjava-package-install-failing">spend days trying to get environment variables</a> loaded just exactly the way it wants them. But Josh assured me that it was really not that hard. Here&rsquo;s the short version:</p>
+
+<p><a href="http://www.microsoft.com/downloads/en/details.aspx?FamilyID=a737000d-68d0-4531-b65d-da0f2a735707&amp;displaylang=en">Download the RJDBC driver from Microsoft</a>. There&rsquo;s Win and *nix versions, so grab which ever you need. Unpack the driver in a known location (I used /etc/sqljdbc_2.0/). Then access the driver from R like so:</p>
+
+<pre><code>require(RJDBC)
+drv &lt;- JDBC(&quot;com.microsoft.sqlserver.jdbc.SQLServerDriver&quot;,
+  &quot;/etc/sqljdbc_2.0/sqljdbc4.jar&quot;) 
+  conn &lt;- dbConnect(drv, &quot;jdbc:sqlserver://serverName&quot;, &quot;userID&quot;, &quot;password&quot;)
+#then build a query and run it
+sqlText &lt;- paste(&quot;
+   SELECT * FROM myTable
+  &quot;, sep=&quot;&quot;)
+queryResults &lt;- dbGetQuery(conn, sqlText)
+</code></pre>
+
+<p>I have a few scripts that I want to run on both my Ubuntu laptop and my Windows Server. To accommodate that I made my scripts compatible with both by doing the following to my drv line:</p>
+
+<pre><code>if (.Platform$OS.type == &quot;unix&quot;){
+         drv &lt;- JDBC(&quot;com.microsoft.sqlserver.jdbc.SQLServerDriver&quot;,
+         &quot;/etc/sqljdbc_2.0/sqljdbc4.jar&quot;)
+} else {
+         drv &lt;- JDBC(&quot;com.microsoft.sqlserver.jdbc.SQLServerDriver&quot;,
+        &quot;C:/Program Files/Microsoft SQL Server JDBC Driver 3.0/sqljdbc_3.0
+         /enu/sqljdbc4.jar&quot;)
+ }
+</code></pre>
+
+<p>Obviously if you unpacked your drivers in different locations you&rsquo;ll need to molest the code to fit your life situation.</p>
+
+<p>**EDIT: **A MUCH better place to put the JDBC drivers in Ubuntu would be the /opt/ path as opposed to /etc/ which I used above. In Ubuntu the /opt/ directory is where one should put user executables and /etc/ should be reserved for packages installed by apt. I&rsquo;m not familiar with all the conventions in Ubuntu (or even Linux in general) so I didn&rsquo;t realize this until I got some reader feedback.</p>
+
+<p>Be forewarned, RJDBC is pretty damn slow and it appears to no longer be in active development. For my use case, RODBC was clearly faster. But RJDBC works for me in Ubuntu and that was my biggest need.</p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+

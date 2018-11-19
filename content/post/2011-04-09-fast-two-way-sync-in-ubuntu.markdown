@@ -1,0 +1,41 @@
+---
+author: JD Long
+date: 2011-04-09 15:32:48+00:00
+draft: false
+title: 'Fast Two Way Sync in Ubuntu! '
+type: post
+url: /2011/04/fast-two-way-sync-in-ubuntu/
+tags:
+- R
+- sync
+- workflow
+---
+
+[![](https://www.cerebralmastication.com/wp-content/uploads/2011/04/SyncDifferent.png)
+](https://www.cerebralmastication.com/wp-content/uploads/2011/04/SyncDifferent.png)I love the portability of a laptop. I have a 45 min train ride twice a day and I fly a little too, so having my work with me on my laptop is very important. But I hate doing long running analytics on my laptop when I'm in the office because it bogs down my laptop and all those videos on [The Superficial](http://www.thesuperficial.com/) get all jerky and stuff.
+
+I get around this conundrum by running much of my analytics on either my work server or on an EC2 machine (I'm going to call these collectively "my servers" for the rest of this post). The nagging problem with this has been keeping files in sync. [RStudio Server](http://rstudio.org/) has been a great help to my workflow because it lets me edit files in my browser and they run on my servers. But when a long running R job blows out files I want those IMMEDIATELY synced with my laptop. That way I know when I undock my laptop to run to the train station that all my files will be there for me to spill Old Style beer on as I ride the Metra North line.
+
+[![](https://www.cerebralmastication.com/wp-content/uploads/2011/04/dropbox_logo_home.png)
+](https://www.cerebralmastication.com/wp-content/uploads/2011/04/dropbox_logo_home.png)I experimented with [Dropbox](https://www.dropbox.com/) and I gotta say, it's great. It really is well engineered, fast, and drop dead simple. I love that with Dropbox I could pull up most any file from my Dropbox on my iPad or iPhone. That's a very handy feature. And it's fast. If I created a small text file on my server, it would be synced with my laptop in a few seconds. Perfect! Wel... almost. Dropbox has a huge limitation: encryption. Dropbox encrypts for transmission and may even store files encrypted on their end. However, Dropbox controls the key. So if a rogue employee, a crafty Russian hacker, or a law enforcement officer with a subpoena gained access to Dropbox, they could get access to my files without my knowledge. As a risk manager I can't help but see Dropbox's security as a huge, targeted, single point of failure. It's hard to say which would be a bigger payday: cracking GMail, or cracking Dropbox. But I'm suspicious it's Dropbox. There are some workarounds to try and shoehorn file encryption into Dropbox, and they all suck.
+
+[![](https://www.cerebralmastication.com/wp-content/uploads/2011/04/logo.gif)
+](https://www.cerebralmastication.com/wp-content/uploads/2011/04/logo.gif)So Dropbox can't really give me what I want (what I really really want). But I stumbled into [Spideroak](https://spideroak.com/) who are like the smarter, but lesser known cousins of Dropbox. Their software does everything Dropbox does (including tracking all revisions!) but they have a "trust no one" model which encrypts all files before leaving my computer using, and this is critical, MY key which they don't store. Pretty cool, eh? Spideroak also has a iPad/iPhone app and offers a neat feature that allows emailing any file in my Spideroak "bucket" to anyone using my iPhone without having to upload the file to my iPhone first. They do this by sending a special link to the email recipient that allows them to open only the file you wanted them to have. This could be a huge bacon saver on the road.
+
+So Spideroak's the panacea then? Well... um... no. They have two critical flaws: 1) They depend on time stamps on files to determine most recent file. 2) Syncs are slow, sometimes taking more than 5 minutes for very small files. The time stamp issue is an engineering failure, plain and simple. I've talked to their tech support and been assured that they are going to change this and index using server time, not system time in the future. But as of April 6, 2011, Spideroak uses local system time. For most users this is no big deal. For my use case this is painful. My server and my laptop were 6 seconds different and that time difference was enough for me to get Spideroak confused about which files were the freshest. This is a big deal when syncing two file systems with fast changing files. The other issue, slow sync, was actually more painful but probably the result of their attempt to be nice with CPU time and also encryption. When jobs on my server finished, I expected those files to start syncing within seconds and the only delay I expected was bandwidth constraints. With Spideroak syncs might take 5 minutes to start and then it would go out for coffee, come back jittery and then finally complete. Even if SPideroak fixed the time sync issue (or I forced my laptop to set its time based on my server), it still would not work for my sync because of the huge lags.
+
+So looking at Dropbox and Spideroak I realized that I liked everything about Spideroak except its sync. It's a great cloud backup tool that seems to properly do encryption, it's multiplatform (win, linux, mac), has an iPad/iPhone app for viewing/sending files, it's smart about backups and won't upload the same file twice (even if the file is on two different computers). For my business use, I just can't use Dropbox. The lack of "trust no one" encryption is a deal killer. So what I really need is a sync solution to use along side Spideroak.
+
+There are some neat projects out there for sync. Projects like [Sparkleshare](http://www.sparkleshare.org/) look really promising but they are trying to do all sorts of things, not just sync. I've already settled on letting Spideroak do backup and version tracking so I don't really need all those features... OK, OK, I can hear you muttering, "just use rsync and be done with it already." Yeah, that's a good idea. But rsync is single directional and does a lot of things well, but can also be a bit of an asshole if you don't set all the flags right and rub its belly the right way. If you google for "bidirectional sync" you're going to see this problem has plagued a lot of folks. This blog post has already gone on long enough so I'll cut to the chase. Here's the stack of tools I settled on for cobbling together my own secure, real-time, bidirectional sync between two Ubuntu boxes (one of which changes IP address and is often behind a NAT router):
+
+1) [Unison](http://www.cis.upenn.edu/~bcpierce/unison/) - Fast sync using rsync-esque algos and really fast caching/scanning
+
+2) [lsyncd](http://code.google.com/p/lsyncd/) - Live (real-time) sync daemon
+
+3) [autossh](http://linux.die.net/man/1/autossh) - ssh client with a nifty wrapper that keeps the connection alive and respawns the connection if dropped
+
+I'll do another post with the nitty-gritty of how I set this up, but the short version is that I installed Unison and lsyncd on both the laptop and the server. Single direction sync from my laptop to the server is pretty straight forward: lsyncd watches files, if one changes it calls unison which syncs the files with the server. The tricky bit was getting my server to be able to sync with my laptop which is often behind a NAT router. The solution was to open an ssh connection from my laptop to my server using autossh and reverse port forward port 5555 from the server back to my laptop's port 22. That way an lsyncd process on the server can monitor the file system and when it sees a change can kick off a unison job that syncs the server to ssh://localhost:5555//some/path which is forwarded to my laptop! Autossh makes sure that connection does not get dropped and respawns if it does get dropped. So with a little shell scripting to start the lsyncd daemon on both machines, some config of lsyncd, and a local shell script to fire off the autossh connection, I've got real-time bidirectional sync!
+
+In a follow up post I'll put of the details of this configuration. Stay tuned. (EDIT: [Update posted](https://www.cerebralmastication.com/2011/04/details-of-two-way-sync-between-two-ubuntu-machines/)!)
+
+If you've solved sync a different way and you like your solution, please comment. I've not settled that this is my long-term solution. It's just a solution that works. Which is more than I had yesterday.

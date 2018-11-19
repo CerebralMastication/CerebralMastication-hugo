@@ -1,0 +1,21 @@
+---
+author: JD Long
+date: 2009-02-19 19:15:23+00:00
+draft: false
+title: OMG, WTF?! BBQ!!11!1
+type: post
+url: /2009/02/omg-wtf-bbq111/
+tags:
+- rant
+---
+
+![sol](https://www.cerebralmastication.com/wp-content/uploads/2009/02/sol.jpg)
+It blows my mind that organizations choose names and acronyms that have alternative, non-flattering meaning. I understand this when there is language translation involved. No one at Ford knew that Nova sounds just like "no go" in Spanish. I mean, it's Ford, they were educated in Detroit public schools. They don't speak Mexican. But take Virginia, for example. Like other states, VA gives school kids standardized exams. Every states has some acronym for these exams. In VA, that [TLA ](http://en.wikipedia.org/wiki/Three-letter_acronym)is SOL. You got it, Virginia makes kids take the SOL exam to determine if they are, indeed, SOL.
+
+I was reminded of this recently when reading about someone from the [Object Management Group ](http://www.omg.org/)giving a conference presentation. They were listed as Whitey McCracker, OMG, giving a speech on "managing your objects in a functional object post internet paradigm (2.0)." To which I simply thought, "WTF does that mean? OMG that is hard to decipher. "
+
+I guess the bottom line is this, if you are thinking up a public acronym, be sure and run it by your 14 year old son to make sure it does not have an alternative meaning.
+
+To battle the proliferation of TLAs I've taken to just saying "Whiskey Tango Foxtrot" because I think it makes me sound cool, like that gay guy in TopGun.
+
+-JD

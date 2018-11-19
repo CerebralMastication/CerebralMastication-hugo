@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Proxy on A Hugo website</title>
+    <link>/tags/proxy/</link>
+    <description>Recent content in Proxy on A Hugo website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 16 Jul 2010 22:07:12 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/proxy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Starting an EC2 Machine Then Setting Up a Socks Proxy... From R!</title>
+      <link>/2010/07/starting-an-ec2-machine-then-setting-up-a-socks-proxy-from-r/</link>
+      <pubDate>Fri, 16 Jul 2010 22:07:12 +0000</pubDate>
+      
+      <guid>/2010/07/starting-an-ec2-machine-then-setting-up-a-socks-proxy-from-r/</guid>
+      <description>I do some work from home, some work from an office in Chicago and some work on the road. It&amp;rsquo;s not uncommon for me to want to tunnel all my web traffic through a VPN tunnel. In one of my previous blog posts I alluded to using Amazon EC2 as a way to get around your corporate IT mind control voyeurs service providers. This tunneling method is one of the 5 or so ways I have used EC2 to set up a tunnel.</description>
+    </item>
+    
+  </channel>
+</rss>

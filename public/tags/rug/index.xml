@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rug on A Hugo website</title>
+    <link>/tags/rug/</link>
+    <description>Recent content in Rug on A Hugo website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 09 Apr 2010 16:42:07 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/rug/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Chicago R User Group... It&#39;s for the sexy people! </title>
+      <link>/2010/04/chicago-r-user-group-its-for-the-sexy-people/</link>
+      <pubDate>Fri, 09 Apr 2010 16:42:07 +0000</pubDate>
+      
+      <guid>/2010/04/chicago-r-user-group-its-for-the-sexy-people/</guid>
+      <description>[caption id=&amp;ldquo;attachment_673&amp;rdquo; align=&amp;ldquo;alignleft&amp;rdquo; width=&amp;ldquo;169&amp;rdquo; caption=&amp;ldquo;Morris Day, y&amp;rsquo;all! &amp;ldquo;][/caption]
+I think we all know that Morris Day was talking about when he wrote the lyrics to &amp;ldquo;The Bird&amp;rdquo;:
+Yes! Hold on now, this dance ain&#39;t for everybody. Just the sexy people. White folks, you&#39;re much too tight. You gotta shake your head like the black folks. You might get some tonight. Look out! That&amp;rsquo;s right, he was talking about the new R User Group in Chicago!</description>
+    </item>
+    
+  </channel>
+</rss>

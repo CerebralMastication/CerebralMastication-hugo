@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.51" />
+
+
+<title>Solving easy problems the hard way - A Hugo website</title>
+<meta property="og:title" content="Solving easy problems the hard way - A Hugo website">
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="https://github.com/rstudio/blogdown">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/rstudio">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">4 min read</span>
+    
+
+    <h1 class="article-title">Solving easy problems the hard way</h1>
+
+    
+    <span class="article-date">2012/03/17</span>
+    
+
+    <div class="article-content">
+      <p>There&rsquo;s a charming little brain teaser that&rsquo;s going around the Interwebs. It&rsquo;s got various forms, but they all look something like this:</p>
+
+<blockquote>This problem can be solved by pre-school children in 5-10 minutes, by programer – in 1 hour, by people with higher education … well, check it yourself! ![:)](http://girlsaregeeks.com/WPApp/wp-includes/images/smilies/icon_smile.gif)
+
+
+8809=6
+7111=0
+2172=0
+6666=4
+1111=0
+3213=0
+7662=2
+9313=1
+0000=4
+2222=0
+3333=0
+5555=0
+8193=3
+8096=5
+7777=0
+9999=4
+7756=1
+6855=3
+9881=5
+5531=0
+2581=?</blockquote>
+
+<p>SPOILER ALERT&hellip;</p>
+
+<p>The answer has to do with how many circles are in each number. So the number 8 has two circles in its shape so it counts as two. And 0 is one big circle, so it counts as 1. So 2581=2. Ok, that&rsquo;s cute, it&rsquo;s an alternative mapping of values with implied addition.</p>
+
+<p>What bugged me was how might I solve this if the mapping of values was not based on shape. So how could I program a computer to solve this puzzle? I gave it a little thought and since I like to pretend I&rsquo;m an econometrician, this looked a LOT like a series of equations that could be solved with an OLS regression. So how can I refactor the problem and data into a trivial OLS? I really need to convert each row of the training data into a frequency of occurrence chart. So instead of 8809=6 I need to refactor that into something like:</p>
+
+<p>1,0,0,0,0,0,0,0,2,1 = 6</p>
+
+<p>In this format the independent variables are the digits 0-9 and their value is the number of times they occur in each row of the training data. I couldn&rsquo;t figure out how to do the freq table so, as is my custom, I created a concise simplification of the problem and <a href="http://stackoverflow.com/q/9728038/37751">put it on StackOverflow.com </a>which  yielded a great solution. Once I had the frequency table built, it was simple a matter of a linear regression with 10 independent variables and a dependent with no intercept term.</p>
+
+<p>My whole script, which you should be able to cut and paste into R, if you are so inclined, is the following:</p>
+
+<pre><code>&lt;span style=&quot;color: #666666; font-style: italic;&quot;&gt;## read in the training data&lt;/span&gt;
+&lt;span style=&quot;color: #666666; font-style: italic;&quot;&gt;## more lines than it should be because of the https requirement in Github&lt;/span&gt;
+temporaryFile &lt;span&gt;&lt;-&lt;/span&gt; &lt;a href=&quot;http://inside-r.org/r-doc/base/tempfile&quot;&gt;&lt;span style=&quot;color: #003399; font-weight: bold;&quot;&gt;tempfile&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;color: #009900;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #009900;&quot;&gt;)&lt;/span&gt;
+&lt;a href=&quot;http://inside-r.org/r-doc/utils/download.file&quot;&gt;&lt;span style=&quot;color: #003399; font-weight: bold;&quot;&gt;download.file&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;color: #009900;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&quot;https://raw.github.com/gist/2061284/44a4dc9b304249e7ab3add86bc245b6be64d2cdd/problem.csv&quot;&lt;/span&gt;&lt;span style=&quot;color: #339933;&quot;&gt;,&lt;/span&gt;destfile=temporaryFile&lt;span style=&quot;color: #339933;&quot;&gt;,&lt;/span&gt; method=&lt;span style=&quot;color: #0000ff;&quot;&gt;&quot;curl&quot;&lt;/span&gt;&lt;span style=&quot;color: #009900;&quot;&gt;)&lt;/span&gt;
+series &lt;span&gt;&lt;-&lt;/span&gt; &lt;a href=&quot;http://inside-r.org/r-doc/utils/read.csv&quot;&gt;&lt;span style=&quot;color: #003399; font-weight: bold;&quot;&gt;read.csv&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;color: #009900;&quot;&gt;(&lt;/span&gt;temporaryFile&lt;span style=&quot;color: #009900;&quot;&gt;)&lt;/span&gt;
+
+&lt;span style=&quot;color: #666666; font-style: italic;&quot;&gt;## munge the data to create a frequency table&lt;/span&gt;
+freqTable &lt;span&gt;&lt;-&lt;/span&gt; &lt;a href=&quot;http://inside-r.org/r-doc/base/as.data.frame&quot;&gt;&lt;span style=&quot;color: #003399; font-weight: bold;&quot;&gt;as.data.frame&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;color: #009900;&quot;&gt;(&lt;/span&gt; &lt;a href=&quot;http://inside-r.org/r-doc/base/t&quot;&gt;&lt;span style=&quot;color: #003399; font-weight: bold;&quot;&gt;t&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;color: #009900;&quot;&gt;(&lt;/span&gt;&lt;a href=&quot;http://inside-r.org/r-doc/base/apply&quot;&gt;&lt;span style=&quot;color: #003399; font-weight: bold;&quot;&gt;apply&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;color: #009900;&quot;&gt;(&lt;/span&gt;series&lt;span style=&quot;color: #009900;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #339933;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot;color: #cc66cc;&quot;&gt;1&lt;/span&gt;&lt;span&gt;:&lt;/span&gt;&lt;span style=&quot;color: #cc66cc;&quot;&gt;4&lt;/span&gt;&lt;span style=&quot;color: #009900;&quot;&gt;]&lt;/span&gt;&lt;span style=&quot;color: #339933;&quot;&gt;,&lt;/span&gt; &lt;span style=&quot;color: #cc66cc;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot;color: #339933;&quot;&gt;,&lt;/span&gt; &lt;a href=&quot;http://inside-r.org/r-doc/base/function&quot;&gt;&lt;span style=&quot;color: #003399; font-weight: bold;&quot;&gt;function&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;color: #009900;&quot;&gt;(&lt;/span&gt;X&lt;span style=&quot;color: #009900;&quot;&gt;)&lt;/span&gt; &lt;a href=&quot;http://inside-r.org/r-doc/base/table&quot;&gt;&lt;span style=&quot;color: #003399; font-weight: bold;&quot;&gt;table&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;color: #009900;&quot;&gt;(&lt;/span&gt;&lt;a href=&quot;http://inside-r.org/r-doc/base/c&quot;&gt;&lt;span style=&quot;color: #003399; font-weight: bold;&quot;&gt;c&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;color: #009900;&quot;&gt;(&lt;/span&gt;X&lt;span style=&quot;color: #339933;&quot;&gt;,&lt;/span&gt; &lt;span style=&quot;color: #cc66cc;&quot;&gt;0&lt;/span&gt;&lt;span&gt;:&lt;/span&gt;&lt;span style=&quot;color: #cc66cc;&quot;&gt;9&lt;/span&gt;&lt;span style=&quot;color: #009900;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;color: #009900;&quot;&gt;)&lt;/span&gt;&lt;span&gt;-&lt;/span&gt;&lt;span style=&quot;color: #cc66cc;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot;color: #009900;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;color: #009900;&quot;&gt;)&lt;/span&gt; &lt;span style=&quot;color: #009900;&quot;&gt;)&lt;/span&gt;
+&lt;a href=&quot;http://inside-r.org/r-doc/base/names&quot;&gt;&lt;span style=&quot;color: #003399; font-weight: bold;&quot;&gt;names&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;color: #009900;&quot;&gt;(&lt;/span&gt;freqTable&lt;span style=&quot;color: #009900;&quot;&gt;)&lt;/span&gt; &lt;span&gt;&lt;-&lt;/span&gt; &lt;a href=&quot;http://inside-r.org/r-doc/base/c&quot;&gt;&lt;span style=&quot;color: #003399; font-weight: bold;&quot;&gt;c&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;color: #009900;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&quot;zero&quot;&lt;/span&gt;&lt;span style=&quot;color: #339933;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&quot;one&quot;&lt;/span&gt;&lt;span style=&quot;color: #339933;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&quot;two&quot;&lt;/span&gt;&lt;span style=&quot;color: #339933;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&quot;three&quot;&lt;/span&gt;&lt;span style=&quot;color: #339933;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&quot;four&quot;&lt;/span&gt;&lt;span style=&quot;color: #339933;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&quot;five&quot;&lt;/span&gt;&lt;span style=&quot;color: #339933;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&quot;six&quot;&lt;/span&gt;&lt;span style=&quot;color: #339933;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&quot;seven&quot;&lt;/span&gt;&lt;span style=&quot;color: #339933;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&quot;eight&quot;&lt;/span&gt;&lt;span style=&quot;color: #339933;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&quot;nine&quot;&lt;/span&gt;&lt;span style=&quot;color: #009900;&quot;&gt;)&lt;/span&gt;
+freqTable&lt;span&gt;$&lt;/span&gt;dep &lt;span&gt;&lt;-&lt;/span&gt; series&lt;span style=&quot;color: #009900;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #339933;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot;color: #cc66cc;&quot;&gt;5&lt;/span&gt;&lt;span style=&quot;color: #009900;&quot;&gt;]&lt;/span&gt;
+
+&lt;span style=&quot;color: #666666; font-style: italic;&quot;&gt;## now a simple OLS regression with no intercept&lt;/span&gt;
+myModel &lt;span&gt;&lt;-&lt;/span&gt; &lt;a href=&quot;http://inside-r.org/r-doc/stats/lm&quot;&gt;&lt;span style=&quot;color: #003399; font-weight: bold;&quot;&gt;lm&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;color: #009900;&quot;&gt;(&lt;/span&gt;dep &lt;span&gt;~&lt;/span&gt; &lt;span style=&quot;color: #cc66cc;&quot;&gt;0&lt;/span&gt; &lt;span&gt;+&lt;/span&gt; zero &lt;span&gt;+&lt;/span&gt; one &lt;span&gt;+&lt;/span&gt; two &lt;span&gt;+&lt;/span&gt; three &lt;span&gt;+&lt;/span&gt; four &lt;span&gt;+&lt;/span&gt; five &lt;span&gt;+&lt;/span&gt; six &lt;span&gt;+&lt;/span&gt; seven &lt;span&gt;+&lt;/span&gt; eight &lt;span&gt;+&lt;/span&gt; nine&lt;span style=&quot;color: #339933;&quot;&gt;,&lt;/span&gt; &lt;a href=&quot;http://inside-r.org/r-doc/utils/data&quot;&gt;&lt;span style=&quot;color: #003399; font-weight: bold;&quot;&gt;data&lt;/span&gt;&lt;/a&gt;=freqTable&lt;span style=&quot;color: #009900;&quot;&gt;)&lt;/span&gt;
+&lt;a href=&quot;http://inside-r.org/r-doc/base/round&quot;&gt;&lt;span style=&quot;color: #003399; font-weight: bold;&quot;&gt;round&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;color: #009900;&quot;&gt;(&lt;/span&gt;myModel&lt;span&gt;$&lt;/span&gt;coefficients&lt;span style=&quot;color: #009900;&quot;&gt;)&lt;/span&gt;
+</code></pre>
+
+<p><a href="http://www.inside-r.org/pretty-r">Created by Pretty R at inside-R.org</a></p>
+
+<p>The final result looks like this:</p>
+
+<pre><code>&lt;div id=&quot;_mcePaste&quot;&gt;&gt; round(myModel$coefficients)&lt;/div&gt;
+&lt;div id=&quot;_mcePaste&quot;&gt;zero   one   two three  four  five   six seven eight  nine&lt;/div&gt;
+&lt;div id=&quot;_mcePaste&quot;&gt;   1     0     0     0    NA     0     1     0     2     1&lt;/div&gt;
+</code></pre>
+
+<p>So we can see that zero, six, and nine all get mapped to 1 and eight gets mapped to 2. Everything else is zero. And four is NA because there were no fours in the training data.</p>
+
+<p>There. I&rsquo;m as smart as a preschooler. And I have code to prove it.</p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+

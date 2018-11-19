@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.51" />
+
+
+<title>You can Hadoop it! It&#39;s elastic! Boogie woogie woog-ie! - A Hugo website</title>
+<meta property="og:title" content="You can Hadoop it! It&#39;s elastic! Boogie woogie woog-ie! - A Hugo website">
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="https://github.com/rstudio/blogdown">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/rstudio">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">5 min read</span>
+    
+
+    <h1 class="article-title">You can Hadoop it! It&#39;s elastic! Boogie woogie woog-ie!</h1>
+
+    
+    <span class="article-date">2010/02/16</span>
+    
+
+    <div class="article-content">
+      <p>[caption id=&ldquo;attachment_594&rdquo; align=&ldquo;alignleft&rdquo; width=&ldquo;261&rdquo; caption=&ldquo;This blog&rsquo;s name in Chinese! &ldquo;]<a href="https://www.cerebralmastication.com/wp-content/uploads/2010/02/bad_egg.png"><img src="https://www.cerebralmastication.com/wp-content/uploads/2010/02/bad_egg.png" alt="" />
+</a>[/caption]</p>
+
+<p>I just came back from the future and let me be the first to tell you this: Learn some Chinese. And more than just cào nǐ niáng  (肏你娘) which your friend in grad school told you means &ldquo;Live happy with many blessings&rdquo;. Trust me, I&rsquo;ve been hanging with Madam Wu and she told me it doesn&rsquo;t mean that.</p>
+
+<p>So how did I travel to the future to visit with Madam Wu, you ask? Well the short answer is Hadoop. Yeah, the cute little elephant. <a href="https://www.cerebralmastication.com/2010/02/using-the-r-multicore-package-in-linux-with-wild-and-passionate-abandon/">As I have told you before</a>, multicore makes your R code run fast by using worm holes to shoot your results back from the future. Well Hadoop actually takes you to the future on the back of an elephant and you can bring your own results back! I couldn&rsquo;t make this up if I tried, so you know it&rsquo;s true! And what&rsquo;s fantastic about all of this is Hadoop works with R! And Amazon will let you rent a time traveling elephant through their <a href="http://aws.amazon.com/elasticmapreduce/">Elastic MapReduce service</a>! I think Amazon coined the term &ldquo;Time Travel as a Service&rdquo; or TTaaS  generally pronounced as &ldquo;ta-tas&rdquo; in <a href="http://www.savethetatas.com/">the industry</a>. If you are a CTO be sure and use this in your next &ldquo;vision statement&rdquo; pitch so everyone will know you&rsquo;re hip to all this cloud stuff.</p>
+
+<p>So you use R and you want to travel into the future on the back of an elephant to visit Madam Wu and get your model results back, don&rsquo;t you? Well it&rsquo;s a damn good thing you read this blog because I&rsquo;m going to give you the keys to the Wu dynasty and a little 福寿 while we&rsquo;re at it.</p>
+
+<p>I&rsquo;ve never had an original thought in my life so I started with <a href="http://developer.amazonwebservices.com/connect/thread.jspa?messageID=128995&amp;#128995">this discussion </a>over at the AMZN E M/R discussion forum. Peter Skomoroch from <a href="http://www.datawrangling.com/">Data Wrangling </a>gives a very good example with all the data and code provided so you can run it yourself.  Pete&rsquo;s example really shakes the  yáng guǐzi, as we say in the future. In addition I read the documentation for David Rosenberg&rsquo;s <a href="http://docs.google.com/viewer?url=http%3A%2F%2Fcran.r-project.org%2Fweb%2Fpackages%2FHadoopStreaming%2FHadoopStreaming.pdf">HadoopStreaming package</a> which was good for insight, but I didn&rsquo;t use the package as it&rsquo;s really focused on the &lsquo;big data&rsquo; problem.</p>
+
+<p>[caption id=&ldquo;attachment_639&rdquo; align=&ldquo;alignleft&rdquo; width=&ldquo;208&rdquo; caption=&ldquo;That elephant is so freaking cute! &ldquo;]<a href="https://www.cerebralmastication.com/wp-content/uploads/2010/02/hadoop-elephant.jpeg"><img src="https://www.cerebralmastication.com/wp-content/uploads/2010/02/hadoop-elephant.jpeg" alt="" />
+</a>[/caption]</p>
+
+<p>Prior to my foray into time travel, I knew that Hadoop could be used to process big text files and do something like rip out all the links and count them. But I thought that Hadoop was all about processing big data. I never paid attention to the big Hadoop elephant in the room because I don&rsquo;t have big data. I have big CPU hogging models (mostly slow because I don&rsquo;t code worth a shit). What got me reconsidering my world view was <a href="http://www.johnmyleswhite.com/">John Myles White</a>&rsquo;s comment on my <a href="https://www.cerebralmastication.com/2010/02/using-the-r-multicore-package-in-linux-with-wild-and-passionate-abandon/">multicore post </a>earlier. John encouraged me to look into running my simulations on AMZN&rsquo;s E M/R service using Hadoop streaming. So instead of giving Hadoop  a big fat text file to parse, I just gave it a text file with 10,000 rows each containing an integer from 1:10,000. Then I refactored my R code to read a line from stdin, trim it down to just the integer, and then go run the simulation with that number. When done I had it serialize the resulting model output and return that to stdout. Hadoop takes care of chopping up the input and pulling together the output.</p>
+
+<p>I learned a few &ldquo;gotchas&rdquo; or, as we say in the future: 臭婊子(I think that should be plural). I&rsquo;ll do a whole blog post on gotchas soon, but here&rsquo;s the bullet points:</p>
+
+<pre><code>  * AMZN is currently running the version of Debian Linux named Lenny which has version 2.7.1 of R installed. No matter what the documentation says, don't let Lenny tend to the rabbits.
+  * Test all code by firing up an interactive Pig instance and logging in as 'hadoop'. Instead of running Pig, run R and test your code. And as it says in the FAQ: &quot;The Pig don't care either way. &quot; Which, despite sounding like buggery, is the truth.
+  * If your code runs inside of R on a Hadoop instance, drop back to the command line on the Hadoop instance and run 'cat infile.txt | yourMapper.R | sort | yourReducer.R &gt; outfile.txt'. This pipes your input file into your mapper file which does it's thing and then pipes the results to your reducer file which then &quot;pumps up the jam&quot; into an output file.  What you see in the outfile.txt is what Hadoop will produce. So it you don't like what you see, you better do some more coding.
+  * You CAN load packages into R in a Hadoop instance running in AMZN E M/R. There are a few caveats, of course:
+
+
+  1. Your package has to work in R 2.7.1. (until AMZN upgrades to the next stable version of Debian.
+  2. As far as I can tell, all the output has to come out of stdout. So if you want to end up with R objects which you use for other things, you should get comfortable with the serialize() command and reading text files back into R. Which, as you can see [from this question](http://stackoverflow.com/questions/2258511/r-serialize-objects-to-text-file-and-back-again), I am not yet comfortable with.
+  3. There will be multiple instances of R running on every machine. So if they are all trying to download a package to the same directory, you are going to get file lock errors. One solution is to have each R instance create a directory for packages that includes the PID of the R instances. That way there's no possibility for a conflict! Here's an example of how I load the Hmisc package:
+
+
+  * You'll probably want to provide some data to R. This is done by uploading your files to S3 and then passing the &quot;-cacheFile&quot; option to Hadoop. To get the plyr package to load in R 2.7.1 I had to edit the package. I then uploaded the altered package thusly:
+</code></pre>
+
+<blockquote>-cacheFile s3n://rdata/plyr_0.1.9.tar.gz#plyr_0.1.9.tar.gz</blockquote>
+
+<p>More to come later. I&rsquo;ve gotta get back to the future.</p>
+
+<p>[caption id=&ldquo;attachment_631&rdquo; align=&ldquo;alignleft&rdquo; width=&ldquo;304&rdquo; caption=&ldquo;You hold the elephant and I&rsquo;ll plug this in. &ldquo;]<a href="https://www.cerebralmastication.com/wp-content/uploads/2010/02/christopher_lloyd.jpg"><img src="https://www.cerebralmastication.com/wp-content/uploads/2010/02/christopher_lloyd.jpg" alt="" />
+</a>[/caption]</p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+
+    
+  </body>
+</html>
+

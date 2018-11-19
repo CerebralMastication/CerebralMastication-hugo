@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Event on A Hugo website</title>
+    <link>/tags/event/</link>
+    <description>Recent content in Event on A Hugo website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Feb 2009 14:43:16 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/event/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>R in The Windy City</title>
+      <link>/2009/02/r-in-the-windy-city/</link>
+      <pubDate>Fri, 27 Feb 2009 14:43:16 +0000</pubDate>
+      
+      <guid>/2009/02/r-in-the-windy-city/</guid>
+      <description>In honor of me moving to Chicago, the powers who abide have decided to hold the first annual &amp;ldquo;R/Finance conference for applied finance using R&amp;rdquo; conference in Chicago this year. The dates are April 24-25, 2009.
+R/Finance 2009: Applied Finance with R
+To those who made the decision on location, I&amp;rsquo;m pleased but slightly embarrassed that you let my relocation decision have such a profound impact on your venue choice.</description>
+    </item>
+    
+  </channel>
+</rss>

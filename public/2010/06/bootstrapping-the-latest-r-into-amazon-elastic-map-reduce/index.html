@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.51" />
+
+
+<title>Bootstrapping the latest R into Amazon Elastic Map Reduce - A Hugo website</title>
+<meta property="og:title" content="Bootstrapping the latest R into Amazon Elastic Map Reduce - A Hugo website">
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="https://github.com/rstudio/blogdown">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/rstudio">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">3 min read</span>
+    
+
+    <h1 class="article-title">Bootstrapping the latest R into Amazon Elastic Map Reduce</h1>
+
+    
+    <span class="article-date">2010/06/28</span>
+    
+
+    <div class="article-content">
+      <p><a href="https://www.cerebralmastication.com/wp-content/uploads/2010/06/boot.jpg"><img src="https://www.cerebralmastication.com/wp-content/uploads/2010/06/boot.jpg" alt="" />
+</a>I&rsquo;ve been continuing to muck around with using R inside of Amazon Elastic Map reduce jobs. I&rsquo;ve been working on abstracting the lapply() logic so that R will farm the pieces out to Amazon EMR. This is coming along really well, thanks in no small part to the <a href="http://stackoverflow.com/questions/tagged/r">Stack Overflow [r] </a>community. I have no idea how crappy coders like me got anything at all done before the Interwebs.</p>
+
+<p>One of the immediate hurdles faced when trying to use AMZN EMR in anger is that the default version of R on EMR is 2.7.1. Yes, that is indeed the version that Moses taught the Israelites to use while they wandered in the desert. I&rsquo;m impressed by your religious knowledge. At any rate, all kinds of things go to hell when you try to run code and load packages in 2.7.1. When I first started fighting with EMR the only solution was to backport my code and alter any packages so they would run in 2.7.1. Yes, that is, as Moses would say, a Nudnik. Nudnik also happens to be the pet name my neighbors have given me. They love me. Where was I? Oh yeah, Methusla&rsquo;s R version. Recently Amazon released a neat feature called &ldquo;Bootstrapping&rdquo; for EMR. Before you start thinking about sampling and resampling and all that  crap, let me clarify. This is NOT statistical bootstrapping. It&rsquo;s called bootstrapping because it&rsquo;s code that runs after each node boots up, but before the mapper procedure runs. So to get a more modern version of R loaded on to each node I set up a little script that updates the sources.list file and then installs the latest version of R. And since I&rsquo;m a caring, sharing guy, here&rsquo;s my script:</p>
+
+<p>[gist id=&ldquo;455962&rdquo;]</p>
+
+<p>And if that doesn&rsquo;t show up for some reason, you can find all<a href="http://gist.github.com/455962"> 5 lines of its bash glory here over at github</a>.</p>
+
+<p>If you&rsquo;re not conveniently located in Chicago, IL you may want to change your R mirror location. The bootstrap action can be set up from the EMR web GUI or if you&rsquo;re firing the jobs off using the elastic-mapreduce command line tools you just add the following option: &ldquo;&ndash;bootstrap-action s3://myBucket/bootstrap.sh&rdquo; assuming myBucket is the bucket with your script in it and bootstrap.sh contains your bootstrap shell script. And then, as my buddies in Dublin say, &ldquo;Bob&rsquo;s your mother&rsquo;s brother.&rdquo;</p>
+
+<p>And before you ask, yes, this slows crap down. I&rsquo;ll probably hack together a script that will take the R binaries and other needed upgrades out of Amazon S3 and load them in a bootstrap action which will greatly speed things up. The above example has one clear advantage over loading binaries from S3: It works right now. And remember folks, code that works right now kicks code that &ldquo;might work someday&rdquo; right in the balls. And then mocks it while it cries.</p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News on A Hugo website</title>
+    <link>/tags/news/</link>
+    <description>Recent content in News on A Hugo website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 03 Feb 2009 15:35:33 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/news/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mainstream Article on R - NYT</title>
+      <link>/2009/02/mainstream-article-on-r-nyt/</link>
+      <pubDate>Tue, 03 Feb 2009 15:35:33 +0000</pubDate>
+      
+      <guid>/2009/02/mainstream-article-on-r-nyt/</guid>
+      <description>Robert Gentleman, left, and Ross Ihaka, the creators of R. Picture courtesy of the New York Times
+For those of us who use R on a regular basis it was pretty neat to see a mainstream media piece on the R language. Ashlee Vance of the New York Times did a good job on the piece. It is hard to explain to your average kitchen table reader of the Grey Lady why a computer programing language is important.</description>
+    </item>
+    
+  </channel>
+</rss>

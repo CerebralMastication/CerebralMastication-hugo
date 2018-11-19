@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Graph on A Hugo website</title>
+    <link>/tags/graph/</link>
+    <description>Recent content in Graph on A Hugo website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 16 Jun 2009 16:26:46 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/graph/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Not Just Normal... Gaussian</title>
+      <link>/2009/06/not-just-normal-gaussian/</link>
+      <pubDate>Tue, 16 Jun 2009 16:26:46 +0000</pubDate>
+      
+      <guid>/2009/06/not-just-normal-gaussian/</guid>
+      <description>[caption id=&amp;ldquo;&amp;rdquo; align=&amp;ldquo;alignleft&amp;rdquo; width=&amp;ldquo;188&amp;rdquo; caption=&amp;ldquo;Pretty Normal&amp;rdquo;][/caption]
+Dave, over at The Revolutions Blog,posted about the big &amp;lsquo;ol list of graphs created with R that are over at Wikimedia Commons. As I was scrolling through the list I recognized the standard normal distribution from the Wikipedia article on the same topic.
+Below is the fairly simple source code with lots of comments. Here&amp;rsquo;s the source. Run it at home&amp;hellip; for fun and profit.</description>
+    </item>
+    
+  </channel>
+</rss>
