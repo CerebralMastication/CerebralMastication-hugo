@@ -1,0 +1,7 @@
+]0;~/DocumentsPersonal/github.com/CerebralMastication-hugo[?1034hJALmac:CerebralMastication-hugo jal$ [KJALmac:CerebralMastication-hugo jal$ git init
+Initialized empty Git repository in /Users/jal/DocumentsPersonal/github.com/CerebralMastication-hugo/.git/
+]0;~/DocumentsPersonal/github.com/CerebralMastication-hugoJALmac:CerebralMastication-hugo jal$ git remote add origin https://github.com/Cerebr alMastication/CerebralMastication-hugo.git
+]0;~/DocumentsPersonal/github.com/CerebralMastication-hugoJALmac:CerebralMastication-hugo jal$ git push -u origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/CerebralMastication/CerebralMastication-hugo.git'
+]0;~/DocumentsPersonal/github.com/CerebralMastication-hugoJALmac:CerebralMastication-hugo jal$ 
