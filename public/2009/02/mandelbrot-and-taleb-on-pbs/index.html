@@ -1,70 +1,262 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.51" />
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.51" />
+
+  <title>Mandelbrot and Taleb on PBS &middot; Your site title</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://www.cerebralmastication.com/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://www.cerebralmastication.com/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="https://www.cerebralmastication.com/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://www.cerebralmastication.com/img/favicon.ico" type="image/x-icon" />
+
+  
+    
+        <link rel="stylesheet" href="https://www.cerebralmastication.com/css/my.css">
+    
+  
+  
+    
+        <script src="https://www.cerebralmastication.com/js/my.js"></script>
+    
+  
+
+</head>
 
 
-<title>Mandelbrot and Taleb on PBS - A Hugo website</title>
-<meta property="og:title" content="Mandelbrot and Taleb on PBS - A Hugo website">
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="https://www.cerebralmastication.com/">Blackburn</a>
 
 
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://www.cerebralmastication.com/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://www.cerebralmastication.com/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://www.cerebralmastication.com/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://www.cerebralmastication.com/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/*" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/*" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/yoshiharuyamashita" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://stackoverflow.com/users/*" target="_blank"><i class="fa fa-stack-overflow fa-fw"></i>Stack Overflow</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2018. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Mandelbrot and Taleb on PBS</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>03 Feb 2009, 21:34</time>
+  </div>
 
   
 
+  
 
-
-
-
-
-
-<link rel="stylesheet" href="/css/fonts.css" media="all">
-<link rel="stylesheet" href="/css/main.css" media="all">
-
-
-
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <nav class="nav">
-  <a href="/" class="nav-logo">
-    <img src="/images/logo.png"
-         width="50"
-         height="50"
-         alt="Logo">
-  </a>
-
-  <ul class="nav-links">
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
     
-    <li><a href="/about/">About</a></li>
+      <a class="post-taxonomy-tag" href="https://www.cerebralmastication.com/tags/risk">risk</a>&nbsp;&#47;
     
-    <li><a href="https://github.com/cerebralmastication/">GitHub</a></li>
+      <a class="post-taxonomy-tag" href="https://www.cerebralmastication.com/tags/video">video</a>
     
-    <li><a href="https://twitter.com/CMastication">Twitter</a></li>
-    
-  </ul>
-</nav>
+  </div>
+  
+  
 
-      </header>
+</div>
 
-
-<main class="content" role="main">
-
-  <article class="article">
-    
-    <span class="article-duration">3 min read</span>
-    
-
-    <h1 class="article-title">Mandelbrot and Taleb on PBS</h1>
-
-    
-    <span class="article-date">2009/02/03</span>
-    
-
-    <div class="article-content">
-      <p>Let me start by saying that I like <a href="http://en.wikipedia.org/wiki/Taleb">Nassim Nicholas Taleb </a>and <a href="http://en.wikipedia.org/wiki/Beno%C3%AEt_Mandelbrot">Benoît Mandelbrot </a>quite a lot. I don&rsquo;t agree with them all the time, but that is generally true of people I like. I recall reading Mandelbrot&rsquo;s book <a href="http://www.amazon.com/gp/product/0465043577?ie=UTF8&amp;tag=riskthou-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0465043577">The Misbehavior of Markets: A Fractal View of Financial Turbulence</a><img src="http://www.assoc-amazon.com/e/ir?t=riskthou-20&amp;l=as2&amp;o=1&amp;a=0465043577" alt="" />
+  <p>Let me start by saying that I like <a href="http://en.wikipedia.org/wiki/Taleb">Nassim Nicholas Taleb </a>and <a href="http://en.wikipedia.org/wiki/Beno%C3%AEt_Mandelbrot">Benoît Mandelbrot </a>quite a lot. I don&rsquo;t agree with them all the time, but that is generally true of people I like. I recall reading Mandelbrot&rsquo;s book <a href="http://www.amazon.com/gp/product/0465043577?ie=UTF8&amp;tag=riskthou-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0465043577">The Misbehavior of Markets: A Fractal View of Financial Turbulence</a><img src="http://www.assoc-amazon.com/e/ir?t=riskthou-20&amp;l=as2&amp;o=1&amp;a=0465043577" alt="" />
 some years ago and being struck by how much sense Mandelbrot makes. It helped that his early work related to markets was in cotton prices and I am an agricultural economist.</p>
 
 <p><!-- more -->Taleb is a bit harder to like than Mandelbrot. He&rsquo;s mouthy, arrogant, and demands that his publisher not edit his books. If he crosses your ideology you will find yourself wanting to write him a pissy letter starting with the greeting, &ldquo;Look you arrogant ass&hellip;&rdquo; But he also has some really great intuition about risk. Most folks get religion after they have a near death experience. Taleb got his religion after he got rich. NNT was holding a double butt load (that&rsquo;s a technical term, go look it up) of calls when the financial world went to hell in 1987. NNT knew that the reason he got rich was not because he was smarter or had more foresight than anyone else. He did know one thing, there is no way to know what the probability of a huge price swing is. So he bought out of the money options in both directions since he suspected that the probability of these options paying off BIG was not properly accounted for in the price. It seems he may have been right. He&rsquo;s also waged a war against <a href="http://en.wikipedia.org/wiki/Value_at_Risk">value at risk </a>or VAR which I don&rsquo;t fully agree with, but C&rsquo;est la vie.</p>
@@ -84,66 +276,100 @@ some years ago and being struck by how much sense Mandelbrot makes. It helped th
 <p><a href="http://www.amazon.com/gp/product/0471152803?ie=UTF8&amp;tag=riskthou-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0471152803"><img src="https://images-na.ssl-images-amazon.com/images/I/71VS8F39BYL._SL160_.gif" alt="" />
 </a></p>
 
-    </div>
-  </article>
 
   
-<section id="comments">
-  <div id="disqus_thread"></div>
-  <script>
-  var disqus_config = function () {
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://www.cerebralmastication.com/2009/02/mainstream-article-on-r-nyt/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://www.cerebralmastication.com/2009/02/mainstream-article-on-r-nyt/">Mainstream Article on R - NYT</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="https://www.cerebralmastication.com/2009/02/mandelbrot-set-in-r/">Mandelbrot Set in R</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://www.cerebralmastication.com/2009/02/mandelbrot-set-in-r/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
   
-  };
-  (function() {
-    var inIFrame = function() {
-      var iframe = true;
-      try { iframe = window.self !== window.top; } catch (e) {}
-      return iframe;
-    };
-    if (inIFrame()) return;
-    var d = document, s = d.createElement('script');
-    s.src = '//cerebralmastication.disqus.com/embed.js'; s.async = true;
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-  })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</section>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
 
-
-
-</main>
-
-      <footer class="footer">
-        <ul class="footer-links">
-          <li>
-            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
-          </li>
-          <li>
-            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
-          </li>
-        </ul>
-      </footer>
-
-    </div>
+(function() {
     
-
     
+    if (window.location.hostname == "localhost")
+        return;
 
-    
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-129487349-1', 'auto');
-	
-	ga('send', 'pageview');
-}
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'Your Disqus shortname';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="https://www.cerebralmastication.com/js/ui.js"></script>
+<script src="https://www.cerebralmastication.com/js/menus.js"></script>
+
+
+<script>
+  
+  if (window.location.hostname != "localhost") {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'Your Google Analytics tracking ID', 'auto');
+    ga('send', 'pageview');
+  }
 </script>
 
-  </body>
+
+
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="\/\/analytics.example.com\/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId',  2 ]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//analytics.example.com/piwik.php?idsite=2" style="border:0;" alt="" /></p></noscript>
+
+
+
+</body>
 </html>
 

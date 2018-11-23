@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Analysis on A Hugo website</title>
-    <link>/tags/analysis/</link>
-    <description>Recent content in Analysis on A Hugo website</description>
+    <title>Analysis on Your site title</title>
+    <link>https://www.cerebralmastication.com/tags/analysis/</link>
+    <description>Recent content in Analysis on Your site title</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Thu, 16 Sep 2010 17:11:27 +0000</lastBuildDate>
     
-	<atom:link href="/tags/analysis/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.cerebralmastication.com/tags/analysis/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Principal Component Analysis (PCA) vs Ordinary Least Squares (OLS): A Visual Explanation</title>
-      <link>/2010/09/principal-component-analysis-pca-vs-ordinary-least-squares-ols-a-visual-explination/</link>
+      <link>https://www.cerebralmastication.com/2010/09/principal-component-analysis-pca-vs-ordinary-least-squares-ols-a-visual-explination/</link>
       <pubDate>Thu, 16 Sep 2010 17:11:27 +0000</pubDate>
       
-      <guid>/2010/09/principal-component-analysis-pca-vs-ordinary-least-squares-ols-a-visual-explination/</guid>
+      <guid>https://www.cerebralmastication.com/2010/09/principal-component-analysis-pca-vs-ordinary-least-squares-ols-a-visual-explination/</guid>
       <description>Over at stats.stackexchange.com recently, a really interesting question was raised about principal component analysis (PCA). The gist was &amp;ldquo;Thanks to my college class I can do the math, but what does it MEAN?&amp;rdquo;
 I felt like this a number of times in my life. Many of my classes were focused on the technical implementations they kinda missed the section titled &amp;ldquo;Why I give a shit.&amp;rdquo; A perfect example was my Mathematics Principles of Economics class which taught me how to manually calculate a bordered Hessian but, for the life of me, I have no idea why I would ever want to calculate such a monster.</description>
     </item>

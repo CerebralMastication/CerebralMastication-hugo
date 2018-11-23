@@ -1,70 +1,264 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.51" />
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.51" />
+
+  <title>Using the R multicore package in Linux with wild and passionate abandon &middot; Your site title</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://www.cerebralmastication.com/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://www.cerebralmastication.com/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="https://www.cerebralmastication.com/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://www.cerebralmastication.com/img/favicon.ico" type="image/x-icon" />
+
+  
+    
+        <link rel="stylesheet" href="https://www.cerebralmastication.com/css/my.css">
+    
+  
+  
+    
+        <script src="https://www.cerebralmastication.com/js/my.js"></script>
+    
+  
+
+</head>
 
 
-<title>Using the R multicore package in Linux with wild and passionate abandon - A Hugo website</title>
-<meta property="og:title" content="Using the R multicore package in Linux with wild and passionate abandon - A Hugo website">
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="https://www.cerebralmastication.com/">Blackburn</a>
 
 
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://www.cerebralmastication.com/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://www.cerebralmastication.com/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://www.cerebralmastication.com/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://www.cerebralmastication.com/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/*" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/*" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/yoshiharuyamashita" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://stackoverflow.com/users/*" target="_blank"><i class="fa fa-stack-overflow fa-fw"></i>Stack Overflow</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2018. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Using the R multicore package in Linux with wild and passionate abandon</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>09 Feb 2010, 19:57</time>
+  </div>
 
   
 
+  
 
-
-
-
-
-
-<link rel="stylesheet" href="/css/fonts.css" media="all">
-<link rel="stylesheet" href="/css/main.css" media="all">
-
-
-
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <nav class="nav">
-  <a href="/" class="nav-logo">
-    <img src="/images/logo.png"
-         width="50"
-         height="50"
-         alt="Logo">
-  </a>
-
-  <ul class="nav-links">
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
     
-    <li><a href="/about/">About</a></li>
+      <a class="post-taxonomy-tag" href="https://www.cerebralmastication.com/tags/ec2">ec2</a>&nbsp;&#47;
     
-    <li><a href="https://github.com/cerebralmastication/">GitHub</a></li>
+      <a class="post-taxonomy-tag" href="https://www.cerebralmastication.com/tags/howto">howto</a>&nbsp;&#47;
     
-    <li><a href="https://twitter.com/CMastication">Twitter</a></li>
+      <a class="post-taxonomy-tag" href="https://www.cerebralmastication.com/tags/r">R</a>
     
-  </ul>
-</nav>
+  </div>
+  
+  
 
-      </header>
+</div>
 
-
-<main class="content" role="main">
-
-  <article class="article">
-    
-    <span class="article-duration">4 min read</span>
-    
-
-    <h1 class="article-title">Using the R multicore package in Linux with wild and passionate abandon</h1>
-
-    
-    <span class="article-date">2010/02/09</span>
-    
-
-    <div class="article-content">
-      <p><a href="https://www.cerebralmastication.com/wp-content/uploads/2010/02/amd_mc_processing.jpg"><img src="https://www.cerebralmastication.com/wp-content/uploads/2010/02/amd_mc_processing.jpg" alt="" />
+  <p><a href="https://www.cerebralmastication.com/wp-content/uploads/2010/02/amd_mc_processing.jpg"><img src="https://www.cerebralmastication.com/wp-content/uploads/2010/02/amd_mc_processing.jpg" alt="" />
 </a>One of my primary uses for R is to build stochastic simulations of insurance portfolios and reinsurance treaties. It&rsquo;s not uncommon for each of my simulations to take 20 seconds or more to complete (if you&rsquo;re doing the math, that&rsquo;s 55 hours for 10K sims or, approximately 453 games of solitaire) . Initially I ran my sims in R running on an <a href="http://www.virtualbox.org/">Oracle VirtualBox </a>(Oracle now owns Virtualbox! <em>gasp</em> ) running Ubuntu. Lately I&rsquo;ve moved to running my sims on EC2 machines. I&rsquo;m not yet doing RMPI clustering, although that is on my roadmap. Currently I just fire up a couple of 8 core instances and run 5K sims on each one then FTP the results back to my desktop. It&rsquo;s not very sexy, but it gets the job done&hellip; I guess the same could be said of myself, except substitute &ldquo;makes slurping sounds eating udon&rdquo; in the place of &ldquo;gets the job done.&rdquo;</p>
 
 <p>When running processor intensive crap (that&rsquo;s a stochastic modeling term) the single threaded nature of R is painful. In Linux or Mac (i.e. NOT Windows) the <a href="http://www.rforge.net/doc/packages/multicore/multicore.html">multicore package </a>is a real godsend. I did a quick code review and, from what I can tell, multicore exploits worm holes to travel back in time and reports your results in a fraction of the time you would expect it to take. Seriously. I expect that as the code matures my computer will fill up with simulation results from simulations which I have not even coded yet. It&rsquo;s almost like magic, except without the rabbit and hat.</p>
@@ -90,66 +284,100 @@
 
 <p>Special thanks to <a href="http://www.cis.udel.edu/~cavazos/index.php?page=multicore-programming">John Cavazos over at the University of Delaware</a> from whom I stole the MC for Dummies image. John, your a gentleman and a humble scholar. Damn few of us left.</p>
 
-    </div>
-  </article>
 
   
-<section id="comments">
-  <div id="disqus_thread"></div>
-  <script>
-  var disqus_config = function () {
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://www.cerebralmastication.com/2010/01/remote-backup-fail-and-how-to-silently-copy-files/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://www.cerebralmastication.com/2010/01/remote-backup-fail-and-how-to-silently-copy-files/">Remote Backup Fail and How to Silently Copy Files</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="https://www.cerebralmastication.com/2010/02/you-can-hadoop-it-its-elastic-boogie-woogie-woog-ie/">You can Hadoop it! It&#39;s elastic! Boogie woogie woog-ie!</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://www.cerebralmastication.com/2010/02/you-can-hadoop-it-its-elastic-boogie-woogie-woog-ie/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
   
-  };
-  (function() {
-    var inIFrame = function() {
-      var iframe = true;
-      try { iframe = window.self !== window.top; } catch (e) {}
-      return iframe;
-    };
-    if (inIFrame()) return;
-    var d = document, s = d.createElement('script');
-    s.src = '//cerebralmastication.disqus.com/embed.js'; s.async = true;
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-  })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</section>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
 
-
-
-</main>
-
-      <footer class="footer">
-        <ul class="footer-links">
-          <li>
-            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
-          </li>
-          <li>
-            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
-          </li>
-        </ul>
-      </footer>
-
-    </div>
+(function() {
     
-
     
+    if (window.location.hostname == "localhost")
+        return;
 
-    
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-129487349-1', 'auto');
-	
-	ga('send', 'pageview');
-}
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'Your Disqus shortname';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="https://www.cerebralmastication.com/js/ui.js"></script>
+<script src="https://www.cerebralmastication.com/js/menus.js"></script>
+
+
+<script>
+  
+  if (window.location.hostname != "localhost") {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'Your Google Analytics tracking ID', 'auto');
+    ga('send', 'pageview');
+  }
 </script>
 
-  </body>
+
+
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="\/\/analytics.example.com\/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId',  2 ]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//analytics.example.com/piwik.php?idsite=2" style="border:0;" alt="" /></p></noscript>
+
+
+
+</body>
 </html>
 

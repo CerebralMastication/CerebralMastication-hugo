@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Twitter on A Hugo website</title>
-    <link>/tags/twitter/</link>
-    <description>Recent content in Twitter on A Hugo website</description>
+    <title>Twitter on Your site title</title>
+    <link>https://www.cerebralmastication.com/tags/twitter/</link>
+    <description>Recent content in Twitter on Your site title</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Mon, 22 Jun 2009 14:14:55 +0000</lastBuildDate>
     
-	<atom:link href="/tags/twitter/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.cerebralmastication.com/tags/twitter/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Who&#39;s Tweets Do I Read... Magic R Code Says...</title>
-      <link>/2009/06/whos-tweets-do-i-read-magic-r-code-says/</link>
+      <link>https://www.cerebralmastication.com/2009/06/whos-tweets-do-i-read-magic-r-code-says/</link>
       <pubDate>Mon, 22 Jun 2009 14:14:55 +0000</pubDate>
       
-      <guid>/2009/06/whos-tweets-do-i-read-magic-r-code-says/</guid>
+      <guid>https://www.cerebralmastication.com/2009/06/whos-tweets-do-i-read-magic-r-code-says/</guid>
       <description>So one glace at my user logs shows the truth: no one gives a rat&amp;rsquo;s rump thatI just quit my job; you just love you some Twitter R code. And I&amp;rsquo;m nothing but an attention whore, so come get some!
 So in mylast &amp;lsquo;Twitter with R&amp;rsquo; post I gave you some code I&amp;rsquo;d written ripped off that allowed you to update your status from R. That&amp;rsquo;s kinda cool, but really just for annoying your friends, tweeting when your code is finished running or, as Eva pointed out in the comments, maybe Tweeting the outcome of a routine.</description>
     </item>
     
     <item>
       <title>Twitter from R... Sure, why not!</title>
-      <link>/2009/06/twitter-from-r-sure-why-not/</link>
+      <link>https://www.cerebralmastication.com/2009/06/twitter-from-r-sure-why-not/</link>
       <pubDate>Thu, 04 Jun 2009 15:22:21 +0000</pubDate>
       
-      <guid>/2009/06/twitter-from-r-sure-why-not/</guid>
+      <guid>https://www.cerebralmastication.com/2009/06/twitter-from-r-sure-why-not/</guid>
       <description>So I have started following the #RStats tag in twitter. Prior to a week ago I had never Twitterbated so I thought I would give it a go since I am not one to shy away from new technology&amp;hellip; much. I think of Twitter like a call in radio show where I get to cut off callers when they annoy me.
 Well one of the interesting things I ran across was this tweet that pointed to this page about posting tweets from R.</description>
     </item>

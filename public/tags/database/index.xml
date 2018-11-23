@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Database on A Hugo website</title>
-    <link>/tags/database/</link>
-    <description>Recent content in Database on A Hugo website</description>
+    <title>Database on Your site title</title>
+    <link>https://www.cerebralmastication.com/tags/database/</link>
+    <description>Recent content in Database on Your site title</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Wed, 18 Mar 2009 13:56:56 +0000</lastBuildDate>
     
-	<atom:link href="/tags/database/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.cerebralmastication.com/tags/database/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>More on Databases for Analytics</title>
-      <link>/2009/03/more-on-databases-for-analytics/</link>
+      <link>https://www.cerebralmastication.com/2009/03/more-on-databases-for-analytics/</link>
       <pubDate>Wed, 18 Mar 2009 13:56:56 +0000</pubDate>
       
-      <guid>/2009/03/more-on-databases-for-analytics/</guid>
+      <guid>https://www.cerebralmastication.com/2009/03/more-on-databases-for-analytics/</guid>
       <description>Lately I have been struggling for what type of database to use for my analytics work. SQL Server is a really good database but I always get the feeling it wasbuilt for stuff other than what I want to do with it. I keep feeling like I am digging post holes with a spade and I keep thinking, &amp;ldquo;there should be a tool that does this better.&amp;rdquo;
 Yesterday I was listening to the IT Conversations Podcast and heard a presentation given by Michael Stonebraker from the Money:Tech conference.</description>
     </item>
     
     <item>
       <title>Choosing an SQL Engine for Analytics</title>
-      <link>/2009/03/chosing-an-sql-engine-for-analytics/</link>
+      <link>https://www.cerebralmastication.com/2009/03/chosing-an-sql-engine-for-analytics/</link>
       <pubDate>Mon, 09 Mar 2009 21:37:57 +0000</pubDate>
       
-      <guid>/2009/03/chosing-an-sql-engine-for-analytics/</guid>
+      <guid>https://www.cerebralmastication.com/2009/03/chosing-an-sql-engine-for-analytics/</guid>
       <description>I&amp;rsquo;ve been struggling for a while on which database to use for my working data. I used to use MS Access quite a lot. The problems with MS Access include but are not limited to:
  * 2 GB file size limit, at least historically * Versions change with each edition of MS Office * Sort of tough to write SQL scripts * Very little automation, ie compression, backup, etc. * Windows only  I used Oracle for a few years as a result of my previous employer being an Oracle shop.</description>
     </item>

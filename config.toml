@@ -1,39 +1,70 @@
-baseurl = "/"
-languageCode = "en-us"
-title = "A Hugo website"
-theme = "hugo-lithium"
-googleAnalytics = "UA-129487349-1"
-disqusShortname = "cerebralmastication"
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+baseurl = "https://www.cerebralmastication.com/" # Make sure to end baseurl with a '/'
+title = "Your site title"
+author = "Your name"
+# Shown in the side menu
+copyright = "&copy; 2018. All rights reserved."
+canonifyurls = true
+paginate = 10
 
-[permalinks]
-    post = "/:year/:month/:day/:slug/"
-
-[[menu.main]]
-    name = "About"
-    url = "/about/"
-[[menu.main]]
-    name = "GitHub"
-    url = "https://github.com/cerebralmastication/"
-[[menu.main]]
-    name = "Twitter"
-    url = "https://twitter.com/CMastication"
+[indexes]
+tag = "tags"
+topic = "topics"
 
 [params]
-    description = "A website built through Hugo and blogdown."
+# Shown in the home page
+subtitle = "A Hugo Theme"
+brand = "Blackburn"
+googleAnalytics = "Your Google Analytics tracking ID"
+disqus = "Your Disqus shortname"
+# CSS name for highlight.js
+highlightjs = "androidstudio"
+highlightjs_extra_languages = ["yaml"]
+dateFormat = "02 Jan 2006, 15:04"
+# Include any custom CSS and/or JS files
+# (relative to /static folder)
+custom_css = ["css/my.css"]
+custom_js = ["js/my.js"]
 
-    # options for highlight.js (version, additional languages, and theme)
-    highlightjsVersion = "9.12.0"
-    highlightjsCDN = "//cdnjs.cloudflare.com/ajax/libs"
-    highlightjsLang = ["r", "yaml"]
-    highlightjsTheme = "github"
+[params.piwikAnalytics]
+siteid = 2
+piwikroot = "//analytics.example.com/"
 
-    MathJaxCDN = "//cdnjs.cloudflare.com/ajax/libs"
-    MathJaxVersion = "2.7.5"
+[menu]
+# Shown in the side menu.
+[[menu.main]]
+name = "Home"
+pre = "<i class='fa fa-home fa-fw'></i>"
+weight = 1
+identifier = "home"
+url = "/"
+[[menu.main]]
+name = "Posts"
+pre = "<i class='fa fa-list fa-fw'></i>"
+weight = 2
+identifier = "post"
+url = "/post/"
+[[menu.main]]
+name = "About"
+pre = "<i class='fa fa-user fa-fw'></i>"
+weight = 3
+identifier = "about"
+url = "/about/"
+[[menu.main]]
+name = "Contact"
+pre = "<i class='fa fa-phone fa-fw'></i>"
+weight = 4
+url = "/contact/"
 
-    [params.logo]
-    url = "logo.png"
-    width = 50
-    height = 50
-    alt = "Logo"
+[social]
+# Link your social networking accounts to the side menu
+# by entering your username or ID.
 
+# SNS microblogging
+twitter = "*"
+
+# SNS career oriented
+linkedin = "*"
+
+# Techie
+github = "yoshiharuyamashita"
+stackoverflow = "*"

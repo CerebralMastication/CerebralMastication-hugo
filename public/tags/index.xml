@@ -1,697 +1,697 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on A Hugo website</title>
-    <link>/tags/</link>
-    <description>Recent content in Tags on A Hugo website</description>
+    <title>Tags on Your site title</title>
+    <link>https://www.cerebralmastication.com/tags/</link>
+    <description>Recent content in Tags on Your site title</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Tue, 30 Jun 2009 17:00:27 +0000</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.cerebralmastication.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Agriculture</title>
-      <link>/tags/agriculture/</link>
+      <link>https://www.cerebralmastication.com/tags/agriculture/</link>
       <pubDate>Tue, 30 Jun 2009 17:00:27 +0000</pubDate>
       
-      <guid>/tags/agriculture/</guid>
+      <guid>https://www.cerebralmastication.com/tags/agriculture/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Analysis</title>
-      <link>/tags/analysis/</link>
+      <link>https://www.cerebralmastication.com/tags/analysis/</link>
       <pubDate>Thu, 16 Sep 2010 17:11:27 +0000</pubDate>
       
-      <guid>/tags/analysis/</guid>
+      <guid>https://www.cerebralmastication.com/tags/analysis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Apply</title>
-      <link>/tags/apply/</link>
+      <link>https://www.cerebralmastication.com/tags/apply/</link>
       <pubDate>Fri, 11 Dec 2009 19:30:55 +0000</pubDate>
       
-      <guid>/tags/apply/</guid>
+      <guid>https://www.cerebralmastication.com/tags/apply/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Aws</title>
-      <link>/tags/aws/</link>
+      <link>https://www.cerebralmastication.com/tags/aws/</link>
       <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/aws/</guid>
+      <guid>https://www.cerebralmastication.com/tags/aws/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Backup</title>
-      <link>/tags/backup/</link>
+      <link>https://www.cerebralmastication.com/tags/backup/</link>
       <pubDate>Tue, 19 Jan 2010 23:33:01 +0000</pubDate>
       
-      <guid>/tags/backup/</guid>
+      <guid>https://www.cerebralmastication.com/tags/backup/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Batch Files</title>
-      <link>/tags/batch-files/</link>
+      <link>https://www.cerebralmastication.com/tags/batch-files/</link>
       <pubDate>Tue, 19 Jan 2010 23:33:01 +0000</pubDate>
       
-      <guid>/tags/batch-files/</guid>
+      <guid>https://www.cerebralmastication.com/tags/batch-files/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Beer</title>
-      <link>/tags/beer/</link>
+      <link>https://www.cerebralmastication.com/tags/beer/</link>
       <pubDate>Thu, 19 Feb 2009 14:37:28 +0000</pubDate>
       
-      <guid>/tags/beer/</guid>
+      <guid>https://www.cerebralmastication.com/tags/beer/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bi</title>
-      <link>/tags/bi/</link>
+      <link>https://www.cerebralmastication.com/tags/bi/</link>
       <pubDate>Thu, 05 Feb 2009 17:03:12 +0000</pubDate>
       
-      <guid>/tags/bi/</guid>
+      <guid>https://www.cerebralmastication.com/tags/bi/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Books</title>
-      <link>/tags/books/</link>
+      <link>https://www.cerebralmastication.com/tags/books/</link>
       <pubDate>Fri, 23 May 2014 12:56:15 +0000</pubDate>
       
-      <guid>/tags/books/</guid>
+      <guid>https://www.cerebralmastication.com/tags/books/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Career</title>
-      <link>/tags/career/</link>
+      <link>https://www.cerebralmastication.com/tags/career/</link>
       <pubDate>Tue, 16 Jun 2009 15:58:17 +0000</pubDate>
       
-      <guid>/tags/career/</guid>
+      <guid>https://www.cerebralmastication.com/tags/career/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Column Oriented</title>
-      <link>/tags/column-oriented/</link>
+      <link>https://www.cerebralmastication.com/tags/column-oriented/</link>
       <pubDate>Wed, 18 Mar 2009 13:56:56 +0000</pubDate>
       
-      <guid>/tags/column-oriented/</guid>
+      <guid>https://www.cerebralmastication.com/tags/column-oriented/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Commerce Thursday</title>
-      <link>/tags/commerce-thursday/</link>
+      <link>https://www.cerebralmastication.com/tags/commerce-thursday/</link>
       <pubDate>Thu, 19 Feb 2009 14:37:28 +0000</pubDate>
       
-      <guid>/tags/commerce-thursday/</guid>
+      <guid>https://www.cerebralmastication.com/tags/commerce-thursday/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Copula</title>
-      <link>/tags/copula/</link>
+      <link>https://www.cerebralmastication.com/tags/copula/</link>
       <pubDate>Fri, 27 Feb 2009 14:41:36 +0000</pubDate>
       
-      <guid>/tags/copula/</guid>
+      <guid>https://www.cerebralmastication.com/tags/copula/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Darts</title>
-      <link>/tags/darts/</link>
+      <link>https://www.cerebralmastication.com/tags/darts/</link>
       <pubDate>Fri, 16 Apr 2010 18:05:20 +0000</pubDate>
       
-      <guid>/tags/darts/</guid>
+      <guid>https://www.cerebralmastication.com/tags/darts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Data</title>
-      <link>/tags/data/</link>
+      <link>https://www.cerebralmastication.com/tags/data/</link>
       <pubDate>Thu, 12 Feb 2009 14:23:46 +0000</pubDate>
       
-      <guid>/tags/data/</guid>
+      <guid>https://www.cerebralmastication.com/tags/data/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Database</title>
-      <link>/tags/database/</link>
+      <link>https://www.cerebralmastication.com/tags/database/</link>
       <pubDate>Wed, 18 Mar 2009 13:56:56 +0000</pubDate>
       
-      <guid>/tags/database/</guid>
+      <guid>https://www.cerebralmastication.com/tags/database/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Descisions</title>
-      <link>/tags/descisions/</link>
+      <link>https://www.cerebralmastication.com/tags/descisions/</link>
       <pubDate>Mon, 12 Apr 2010 15:21:29 +0000</pubDate>
       
-      <guid>/tags/descisions/</guid>
+      <guid>https://www.cerebralmastication.com/tags/descisions/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ec2</title>
-      <link>/tags/ec2/</link>
+      <link>https://www.cerebralmastication.com/tags/ec2/</link>
       <pubDate>Fri, 06 May 2011 20:57:40 +0000</pubDate>
       
-      <guid>/tags/ec2/</guid>
+      <guid>https://www.cerebralmastication.com/tags/ec2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Econ</title>
-      <link>/tags/econ/</link>
+      <link>https://www.cerebralmastication.com/tags/econ/</link>
       <pubDate>Tue, 24 Mar 2009 18:30:18 +0000</pubDate>
       
-      <guid>/tags/econ/</guid>
+      <guid>https://www.cerebralmastication.com/tags/econ/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Emr</title>
-      <link>/tags/emr/</link>
+      <link>https://www.cerebralmastication.com/tags/emr/</link>
       <pubDate>Mon, 28 Jun 2010 15:38:42 +0000</pubDate>
       
-      <guid>/tags/emr/</guid>
+      <guid>https://www.cerebralmastication.com/tags/emr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Event</title>
-      <link>/tags/event/</link>
+      <link>https://www.cerebralmastication.com/tags/event/</link>
       <pubDate>Fri, 27 Feb 2009 14:43:16 +0000</pubDate>
       
-      <guid>/tags/event/</guid>
+      <guid>https://www.cerebralmastication.com/tags/event/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Finance</title>
-      <link>/tags/finance/</link>
+      <link>https://www.cerebralmastication.com/tags/finance/</link>
       <pubDate>Thu, 26 Mar 2009 21:06:51 +0000</pubDate>
       
-      <guid>/tags/finance/</guid>
+      <guid>https://www.cerebralmastication.com/tags/finance/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Firebird</title>
-      <link>/tags/firebird/</link>
+      <link>https://www.cerebralmastication.com/tags/firebird/</link>
       <pubDate>Mon, 09 Mar 2009 21:37:57 +0000</pubDate>
       
-      <guid>/tags/firebird/</guid>
+      <guid>https://www.cerebralmastication.com/tags/firebird/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Flow</title>
-      <link>/tags/flow/</link>
+      <link>https://www.cerebralmastication.com/tags/flow/</link>
       <pubDate>Tue, 10 Mar 2009 15:41:01 +0000</pubDate>
       
-      <guid>/tags/flow/</guid>
+      <guid>https://www.cerebralmastication.com/tags/flow/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Fractal</title>
-      <link>/tags/fractal/</link>
+      <link>https://www.cerebralmastication.com/tags/fractal/</link>
       <pubDate>Wed, 04 Feb 2009 14:53:50 +0000</pubDate>
       
-      <guid>/tags/fractal/</guid>
+      <guid>https://www.cerebralmastication.com/tags/fractal/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Graph</title>
-      <link>/tags/graph/</link>
+      <link>https://www.cerebralmastication.com/tags/graph/</link>
       <pubDate>Tue, 16 Jun 2009 16:26:46 +0000</pubDate>
       
-      <guid>/tags/graph/</guid>
+      <guid>https://www.cerebralmastication.com/tags/graph/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hadoop</title>
-      <link>/tags/hadoop/</link>
+      <link>https://www.cerebralmastication.com/tags/hadoop/</link>
       <pubDate>Tue, 16 Feb 2010 18:31:23 +0000</pubDate>
       
-      <guid>/tags/hadoop/</guid>
+      <guid>https://www.cerebralmastication.com/tags/hadoop/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hardware</title>
-      <link>/tags/hardware/</link>
+      <link>https://www.cerebralmastication.com/tags/hardware/</link>
       <pubDate>Thu, 19 Aug 2010 15:02:06 +0000</pubDate>
       
-      <guid>/tags/hardware/</guid>
+      <guid>https://www.cerebralmastication.com/tags/hardware/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Howto</title>
-      <link>/tags/howto/</link>
+      <link>https://www.cerebralmastication.com/tags/howto/</link>
       <pubDate>Thu, 12 May 2011 20:31:31 +0000</pubDate>
       
-      <guid>/tags/howto/</guid>
+      <guid>https://www.cerebralmastication.com/tags/howto/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Interview</title>
-      <link>/tags/interview/</link>
+      <link>https://www.cerebralmastication.com/tags/interview/</link>
       <pubDate>Wed, 17 Feb 2010 16:54:32 +0000</pubDate>
       
-      <guid>/tags/interview/</guid>
+      <guid>https://www.cerebralmastication.com/tags/interview/</guid>
       <description></description>
     </item>
     
     <item>
       <title>It</title>
-      <link>/tags/it/</link>
+      <link>https://www.cerebralmastication.com/tags/it/</link>
       <pubDate>Tue, 03 Nov 2009 15:28:26 +0000</pubDate>
       
-      <guid>/tags/it/</guid>
+      <guid>https://www.cerebralmastication.com/tags/it/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linux</title>
-      <link>/tags/linux/</link>
+      <link>https://www.cerebralmastication.com/tags/linux/</link>
       <pubDate>Tue, 17 Feb 2009 14:51:11 +0000</pubDate>
       
-      <guid>/tags/linux/</guid>
+      <guid>https://www.cerebralmastication.com/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Luciddb</title>
-      <link>/tags/luciddb/</link>
+      <link>https://www.cerebralmastication.com/tags/luciddb/</link>
       <pubDate>Wed, 18 Mar 2009 13:56:56 +0000</pubDate>
       
-      <guid>/tags/luciddb/</guid>
+      <guid>https://www.cerebralmastication.com/tags/luciddb/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Meetup</title>
-      <link>/tags/meetup/</link>
+      <link>https://www.cerebralmastication.com/tags/meetup/</link>
       <pubDate>Mon, 24 May 2010 20:20:34 +0000</pubDate>
       
-      <guid>/tags/meetup/</guid>
+      <guid>https://www.cerebralmastication.com/tags/meetup/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Multiple Monitors</title>
-      <link>/tags/multiple-monitors/</link>
+      <link>https://www.cerebralmastication.com/tags/multiple-monitors/</link>
       <pubDate>Thu, 19 Feb 2009 14:37:28 +0000</pubDate>
       
-      <guid>/tags/multiple-monitors/</guid>
+      <guid>https://www.cerebralmastication.com/tags/multiple-monitors/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mysql</title>
-      <link>/tags/mysql/</link>
+      <link>https://www.cerebralmastication.com/tags/mysql/</link>
       <pubDate>Mon, 09 Mar 2009 21:37:57 +0000</pubDate>
       
-      <guid>/tags/mysql/</guid>
+      <guid>https://www.cerebralmastication.com/tags/mysql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>News</title>
-      <link>/tags/news/</link>
+      <link>https://www.cerebralmastication.com/tags/news/</link>
       <pubDate>Tue, 03 Feb 2009 15:35:33 +0000</pubDate>
       
-      <guid>/tags/news/</guid>
+      <guid>https://www.cerebralmastication.com/tags/news/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Odbc</title>
-      <link>/tags/odbc/</link>
+      <link>https://www.cerebralmastication.com/tags/odbc/</link>
       <pubDate>Thu, 31 Jan 2013 21:14:33 +0000</pubDate>
       
-      <guid>/tags/odbc/</guid>
+      <guid>https://www.cerebralmastication.com/tags/odbc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Open Source</title>
-      <link>/tags/open-source/</link>
+      <link>https://www.cerebralmastication.com/tags/open-source/</link>
       <pubDate>Thu, 26 Mar 2009 21:06:51 +0000</pubDate>
       
-      <guid>/tags/open-source/</guid>
+      <guid>https://www.cerebralmastication.com/tags/open-source/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Pandas</title>
-      <link>/tags/pandas/</link>
+      <link>https://www.cerebralmastication.com/tags/pandas/</link>
       <pubDate>Thu, 31 Jan 2013 21:14:33 +0000</pubDate>
       
-      <guid>/tags/pandas/</guid>
+      <guid>https://www.cerebralmastication.com/tags/pandas/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Personal</title>
-      <link>/tags/personal/</link>
+      <link>https://www.cerebralmastication.com/tags/personal/</link>
       <pubDate>Tue, 16 Jun 2009 15:58:17 +0000</pubDate>
       
-      <guid>/tags/personal/</guid>
+      <guid>https://www.cerebralmastication.com/tags/personal/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Plot</title>
-      <link>/tags/plot/</link>
+      <link>https://www.cerebralmastication.com/tags/plot/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>/tags/plot/</guid>
+      <guid>https://www.cerebralmastication.com/tags/plot/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Plyr</title>
-      <link>/tags/plyr/</link>
+      <link>https://www.cerebralmastication.com/tags/plyr/</link>
       <pubDate>Fri, 11 Dec 2009 19:30:55 +0000</pubDate>
       
-      <guid>/tags/plyr/</guid>
+      <guid>https://www.cerebralmastication.com/tags/plyr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Programming</title>
-      <link>/tags/programming/</link>
+      <link>https://www.cerebralmastication.com/tags/programming/</link>
       <pubDate>Tue, 10 Mar 2009 23:34:10 +0000</pubDate>
       
-      <guid>/tags/programming/</guid>
+      <guid>https://www.cerebralmastication.com/tags/programming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Proxy</title>
-      <link>/tags/proxy/</link>
+      <link>https://www.cerebralmastication.com/tags/proxy/</link>
       <pubDate>Fri, 16 Jul 2010 22:07:12 +0000</pubDate>
       
-      <guid>/tags/proxy/</guid>
+      <guid>https://www.cerebralmastication.com/tags/proxy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>/tags/python/</link>
+      <link>https://www.cerebralmastication.com/tags/python/</link>
       <pubDate>Thu, 31 Jan 2013 21:14:33 +0000</pubDate>
       
-      <guid>/tags/python/</guid>
+      <guid>https://www.cerebralmastication.com/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>/tags/r/</link>
+      <link>https://www.cerebralmastication.com/tags/r/</link>
       <pubDate>Sat, 17 Mar 2012 16:03:42 +0000</pubDate>
       
-      <guid>/tags/r/</guid>
+      <guid>https://www.cerebralmastication.com/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R Markdown</title>
-      <link>/tags/r-markdown/</link>
+      <link>https://www.cerebralmastication.com/tags/r-markdown/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>/tags/r-markdown/</guid>
+      <guid>https://www.cerebralmastication.com/tags/r-markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rant</title>
-      <link>/tags/rant/</link>
+      <link>https://www.cerebralmastication.com/tags/rant/</link>
       <pubDate>Fri, 23 May 2014 12:56:15 +0000</pubDate>
       
-      <guid>/tags/rant/</guid>
+      <guid>https://www.cerebralmastication.com/tags/rant/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Regression</title>
-      <link>/tags/regression/</link>
+      <link>https://www.cerebralmastication.com/tags/regression/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>/tags/regression/</guid>
+      <guid>https://www.cerebralmastication.com/tags/regression/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Risk</title>
-      <link>/tags/risk/</link>
+      <link>https://www.cerebralmastication.com/tags/risk/</link>
       <pubDate>Wed, 20 Apr 2011 15:33:17 +0000</pubDate>
       
-      <guid>/tags/risk/</guid>
+      <guid>https://www.cerebralmastication.com/tags/risk/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rjava</title>
-      <link>/tags/rjava/</link>
+      <link>https://www.cerebralmastication.com/tags/rjava/</link>
       <pubDate>Tue, 30 Nov 2010 19:51:17 +0000</pubDate>
       
-      <guid>/tags/rjava/</guid>
+      <guid>https://www.cerebralmastication.com/tags/rjava/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rockstars</title>
-      <link>/tags/rockstars/</link>
+      <link>https://www.cerebralmastication.com/tags/rockstars/</link>
       <pubDate>Wed, 17 Feb 2010 16:54:32 +0000</pubDate>
       
-      <guid>/tags/rockstars/</guid>
+      <guid>https://www.cerebralmastication.com/tags/rockstars/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rug</title>
-      <link>/tags/rug/</link>
+      <link>https://www.cerebralmastication.com/tags/rug/</link>
       <pubDate>Fri, 09 Apr 2010 16:42:07 +0000</pubDate>
       
-      <guid>/tags/rug/</guid>
+      <guid>https://www.cerebralmastication.com/tags/rug/</guid>
       <description></description>
     </item>
     
     <item>
       <title>S</title>
-      <link>/tags/s/</link>
+      <link>https://www.cerebralmastication.com/tags/s/</link>
       <pubDate>Thu, 05 Feb 2009 17:03:12 +0000</pubDate>
       
-      <guid>/tags/s/</guid>
+      <guid>https://www.cerebralmastication.com/tags/s/</guid>
       <description></description>
     </item>
     
     <item>
       <title>S3</title>
-      <link>/tags/s3/</link>
+      <link>https://www.cerebralmastication.com/tags/s3/</link>
       <pubDate>Tue, 30 Nov 2010 19:51:17 +0000</pubDate>
       
-      <guid>/tags/s3/</guid>
+      <guid>https://www.cerebralmastication.com/tags/s3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sas</title>
-      <link>/tags/sas/</link>
+      <link>https://www.cerebralmastication.com/tags/sas/</link>
       <pubDate>Wed, 18 Mar 2009 13:56:56 +0000</pubDate>
       
-      <guid>/tags/sas/</guid>
+      <guid>https://www.cerebralmastication.com/tags/sas/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sql</title>
-      <link>/tags/sql/</link>
+      <link>https://www.cerebralmastication.com/tags/sql/</link>
       <pubDate>Thu, 31 Jan 2013 21:14:33 +0000</pubDate>
       
-      <guid>/tags/sql/</guid>
+      <guid>https://www.cerebralmastication.com/tags/sql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sql Server</title>
-      <link>/tags/sql-server/</link>
+      <link>https://www.cerebralmastication.com/tags/sql-server/</link>
       <pubDate>Wed, 22 Sep 2010 18:00:26 +0000</pubDate>
       
-      <guid>/tags/sql-server/</guid>
+      <guid>https://www.cerebralmastication.com/tags/sql-server/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sqldf</title>
-      <link>/tags/sqldf/</link>
+      <link>https://www.cerebralmastication.com/tags/sqldf/</link>
       <pubDate>Tue, 24 Nov 2009 23:14:06 +0000</pubDate>
       
-      <guid>/tags/sqldf/</guid>
+      <guid>https://www.cerebralmastication.com/tags/sqldf/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sqlite</title>
-      <link>/tags/sqlite/</link>
+      <link>https://www.cerebralmastication.com/tags/sqlite/</link>
       <pubDate>Tue, 24 Nov 2009 23:14:06 +0000</pubDate>
       
-      <guid>/tags/sqlite/</guid>
+      <guid>https://www.cerebralmastication.com/tags/sqlite/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Statistics</title>
-      <link>/tags/statistics/</link>
+      <link>https://www.cerebralmastication.com/tags/statistics/</link>
       <pubDate>Fri, 09 Apr 2010 16:01:40 +0000</pubDate>
       
-      <guid>/tags/statistics/</guid>
+      <guid>https://www.cerebralmastication.com/tags/statistics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Stats</title>
-      <link>/tags/stats/</link>
+      <link>https://www.cerebralmastication.com/tags/stats/</link>
       <pubDate>Fri, 06 Feb 2009 16:21:37 +0000</pubDate>
       
-      <guid>/tags/stats/</guid>
+      <guid>https://www.cerebralmastication.com/tags/stats/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Strategy</title>
-      <link>/tags/strategy/</link>
+      <link>https://www.cerebralmastication.com/tags/strategy/</link>
       <pubDate>Thu, 11 Nov 2010 22:15:54 +0000</pubDate>
       
-      <guid>/tags/strategy/</guid>
+      <guid>https://www.cerebralmastication.com/tags/strategy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sync</title>
-      <link>/tags/sync/</link>
+      <link>https://www.cerebralmastication.com/tags/sync/</link>
       <pubDate>Sat, 09 Apr 2011 15:32:48 +0000</pubDate>
       
-      <guid>/tags/sync/</guid>
+      <guid>https://www.cerebralmastication.com/tags/sync/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Technical</title>
-      <link>/tags/technical/</link>
+      <link>https://www.cerebralmastication.com/tags/technical/</link>
       <pubDate>Tue, 24 Mar 2009 18:30:18 +0000</pubDate>
       
-      <guid>/tags/technical/</guid>
+      <guid>https://www.cerebralmastication.com/tags/technical/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Technology</title>
-      <link>/tags/technology/</link>
+      <link>https://www.cerebralmastication.com/tags/technology/</link>
       <pubDate>Tue, 17 Feb 2009 14:51:11 +0000</pubDate>
       
-      <guid>/tags/technology/</guid>
+      <guid>https://www.cerebralmastication.com/tags/technology/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ted</title>
-      <link>/tags/ted/</link>
+      <link>https://www.cerebralmastication.com/tags/ted/</link>
       <pubDate>Fri, 09 Apr 2010 16:01:40 +0000</pubDate>
       
-      <guid>/tags/ted/</guid>
+      <guid>https://www.cerebralmastication.com/tags/ted/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Twitter</title>
-      <link>/tags/twitter/</link>
+      <link>https://www.cerebralmastication.com/tags/twitter/</link>
       <pubDate>Mon, 22 Jun 2009 14:14:55 +0000</pubDate>
       
-      <guid>/tags/twitter/</guid>
+      <guid>https://www.cerebralmastication.com/tags/twitter/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ui</title>
-      <link>/tags/ui/</link>
+      <link>https://www.cerebralmastication.com/tags/ui/</link>
       <pubDate>Tue, 17 Feb 2009 14:51:11 +0000</pubDate>
       
-      <guid>/tags/ui/</guid>
+      <guid>https://www.cerebralmastication.com/tags/ui/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Vconf</title>
-      <link>/tags/vconf/</link>
+      <link>https://www.cerebralmastication.com/tags/vconf/</link>
       <pubDate>Tue, 04 May 2010 02:27:03 +0000</pubDate>
       
-      <guid>/tags/vconf/</guid>
+      <guid>https://www.cerebralmastication.com/tags/vconf/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Video</title>
-      <link>/tags/video/</link>
+      <link>https://www.cerebralmastication.com/tags/video/</link>
       <pubDate>Thu, 11 Nov 2010 22:15:54 +0000</pubDate>
       
-      <guid>/tags/video/</guid>
+      <guid>https://www.cerebralmastication.com/tags/video/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Windows</title>
-      <link>/tags/windows/</link>
+      <link>https://www.cerebralmastication.com/tags/windows/</link>
       <pubDate>Tue, 19 Jan 2010 23:33:01 +0000</pubDate>
       
-      <guid>/tags/windows/</guid>
+      <guid>https://www.cerebralmastication.com/tags/windows/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Women</title>
-      <link>/tags/women/</link>
+      <link>https://www.cerebralmastication.com/tags/women/</link>
       <pubDate>Tue, 24 Mar 2009 23:27:09 +0000</pubDate>
       
-      <guid>/tags/women/</guid>
+      <guid>https://www.cerebralmastication.com/tags/women/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Workflow</title>
-      <link>/tags/workflow/</link>
+      <link>https://www.cerebralmastication.com/tags/workflow/</link>
       <pubDate>Mon, 18 Apr 2011 20:48:32 +0000</pubDate>
       
-      <guid>/tags/workflow/</guid>
+      <guid>https://www.cerebralmastication.com/tags/workflow/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Wps</title>
-      <link>/tags/wps/</link>
+      <link>https://www.cerebralmastication.com/tags/wps/</link>
       <pubDate>Thu, 05 Feb 2009 17:03:12 +0000</pubDate>
       
-      <guid>/tags/wps/</guid>
+      <guid>https://www.cerebralmastication.com/tags/wps/</guid>
       <description></description>
     </item>
     
