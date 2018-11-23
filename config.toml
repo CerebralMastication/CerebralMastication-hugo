@@ -1,6 +1,6 @@
 baseurl = "https://cerebralmastication.netlify.com/" # Make sure to end baseurl with a '/'
-title = "Your site title"
-author = "Your name"
+title = "Cerebral Mastication: Something to Chew On"
+author = "JD Long"
 # Shown in the side menu
 copyright = "&copy; 2018. All rights reserved."
 canonifyurls = true
@@ -49,22 +49,17 @@ pre = "<i class='fa fa-user fa-fw'></i>"
 weight = 3
 identifier = "about"
 url = "/about/"
-[[menu.main]]
-name = "Contact"
-pre = "<i class='fa fa-phone fa-fw'></i>"
-weight = 4
-url = "/contact/"
 
 [social]
 # Link your social networking accounts to the side menu
 # by entering your username or ID.
 
 # SNS microblogging
-twitter = "*"
+twitter = "CMastication"
 
 # SNS career oriented
-linkedin = "*"
+linkedin = "jamesdlong"
 
 # Techie
-github = "yoshiharuyamashita"
-stackoverflow = "*"
+github = "CerebralMastication"
+stackoverflow = "37751"

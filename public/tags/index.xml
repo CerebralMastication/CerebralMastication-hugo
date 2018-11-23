@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Your site title</title>
+    <title>Tags on Cerebral Mastication: Something to Chew On</title>
     <link>https://cerebralmastication.netlify.com/tags/</link>
-    <description>Recent content in Tags on Your site title</description>
+    <description>Recent content in Tags on Cerebral Mastication: Something to Chew On</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Tue, 30 Jun 2009 17:00:27 +0000</lastBuildDate>
@@ -41,7 +41,7 @@
     <item>
       <title>Aws</title>
       <link>https://cerebralmastication.netlify.com/tags/aws/</link>
-      <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 06 May 2011 20:57:40 +0000</pubDate>
       
       <guid>https://cerebralmastication.netlify.com/tags/aws/</guid>
       <description></description>
@@ -381,15 +381,6 @@
     </item>
     
     <item>
-      <title>Plot</title>
-      <link>https://cerebralmastication.netlify.com/tags/plot/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>https://cerebralmastication.netlify.com/tags/plot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Plyr</title>
       <link>https://cerebralmastication.netlify.com/tags/plyr/</link>
       <pubDate>Fri, 11 Dec 2009 19:30:55 +0000</pubDate>
@@ -435,29 +426,11 @@
     </item>
     
     <item>
-      <title>R Markdown</title>
-      <link>https://cerebralmastication.netlify.com/tags/r-markdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>https://cerebralmastication.netlify.com/tags/r-markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Rant</title>
       <link>https://cerebralmastication.netlify.com/tags/rant/</link>
       <pubDate>Fri, 23 May 2014 12:56:15 +0000</pubDate>
       
       <guid>https://cerebralmastication.netlify.com/tags/rant/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Regression</title>
-      <link>https://cerebralmastication.netlify.com/tags/regression/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>https://cerebralmastication.netlify.com/tags/regression/</guid>
       <description></description>
     </item>
     

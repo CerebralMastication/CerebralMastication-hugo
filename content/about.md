@@ -1,21 +1,16 @@
 +++
 title = "About"
-date = "2014-04-09"
+date = "2018-11-23"
 sidemenu = "true"
 description = "About me and this site"
 +++
 
-Hugo is a static site engine written in Go.
+Hey, y'all. I'm JD Long the Masticator in Residence at CerebralMastication.com. This is a dumping grounds for my thoughts and pontification on analytics, data, data science, risk analytics, and miscellany. 
 
-
-It makes use of a variety of open source projects including:
-
-* [Cobra](https://github.com/spf13/cobra)
-* [Viper](https://github.com/spf13/viper)
-* [J Walter Weatherman](https://github.com/spf13/jWalterWeatherman)
-* [Cast](https://github.com/spf13/cast)
-
-Learn more and contribute on [GitHub](https://github.com/spf13).
+Various artifacts I've left behind:
+* [Intro to `dplyr` presented at Google NYC] (https://www.youtube.com/watch?v=EOvN3wPdQoM&feature=youtu.be&t=11m50s)
+<img src="/./about_files/Tidy_by_Nature.png" alt="Tidy By Nature at Google NYC" width="50%"/>
+* 
 
 ## Setup
 
@@ -28,4 +23,3 @@ Some fun facts about [Hugo](http://gohugo.io/):
 
 Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/spf13/hugo/issues/new) or [ask me on Twitter](https://twitter.com/spf13).
 
-Thanks for reading!

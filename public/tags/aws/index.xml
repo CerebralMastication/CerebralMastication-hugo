@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Aws on Your site title</title>
+    <title>Aws on Cerebral Mastication: Something to Chew On</title>
     <link>https://cerebralmastication.netlify.com/tags/aws/</link>
-    <description>Recent content in Aws on Your site title</description>
+    <description>Recent content in Aws on Cerebral Mastication: Something to Chew On</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 20 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 May 2011 20:57:40 +0000</lastBuildDate>
     
 	<atom:link href="https://cerebralmastication.netlify.com/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>test this thing</title>
-      <link>https://cerebralmastication.netlify.com/post/test-this-thing/</link>
-      <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://cerebralmastication.netlify.com/post/test-this-thing/</guid>
-      <description>Does This work? Let’s see! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget quam nec ipsum bibendum imperdiet ut at sapien. Morbi aliquam mi eget lectus rhoncus iaculis. Ut ut pellentesque massa, ultrices porttitor lorem. Curabitur vitae leo ut odio interdum interdum at nec eros. Vivamus sit amet magna odio. Integer accumsan vitae mi sed luctus. Quisque efficitur euismod dui, in egestas mauris hendrerit sit amet. Cras egestas turpis non tincidunt porta.</description>
-    </item>
     
     <item>
       <title>Your Analogy is bad... and you should feel bad!</title>
