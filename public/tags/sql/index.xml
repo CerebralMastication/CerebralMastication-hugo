@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sql on Your site title</title>
-    <link>https://www.cerebralmastication.com/tags/sql/</link>
+    <link>https://cerebralmastication.netlify.com/tags/sql/</link>
     <description>Recent content in Sql on Your site title</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Thu, 31 Jan 2013 21:14:33 +0000</lastBuildDate>
     
-	<atom:link href="https://www.cerebralmastication.com/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cerebralmastication.netlify.com/tags/sql/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Installing &amp; Debugging ODBC on Mac OS X</title>
-      <link>https://www.cerebralmastication.com/2013/01/installing-debugging-odbc-on-mac-os-x/</link>
+      <link>https://cerebralmastication.netlify.com/2013/01/installing-debugging-odbc-on-mac-os-x/</link>
       <pubDate>Thu, 31 Jan 2013 21:14:33 +0000</pubDate>
       
-      <guid>https://www.cerebralmastication.com/2013/01/installing-debugging-odbc-on-mac-os-x/</guid>
+      <guid>https://cerebralmastication.netlify.com/2013/01/installing-debugging-odbc-on-mac-os-x/</guid>
       <description>[](https://www.cerebralmastication.com/wp-content/uploads/2013/01/Screenshot_1_31_13_10_06_AM1.png)I just spent nearly two full days in a bare knuckle brawl with my Macbook Pro trying to get it to talk to a corporate MS SQL Server. I had abandoned MSSQL more than a year ago in favor of PostgreSQL because of how much easier it is to work with PostgreSQL from a non-Microsoft stack. At that point I was R running on Linux and soon R running on OS X.</description>
     </item>
     
     <item>
       <title>Loading Big (ish) Data into R</title>
-      <link>https://www.cerebralmastication.com/2009/11/loading-big-data-into-r/</link>
+      <link>https://cerebralmastication.netlify.com/2009/11/loading-big-data-into-r/</link>
       <pubDate>Tue, 24 Nov 2009 23:14:06 +0000</pubDate>
       
-      <guid>https://www.cerebralmastication.com/2009/11/loading-big-data-into-r/</guid>
+      <guid>https://cerebralmastication.netlify.com/2009/11/loading-big-data-into-r/</guid>
       <description>So for the rest of this conversation big data == 2 Gigs. Done. Don&amp;rsquo;t give me any of this &amp;lsquo;that&amp;rsquo;s not big, THIS is big&amp;rsquo; shit. There now, on with the cool stuff:
 This week on twitter Vince Buffalo asked about loading a 2 gig comma separated file (csv) into R (OK, he asked about tab delimited data, but I ignored that because I use mostly comma data and I wanted to test CSV.</description>
     </item>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>It on Your site title</title>
-    <link>https://www.cerebralmastication.com/tags/it/</link>
+    <link>https://cerebralmastication.netlify.com/tags/it/</link>
     <description>Recent content in It on Your site title</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Tue, 03 Nov 2009 15:28:26 +0000</lastBuildDate>
     
-	<atom:link href="https://www.cerebralmastication.com/tags/it/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cerebralmastication.netlify.com/tags/it/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Using Amazon EC2 to Thwart Crappy Internal IT Services</title>
-      <link>https://www.cerebralmastication.com/2009/11/using-amazon-ec2-to-thwart-crappy-internal-it-services/</link>
+      <link>https://cerebralmastication.netlify.com/2009/11/using-amazon-ec2-to-thwart-crappy-internal-it-services/</link>
       <pubDate>Tue, 03 Nov 2009 15:28:26 +0000</pubDate>
       
-      <guid>https://www.cerebralmastication.com/2009/11/using-amazon-ec2-to-thwart-crappy-internal-it-services/</guid>
+      <guid>https://cerebralmastication.netlify.com/2009/11/using-amazon-ec2-to-thwart-crappy-internal-it-services/</guid>
       <description>The alternative title of this blog post is &amp;ldquo;How to get your sorry ass fired by violating your internal IT policies.&amp;rdquo; So keep that in mind as you read this.
 I say lots of silly crap. Twitter allows me the pleasure of sharing this blather with the world. I was a little surprised that of all the things I have said over the last few months the above Tweet received the most discussion.</description>
     </item>

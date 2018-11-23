@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Open Source on Your site title</title>
-    <link>https://www.cerebralmastication.com/tags/open-source/</link>
+    <link>https://cerebralmastication.netlify.com/tags/open-source/</link>
     <description>Recent content in Open Source on Your site title</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Thu, 26 Mar 2009 21:06:51 +0000</lastBuildDate>
     
-	<atom:link href="https://www.cerebralmastication.com/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cerebralmastication.netlify.com/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Open Source Banking</title>
-      <link>https://www.cerebralmastication.com/2009/03/open-source-banking/</link>
+      <link>https://cerebralmastication.netlify.com/2009/03/open-source-banking/</link>
       <pubDate>Thu, 26 Mar 2009 21:06:51 +0000</pubDate>
       
-      <guid>https://www.cerebralmastication.com/2009/03/open-source-banking/</guid>
+      <guid>https://cerebralmastication.netlify.com/2009/03/open-source-banking/</guid>
       <description>As an economist who has a fascination with open source software, I found this article in Wired about microfinance lending for open source hardware totally engaging. Regulatory issues are clearly an issue for these guys. From the article:
 Zopa&#39;s Pitts agrees that the Open Source Hardware Bank needs to figure out how to navigate through the financial rules of the U.S. market. &#34;These guys do not have a regulatory strategy and they need one,&#34;</description>
     </item>

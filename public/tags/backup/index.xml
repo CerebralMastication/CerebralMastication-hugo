@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Backup on Your site title</title>
-    <link>https://www.cerebralmastication.com/tags/backup/</link>
+    <link>https://cerebralmastication.netlify.com/tags/backup/</link>
     <description>Recent content in Backup on Your site title</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Tue, 19 Jan 2010 23:33:01 +0000</lastBuildDate>
     
-	<atom:link href="https://www.cerebralmastication.com/tags/backup/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cerebralmastication.netlify.com/tags/backup/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Remote Backup Fail and How to Silently Copy Files</title>
-      <link>https://www.cerebralmastication.com/2010/01/remote-backup-fail-and-how-to-silently-copy-files/</link>
+      <link>https://cerebralmastication.netlify.com/2010/01/remote-backup-fail-and-how-to-silently-copy-files/</link>
       <pubDate>Tue, 19 Jan 2010 23:33:01 +0000</pubDate>
       
-      <guid>https://www.cerebralmastication.com/2010/01/remote-backup-fail-and-how-to-silently-copy-files/</guid>
+      <guid>https://cerebralmastication.netlify.com/2010/01/remote-backup-fail-and-how-to-silently-copy-files/</guid>
       <description>Recently I&amp;rsquo;ve run into frustrations with Iron Mountain Connected Backup so I&amp;rsquo;ve been looking for alternatives.
 Alternatives: I&amp;rsquo;ve been running Jungle Disk at home and really like it. I could use that at work except I have not set up an Amazon or RackSpace account with my work credit card. But I am in Chicago and my database server/ file server is in Dallas TX. So I decided to just create a mirror on my laptop onto a shared drive on my server.</description>
     </item>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rockstars on Your site title</title>
-    <link>https://www.cerebralmastication.com/tags/rockstars/</link>
+    <link>https://cerebralmastication.netlify.com/tags/rockstars/</link>
     <description>Recent content in Rockstars on Your site title</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Wed, 17 Feb 2010 16:54:32 +0000</lastBuildDate>
     
-	<atom:link href="https://www.cerebralmastication.com/tags/rockstars/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cerebralmastication.netlify.com/tags/rockstars/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Real-World, Real-Time Analytics </title>
-      <link>https://www.cerebralmastication.com/2010/02/real-world-real-time-analytics/</link>
+      <link>https://cerebralmastication.netlify.com/2010/02/real-world-real-time-analytics/</link>
       <pubDate>Wed, 17 Feb 2010 16:54:32 +0000</pubDate>
       
-      <guid>https://www.cerebralmastication.com/2010/02/real-world-real-time-analytics/</guid>
+      <guid>https://cerebralmastication.netlify.com/2010/02/real-world-real-time-analytics/</guid>
       <description>Stop wasting time reading my drivel. You need to head over the the DataWrangling.com blog and read Peter Skomoroch&amp;rsquo;s interview with Bradford Cross of FlightCaster.
 Peter wrote up this interview back in August 2009, so I&amp;rsquo;m a little late to this party. There&amp;rsquo;s some really great quotes in this interview. Here&amp;rsquo;s a few of my fav quotes from Cross:
 At Google, the research scientists prototype in python and R, and then port to C++ for the real scalable map reduce runs.</description>
@@ -24,20 +24,20 @@ At Google, the research scientists prototype in python and R, and then port to C
     
     <item>
       <title>Happy Ada Lovelace Day!</title>
-      <link>https://www.cerebralmastication.com/2009/03/happy-ada-lovelace-day/</link>
+      <link>https://cerebralmastication.netlify.com/2009/03/happy-ada-lovelace-day/</link>
       <pubDate>Tue, 24 Mar 2009 23:27:09 +0000</pubDate>
       
-      <guid>https://www.cerebralmastication.com/2009/03/happy-ada-lovelace-day/</guid>
+      <guid>https://cerebralmastication.netlify.com/2009/03/happy-ada-lovelace-day/</guid>
       <description>Today (March 24th) is Ada Lovelace day. It&amp;rsquo;s a day to remember that chicks dig technology and you don&amp;rsquo;t have to have a penis to be a geek. Mom, I know you find that hard to believe but it&amp;rsquo;s true.
 So part of Ada Lovelace day is to blog about women in technology. I love technology. I love women. I have a daughter named Ada whom I love. So it seems like I am more qualified than most to blog about women in tech.</description>
     </item>
     
     <item>
       <title>Hal Varian - Google’s chief economist (thinks I am sexy)</title>
-      <link>https://www.cerebralmastication.com/2009/02/hal-varian-googles-chief-economist-thinks-i-am-sexy/</link>
+      <link>https://cerebralmastication.netlify.com/2009/02/hal-varian-googles-chief-economist-thinks-i-am-sexy/</link>
       <pubDate>Fri, 06 Feb 2009 16:21:37 +0000</pubDate>
       
-      <guid>https://www.cerebralmastication.com/2009/02/hal-varian-googles-chief-economist-thinks-i-am-sexy/</guid>
+      <guid>https://cerebralmastication.netlify.com/2009/02/hal-varian-googles-chief-economist-thinks-i-am-sexy/</guid>
       <description>[caption id=&amp;ldquo;attachment_100&amp;rdquo; align=&amp;ldquo;alignleft&amp;rdquo; width=&amp;ldquo;200&amp;rdquo; caption=&amp;ldquo;Hal Varian - Superstar&amp;rdquo;][/caption]
 So one of the top jobs in the world has to be the friggin&amp;rsquo; gig that Hal Varian has. He&amp;rsquo;s the chief economist at Google. He might as well have business cards that read &amp;ldquo;Hal Varian, Mother Friggin Rock Star.&amp;rdquo; Plus he did his BS at MIT and got his MA in math and his PhD in econ at Berkeley. According to Wikipedia (aka digitalgod) he finished his education at MIT in &amp;lsquo;69 and his PhD at Berkeley in &amp;lsquo;73.</description>
     </item>

@@ -1,4 +1,4 @@
-baseurl = "https://www.cerebralmastication.com/" # Make sure to end baseurl with a '/'
+baseurl = "https://cerebralmastication.netlify.com/" # Make sure to end baseurl with a '/'
 title = "Your site title"
 author = "Your name"
 # Shown in the side menu

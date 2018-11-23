@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sqldf on Your site title</title>
-    <link>https://www.cerebralmastication.com/tags/sqldf/</link>
+    <link>https://cerebralmastication.netlify.com/tags/sqldf/</link>
     <description>Recent content in Sqldf on Your site title</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Tue, 24 Nov 2009 23:14:06 +0000</lastBuildDate>
     
-	<atom:link href="https://www.cerebralmastication.com/tags/sqldf/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cerebralmastication.netlify.com/tags/sqldf/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Loading Big (ish) Data into R</title>
-      <link>https://www.cerebralmastication.com/2009/11/loading-big-data-into-r/</link>
+      <link>https://cerebralmastication.netlify.com/2009/11/loading-big-data-into-r/</link>
       <pubDate>Tue, 24 Nov 2009 23:14:06 +0000</pubDate>
       
-      <guid>https://www.cerebralmastication.com/2009/11/loading-big-data-into-r/</guid>
+      <guid>https://cerebralmastication.netlify.com/2009/11/loading-big-data-into-r/</guid>
       <description>So for the rest of this conversation big data == 2 Gigs. Done. Don&amp;rsquo;t give me any of this &amp;lsquo;that&amp;rsquo;s not big, THIS is big&amp;rsquo; shit. There now, on with the cool stuff:
 This week on twitter Vince Buffalo asked about loading a 2 gig comma separated file (csv) into R (OK, he asked about tab delimited data, but I ignored that because I use mostly comma data and I wanted to test CSV.</description>
     </item>

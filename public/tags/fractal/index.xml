@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fractal on Your site title</title>
-    <link>https://www.cerebralmastication.com/tags/fractal/</link>
+    <link>https://cerebralmastication.netlify.com/tags/fractal/</link>
     <description>Recent content in Fractal on Your site title</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Wed, 04 Feb 2009 14:53:50 +0000</lastBuildDate>
     
-	<atom:link href="https://www.cerebralmastication.com/tags/fractal/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cerebralmastication.netlify.com/tags/fractal/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Mandelbrot Set in R</title>
-      <link>https://www.cerebralmastication.com/2009/02/mandelbrot-set-in-r/</link>
+      <link>https://cerebralmastication.netlify.com/2009/02/mandelbrot-set-in-r/</link>
       <pubDate>Wed, 04 Feb 2009 14:53:50 +0000</pubDate>
       
-      <guid>https://www.cerebralmastication.com/2009/02/mandelbrot-set-in-r/</guid>
+      <guid>https://cerebralmastication.netlify.com/2009/02/mandelbrot-set-in-r/</guid>
       <description>After writing the previous entry about Taleb and Mandelbrot I was thinking, &amp;ldquo;hey, I should be able to create the Mandelbrot set using R.&amp;rdquo; I&amp;rsquo;ve never actually tried to code the Mandelbrot set, but it seems easy enough. Well I messed with it for 2 maybe 3 seconds and then Googled [Mandelbrot set r] and, no surprise, I found a great implementation that not only produces the Mandelbrot set, it produces it with animation!</description>
     </item>
     
