@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Apply on Cerebral Mastication</title>
-    <link>http://www.cerebralmastication.com/tags/apply/</link>
+    <link>http://cerebralmastication.com/tags/apply/</link>
     <description>Recent content in Apply on Cerebral Mastication</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Fri, 11 Dec 2009 19:30:55 +0000</lastBuildDate>
     
-	<atom:link href="http://www.cerebralmastication.com/tags/apply/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://cerebralmastication.com/tags/apply/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Struggling with apply() in R</title>
-      <link>http://www.cerebralmastication.com/2009/12/struggling-with-apply-in-r/</link>
+      <link>http://cerebralmastication.com/2009/12/struggling-with-apply-in-r/</link>
       <pubDate>Fri, 11 Dec 2009 19:30:55 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2009/12/struggling-with-apply-in-r/</guid>
+      <guid>http://cerebralmastication.com/2009/12/struggling-with-apply-in-r/</guid>
       <description>It&amp;rsquo;s common knowledge that I struggle wrapping my head around the apply functions in R. That is illustrated very clearly in the following discussion on Stack Overflow:
 
 Dirk&amp;rsquo;s comment is actually spot on. I&amp;rsquo;ve asked the same damn question at least 4-5 times. Only I didn&amp;rsquo;t really understand it was the same question. That&amp;rsquo;s one of the problems of not really being good at something; it&amp;rsquo;s hard to think abstractly about it.</description>

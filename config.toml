@@ -1,4 +1,4 @@
-baseurl = "http://www.cerebralmastication.com/" # Make sure to end baseurl with a '/'
+baseurl = "http://cerebralmastication.com/" # Make sure to end baseurl with a '/'
 title = "Cerebral Mastication"
 author = "JD Long"
 # Shown in the side menu

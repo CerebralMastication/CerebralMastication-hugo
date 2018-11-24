@@ -2,183 +2,183 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R on Cerebral Mastication</title>
-    <link>http://www.cerebralmastication.com/tags/r/</link>
+    <link>http://cerebralmastication.com/tags/r/</link>
     <description>Recent content in R on Cerebral Mastication</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Sat, 17 Mar 2012 16:03:42 +0000</lastBuildDate>
     
-	<atom:link href="http://www.cerebralmastication.com/tags/r/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://cerebralmastication.com/tags/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Solving easy problems the hard way</title>
-      <link>http://www.cerebralmastication.com/2012/03/solving-easy-problems-the-hard-way/</link>
+      <link>http://cerebralmastication.com/2012/03/solving-easy-problems-the-hard-way/</link>
       <pubDate>Sat, 17 Mar 2012 16:03:42 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2012/03/solving-easy-problems-the-hard-way/</guid>
+      <guid>http://cerebralmastication.com/2012/03/solving-easy-problems-the-hard-way/</guid>
       <description>There&amp;rsquo;s a charming little brain teaser that&amp;rsquo;s going around the Interwebs. It&amp;rsquo;s got various forms, but they all look something like this:
 This problem can be solved by pre-school children in 5-10 minutes, by programer – in 1 hour, by people with higher education … well, check it yourself! ![:)](http://girlsaregeeks.com/WPApp/wp-includes/images/smilies/icon_smile.gif) 8809=6 7111=0 2172=0 6666=4 1111=0 3213=0 7662=2 9313=1 0000=4 2222=0 3333=0 5555=0 8193=3 8096=5 7777=0 9999=4 7756=1 6855=3 9881=5 5531=0 2581=?</description>
     </item>
     
     <item>
       <title>Fitting Distribution X to Data From Distribution Y</title>
-      <link>http://www.cerebralmastication.com/2011/05/fitting-distribution-x-to-data-from-distribution-y/</link>
+      <link>http://cerebralmastication.com/2011/05/fitting-distribution-x-to-data-from-distribution-y/</link>
       <pubDate>Thu, 12 May 2011 20:31:31 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2011/05/fitting-distribution-x-to-data-from-distribution-y/</guid>
+      <guid>http://cerebralmastication.com/2011/05/fitting-distribution-x-to-data-from-distribution-y/</guid>
       <description>I had someone ask me about fitting a beta distribution to data drawn from a gamma distribution and how well the distribution would fit. I&amp;rsquo;m not a &amp;ldquo;closed form&amp;rdquo; kinda guy. I&amp;rsquo;m more of a &amp;ldquo;numerical simulation&amp;rdquo; type of fellow. So I whipped up a little R code to illustrate the process then we changed the parameters of the gamma distribution to see how it impacted fit. An exercise like this is what I call building a &amp;ldquo;toy model&amp;rdquo; and I think this is invaluable as a method for building intuition and a visceral understanding of data.</description>
     </item>
     
     <item>
       <title>Your Analogy is bad... and you should feel bad!</title>
-      <link>http://www.cerebralmastication.com/2011/05/shell-scripting-ec2-for-fun-and-profit/</link>
+      <link>http://cerebralmastication.com/2011/05/shell-scripting-ec2-for-fun-and-profit/</link>
       <pubDate>Fri, 06 May 2011 20:57:40 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2011/05/shell-scripting-ec2-for-fun-and-profit/</guid>
+      <guid>http://cerebralmastication.com/2011/05/shell-scripting-ec2-for-fun-and-profit/</guid>
       <description>A bad analogy can frame an entire conversation improperly. This is one of those &amp;ldquo;anecdotes from a middle-aged man posts.&amp;rdquo; So take it with a grain of salt.
 A number of years ago I worked in the risk management team for an insurance company that sold long term care (LTC) insurance. LTC insurance is a private product that covers home health care and nursing home care if the policyholder is unable to take care of themselves on their own.</description>
     </item>
     
     <item>
       <title>Details of two-way sync between two Ubuntu machines</title>
-      <link>http://www.cerebralmastication.com/2011/04/details-of-two-way-sync-between-two-ubuntu-machines/</link>
+      <link>http://cerebralmastication.com/2011/04/details-of-two-way-sync-between-two-ubuntu-machines/</link>
       <pubDate>Mon, 18 Apr 2011 20:48:32 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2011/04/details-of-two-way-sync-between-two-ubuntu-machines/</guid>
+      <guid>http://cerebralmastication.com/2011/04/details-of-two-way-sync-between-two-ubuntu-machines/</guid>
       <description>In a previous post I discussed my frustrations with trying to get Dropbox or Spideroak to perform BOTH encrypted remote backup and AND fast two way file syncing. This is the detail of how I set up for two machines, both Ubuntu 10.10, to perform two way sync where a file change on either machine will result in that change being replicated on the other machine.
 I initially tried running Unison on BOTH my laptop and the server and had the server Unison set to sync with my laptop back through an SSH reverse proxy.</description>
     </item>
     
     <item>
       <title>Fast Two Way Sync in Ubuntu! </title>
-      <link>http://www.cerebralmastication.com/2011/04/fast-two-way-sync-in-ubuntu/</link>
+      <link>http://cerebralmastication.com/2011/04/fast-two-way-sync-in-ubuntu/</link>
       <pubDate>Sat, 09 Apr 2011 15:32:48 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2011/04/fast-two-way-sync-in-ubuntu/</guid>
+      <guid>http://cerebralmastication.com/2011/04/fast-two-way-sync-in-ubuntu/</guid>
       <description>I love the portability of a laptop. I have a 45 min train ride twice a day and I fly a little too, so having my work with me on my laptop is very important. But I hate doing long running analytics on my laptop when I&amp;rsquo;m in the office because it bogs down my laptop and all those videos on The Superficial get all jerky and stuff.
 I get around this conundrum by running much of my analytics on either my work server or on an EC2 machine (I&amp;rsquo;m going to call these collectively &amp;ldquo;my servers&amp;rdquo; for the rest of this post).</description>
     </item>
     
     <item>
       <title>Where the heck has JD been?</title>
-      <link>http://www.cerebralmastication.com/2011/03/where-the-heck-has-jd-been/</link>
+      <link>http://cerebralmastication.com/2011/03/where-the-heck-has-jd-been/</link>
       <pubDate>Wed, 23 Mar 2011 02:14:37 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2011/03/where-the-heck-has-jd-been/</guid>
+      <guid>http://cerebralmastication.com/2011/03/where-the-heck-has-jd-been/</guid>
       <description>It&amp;rsquo;s been pointed out to me that I haven&amp;rsquo;t had any blog posts in a while. It&amp;rsquo;s true. I&amp;rsquo;m fairly slack. But in the last few months I&amp;rsquo;ve changed jobs (same firm, new role), written an R abstraction on top of Hadoop, been to China, and managed to stay married. While that sounds pretty awesome, I&amp;rsquo;m nothing compared to Hideaki Akaiwa.
 And you may have heard that the R Cookbook by Chicago&amp;rsquo;s own Paul Teeter has been printed!</description>
     </item>
     
     <item>
       <title>Controlling Amazon Web Services using rJava and the AWS Java SDK</title>
-      <link>http://www.cerebralmastication.com/2010/11/controlling-amazon-web-services-using-rjava-and-the-aws-java-sdk/</link>
+      <link>http://cerebralmastication.com/2010/11/controlling-amazon-web-services-using-rjava-and-the-aws-java-sdk/</link>
       <pubDate>Tue, 30 Nov 2010 19:51:17 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2010/11/controlling-amazon-web-services-using-rjava-and-the-aws-java-sdk/</guid>
+      <guid>http://cerebralmastication.com/2010/11/controlling-amazon-web-services-using-rjava-and-the-aws-java-sdk/</guid>
       <description>I&amp;rsquo;ve been messing around with using Amazon Web Services for a while. I&amp;rsquo;ve had some projects where I wanted to upload files to S3 or fire off EMR jobs. I&amp;rsquo;ve been controlling AWS services using a hodgepodge of command line tools and the R system() function to call the tools from the command line. This has some real disadvantages, however. Using the command line tools means each tool has to be configured individually which is painful on a new machine.</description>
     </item>
     
     <item>
       <title>Connecting to SQL Server from R using RJDBC</title>
-      <link>http://www.cerebralmastication.com/2010/09/connecting-to-sql-server-from-r-using-rjdbc/</link>
+      <link>http://cerebralmastication.com/2010/09/connecting-to-sql-server-from-r-using-rjdbc/</link>
       <pubDate>Wed, 22 Sep 2010 18:00:26 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2010/09/connecting-to-sql-server-from-r-using-rjdbc/</guid>
+      <guid>http://cerebralmastication.com/2010/09/connecting-to-sql-server-from-r-using-rjdbc/</guid>
       <description>A few months ago I switched my laptop from Windows to Ubuntu Linux. I had been connecting to my corporate SQL Server database using RODBC on Windows so I attempted to get ODBC connectivity up and running on Ubuntu. ODBC on Ubuntu turned into an exercise in futility. I spent many hours over many days and never was able to connect from R on Ubuntu to my corp SQL Server.</description>
     </item>
     
     <item>
       <title>Principal Component Analysis (PCA) vs Ordinary Least Squares (OLS): A Visual Explanation</title>
-      <link>http://www.cerebralmastication.com/2010/09/principal-component-analysis-pca-vs-ordinary-least-squares-ols-a-visual-explination/</link>
+      <link>http://cerebralmastication.com/2010/09/principal-component-analysis-pca-vs-ordinary-least-squares-ols-a-visual-explination/</link>
       <pubDate>Thu, 16 Sep 2010 17:11:27 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2010/09/principal-component-analysis-pca-vs-ordinary-least-squares-ols-a-visual-explination/</guid>
+      <guid>http://cerebralmastication.com/2010/09/principal-component-analysis-pca-vs-ordinary-least-squares-ols-a-visual-explination/</guid>
       <description>Over at stats.stackexchange.com recently, a really interesting question was raised about principal component analysis (PCA). The gist was &amp;ldquo;Thanks to my college class I can do the math, but what does it MEAN?&amp;rdquo;
 I felt like this a number of times in my life. Many of my classes were focused on the technical implementations they kinda missed the section titled &amp;ldquo;Why I give a shit.&amp;rdquo; A perfect example was my Mathematics Principles of Economics class which taught me how to manually calculate a bordered Hessian but, for the life of me, I have no idea why I would ever want to calculate such a monster.</description>
     </item>
     
     <item>
       <title>Third, and Hopefully Final, Post on Correlated Random Normal Generation (Cholesky Edition)</title>
-      <link>http://www.cerebralmastication.com/2010/09/cholesk-post-on-correlated-random-normal-generation/</link>
+      <link>http://cerebralmastication.com/2010/09/cholesk-post-on-correlated-random-normal-generation/</link>
       <pubDate>Thu, 02 Sep 2010 18:03:21 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2010/09/cholesk-post-on-correlated-random-normal-generation/</guid>
+      <guid>http://cerebralmastication.com/2010/09/cholesk-post-on-correlated-random-normal-generation/</guid>
       <description>[caption id=&amp;ldquo;attachment_825&amp;rdquo; align=&amp;ldquo;alignleft&amp;rdquo; width=&amp;ldquo;250&amp;rdquo; caption=&amp;ldquo;André-Louis Cholesky is my homeboy&amp;rdquo;][/caption]
 When I did a brief post three days ago I had no plans on writing two more posts on correlated random number generation. But I&amp;rsquo;ve gotten a couple of emails, a few comments, and some Twitter feedback. In response to my first post, Gappy, calls me out and says, &amp;ldquo;the way mensches do multivariate (log)normal variates is via Cholesky. It’s simple, instructive, and fast.</description>
     </item>
     
     <item>
       <title>Even Simpler Multivariate Correlated Simulations</title>
-      <link>http://www.cerebralmastication.com/2010/08/even-simpler-multivariate-correlated-simulations/</link>
+      <link>http://cerebralmastication.com/2010/08/even-simpler-multivariate-correlated-simulations/</link>
       <pubDate>Tue, 31 Aug 2010 15:17:27 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2010/08/even-simpler-multivariate-correlated-simulations/</guid>
+      <guid>http://cerebralmastication.com/2010/08/even-simpler-multivariate-correlated-simulations/</guid>
       <description>So after yesterday&amp;rsquo;s post on Simple Simulation using Copulas I got a very nice email that basically begged the question, &amp;ldquo;Dude, why are you making this so hard?&amp;rdquo; The author pointed out that if what I really want is a Gaussian correlation structure for Gaussian distributions then I could simply use the mvrnorm() function from the MASS package. Well I did a quick
 ?mvrnorm and, I&amp;rsquo;ll be damned, he&amp;rsquo;s right! The advantage of using a copula is the ability to simulate correlation structures where the correlation is different for different levels of values.</description>
     </item>
     
     <item>
       <title>Stochastic Simulation With Copulas in R</title>
-      <link>http://www.cerebralmastication.com/2010/08/stochastic-simulation-with-copulas-in-r/</link>
+      <link>http://cerebralmastication.com/2010/08/stochastic-simulation-with-copulas-in-r/</link>
       <pubDate>Mon, 30 Aug 2010 20:12:34 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2010/08/stochastic-simulation-with-copulas-in-r/</guid>
+      <guid>http://cerebralmastication.com/2010/08/stochastic-simulation-with-copulas-in-r/</guid>
       <description>A friend of mine gave me a call last week and was wondering if I had a little R code that could illustrate how to do a Cholesky decomposition. He ultimately wanted to build a Monte Carlo model with correlated variables. I pointed him to a number of packages that do Cholesky decomp but then I recommended he consider just using a Gaussian Copula  and R for the whole simulation.</description>
     </item>
     
     <item>
       <title>Starting an EC2 Machine Then Setting Up a Socks Proxy... From R!</title>
-      <link>http://www.cerebralmastication.com/2010/07/starting-an-ec2-machine-then-setting-up-a-socks-proxy-from-r/</link>
+      <link>http://cerebralmastication.com/2010/07/starting-an-ec2-machine-then-setting-up-a-socks-proxy-from-r/</link>
       <pubDate>Fri, 16 Jul 2010 22:07:12 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2010/07/starting-an-ec2-machine-then-setting-up-a-socks-proxy-from-r/</guid>
+      <guid>http://cerebralmastication.com/2010/07/starting-an-ec2-machine-then-setting-up-a-socks-proxy-from-r/</guid>
       <description>I do some work from home, some work from an office in Chicago and some work on the road. It&amp;rsquo;s not uncommon for me to want to tunnel all my web traffic through a VPN tunnel. In one of my previous blog posts I alluded to using Amazon EC2 as a way to get around your corporate IT mind control voyeurs service providers. This tunneling method is one of the 5 or so ways I have used EC2 to set up a tunnel.</description>
     </item>
     
     <item>
       <title>Bootstrapping the latest R into Amazon Elastic Map Reduce</title>
-      <link>http://www.cerebralmastication.com/2010/06/bootstrapping-the-latest-r-into-amazon-elastic-map-reduce/</link>
+      <link>http://cerebralmastication.com/2010/06/bootstrapping-the-latest-r-into-amazon-elastic-map-reduce/</link>
       <pubDate>Mon, 28 Jun 2010 15:38:42 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2010/06/bootstrapping-the-latest-r-into-amazon-elastic-map-reduce/</guid>
+      <guid>http://cerebralmastication.com/2010/06/bootstrapping-the-latest-r-into-amazon-elastic-map-reduce/</guid>
       <description>I&amp;rsquo;ve been continuing to muck around with using R inside of Amazon Elastic Map reduce jobs. I&amp;rsquo;ve been working on abstracting the lapply() logic so that R will farm the pieces out to Amazon EMR. This is coming along really well, thanks in no small part to the Stack Overflow [r] community. I have no idea how crappy coders like me got anything at all done before the Interwebs.
 One of the immediate hurdles faced when trying to use AMZN EMR in anger is that the default version of R on EMR is 2.</description>
     </item>
     
     <item>
       <title>Chicago R Meetup: Healthier than Drinking Alone</title>
-      <link>http://www.cerebralmastication.com/2010/05/chicago-r-meetup-healthier-than-drinking-alone/</link>
+      <link>http://cerebralmastication.com/2010/05/chicago-r-meetup-healthier-than-drinking-alone/</link>
       <pubDate>Mon, 24 May 2010 20:20:34 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2010/05/chicago-r-meetup-healthier-than-drinking-alone/</guid>
+      <guid>http://cerebralmastication.com/2010/05/chicago-r-meetup-healthier-than-drinking-alone/</guid>
       <description>I&amp;rsquo;m kinda blown away by the number of folks who have joined the Chicago R User Group (RUG) in the last few weeks. As of this morning we have 65 people signed up for the group and 25 who have said that they are planning on attending the meetup this Thursday (yes, only 3 days away!) I&amp;rsquo;m very pleased that this many people in Chicago find the R language interesting and/or valuable.</description>
     </item>
     
     <item>
       <title>Virtual Conference: R the Language</title>
-      <link>http://www.cerebralmastication.com/2010/05/virtual-conference-r-the-language/</link>
+      <link>http://cerebralmastication.com/2010/05/virtual-conference-r-the-language/</link>
       <pubDate>Tue, 04 May 2010 02:27:03 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2010/05/virtual-conference-r-the-language/</guid>
+      <guid>http://cerebralmastication.com/2010/05/virtual-conference-r-the-language/</guid>
       <description>On Tuesday May 4th at 9:30 PM central, 10:30 eastern, I&amp;rsquo;ll be giving a live online presentation as part of the Vconf.org open conference series. I&amp;rsquo;ll be speaking about R and why I started using R a couple years ago. This is NOT going to be a technical presentation but rather an illustration of how an R convert was created and why R became part of my daily tool set.</description>
     </item>
     
     <item>
       <title>Simulating Dart Throws in R</title>
-      <link>http://www.cerebralmastication.com/2010/04/simulating-dart-throws-in-r-part-1-of-many/</link>
+      <link>http://cerebralmastication.com/2010/04/simulating-dart-throws-in-r-part-1-of-many/</link>
       <pubDate>Fri, 16 Apr 2010 18:05:20 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2010/04/simulating-dart-throws-in-r-part-1-of-many/</guid>
+      <guid>http://cerebralmastication.com/2010/04/simulating-dart-throws-in-r-part-1-of-many/</guid>
       <description>Back in November 2009 Wired wrote an article about some grad students who decided to try to stochastically model throwing darts. Because I don&amp;rsquo;t actually read printed material I didn&amp;rsquo;t see the article until a couple of months ago. My immediate thought was, &amp;ldquo;hey, I drink beer. I throw darts. I build stochastic models. Why haven&amp;rsquo;t I done this?&amp;rdquo; Well we all know why I haven&amp;rsquo;t done this. I have a job and a 2 year old daughter and I like my wife.</description>
     </item>
     
     <item>
       <title>Chicago R User Group... It&#39;s for the sexy people! </title>
-      <link>http://www.cerebralmastication.com/2010/04/chicago-r-user-group-its-for-the-sexy-people/</link>
+      <link>http://cerebralmastication.com/2010/04/chicago-r-user-group-its-for-the-sexy-people/</link>
       <pubDate>Fri, 09 Apr 2010 16:42:07 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2010/04/chicago-r-user-group-its-for-the-sexy-people/</guid>
+      <guid>http://cerebralmastication.com/2010/04/chicago-r-user-group-its-for-the-sexy-people/</guid>
       <description>[caption id=&amp;ldquo;attachment_673&amp;rdquo; align=&amp;ldquo;alignleft&amp;rdquo; width=&amp;ldquo;169&amp;rdquo; caption=&amp;ldquo;Morris Day, y&amp;rsquo;all! &amp;ldquo;][/caption]
 I think we all know that Morris Day was talking about when he wrote the lyrics to &amp;ldquo;The Bird&amp;rdquo;:
 Yes! Hold on now, this dance ain&#39;t for everybody. Just the sexy people. White folks, you&#39;re much too tight. You gotta shake your head like the black folks. You might get some tonight. Look out! That&amp;rsquo;s right, he was talking about the new R User Group in Chicago!</description>
@@ -186,29 +186,29 @@ Yes! Hold on now, this dance ain&#39;t for everybody. Just the sexy people. Whit
     
     <item>
       <title>The Future of Math is Statistics</title>
-      <link>http://www.cerebralmastication.com/2010/04/the-future-of-math-is-statistics/</link>
+      <link>http://cerebralmastication.com/2010/04/the-future-of-math-is-statistics/</link>
       <pubDate>Fri, 09 Apr 2010 16:01:40 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2010/04/the-future-of-math-is-statistics/</guid>
+      <guid>http://cerebralmastication.com/2010/04/the-future-of-math-is-statistics/</guid>
       <description>The future of math is statistics&amp;hellip; and the language of that future is R:
 I&amp;rsquo;ve often thought there was way too little &amp;ldquo;statistical intuition&amp;rdquo; in the workplace. I think Author Benjamin would agree.</description>
     </item>
     
     <item>
       <title>Lookup Performance in R</title>
-      <link>http://www.cerebralmastication.com/2010/04/lookup-performance-in-r/</link>
+      <link>http://cerebralmastication.com/2010/04/lookup-performance-in-r/</link>
       <pubDate>Fri, 02 Apr 2010 13:05:12 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2010/04/lookup-performance-in-r/</guid>
+      <guid>http://cerebralmastication.com/2010/04/lookup-performance-in-r/</guid>
       <description>Rumor has it that Joe Adler, author of the O&amp;rsquo;Reilly Book R in a Nutshell, has joined Linked In as a data scientist. But that does not keep him from still pumping out some interesting content over at OReilly.com. His latest article is about lookup performance in R. He does a great job giving code samples and explaining what he is doing. Worth reading, for sure.</description>
     </item>
     
     <item>
       <title>Real-World, Real-Time Analytics </title>
-      <link>http://www.cerebralmastication.com/2010/02/real-world-real-time-analytics/</link>
+      <link>http://cerebralmastication.com/2010/02/real-world-real-time-analytics/</link>
       <pubDate>Wed, 17 Feb 2010 16:54:32 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2010/02/real-world-real-time-analytics/</guid>
+      <guid>http://cerebralmastication.com/2010/02/real-world-real-time-analytics/</guid>
       <description>Stop wasting time reading my drivel. You need to head over the the DataWrangling.com blog and read Peter Skomoroch&amp;rsquo;s interview with Bradford Cross of FlightCaster.
 Peter wrote up this interview back in August 2009, so I&amp;rsquo;m a little late to this party. There&amp;rsquo;s some really great quotes in this interview. Here&amp;rsquo;s a few of my fav quotes from Cross:
 At Google, the research scientists prototype in python and R, and then port to C++ for the real scalable map reduce runs.</description>
@@ -216,10 +216,10 @@ At Google, the research scientists prototype in python and R, and then port to C
     
     <item>
       <title>You can Hadoop it! It&#39;s elastic! Boogie woogie woog-ie!</title>
-      <link>http://www.cerebralmastication.com/2010/02/you-can-hadoop-it-its-elastic-boogie-woogie-woog-ie/</link>
+      <link>http://cerebralmastication.com/2010/02/you-can-hadoop-it-its-elastic-boogie-woogie-woog-ie/</link>
       <pubDate>Tue, 16 Feb 2010 18:31:23 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2010/02/you-can-hadoop-it-its-elastic-boogie-woogie-woog-ie/</guid>
+      <guid>http://cerebralmastication.com/2010/02/you-can-hadoop-it-its-elastic-boogie-woogie-woog-ie/</guid>
       <description>[caption id=&amp;ldquo;attachment_594&amp;rdquo; align=&amp;ldquo;alignleft&amp;rdquo; width=&amp;ldquo;261&amp;rdquo; caption=&amp;ldquo;This blog&amp;rsquo;s name in Chinese! &amp;ldquo;][/caption]
 I just came back from the future and let me be the first to tell you this: Learn some Chinese. And more than just cào nǐ niáng (肏你娘) which your friend in grad school told you means &amp;ldquo;Live happy with many blessings&amp;rdquo;. Trust me, I&amp;rsquo;ve been hanging with Madam Wu and she told me it doesn&amp;rsquo;t mean that.
 So how did I travel to the future to visit with Madam Wu, you ask?</description>
@@ -227,19 +227,19 @@ So how did I travel to the future to visit with Madam Wu, you ask?</description>
     
     <item>
       <title>Using the R multicore package in Linux with wild and passionate abandon</title>
-      <link>http://www.cerebralmastication.com/2010/02/using-the-r-multicore-package-in-linux-with-wild-and-passionate-abandon/</link>
+      <link>http://cerebralmastication.com/2010/02/using-the-r-multicore-package-in-linux-with-wild-and-passionate-abandon/</link>
       <pubDate>Tue, 09 Feb 2010 19:57:20 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2010/02/using-the-r-multicore-package-in-linux-with-wild-and-passionate-abandon/</guid>
+      <guid>http://cerebralmastication.com/2010/02/using-the-r-multicore-package-in-linux-with-wild-and-passionate-abandon/</guid>
       <description>One of my primary uses for R is to build stochastic simulations of insurance portfolios and reinsurance treaties. It&amp;rsquo;s not uncommon for each of my simulations to take 20 seconds or more to complete (if you&amp;rsquo;re doing the math, that&amp;rsquo;s 55 hours for 10K sims or, approximately 453 games of solitaire) . Initially I ran my sims in R running on an Oracle VirtualBox (Oracle now owns Virtualbox! gasp ) running Ubuntu.</description>
     </item>
     
     <item>
       <title>Struggling with apply() in R</title>
-      <link>http://www.cerebralmastication.com/2009/12/struggling-with-apply-in-r/</link>
+      <link>http://cerebralmastication.com/2009/12/struggling-with-apply-in-r/</link>
       <pubDate>Fri, 11 Dec 2009 19:30:55 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2009/12/struggling-with-apply-in-r/</guid>
+      <guid>http://cerebralmastication.com/2009/12/struggling-with-apply-in-r/</guid>
       <description>It&amp;rsquo;s common knowledge that I struggle wrapping my head around the apply functions in R. That is illustrated very clearly in the following discussion on Stack Overflow:
 
 Dirk&amp;rsquo;s comment is actually spot on. I&amp;rsquo;ve asked the same damn question at least 4-5 times. Only I didn&amp;rsquo;t really understand it was the same question. That&amp;rsquo;s one of the problems of not really being good at something; it&amp;rsquo;s hard to think abstractly about it.</description>
@@ -247,49 +247,49 @@ Dirk&amp;rsquo;s comment is actually spot on. I&amp;rsquo;ve asked the same damn
     
     <item>
       <title>Loading Big (ish) Data into R</title>
-      <link>http://www.cerebralmastication.com/2009/11/loading-big-data-into-r/</link>
+      <link>http://cerebralmastication.com/2009/11/loading-big-data-into-r/</link>
       <pubDate>Tue, 24 Nov 2009 23:14:06 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2009/11/loading-big-data-into-r/</guid>
+      <guid>http://cerebralmastication.com/2009/11/loading-big-data-into-r/</guid>
       <description>So for the rest of this conversation big data == 2 Gigs. Done. Don&amp;rsquo;t give me any of this &amp;lsquo;that&amp;rsquo;s not big, THIS is big&amp;rsquo; shit. There now, on with the cool stuff:
 This week on twitter Vince Buffalo asked about loading a 2 gig comma separated file (csv) into R (OK, he asked about tab delimited data, but I ignored that because I use mostly comma data and I wanted to test CSV.</description>
     </item>
     
     <item>
       <title>Kicking Ass with plyr</title>
-      <link>http://www.cerebralmastication.com/2009/10/kicking-ass-with-plry/</link>
+      <link>http://cerebralmastication.com/2009/10/kicking-ass-with-plry/</link>
       <pubDate>Thu, 29 Oct 2009 16:17:45 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2009/10/kicking-ass-with-plry/</guid>
+      <guid>http://cerebralmastication.com/2009/10/kicking-ass-with-plry/</guid>
       <description>Tonight (October 29, 2009) at 5:30 PM is the Chicago R meetup at Jaks tap. Here&amp;rsquo;s more info. I&amp;rsquo;ll be making a presentation based on my earlier blog post about plyr. The presentation will only be 8 minutes long so I&amp;rsquo;ve had to pick and choose my info carefully. OK, who am I kidding? I had a couple of Schlitz (in a bottle!) for lunch over at Boni Vinos and slammed some slides together rather haphazardly.</description>
     </item>
     
     <item>
       <title>A Fast Intro to PLYR for R</title>
-      <link>http://www.cerebralmastication.com/2009/08/a-fast-intro-to-plyr-for-r/</link>
+      <link>http://cerebralmastication.com/2009/08/a-fast-intro-to-plyr-for-r/</link>
       <pubDate>Thu, 27 Aug 2009 20:00:52 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2009/08/a-fast-intro-to-plyr-for-r/</guid>
+      <guid>http://cerebralmastication.com/2009/08/a-fast-intro-to-plyr-for-r/</guid>
       <description>I&amp;rsquo;m not dead yet! Although it has been rumored that I am. The new job is going great and I&amp;rsquo;m thrilled to be with a new firm doing interesting work alongside smart people. It makes me seem smarter by simple association.
 There&amp;rsquo;s been a lot going on recently in the R user community. There was anR flash mob of Stack Overflow which resulted in a noticeable increase in the number of R questions and answers in SO.</description>
     </item>
     
     <item>
       <title>Who&#39;s Tweets Do I Read... Magic R Code Says...</title>
-      <link>http://www.cerebralmastication.com/2009/06/whos-tweets-do-i-read-magic-r-code-says/</link>
+      <link>http://cerebralmastication.com/2009/06/whos-tweets-do-i-read-magic-r-code-says/</link>
       <pubDate>Mon, 22 Jun 2009 14:14:55 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2009/06/whos-tweets-do-i-read-magic-r-code-says/</guid>
+      <guid>http://cerebralmastication.com/2009/06/whos-tweets-do-i-read-magic-r-code-says/</guid>
       <description>So one glace at my user logs shows the truth: no one gives a rat&amp;rsquo;s rump thatI just quit my job; you just love you some Twitter R code. And I&amp;rsquo;m nothing but an attention whore, so come get some!
 So in mylast &amp;lsquo;Twitter with R&amp;rsquo; post I gave you some code I&amp;rsquo;d written ripped off that allowed you to update your status from R. That&amp;rsquo;s kinda cool, but really just for annoying your friends, tweeting when your code is finished running or, as Eva pointed out in the comments, maybe Tweeting the outcome of a routine.</description>
     </item>
     
     <item>
       <title>Not Just Normal... Gaussian</title>
-      <link>http://www.cerebralmastication.com/2009/06/not-just-normal-gaussian/</link>
+      <link>http://cerebralmastication.com/2009/06/not-just-normal-gaussian/</link>
       <pubDate>Tue, 16 Jun 2009 16:26:46 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2009/06/not-just-normal-gaussian/</guid>
+      <guid>http://cerebralmastication.com/2009/06/not-just-normal-gaussian/</guid>
       <description>[caption id=&amp;ldquo;&amp;rdquo; align=&amp;ldquo;alignleft&amp;rdquo; width=&amp;ldquo;188&amp;rdquo; caption=&amp;ldquo;Pretty Normal&amp;rdquo;][/caption]
 Dave, over at The Revolutions Blog,posted about the big &amp;lsquo;ol list of graphs created with R that are over at Wikimedia Commons. As I was scrolling through the list I recognized the standard normal distribution from the Wikipedia article on the same topic.
 Below is the fairly simple source code with lots of comments. Here&amp;rsquo;s the source. Run it at home&amp;hellip; for fun and profit.</description>
@@ -297,30 +297,30 @@ Below is the fairly simple source code with lots of comments. Here&amp;rsquo;s t
     
     <item>
       <title>Twitter from R... Sure, why not!</title>
-      <link>http://www.cerebralmastication.com/2009/06/twitter-from-r-sure-why-not/</link>
+      <link>http://cerebralmastication.com/2009/06/twitter-from-r-sure-why-not/</link>
       <pubDate>Thu, 04 Jun 2009 15:22:21 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2009/06/twitter-from-r-sure-why-not/</guid>
+      <guid>http://cerebralmastication.com/2009/06/twitter-from-r-sure-why-not/</guid>
       <description>So I have started following the #RStats tag in twitter. Prior to a week ago I had never Twitterbated so I thought I would give it a go since I am not one to shy away from new technology&amp;hellip; much. I think of Twitter like a call in radio show where I get to cut off callers when they annoy me.
 Well one of the interesting things I ran across was this tweet that pointed to this page about posting tweets from R.</description>
     </item>
     
     <item>
       <title>Choosing an SQL Engine for Analytics</title>
-      <link>http://www.cerebralmastication.com/2009/03/chosing-an-sql-engine-for-analytics/</link>
+      <link>http://cerebralmastication.com/2009/03/chosing-an-sql-engine-for-analytics/</link>
       <pubDate>Mon, 09 Mar 2009 21:37:57 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2009/03/chosing-an-sql-engine-for-analytics/</guid>
+      <guid>http://cerebralmastication.com/2009/03/chosing-an-sql-engine-for-analytics/</guid>
       <description>I&amp;rsquo;ve been struggling for a while on which database to use for my working data. I used to use MS Access quite a lot. The problems with MS Access include but are not limited to:
  * 2 GB file size limit, at least historically * Versions change with each edition of MS Office * Sort of tough to write SQL scripts * Very little automation, ie compression, backup, etc. * Windows only  I used Oracle for a few years as a result of my previous employer being an Oracle shop.</description>
     </item>
     
     <item>
       <title>R in The Windy City</title>
-      <link>http://www.cerebralmastication.com/2009/02/r-in-the-windy-city/</link>
+      <link>http://cerebralmastication.com/2009/02/r-in-the-windy-city/</link>
       <pubDate>Fri, 27 Feb 2009 14:43:16 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2009/02/r-in-the-windy-city/</guid>
+      <guid>http://cerebralmastication.com/2009/02/r-in-the-windy-city/</guid>
       <description>In honor of me moving to Chicago, the powers who abide have decided to hold the first annual &amp;ldquo;R/Finance conference for applied finance using R&amp;rdquo; conference in Chicago this year. The dates are April 24-25, 2009.
 R/Finance 2009: Applied Finance with R
 To those who made the decision on location, I&amp;rsquo;m pleased but slightly embarrassed that you let my relocation decision have such a profound impact on your venue choice.</description>
@@ -328,19 +328,19 @@ To those who made the decision on location, I&amp;rsquo;m pleased but slightly e
     
     <item>
       <title>Data Analysis Workflow... Part 1 of Infinity</title>
-      <link>http://www.cerebralmastication.com/2009/02/data-analysis-workflow-part-1-of-infinity/</link>
+      <link>http://cerebralmastication.com/2009/02/data-analysis-workflow-part-1-of-infinity/</link>
       <pubDate>Thu, 26 Feb 2009 14:41:04 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2009/02/data-analysis-workflow-part-1-of-infinity/</guid>
+      <guid>http://cerebralmastication.com/2009/02/data-analysis-workflow-part-1-of-infinity/</guid>
       <description>One of the many things that I sit around pondering when I should be doing productive things is the idea of analytical workflow. I have only worked with one analytical guru who I felt really gave thought and structure to workflow and its impact on analyist productivity. When I talk about workflow I mean the whole process from the time the analytical guy thinks, &amp;ldquo;Hey, I need to understand the velocity of new purchases between different types of sales campaigns.</description>
     </item>
     
     <item>
       <title>Box plot vs. Violin plot in R</title>
-      <link>http://www.cerebralmastication.com/2009/02/box-plot-vs-violin-plot-in-r/</link>
+      <link>http://cerebralmastication.com/2009/02/box-plot-vs-violin-plot-in-r/</link>
       <pubDate>Wed, 18 Feb 2009 19:50:15 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2009/02/box-plot-vs-violin-plot-in-r/</guid>
+      <guid>http://cerebralmastication.com/2009/02/box-plot-vs-violin-plot-in-r/</guid>
       <description>So Andrew Gelman hates box plots. Not that you should give a buck what Gelman thinks. I&amp;rsquo;m just setting this blog post up, OK. So stick with me. Gelman also thought this XKCD cartoon was NOT funny :
 
 There&amp;rsquo;s some correlation as well as causation. I could be wrong, but I suspect that the reason Gelman does not like the XKCD cartoon is because he&amp;rsquo;s very literal, as geeks can be.</description>
@@ -348,38 +348,38 @@ There&amp;rsquo;s some correlation as well as causation. I could be wrong, but I
     
     <item>
       <title>Finding the Source in R</title>
-      <link>http://www.cerebralmastication.com/2009/02/finding-the-source-in-r/</link>
+      <link>http://cerebralmastication.com/2009/02/finding-the-source-in-r/</link>
       <pubDate>Fri, 13 Feb 2009 19:33:23 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2009/02/finding-the-source-in-r/</guid>
+      <guid>http://cerebralmastication.com/2009/02/finding-the-source-in-r/</guid>
       <description>Recently when reading the Revolutions R Blog they talked about getting to the actual source of routines in R. They linked to an R News PDF from a couple years back. The actual text of the article is buried 43 pages into the PDF. To increase awareness and for my own future reference I&amp;rsquo;m going to reprint Uwe Ligges&amp;rsquo; article here.   # **Accessing the Sources**   by Uwe Ligges   ## Introduction   One of the major advantages of open source software such as R is implied by its name: the sources are open (accessible) for everybody.</description>
     </item>
     
     <item>
       <title>Second Verse, Same as the First - SAS is the new Insightful</title>
-      <link>http://www.cerebralmastication.com/2009/02/second-verse-same-as-the-first-sas-is-the-new-insightful/</link>
+      <link>http://cerebralmastication.com/2009/02/second-verse-same-as-the-first-sas-is-the-new-insightful/</link>
       <pubDate>Thu, 05 Feb 2009 17:03:12 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2009/02/second-verse-same-as-the-first-sas-is-the-new-insightful/</guid>
+      <guid>http://cerebralmastication.com/2009/02/second-verse-same-as-the-first-sas-is-the-new-insightful/</guid>
       <description>[caption id=&amp;ldquo;attachment_92&amp;rdquo; align=&amp;ldquo;alignleft&amp;rdquo; width=&amp;ldquo;165&amp;rdquo; caption=&amp;ldquo;I love ya, SAS! &amp;ldquo;][/caption]
 Tibco acquired Insightful last year. Many folks have reported that S-Plus (the closed source implementation of the S language) was dang near financially killed by the success of R (the open source implementation of the S language). I may be slow on the update, but today I learned that a company named World Programming is making a product, WPS, which is an alternative implementation of the SAS base language.</description>
     </item>
     
     <item>
       <title>Mandelbrot Set in R</title>
-      <link>http://www.cerebralmastication.com/2009/02/mandelbrot-set-in-r/</link>
+      <link>http://cerebralmastication.com/2009/02/mandelbrot-set-in-r/</link>
       <pubDate>Wed, 04 Feb 2009 14:53:50 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2009/02/mandelbrot-set-in-r/</guid>
+      <guid>http://cerebralmastication.com/2009/02/mandelbrot-set-in-r/</guid>
       <description>After writing the previous entry about Taleb and Mandelbrot I was thinking, &amp;ldquo;hey, I should be able to create the Mandelbrot set using R.&amp;rdquo; I&amp;rsquo;ve never actually tried to code the Mandelbrot set, but it seems easy enough. Well I messed with it for 2 maybe 3 seconds and then Googled [Mandelbrot set r] and, no surprise, I found a great implementation that not only produces the Mandelbrot set, it produces it with animation!</description>
     </item>
     
     <item>
       <title>Mainstream Article on R - NYT</title>
-      <link>http://www.cerebralmastication.com/2009/02/mainstream-article-on-r-nyt/</link>
+      <link>http://cerebralmastication.com/2009/02/mainstream-article-on-r-nyt/</link>
       <pubDate>Tue, 03 Feb 2009 15:35:33 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2009/02/mainstream-article-on-r-nyt/</guid>
+      <guid>http://cerebralmastication.com/2009/02/mainstream-article-on-r-nyt/</guid>
       <description>Robert Gentleman, left, and Ross Ihaka, the creators of R. Picture courtesy of the New York Times
 For those of us who use R on a regular basis it was pretty neat to see a mainstream media piece on the R language. Ashlee Vance of the New York Times did a good job on the piece. It is hard to explain to your average kitchen table reader of the Grey Lady why a computer programing language is important.</description>
     </item>

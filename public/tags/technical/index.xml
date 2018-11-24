@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Technical on Cerebral Mastication</title>
-    <link>http://www.cerebralmastication.com/tags/technical/</link>
+    <link>http://cerebralmastication.com/tags/technical/</link>
     <description>Recent content in Technical on Cerebral Mastication</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Tue, 24 Mar 2009 18:30:18 +0000</lastBuildDate>
     
-	<atom:link href="http://www.cerebralmastication.com/tags/technical/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://cerebralmastication.com/tags/technical/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>The Anna Karenina Yield Anomaly</title>
-      <link>http://www.cerebralmastication.com/2009/03/the-anna-karenina-yield-anomaly/</link>
+      <link>http://cerebralmastication.com/2009/03/the-anna-karenina-yield-anomaly/</link>
       <pubDate>Tue, 24 Mar 2009 18:30:18 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2009/03/the-anna-karenina-yield-anomaly/</guid>
+      <guid>http://cerebralmastication.com/2009/03/the-anna-karenina-yield-anomaly/</guid>
       <description>[caption id=&amp;ldquo;attachment_240&amp;rdquo; align=&amp;ldquo;alignleft&amp;rdquo; width=&amp;ldquo;157&amp;rdquo; caption=&amp;ldquo;Leo Tolstoy&amp;rdquo;][/caption]
 Leo Tolstoy begins Anna Karenina with the famous lines: &amp;ldquo;All happy families are happy in the same way. All miserable families are miserable in their own way.&amp;rdquo;
 I did my graduate thesis on the spatial relationship of stochastic variables. The stochastic variable which I found most interesting at the time was farmer corn yields. Since yields can&amp;rsquo;t go any lower than zero I had a preconceived notion that in bad years all farmer yields were bunched up down close to zero and on good years yields were very spread out with some farmers having average yields and some having nearly double their average yields.</description>
@@ -24,10 +24,10 @@ I did my graduate thesis on the spatial relationship of stochastic variables. Th
     
     <item>
       <title>Mandelbrot Set in R</title>
-      <link>http://www.cerebralmastication.com/2009/02/mandelbrot-set-in-r/</link>
+      <link>http://cerebralmastication.com/2009/02/mandelbrot-set-in-r/</link>
       <pubDate>Wed, 04 Feb 2009 14:53:50 +0000</pubDate>
       
-      <guid>http://www.cerebralmastication.com/2009/02/mandelbrot-set-in-r/</guid>
+      <guid>http://cerebralmastication.com/2009/02/mandelbrot-set-in-r/</guid>
       <description>After writing the previous entry about Taleb and Mandelbrot I was thinking, &amp;ldquo;hey, I should be able to create the Mandelbrot set using R.&amp;rdquo; I&amp;rsquo;ve never actually tried to code the Mandelbrot set, but it seems easy enough. Well I messed with it for 2 maybe 3 seconds and then Googled [Mandelbrot set r] and, no surprise, I found a great implementation that not only produces the Mandelbrot set, it produces it with animation!</description>
     </item>
     
