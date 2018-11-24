@@ -7,21 +7,22 @@ description: "About me and this site"
 
 Hey, y'all. I'm JD Long the Masticator in Residence at CerebralMastication.com. This is a dumping grounds for my thoughts and pontification on analytics, data, data science, risk analytics, and miscellany. 
 
-Various artifacts I've left laying around:
+What's my background? Well my career arc is captured over on my [LinkedIn profile](https://www.linkedin.com/in/jamesdlong/). And I do a bit of public speaking so I've managed to leave some artifacts around over the years:
 
-## [Intro to `dplyr` presented at Google NYC] (https://www.youtube.com/watch?v=EOvN3wPdQoM&feature=youtu.be&t=11m50s)
+### In the Spring of 2018 I presented an intro to the R package `dplyr` at the NYC Open Data Science Group: [Intro to `dplyr` presented at Google NYC] (https://www.youtube.com/watch?v=EOvN3wPdQoM&feature=youtu.be&t=11m50s)
 <img src="/./about_files/Tidy_by_Nature.png" alt="Tidy By Nature at Google NYC" width="50%"/>
+
+<a href="https://www.youtube.com/watch?v=EOvN3wPdQoM&feature=youtu.be&t=11m50s">
+  <img src="/./about_files/Tidy_by_Nature.png" 
+     width="50%" 
+     title="Tidy By Nature at Google NYC" 
+     alt="Tidy By Nature at Google NYC">
+</a>
 
 ## more... 
 
-## Setup
 
-Some fun facts about [Hugo](http://gohugo.io/):
 
-* Built in [Go](http://golang.org/)
-* Loosely inspired by [Jekyll](http://jekyllrb.com/)
-* Primarily developed by [spf13](http://spf13.com/) on the train while commuting to and from Manhattan.
-* Coded in [Vim](http://vim.org) using [spf13-vim](http://vim.spf13.com/)
+Have questions or suggestions? [Yell at me on Twitter](https://twitter.com/CMastication). The source code for this blog is all availiable on [my Github Account](https://github.com/CerebralMastication/CerebralMastication-hugo). I'm using [Hugo](https://gohugo.io/) with Blogdown hosted by [Netlify](https://www.netlify.com/), so when I change the contents of the Github repo, the site is rebuilt by Netlify using the latest source from Github. 
 
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/spf13/hugo/issues/new) or [ask me on Twitter](https://twitter.com/spf13).
 
