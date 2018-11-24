@@ -91,7 +91,6 @@ i {
 .image_shadow img {
   margin-right: 14px;
   display: block;
-  float: left;
   -webkit-box-shadow: 6px 6px 2px #ccc;
   -moz-box-shadow: 6px 6px 2px #ccc;
   box-shadow: 6px 6px 2px #ccc;
