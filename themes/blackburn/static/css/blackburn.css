@@ -89,8 +89,8 @@ i {
 }
 
 .image_shadow img {
-  background-color: #000000;
-  padding:2px;
+  background-color: #808080;
+  padding:1px;
   margin-right: 14px;
   display: block;
   -webkit-box-shadow: 6px 6px 2px #ccc;

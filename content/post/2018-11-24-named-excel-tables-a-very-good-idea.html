@@ -34,22 +34,26 @@ Figure 1: Format as an Excel Table
 <div id="easy-to-read-formulas" class="section level2">
 <h2>Easy to Read Formulas:</h2>
 When you use Excel Tables you can build formulas that refer to other columns in the Table by name:
+<div class="image_shadow">
 <div class="figure"><span id="fig:excel-table"></span>
 <img src="/images/excel_table.png" alt="Excel Table" width="75%" />
 <p class="caption">
 Figure 2: Excel Table
 </p>
 </div>
+</div>
 <p>This is considerably easier to read and debug than cell references.</p>
 </div>
 <div id="auto-scaling-references" class="section level2">
 <h2>Auto Scaling References:</h2>
 Not sure if “auto scaling” is the right phrase, but when you reference an entire column using a Table formula, that reference stays valid even if the table shrinks or grows later:
+<div class="image_shadow">
 <div class="figure"><span id="fig:excel-table-col"></span>
 <img src="/images/table_col.png" alt="Excel Table Formula Column Ref" width="75%" />
 <p class="caption">
 Figure 3: Excel Table Formula Column Ref
 </p>
+</div>
 </div>
 <p>In addition to being easier to read, this is a <strong>HUGE</strong> maintenance benefit when you update your source data later. I’ve seen spreadsheets in the wild that used explicitly coded references to cells and the data was updated, adding more rows, and the formula only picked up the original number of cells. This produces wrong results but without any error or information to let you know there’s a problem. Excel Table formulas help prevent this.</p>
 </div>
