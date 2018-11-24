@@ -253,15 +253,41 @@
   
 
 
-<pre class="r"><code>library(tidyverse)
-c &lt;- mtcars %&gt;%
-  rownames_to_column() %&gt;%
-  rename(car=rowname)</code></pre>
-<div class="figure"><span id="fig:excel-table"></span>
-<img src="http://cerebralmastication.com/images/excel_table.png" alt="Excel Table" width="60%" />
+<p>Excel has this construct they call and “Excel Table” which is about as helpful as a bicycle maker naming their bike model, “Mountain Bike.” But the Excel folks named these things “Excel Table” so in order to prevent confusion (as if) I try to always capitalize the <em>T</em> in “Table” to make it clear we’re talking about a specific thing, not just any table of data in Excel.</p>
+<p>Excel Tables are the things we get when we click on “Format as Table” in Excel:</p>
+<div class="figure"><span id="fig:excel-table-make"></span>
+<img src="http://cerebralmastication.com/images/Format_as_Table.png" alt="Format as an Excel Table" width="75%" />
 <p class="caption">
-Figure 1: Excel Table
+Figure 1: Format as an Excel Table
 </p>
+</div>
+<p>Although “Format as Table” is as misleading as the name because putting your data in an Excel Table does more than just change the formatting. It puts the data in an object that will help you considerably in the future, make your formulas easier to read, and keep you from shooting your toes off. So, despite the poor name choice using Excel Tables is a “Very Good Idea”.</p>
+<p>Let’s look at a few of the benefits:</p>
+<div id="easy-to-read-formulas" class="section level2">
+<h2>Easy to Read Formulas:</h2>
+When you use Excel Tables you can build formulas that refer to other columns in the Table by name:
+<div class="figure"><span id="fig:excel-table"></span>
+<img src="http://cerebralmastication.com/images/excel_table.png" alt="Excel Table" width="75%" />
+<p class="caption">
+Figure 2: Excel Table
+</p>
+</div>
+<p>This is considerably easier to read and debug than cell references.</p>
+</div>
+<div id="auto-scaling-references" class="section level2">
+<h2>Auto Scaling References:</h2>
+Not sure if “auto scaling” is the right phrase, but when you reference an entire column using a Table formula, that reference stays valid even if the table shrinks or grows later:
+<div class="figure"><span id="fig:excel-table-col"></span>
+<img src="http://cerebralmastication.com/images/table_col.png" alt="Excel Table Formula Column Ref" width="75%" />
+<p class="caption">
+Figure 3: Excel Table Formula Column Ref
+</p>
+</div>
+<p>In addition to being easier to read, this is a <strong>HUGE</strong> maintenance benefit when you update your source data later. I’ve seen spreadsheets in the wild that used explicitly coded references to cells and the data was updated, adding more rows, and the formula only picked up the original number of cells. This produces wrong results but without any error or information to let you know there’s a problem. Excel Table formulas help prevent this.</p>
+</div>
+<div id="prettier-output" class="section level2">
+<h2>Prettier Output:</h2>
+<p>I think many users initially adopt Excel Tables simply because they are more aesthetically pleasing to look at. While totally true, the visual benefits are, in my not-so-humble opinion outweighed by the functional benefits.</p>
 </div>
 
 

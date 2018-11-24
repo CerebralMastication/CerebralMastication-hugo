@@ -17,7 +17,8 @@
       <pubDate>Sat, 24 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>http://cerebralmastication.com/2018/11/24/named-excel-tables-a-very-good-idea/</guid>
-      <description> library(tidyverse) c &amp;lt;- mtcars %&amp;gt;% rownames_to_column() %&amp;gt;% rename(car=rowname)  Figure 1: Excel Table  </description>
+      <description>Excel has this construct they call and “Excel Table” which is about as helpful as a bicycle maker naming their bike model, “Mountain Bike.” But the Excel folks named these things “Excel Table” so in order to prevent confusion (as if) I try to always capitalize the T in “Table” to make it clear we’re talking about a specific thing, not just any table of data in Excel.
+Excel Tables are the things we get when we click on “Format as Table” in Excel:</description>
     </item>
     
   </channel>
