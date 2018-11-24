@@ -253,13 +253,22 @@
   
 
 
+<pre class="r"><code>knitr::knit_hooks$set(class = function(before, options, envir) {
+  if(before){
+    sprintf(&quot;&lt;div class = &#39;%s&#39;&gt;&quot;, options$class)
+  }else{
+    &quot;&lt;/div&gt;&quot;
+  }
+})</code></pre>
 <p>Excel has this construct they call and “Excel Table” which is about as helpful as a bicycle maker naming their bike model, “Mountain Bike.” But the Excel folks named these things “Excel Table” so in order to prevent confusion (as if) I try to always capitalize the <em>T</em> in “Table” to make it clear we’re talking about a specific thing, not just any table of data in Excel.</p>
 <p>Excel Tables are the things we get when we click on “Format as Table” in Excel:</p>
+<div class="image_shadow">
 <div class="figure"><span id="fig:excel-table-make"></span>
 <img src="http://cerebralmastication.com/images/Format_as_Table.png" alt="Format as an Excel Table" width="75%" />
 <p class="caption">
 Figure 1: Format as an Excel Table
 </p>
+</div>
 </div>
 <p>Although “Format as Table” is as misleading as the name because putting your data in an Excel Table does more than just change the formatting. It puts the data in an object that will help you considerably in the future, make your formulas easier to read, and keep you from shooting your toes off. So, despite the poor name choice using Excel Tables is a “Very Good Idea”.</p>
 <p>Let’s look at a few of the benefits:</p>
