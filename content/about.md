@@ -4,6 +4,8 @@ date: "2018-11-23"
 sidemenu: "true"
 description: "About me and this site"
 ---
+<img src="/./about_files/jd_long_face.jpg" alt="James (JD) Long" width="50%"/>
+
 
 Hey, y'all. I'm JD Long the Masticator in Residence at CerebralMastication.com. This is a dumping grounds for my thoughts and pontification on analytics, data, data science, risk analytics, and miscellany. 
 

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Column Oriented on Cerebral Mastication</title>
-    <link>https://cerebralmastication.netlify.com/tags/column-oriented/</link>
+    <link>https://cerebralmastication.com/tags/column-oriented/</link>
     <description>Recent content in Column Oriented on Cerebral Mastication</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Wed, 18 Mar 2009 13:56:56 +0000</lastBuildDate>
     
-	<atom:link href="https://cerebralmastication.netlify.com/tags/column-oriented/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cerebralmastication.com/tags/column-oriented/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>More on Databases for Analytics</title>
-      <link>https://cerebralmastication.netlify.com/2009/03/more-on-databases-for-analytics/</link>
+      <link>https://cerebralmastication.com/2009/03/more-on-databases-for-analytics/</link>
       <pubDate>Wed, 18 Mar 2009 13:56:56 +0000</pubDate>
       
-      <guid>https://cerebralmastication.netlify.com/2009/03/more-on-databases-for-analytics/</guid>
+      <guid>https://cerebralmastication.com/2009/03/more-on-databases-for-analytics/</guid>
       <description>Lately I have been struggling for what type of database to use for my analytics work. SQL Server is a really good database but I always get the feeling it wasbuilt for stuff other than what I want to do with it. I keep feeling like I am digging post holes with a spade and I keep thinking, &amp;ldquo;there should be a tool that does this better.&amp;rdquo;
 Yesterday I was listening to the IT Conversations Podcast and heard a presentation given by Michael Stonebraker from the Money:Tech conference.</description>
     </item>

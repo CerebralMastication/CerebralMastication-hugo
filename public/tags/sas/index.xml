@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sas on Cerebral Mastication</title>
-    <link>https://cerebralmastication.netlify.com/tags/sas/</link>
+    <link>https://cerebralmastication.com/tags/sas/</link>
     <description>Recent content in Sas on Cerebral Mastication</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Wed, 18 Mar 2009 13:56:56 +0000</lastBuildDate>
     
-	<atom:link href="https://cerebralmastication.netlify.com/tags/sas/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cerebralmastication.com/tags/sas/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>More on Databases for Analytics</title>
-      <link>https://cerebralmastication.netlify.com/2009/03/more-on-databases-for-analytics/</link>
+      <link>https://cerebralmastication.com/2009/03/more-on-databases-for-analytics/</link>
       <pubDate>Wed, 18 Mar 2009 13:56:56 +0000</pubDate>
       
-      <guid>https://cerebralmastication.netlify.com/2009/03/more-on-databases-for-analytics/</guid>
+      <guid>https://cerebralmastication.com/2009/03/more-on-databases-for-analytics/</guid>
       <description>Lately I have been struggling for what type of database to use for my analytics work. SQL Server is a really good database but I always get the feeling it wasbuilt for stuff other than what I want to do with it. I keep feeling like I am digging post holes with a spade and I keep thinking, &amp;ldquo;there should be a tool that does this better.&amp;rdquo;
 Yesterday I was listening to the IT Conversations Podcast and heard a presentation given by Michael Stonebraker from the Money:Tech conference.</description>
     </item>
     
     <item>
       <title>Second Verse, Same as the First - SAS is the new Insightful</title>
-      <link>https://cerebralmastication.netlify.com/2009/02/second-verse-same-as-the-first-sas-is-the-new-insightful/</link>
+      <link>https://cerebralmastication.com/2009/02/second-verse-same-as-the-first-sas-is-the-new-insightful/</link>
       <pubDate>Thu, 05 Feb 2009 17:03:12 +0000</pubDate>
       
-      <guid>https://cerebralmastication.netlify.com/2009/02/second-verse-same-as-the-first-sas-is-the-new-insightful/</guid>
+      <guid>https://cerebralmastication.com/2009/02/second-verse-same-as-the-first-sas-is-the-new-insightful/</guid>
       <description>[caption id=&amp;ldquo;attachment_92&amp;rdquo; align=&amp;ldquo;alignleft&amp;rdquo; width=&amp;ldquo;165&amp;rdquo; caption=&amp;ldquo;I love ya, SAS! &amp;ldquo;][/caption]
 Tibco acquired Insightful last year. Many folks have reported that S-Plus (the closed source implementation of the S language) was dang near financially killed by the success of R (the open source implementation of the S language). I may be slow on the update, but today I learned that a company named World Programming is making a product, WPS, which is an alternative implementation of the SAS base language.</description>
     </item>

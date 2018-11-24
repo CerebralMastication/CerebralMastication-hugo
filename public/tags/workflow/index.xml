@@ -2,50 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Workflow on Cerebral Mastication</title>
-    <link>https://cerebralmastication.netlify.com/tags/workflow/</link>
+    <link>https://cerebralmastication.com/tags/workflow/</link>
     <description>Recent content in Workflow on Cerebral Mastication</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Mon, 18 Apr 2011 20:48:32 +0000</lastBuildDate>
     
-	<atom:link href="https://cerebralmastication.netlify.com/tags/workflow/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cerebralmastication.com/tags/workflow/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Details of two-way sync between two Ubuntu machines</title>
-      <link>https://cerebralmastication.netlify.com/2011/04/details-of-two-way-sync-between-two-ubuntu-machines/</link>
+      <link>https://cerebralmastication.com/2011/04/details-of-two-way-sync-between-two-ubuntu-machines/</link>
       <pubDate>Mon, 18 Apr 2011 20:48:32 +0000</pubDate>
       
-      <guid>https://cerebralmastication.netlify.com/2011/04/details-of-two-way-sync-between-two-ubuntu-machines/</guid>
+      <guid>https://cerebralmastication.com/2011/04/details-of-two-way-sync-between-two-ubuntu-machines/</guid>
       <description>In a previous post I discussed my frustrations with trying to get Dropbox or Spideroak to perform BOTH encrypted remote backup and AND fast two way file syncing. This is the detail of how I set up for two machines, both Ubuntu 10.10, to perform two way sync where a file change on either machine will result in that change being replicated on the other machine.
 I initially tried running Unison on BOTH my laptop and the server and had the server Unison set to sync with my laptop back through an SSH reverse proxy.</description>
     </item>
     
     <item>
       <title>Fast Two Way Sync in Ubuntu! </title>
-      <link>https://cerebralmastication.netlify.com/2011/04/fast-two-way-sync-in-ubuntu/</link>
+      <link>https://cerebralmastication.com/2011/04/fast-two-way-sync-in-ubuntu/</link>
       <pubDate>Sat, 09 Apr 2011 15:32:48 +0000</pubDate>
       
-      <guid>https://cerebralmastication.netlify.com/2011/04/fast-two-way-sync-in-ubuntu/</guid>
+      <guid>https://cerebralmastication.com/2011/04/fast-two-way-sync-in-ubuntu/</guid>
       <description>I love the portability of a laptop. I have a 45 min train ride twice a day and I fly a little too, so having my work with me on my laptop is very important. But I hate doing long running analytics on my laptop when I&amp;rsquo;m in the office because it bogs down my laptop and all those videos on The Superficial get all jerky and stuff.
 I get around this conundrum by running much of my analytics on either my work server or on an EC2 machine (I&amp;rsquo;m going to call these collectively &amp;ldquo;my servers&amp;rdquo; for the rest of this post).</description>
     </item>
     
     <item>
       <title>The Downside of &#34;Flow&#34;... Technician&#39;s Myopia</title>
-      <link>https://cerebralmastication.netlify.com/2009/03/the-downside-of-flow-technicians-myopia/</link>
+      <link>https://cerebralmastication.com/2009/03/the-downside-of-flow-technicians-myopia/</link>
       <pubDate>Tue, 10 Mar 2009 15:41:01 +0000</pubDate>
       
-      <guid>https://cerebralmastication.netlify.com/2009/03/the-downside-of-flow-technicians-myopia/</guid>
+      <guid>https://cerebralmastication.com/2009/03/the-downside-of-flow-technicians-myopia/</guid>
       <description>It geeky circles there&amp;rsquo;s often talk of finding your &amp;ldquo;flow.&amp;rdquo; The term was coined by psychologist Mihaly Csikszentmihalyi in his book Flow: The Psychology of Optimal Experience and which he revisits in the smaller and more readable Finding Flow: The Psychology of Engagement with Everyday Life. The general idea is finding the state where you lose yourself in what you are doing and find the experience fun, enjoyable, and productive. There&amp;rsquo;s even a Wikipedia article on the topic of flow.</description>
     </item>
     
     <item>
       <title>Data Analysis Workflow... Part 1 of Infinity</title>
-      <link>https://cerebralmastication.netlify.com/2009/02/data-analysis-workflow-part-1-of-infinity/</link>
+      <link>https://cerebralmastication.com/2009/02/data-analysis-workflow-part-1-of-infinity/</link>
       <pubDate>Thu, 26 Feb 2009 14:41:04 +0000</pubDate>
       
-      <guid>https://cerebralmastication.netlify.com/2009/02/data-analysis-workflow-part-1-of-infinity/</guid>
+      <guid>https://cerebralmastication.com/2009/02/data-analysis-workflow-part-1-of-infinity/</guid>
       <description>One of the many things that I sit around pondering when I should be doing productive things is the idea of analytical workflow. I have only worked with one analytical guru who I felt really gave thought and structure to workflow and its impact on analyist productivity. When I talk about workflow I mean the whole process from the time the analytical guy thinks, &amp;ldquo;Hey, I need to understand the velocity of new purchases between different types of sales campaigns.</description>
     </item>
     
