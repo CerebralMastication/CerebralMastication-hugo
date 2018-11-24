@@ -1,9 +1,9 @@
-+++
-title = "About"
-date = "2018-11-23"
-sidemenu = "true"
-description = "About me and this site"
-+++
+---
+title: "About"
+date: "2018-11-23"
+sidemenu: "true"
+description: "About me and this site"
+---
 
 Hey, y'all. I'm JD Long the Masticator in Residence at CerebralMastication.com. This is a dumping grounds for my thoughts and pontification on analytics, data, data science, risk analytics, and miscellany. 
 
