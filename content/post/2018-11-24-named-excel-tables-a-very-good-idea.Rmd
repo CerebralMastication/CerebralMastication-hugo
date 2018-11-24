@@ -9,3 +9,11 @@ tags:
   - Excel
 ---
 
+```{r, message=FALSE}
+library(tidyverse)
+c <- mtcars %>%
+  rownames_to_column() %>%
+  rename(car=rowname)
+
+plot(c$mpg)
+```

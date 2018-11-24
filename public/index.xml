@@ -17,7 +17,7 @@
       <pubDate>Sat, 24 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>http://www.cerebralmastication.com/2018/11/24/named-excel-tables-a-very-good-idea/</guid>
-      <description></description>
+      <description> library(tidyverse) c &amp;lt;- mtcars %&amp;gt;% rownames_to_column() %&amp;gt;% rename(car=rowname) plot(c$mpg) </description>
     </item>
     
     <item>
