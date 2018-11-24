@@ -14,8 +14,8 @@ topic = "topics"
 # Shown in the home page
 subtitle = "A Hugo Theme"
 brand = "Blackburn"
-googleAnalytics = "Your Google Analytics tracking ID"
-disqus = "Your Disqus shortname"
+googleAnalytics = "UA-129487349-1"
+disqus = "cerebralmastication"
 # CSS name for highlight.js
 highlightjs = "androidstudio"
 highlightjs_extra_languages = ["yaml"]
@@ -24,10 +24,12 @@ dateFormat = "02 Jan 2006, 15:04"
 # (relative to /static folder)
 custom_css = ["css/my.css"]
 custom_js = ["js/my.js"]
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
-[params.piwikAnalytics]
-siteid = 2
-piwikroot = "//analytics.example.com/"
+
+# [params.piwikAnalytics]
+# siteid = 2
+# piwikroot = "//analytics.example.com/"
 
 [menu]
 # Shown in the side menu.
