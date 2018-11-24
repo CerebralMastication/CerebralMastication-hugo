@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Plyr on Cerebral Mastication</title>
-    <link>https://cerebralmastication.com/tags/plyr/</link>
+    <link>http://cerebralmastication.com/tags/plyr/</link>
     <description>Recent content in Plyr on Cerebral Mastication</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Fri, 11 Dec 2009 19:30:55 +0000</lastBuildDate>
     
-	<atom:link href="https://cerebralmastication.com/tags/plyr/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://cerebralmastication.com/tags/plyr/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Struggling with apply() in R</title>
-      <link>https://cerebralmastication.com/2009/12/struggling-with-apply-in-r/</link>
+      <link>http://cerebralmastication.com/2009/12/struggling-with-apply-in-r/</link>
       <pubDate>Fri, 11 Dec 2009 19:30:55 +0000</pubDate>
       
-      <guid>https://cerebralmastication.com/2009/12/struggling-with-apply-in-r/</guid>
+      <guid>http://cerebralmastication.com/2009/12/struggling-with-apply-in-r/</guid>
       <description>It&amp;rsquo;s common knowledge that I struggle wrapping my head around the apply functions in R. That is illustrated very clearly in the following discussion on Stack Overflow:
 
 Dirk&amp;rsquo;s comment is actually spot on. I&amp;rsquo;ve asked the same damn question at least 4-5 times. Only I didn&amp;rsquo;t really understand it was the same question. That&amp;rsquo;s one of the problems of not really being good at something; it&amp;rsquo;s hard to think abstractly about it.</description>
@@ -24,10 +24,10 @@ Dirk&amp;rsquo;s comment is actually spot on. I&amp;rsquo;ve asked the same damn
     
     <item>
       <title>A Fast Intro to PLYR for R</title>
-      <link>https://cerebralmastication.com/2009/08/a-fast-intro-to-plyr-for-r/</link>
+      <link>http://cerebralmastication.com/2009/08/a-fast-intro-to-plyr-for-r/</link>
       <pubDate>Thu, 27 Aug 2009 20:00:52 +0000</pubDate>
       
-      <guid>https://cerebralmastication.com/2009/08/a-fast-intro-to-plyr-for-r/</guid>
+      <guid>http://cerebralmastication.com/2009/08/a-fast-intro-to-plyr-for-r/</guid>
       <description>I&amp;rsquo;m not dead yet! Although it has been rumored that I am. The new job is going great and I&amp;rsquo;m thrilled to be with a new firm doing interesting work alongside smart people. It makes me seem smarter by simple association.
 There&amp;rsquo;s been a lot going on recently in the R user community. There was anR flash mob of Stack Overflow which resulted in a noticeable increase in the number of R questions and answers in SO.</description>
     </item>

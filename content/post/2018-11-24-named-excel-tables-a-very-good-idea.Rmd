@@ -1,0 +1,11 @@
+---
+title: 'Named Excel Tables: A very good idea'
+author: JD Long
+date: '2018-11-24'
+slug: named-excel-tables-a-very-good-idea
+categories:
+  - Tools
+tags:
+  - Excel
+---
+

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Copula on Cerebral Mastication</title>
-    <link>https://cerebralmastication.com/tags/copula/</link>
+    <link>http://cerebralmastication.com/tags/copula/</link>
     <description>Recent content in Copula on Cerebral Mastication</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Fri, 27 Feb 2009 14:41:36 +0000</lastBuildDate>
     
-	<atom:link href="https://cerebralmastication.com/tags/copula/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://cerebralmastication.com/tags/copula/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Copulas in the News</title>
-      <link>https://cerebralmastication.com/2009/02/copulas-in-the-news/</link>
+      <link>http://cerebralmastication.com/2009/02/copulas-in-the-news/</link>
       <pubDate>Fri, 27 Feb 2009 14:41:36 +0000</pubDate>
       
-      <guid>https://cerebralmastication.com/2009/02/copulas-in-the-news/</guid>
+      <guid>http://cerebralmastication.com/2009/02/copulas-in-the-news/</guid>
       <description>I don&amp;rsquo;t want this blog to become an echo chamber of the same crap they blog about over at Revolutions Blog, but they pointed out a really good article from Wired magazine on the topic of the Gaussian Copula and its roll in the current market meltdown. I was pretty impressed that the author, Felix Salmon was able to boil the issues down well and even give really good examples of how correlations can change over time.</description>
     </item>
     

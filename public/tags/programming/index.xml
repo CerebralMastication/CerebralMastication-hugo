@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programming on Cerebral Mastication</title>
-    <link>https://cerebralmastication.com/tags/programming/</link>
+    <link>http://cerebralmastication.com/tags/programming/</link>
     <description>Recent content in Programming on Cerebral Mastication</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Tue, 10 Mar 2009 23:34:10 +0000</lastBuildDate>
     
-	<atom:link href="https://cerebralmastication.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://cerebralmastication.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Programmer Quotes</title>
-      <link>https://cerebralmastication.com/2009/03/programmer-quotes/</link>
+      <link>http://cerebralmastication.com/2009/03/programmer-quotes/</link>
       <pubDate>Tue, 10 Mar 2009 23:34:10 +0000</pubDate>
       
-      <guid>https://cerebralmastication.com/2009/03/programmer-quotes/</guid>
+      <guid>http://cerebralmastication.com/2009/03/programmer-quotes/</guid>
       <description>Since I am an economist and not a computer scientist I sometimes feel like I&amp;rsquo;m not a real programmer, even though I spend hours hacking together bad code. One of my feelings of inadequacy is that all my programs seem to spend 85% of the time on what I have come to call &amp;ldquo;plumbing&amp;rdquo; and only 15% on actually doing useful stuff. According to this quote I ran across today, I&amp;rsquo;m way better than average:</description>
     </item>
     
