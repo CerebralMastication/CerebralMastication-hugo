@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Darts on Cerebral Mastication</title>
-    <link>http://cerebralmastication.com/tags/darts/</link>
+    <link>http://www.cerebralmastication.com/tags/darts/</link>
     <description>Recent content in Darts on Cerebral Mastication</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Fri, 16 Apr 2010 18:05:20 +0000</lastBuildDate>
     
-	<atom:link href="http://cerebralmastication.com/tags/darts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.cerebralmastication.com/tags/darts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Simulating Dart Throws in R</title>
-      <link>http://cerebralmastication.com/2010/04/simulating-dart-throws-in-r-part-1-of-many/</link>
+      <link>http://www.cerebralmastication.com/2010/04/simulating-dart-throws-in-r-part-1-of-many/</link>
       <pubDate>Fri, 16 Apr 2010 18:05:20 +0000</pubDate>
       
-      <guid>http://cerebralmastication.com/2010/04/simulating-dart-throws-in-r-part-1-of-many/</guid>
+      <guid>http://www.cerebralmastication.com/2010/04/simulating-dart-throws-in-r-part-1-of-many/</guid>
       <description>Back in November 2009 Wired wrote an article about some grad students who decided to try to stochastically model throwing darts. Because I don&amp;rsquo;t actually read printed material I didn&amp;rsquo;t see the article until a couple of months ago. My immediate thought was, &amp;ldquo;hey, I drink beer. I throw darts. I build stochastic models. Why haven&amp;rsquo;t I done this?&amp;rdquo; Well we all know why I haven&amp;rsquo;t done this. I have a job and a 2 year old daughter and I like my wife.</description>
     </item>
     

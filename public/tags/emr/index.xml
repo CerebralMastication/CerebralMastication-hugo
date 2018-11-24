@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Emr on Cerebral Mastication</title>
-    <link>http://cerebralmastication.com/tags/emr/</link>
+    <link>http://www.cerebralmastication.com/tags/emr/</link>
     <description>Recent content in Emr on Cerebral Mastication</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Mon, 28 Jun 2010 15:38:42 +0000</lastBuildDate>
     
-	<atom:link href="http://cerebralmastication.com/tags/emr/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.cerebralmastication.com/tags/emr/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Bootstrapping the latest R into Amazon Elastic Map Reduce</title>
-      <link>http://cerebralmastication.com/2010/06/bootstrapping-the-latest-r-into-amazon-elastic-map-reduce/</link>
+      <link>http://www.cerebralmastication.com/2010/06/bootstrapping-the-latest-r-into-amazon-elastic-map-reduce/</link>
       <pubDate>Mon, 28 Jun 2010 15:38:42 +0000</pubDate>
       
-      <guid>http://cerebralmastication.com/2010/06/bootstrapping-the-latest-r-into-amazon-elastic-map-reduce/</guid>
+      <guid>http://www.cerebralmastication.com/2010/06/bootstrapping-the-latest-r-into-amazon-elastic-map-reduce/</guid>
       <description>I&amp;rsquo;ve been continuing to muck around with using R inside of Amazon Elastic Map reduce jobs. I&amp;rsquo;ve been working on abstracting the lapply() logic so that R will farm the pieces out to Amazon EMR. This is coming along really well, thanks in no small part to the Stack Overflow [r] community. I have no idea how crappy coders like me got anything at all done before the Interwebs.
 One of the immediate hurdles faced when trying to use AMZN EMR in anger is that the default version of R on EMR is 2.</description>
     </item>

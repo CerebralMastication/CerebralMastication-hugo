@@ -2,9 +2,9 @@
 title: "About"
 date: "2018-11-23"
 sidemenu: "true"
-description: "About me and this site"
+description: "About JD Long and this site"
 ---
-<img src="/./about_files/jd_long_face.jpg" alt="James (JD) Long" width="50%"/>
+<img src="/./about_files/jd_long_face.jpg" alt="James (JD) Long" width="20%" class="center" />
 
 
 Hey, y'all. I'm JD Long the Masticator in Residence at CerebralMastication.com. This is a dumping grounds for my thoughts and pontification on analytics, data, data science, risk analytics, and miscellany. 
@@ -13,7 +13,7 @@ What's my background? Well my career arc is captured over on my [LinkedIn profil
 
 ### DataFramed Podcast
 
-My friend, Hugo Bowne-Anderson graciously invited me to speak with him on the [DataFramed podcast from DataCamp](https://www.datacamp.com/community/podcast/data-science-insurance). We discussed my background with risk, insurance, and why you should "plot your damn data!" Hugo was a great interviewer and much fun to chat with:  
+My friend, Hugo Bowne-Anderson, graciously invited me to speak with him on the [DataFramed podcast from DataCamp](https://www.datacamp.com/community/podcast/data-science-insurance). We discussed my background with risk, insurance, and why you should "plot your damn data!" Hugo was a great interviewer and much fun to chat with:  
 
 <a href="https://soundcloud.com/dataframed/37-data-science-and-insurance-with-jd-long">
   <img src="/./about_files/dataframed.png" 

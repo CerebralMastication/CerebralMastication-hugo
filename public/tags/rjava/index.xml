@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rjava on Cerebral Mastication</title>
-    <link>http://cerebralmastication.com/tags/rjava/</link>
+    <link>http://www.cerebralmastication.com/tags/rjava/</link>
     <description>Recent content in Rjava on Cerebral Mastication</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Tue, 30 Nov 2010 19:51:17 +0000</lastBuildDate>
     
-	<atom:link href="http://cerebralmastication.com/tags/rjava/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.cerebralmastication.com/tags/rjava/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Controlling Amazon Web Services using rJava and the AWS Java SDK</title>
-      <link>http://cerebralmastication.com/2010/11/controlling-amazon-web-services-using-rjava-and-the-aws-java-sdk/</link>
+      <link>http://www.cerebralmastication.com/2010/11/controlling-amazon-web-services-using-rjava-and-the-aws-java-sdk/</link>
       <pubDate>Tue, 30 Nov 2010 19:51:17 +0000</pubDate>
       
-      <guid>http://cerebralmastication.com/2010/11/controlling-amazon-web-services-using-rjava-and-the-aws-java-sdk/</guid>
+      <guid>http://www.cerebralmastication.com/2010/11/controlling-amazon-web-services-using-rjava-and-the-aws-java-sdk/</guid>
       <description>I&amp;rsquo;ve been messing around with using Amazon Web Services for a while. I&amp;rsquo;ve had some projects where I wanted to upload files to S3 or fire off EMR jobs. I&amp;rsquo;ve been controlling AWS services using a hodgepodge of command line tools and the R system() function to call the tools from the command line. This has some real disadvantages, however. Using the command line tools means each tool has to be configured individually which is painful on a new machine.</description>
     </item>
     

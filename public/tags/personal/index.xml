@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Personal on Cerebral Mastication</title>
-    <link>http://cerebralmastication.com/tags/personal/</link>
+    <link>http://www.cerebralmastication.com/tags/personal/</link>
     <description>Recent content in Personal on Cerebral Mastication</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Tue, 16 Jun 2009 15:58:17 +0000</lastBuildDate>
     
-	<atom:link href="http://cerebralmastication.com/tags/personal/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.cerebralmastication.com/tags/personal/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Keeping Technical Talent or Why I Just Quit My Job</title>
-      <link>http://cerebralmastication.com/2009/06/keeping-technical-talent-or-why-i-just-quit-my-job/</link>
+      <link>http://www.cerebralmastication.com/2009/06/keeping-technical-talent-or-why-i-just-quit-my-job/</link>
       <pubDate>Tue, 16 Jun 2009 15:58:17 +0000</pubDate>
       
-      <guid>http://cerebralmastication.com/2009/06/keeping-technical-talent-or-why-i-just-quit-my-job/</guid>
+      <guid>http://www.cerebralmastication.com/2009/06/keeping-technical-talent-or-why-i-just-quit-my-job/</guid>
       <description>[caption id=&amp;ldquo;attachment_292&amp;rdquo; align=&amp;ldquo;alignleft&amp;rdquo; width=&amp;ldquo;178&amp;rdquo; caption=&amp;ldquo;Spolsky Drinking Straight Vodka&amp;hellip; L&amp;rsquo;Chaim!&amp;rdquo;][/caption]
 I&amp;rsquo;ve been a long time reader of Joel Splosky. I enjoy his writing. He is Jewish, opinionated, and successful. I, am only opinionated so I enjoy his differing experience from my own. Joel runs a software development firm in NYC. He also really understands developers. His business model is, in short: Hire great developers, keep them happy, count the money. While his writing is almost totally focused on software developers, there are a LOT of allegories with other technical knowledge workers.</description>
     </item>
