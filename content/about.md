@@ -55,11 +55,11 @@ In May 2017 I shared some thoughts about how empathy with the audience for (and 
      alt="Empathy as a Tech Skill">
 </a>
 
-### That R in Finance lightening talk that rhymed
+### That R in Finance lightning talk that rhymed
 
 There are rumors circulating that in 2011 I gave a presentation at the R in Finance conference in Chicago where my entire presentation was in Dr. Seuss style rhyme. Those rumors are true:
 <a href="https://soundcloud.com/jdlong/segue-pres">
-  <img src="/./soundcloud_segue.png" 
+  <img src="/./about_files/soundcloud_segue.png" 
      width="50%" 
      title="Segue in Seuss Rhyme" 
      alt="Segue in Seuss Rhyme">
@@ -67,6 +67,6 @@ There are rumors circulating that in 2011 I gave a presentation at the R in Fina
 
 
 
-Have questions or suggestions? [Yell at me on Twitter](https://twitter.com/CMastication). The source code for this blog is all availiable on [my Github Account](https://github.com/CerebralMastication/CerebralMastication-hugo). I'm using [Hugo](https://gohugo.io/) with Blogdown hosted by [Netlify](https://www.netlify.com/), so when I change the contents of the Github repo, the site is rebuilt by Netlify using the latest source from Github. 
+Have questions or suggestions? [Yell at me on Twitter](https://twitter.com/CMastication). The source code for this blog is all availiable on [my Github Account](https://github.com/CerebralMastication/CerebralMastication-hugo). I'm using [Hugo](https://gohugo.io/) with [Blogdown](https://bookdown.org/yihui/blogdown/) hosted by [Netlify](https://www.netlify.com/), so when I change the contents of the Github repo, the site is rebuilt by Netlify using the latest source from Github. It's an amazing workflow and if you do websites and use *R*, it's hard to beat the Hugo/Blogdown/Netlify combination. 
 
 
