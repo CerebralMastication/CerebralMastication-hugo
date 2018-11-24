@@ -9,9 +9,10 @@ Hey, y'all. I'm JD Long the Masticator in Residence at CerebralMastication.com. 
 
 Various artifacts I've left laying around:
 
-* [Intro to `dplyr` presented at Google NYC] (https://www.youtube.com/watch?v=EOvN3wPdQoM&feature=youtu.be&t=11m50s)
+## [Intro to `dplyr` presented at Google NYC] (https://www.youtube.com/watch?v=EOvN3wPdQoM&feature=youtu.be&t=11m50s)
 <img src="/./about_files/Tidy_by_Nature.png" alt="Tidy By Nature at Google NYC" width="50%"/>
-* more... 
+
+## more... 
 
 ## Setup
 
