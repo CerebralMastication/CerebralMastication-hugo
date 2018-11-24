@@ -17,6 +17,6 @@ c <- mtcars %>%
   rename(car=rowname)
 ```
 
-```{r excel-table, fig.cap='Excel Table', echo=FALSE, out.width='30%'}
+```{r excel-table, fig.cap='Excel Table', echo=FALSE, out.width='60%'}
 knitr::include_graphics("/images/excel_table.png")
 ```
