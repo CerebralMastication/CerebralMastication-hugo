@@ -8,9 +8,10 @@ description: "About me and this site"
 Hey, y'all. I'm JD Long the Masticator in Residence at CerebralMastication.com. This is a dumping grounds for my thoughts and pontification on analytics, data, data science, risk analytics, and miscellany. 
 
 Various artifacts I've left laying around:
+
 * [Intro to `dplyr` presented at Google NYC] (https://www.youtube.com/watch?v=EOvN3wPdQoM&feature=youtu.be&t=11m50s)
-<img src="/./about_files/Tidy_by_Nature.png" alt="Tidy By Nature at Google NYC" width="30%"/>
-* 
+<img src="/./about_files/Tidy_by_Nature.png" alt="Tidy By Nature at Google NYC" width="50%"/>
+* more... 
 
 ## Setup
 
