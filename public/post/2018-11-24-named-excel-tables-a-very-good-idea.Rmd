@@ -14,7 +14,7 @@ Excel has this construct they call and "Excel Table" which is about as helpful a
 
 Excel Tables are the things we get when we click on "Format as Table" in Excel: 
 
-```{r excel-table-make, fig.cap='Format as an Excel Table', echo=FALSE, out.width='75%'}
+```{r excel-table-make, fig.cap='Format as an Excel Table', echo=FALSE, out.width='75%', class='image_shadow'}
 knitr::include_graphics("/images/Format_as_Table.png")
 ```
 Although "Format as Table" is as misleading as the name because putting your data in an Excel Table does more than just change the formatting. It puts the data in an object that will help you considerably in the future, make your formulas easier to read, and keep you from shooting your toes off. So, despite the poor name choice using Excel Tables is a "Very Good Idea". 
