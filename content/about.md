@@ -14,7 +14,7 @@ What's my background? Well my career arc is captured over on my [LinkedIn profil
 My friend, Hugo Bowne-Anderson graciously invited me to speak with him on the [DataFramed podcast from DataCamp](https://www.datacamp.com/community/podcast/data-science-insurance). We discussed my background with risk, insurance, and why you should "plot your damn data!" Hugo was a great interviewer and much fun to chat with:  
 
 <a href="https://soundcloud.com/dataframed/37-data-science-and-insurance-with-jd-long">
-  <img src="/./dataframed.png" 
+  <img src="/./about_files/dataframed.png" 
      width="50%" 
      title="JD Long on DataFramed" 
      alt="JD Long on DataFramed">
@@ -49,7 +49,7 @@ In March 2017 I was a guest on the rOpenSci Community Call where I presented "Th
 In May 2017 I shared some thoughts about how empathy with the audience for (and subjects of) our analysis can make us better data scientists. 
 
 <a href="https://www.youtube.com/watch?v=P7VnKgVMLvY">
-  <img src="/./empathy.png" 
+  <img src="/./about_files/empathy.png" 
      width="50%" 
      title="Empathy as a Tech Skill" 
      alt="Empathy as a Tech Skill">
