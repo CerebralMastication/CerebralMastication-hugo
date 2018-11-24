@@ -88,12 +88,3 @@ i {
   color: #265778;
 }
 
-.image_shadow img {
-  background-color: #808080;
-  padding:1px;
-  margin-right: 14px;
-  display: block;
-  -webkit-box-shadow: 6px 6px 2px #ccc;
-  -moz-box-shadow: 6px 6px 2px #ccc;
-  box-shadow: 6px 6px 2px #ccc;
-}
