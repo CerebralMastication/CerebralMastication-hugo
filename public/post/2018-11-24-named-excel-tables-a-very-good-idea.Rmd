@@ -18,5 +18,5 @@ c <- mtcars %>%
 ```
 
 ```{r excel-table, fig.cap='Excel Table', echo=FALSE}
-knitr::include_graphics("../../static/images/excel_table.png")
+knitr::include_graphics("/public/images/excel_table.png")
 ```
