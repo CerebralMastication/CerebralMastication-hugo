@@ -2,77 +2,77 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rant on Cerebral Mastication</title>
-    <link>http://cerebralmastication.com/tags/rant/</link>
+    <link>http://cerebralmastication.netlify.com/tags/rant/</link>
     <description>Recent content in Rant on Cerebral Mastication</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Fri, 23 May 2014 12:56:15 +0000</lastBuildDate>
     
-	<atom:link href="http://cerebralmastication.com/tags/rant/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://cerebralmastication.netlify.com/tags/rant/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Teens and the Internet...</title>
-      <link>http://cerebralmastication.com/2014/05/teens-and-the-internet/</link>
+      <link>http://cerebralmastication.netlify.com/2014/05/teens-and-the-internet/</link>
       <pubDate>Fri, 23 May 2014 12:56:15 +0000</pubDate>
       
-      <guid>http://cerebralmastication.com/2014/05/teens-and-the-internet/</guid>
+      <guid>http://cerebralmastication.netlify.com/2014/05/teens-and-the-internet/</guid>
       <description>Given that I have a small version of myself running around my house, I think about how she&amp;rsquo;ll use the Internet when she gets older. Just the other day she, &amp;ldquo;Asked Google something&amp;rdquo; which made me realize that, although she&amp;rsquo;s just barely literate, my kid is going to &amp;ldquo;be online&amp;rdquo; for the rest of her life. Although I&amp;rsquo;m not really sure what &amp;ldquo;be online&amp;rdquo; will mean for her over the years.</description>
     </item>
     
     <item>
       <title>The O&#39;Reilly Safari Books Online app broke my heart</title>
-      <link>http://cerebralmastication.com/2010/11/the-oreilly-safari-books-online-app-broke-my-heart/</link>
+      <link>http://cerebralmastication.netlify.com/2010/11/the-oreilly-safari-books-online-app-broke-my-heart/</link>
       <pubDate>Thu, 11 Nov 2010 22:15:54 +0000</pubDate>
       
-      <guid>http://cerebralmastication.com/2010/11/the-oreilly-safari-books-online-app-broke-my-heart/</guid>
+      <guid>http://cerebralmastication.netlify.com/2010/11/the-oreilly-safari-books-online-app-broke-my-heart/</guid>
       <description>I&amp;rsquo;m a huge O&amp;rsquo;Reilly Media fan boy. I can&amp;rsquo;t hide it. I hear Tim O&amp;rsquo;Reilly speak at conferences and I think to myself, &amp;ldquo;Screw being president, I want to be Tim O&amp;rsquo;Reilly.&amp;rdquo; I&amp;rsquo;ve been a subscriber to their online book services called Safari Books Online for years. Every month I see the bill for $43 come through and I think to myself, &amp;ldquo;Self, that&amp;rsquo;s the best $43 you spent all month.</description>
     </item>
     
     <item>
       <title>Remote Backup Fail and How to Silently Copy Files</title>
-      <link>http://cerebralmastication.com/2010/01/remote-backup-fail-and-how-to-silently-copy-files/</link>
+      <link>http://cerebralmastication.netlify.com/2010/01/remote-backup-fail-and-how-to-silently-copy-files/</link>
       <pubDate>Tue, 19 Jan 2010 23:33:01 +0000</pubDate>
       
-      <guid>http://cerebralmastication.com/2010/01/remote-backup-fail-and-how-to-silently-copy-files/</guid>
+      <guid>http://cerebralmastication.netlify.com/2010/01/remote-backup-fail-and-how-to-silently-copy-files/</guid>
       <description>Recently I&amp;rsquo;ve run into frustrations with Iron Mountain Connected Backup so I&amp;rsquo;ve been looking for alternatives.
 Alternatives: I&amp;rsquo;ve been running Jungle Disk at home and really like it. I could use that at work except I have not set up an Amazon or RackSpace account with my work credit card. But I am in Chicago and my database server/ file server is in Dallas TX. So I decided to just create a mirror on my laptop onto a shared drive on my server.</description>
     </item>
     
     <item>
       <title>Using Amazon EC2 to Thwart Crappy Internal IT Services</title>
-      <link>http://cerebralmastication.com/2009/11/using-amazon-ec2-to-thwart-crappy-internal-it-services/</link>
+      <link>http://cerebralmastication.netlify.com/2009/11/using-amazon-ec2-to-thwart-crappy-internal-it-services/</link>
       <pubDate>Tue, 03 Nov 2009 15:28:26 +0000</pubDate>
       
-      <guid>http://cerebralmastication.com/2009/11/using-amazon-ec2-to-thwart-crappy-internal-it-services/</guid>
+      <guid>http://cerebralmastication.netlify.com/2009/11/using-amazon-ec2-to-thwart-crappy-internal-it-services/</guid>
       <description>The alternative title of this blog post is &amp;ldquo;How to get your sorry ass fired by violating your internal IT policies.&amp;rdquo; So keep that in mind as you read this.
 I say lots of silly crap. Twitter allows me the pleasure of sharing this blather with the world. I was a little surprised that of all the things I have said over the last few months the above Tweet received the most discussion.</description>
     </item>
     
     <item>
       <title>Copulas in the News</title>
-      <link>http://cerebralmastication.com/2009/02/copulas-in-the-news/</link>
+      <link>http://cerebralmastication.netlify.com/2009/02/copulas-in-the-news/</link>
       <pubDate>Fri, 27 Feb 2009 14:41:36 +0000</pubDate>
       
-      <guid>http://cerebralmastication.com/2009/02/copulas-in-the-news/</guid>
+      <guid>http://cerebralmastication.netlify.com/2009/02/copulas-in-the-news/</guid>
       <description>I don&amp;rsquo;t want this blog to become an echo chamber of the same crap they blog about over at Revolutions Blog, but they pointed out a really good article from Wired magazine on the topic of the Gaussian Copula and its roll in the current market meltdown. I was pretty impressed that the author, Felix Salmon was able to boil the issues down well and even give really good examples of how correlations can change over time.</description>
     </item>
     
     <item>
       <title>OMG, WTF?! BBQ!!11!1</title>
-      <link>http://cerebralmastication.com/2009/02/omg-wtf-bbq111/</link>
+      <link>http://cerebralmastication.netlify.com/2009/02/omg-wtf-bbq111/</link>
       <pubDate>Thu, 19 Feb 2009 19:15:23 +0000</pubDate>
       
-      <guid>http://cerebralmastication.com/2009/02/omg-wtf-bbq111/</guid>
+      <guid>http://cerebralmastication.netlify.com/2009/02/omg-wtf-bbq111/</guid>
       <description>It blows my mind that organizations choose names and acronyms that have alternative, non-flattering meaning. I understand this when there is language translation involved. No one at Ford knew that Nova sounds just like &amp;ldquo;no go&amp;rdquo; in Spanish. I mean, it&amp;rsquo;s Ford, they were educated in Detroit public schools. They don&amp;rsquo;t speak Mexican. But take Virginia, for example. Like other states, VA gives school kids standardized exams. Every states has some acronym for these exams.</description>
     </item>
     
     <item>
       <title>Annoying Security Paper Tiger - Staples.com</title>
-      <link>http://cerebralmastication.com/2009/02/annoying-security-paper-tiger-staplescom/</link>
+      <link>http://cerebralmastication.netlify.com/2009/02/annoying-security-paper-tiger-staplescom/</link>
       <pubDate>Fri, 13 Feb 2009 20:31:57 +0000</pubDate>
       
-      <guid>http://cerebralmastication.com/2009/02/annoying-security-paper-tiger-staplescom/</guid>
+      <guid>http://cerebralmastication.netlify.com/2009/02/annoying-security-paper-tiger-staplescom/</guid>
       <description>Today I have a couple I want to print for reading later and I want to print them duplex so the stack of crap would be smaller. I need to go to Staples (the office supply store) later so I thought I would just use their online printing tool to print the document at their store and then pick it up when I go there later today. As with most sites they want a bunch of personal info from me so I diligently fill out 15 text boxes.</description>
     </item>
     

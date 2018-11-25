@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Women on Cerebral Mastication</title>
-    <link>http://cerebralmastication.com/tags/women/</link>
+    <link>http://cerebralmastication.netlify.com/tags/women/</link>
     <description>Recent content in Women on Cerebral Mastication</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Tue, 24 Mar 2009 23:27:09 +0000</lastBuildDate>
     
-	<atom:link href="http://cerebralmastication.com/tags/women/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://cerebralmastication.netlify.com/tags/women/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Happy Ada Lovelace Day!</title>
-      <link>http://cerebralmastication.com/2009/03/happy-ada-lovelace-day/</link>
+      <link>http://cerebralmastication.netlify.com/2009/03/happy-ada-lovelace-day/</link>
       <pubDate>Tue, 24 Mar 2009 23:27:09 +0000</pubDate>
       
-      <guid>http://cerebralmastication.com/2009/03/happy-ada-lovelace-day/</guid>
+      <guid>http://cerebralmastication.netlify.com/2009/03/happy-ada-lovelace-day/</guid>
       <description>Today (March 24th) is Ada Lovelace day. It&amp;rsquo;s a day to remember that chicks dig technology and you don&amp;rsquo;t have to have a penis to be a geek. Mom, I know you find that hard to believe but it&amp;rsquo;s true.
 So part of Ada Lovelace day is to blog about women in technology. I love technology. I love women. I have a daughter named Ada whom I love. So it seems like I am more qualified than most to blog about women in tech.</description>
     </item>

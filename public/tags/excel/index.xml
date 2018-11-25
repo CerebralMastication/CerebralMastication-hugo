@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Excel on Cerebral Mastication</title>
-    <link>http://cerebralmastication.com/tags/excel/</link>
+    <link>http://cerebralmastication.netlify.com/tags/excel/</link>
     <description>Recent content in Excel on Cerebral Mastication</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Sat, 24 Nov 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://cerebralmastication.com/tags/excel/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://cerebralmastication.netlify.com/tags/excel/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Named Excel Tables: A very good idea</title>
-      <link>http://cerebralmastication.com/2018/11/24/named-excel-tables-a-very-good-idea/</link>
+      <link>http://cerebralmastication.netlify.com/2018/11/24/named-excel-tables-a-very-good-idea/</link>
       <pubDate>Sat, 24 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://cerebralmastication.com/2018/11/24/named-excel-tables-a-very-good-idea/</guid>
+      <guid>http://cerebralmastication.netlify.com/2018/11/24/named-excel-tables-a-very-good-idea/</guid>
       <description>Excel has this construct they call and “Excel Table” which is about as helpful as a bicycle maker naming their bike model, “Mountain Bike.” But the Excel folks named these things “Excel Table” so in order to prevent confusion (as if) I try to always capitalize the T in “Table” to make it clear we’re talking about a specific thing, not just any table of data in Excel.
 Excel Tables are the things we get when we click on “Format as Table” in Excel:</description>
     </item>

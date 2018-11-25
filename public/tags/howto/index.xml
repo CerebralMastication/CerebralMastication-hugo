@@ -2,98 +2,98 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Howto on Cerebral Mastication</title>
-    <link>http://cerebralmastication.com/tags/howto/</link>
+    <link>http://cerebralmastication.netlify.com/tags/howto/</link>
     <description>Recent content in Howto on Cerebral Mastication</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Thu, 12 May 2011 20:31:31 +0000</lastBuildDate>
     
-	<atom:link href="http://cerebralmastication.com/tags/howto/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://cerebralmastication.netlify.com/tags/howto/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Fitting Distribution X to Data From Distribution Y</title>
-      <link>http://cerebralmastication.com/2011/05/fitting-distribution-x-to-data-from-distribution-y/</link>
+      <link>http://cerebralmastication.netlify.com/2011/05/fitting-distribution-x-to-data-from-distribution-y/</link>
       <pubDate>Thu, 12 May 2011 20:31:31 +0000</pubDate>
       
-      <guid>http://cerebralmastication.com/2011/05/fitting-distribution-x-to-data-from-distribution-y/</guid>
+      <guid>http://cerebralmastication.netlify.com/2011/05/fitting-distribution-x-to-data-from-distribution-y/</guid>
       <description>I had someone ask me about fitting a beta distribution to data drawn from a gamma distribution and how well the distribution would fit. I&amp;rsquo;m not a &amp;ldquo;closed form&amp;rdquo; kinda guy. I&amp;rsquo;m more of a &amp;ldquo;numerical simulation&amp;rdquo; type of fellow. So I whipped up a little R code to illustrate the process then we changed the parameters of the gamma distribution to see how it impacted fit. An exercise like this is what I call building a &amp;ldquo;toy model&amp;rdquo; and I think this is invaluable as a method for building intuition and a visceral understanding of data.</description>
     </item>
     
     <item>
       <title>Your Analogy is bad... and you should feel bad!</title>
-      <link>http://cerebralmastication.com/2011/05/shell-scripting-ec2-for-fun-and-profit/</link>
+      <link>http://cerebralmastication.netlify.com/2011/05/shell-scripting-ec2-for-fun-and-profit/</link>
       <pubDate>Fri, 06 May 2011 20:57:40 +0000</pubDate>
       
-      <guid>http://cerebralmastication.com/2011/05/shell-scripting-ec2-for-fun-and-profit/</guid>
+      <guid>http://cerebralmastication.netlify.com/2011/05/shell-scripting-ec2-for-fun-and-profit/</guid>
       <description>A bad analogy can frame an entire conversation improperly. This is one of those &amp;ldquo;anecdotes from a middle-aged man posts.&amp;rdquo; So take it with a grain of salt.
 A number of years ago I worked in the risk management team for an insurance company that sold long term care (LTC) insurance. LTC insurance is a private product that covers home health care and nursing home care if the policyholder is unable to take care of themselves on their own.</description>
     </item>
     
     <item>
       <title>Details of two-way sync between two Ubuntu machines</title>
-      <link>http://cerebralmastication.com/2011/04/details-of-two-way-sync-between-two-ubuntu-machines/</link>
+      <link>http://cerebralmastication.netlify.com/2011/04/details-of-two-way-sync-between-two-ubuntu-machines/</link>
       <pubDate>Mon, 18 Apr 2011 20:48:32 +0000</pubDate>
       
-      <guid>http://cerebralmastication.com/2011/04/details-of-two-way-sync-between-two-ubuntu-machines/</guid>
+      <guid>http://cerebralmastication.netlify.com/2011/04/details-of-two-way-sync-between-two-ubuntu-machines/</guid>
       <description>In a previous post I discussed my frustrations with trying to get Dropbox or Spideroak to perform BOTH encrypted remote backup and AND fast two way file syncing. This is the detail of how I set up for two machines, both Ubuntu 10.10, to perform two way sync where a file change on either machine will result in that change being replicated on the other machine.
 I initially tried running Unison on BOTH my laptop and the server and had the server Unison set to sync with my laptop back through an SSH reverse proxy.</description>
     </item>
     
     <item>
       <title>Connecting to SQL Server from R using RJDBC</title>
-      <link>http://cerebralmastication.com/2010/09/connecting-to-sql-server-from-r-using-rjdbc/</link>
+      <link>http://cerebralmastication.netlify.com/2010/09/connecting-to-sql-server-from-r-using-rjdbc/</link>
       <pubDate>Wed, 22 Sep 2010 18:00:26 +0000</pubDate>
       
-      <guid>http://cerebralmastication.com/2010/09/connecting-to-sql-server-from-r-using-rjdbc/</guid>
+      <guid>http://cerebralmastication.netlify.com/2010/09/connecting-to-sql-server-from-r-using-rjdbc/</guid>
       <description>A few months ago I switched my laptop from Windows to Ubuntu Linux. I had been connecting to my corporate SQL Server database using RODBC on Windows so I attempted to get ODBC connectivity up and running on Ubuntu. ODBC on Ubuntu turned into an exercise in futility. I spent many hours over many days and never was able to connect from R on Ubuntu to my corp SQL Server.</description>
     </item>
     
     <item>
       <title>Principal Component Analysis (PCA) vs Ordinary Least Squares (OLS): A Visual Explanation</title>
-      <link>http://cerebralmastication.com/2010/09/principal-component-analysis-pca-vs-ordinary-least-squares-ols-a-visual-explination/</link>
+      <link>http://cerebralmastication.netlify.com/2010/09/principal-component-analysis-pca-vs-ordinary-least-squares-ols-a-visual-explination/</link>
       <pubDate>Thu, 16 Sep 2010 17:11:27 +0000</pubDate>
       
-      <guid>http://cerebralmastication.com/2010/09/principal-component-analysis-pca-vs-ordinary-least-squares-ols-a-visual-explination/</guid>
+      <guid>http://cerebralmastication.netlify.com/2010/09/principal-component-analysis-pca-vs-ordinary-least-squares-ols-a-visual-explination/</guid>
       <description>Over at stats.stackexchange.com recently, a really interesting question was raised about principal component analysis (PCA). The gist was &amp;ldquo;Thanks to my college class I can do the math, but what does it MEAN?&amp;rdquo;
 I felt like this a number of times in my life. Many of my classes were focused on the technical implementations they kinda missed the section titled &amp;ldquo;Why I give a shit.&amp;rdquo; A perfect example was my Mathematics Principles of Economics class which taught me how to manually calculate a bordered Hessian but, for the life of me, I have no idea why I would ever want to calculate such a monster.</description>
     </item>
     
     <item>
       <title>Third, and Hopefully Final, Post on Correlated Random Normal Generation (Cholesky Edition)</title>
-      <link>http://cerebralmastication.com/2010/09/cholesk-post-on-correlated-random-normal-generation/</link>
+      <link>http://cerebralmastication.netlify.com/2010/09/cholesk-post-on-correlated-random-normal-generation/</link>
       <pubDate>Thu, 02 Sep 2010 18:03:21 +0000</pubDate>
       
-      <guid>http://cerebralmastication.com/2010/09/cholesk-post-on-correlated-random-normal-generation/</guid>
+      <guid>http://cerebralmastication.netlify.com/2010/09/cholesk-post-on-correlated-random-normal-generation/</guid>
       <description>[caption id=&amp;ldquo;attachment_825&amp;rdquo; align=&amp;ldquo;alignleft&amp;rdquo; width=&amp;ldquo;250&amp;rdquo; caption=&amp;ldquo;André-Louis Cholesky is my homeboy&amp;rdquo;][/caption]
 When I did a brief post three days ago I had no plans on writing two more posts on correlated random number generation. But I&amp;rsquo;ve gotten a couple of emails, a few comments, and some Twitter feedback. In response to my first post, Gappy, calls me out and says, &amp;ldquo;the way mensches do multivariate (log)normal variates is via Cholesky. It’s simple, instructive, and fast.</description>
     </item>
     
     <item>
       <title>Even Simpler Multivariate Correlated Simulations</title>
-      <link>http://cerebralmastication.com/2010/08/even-simpler-multivariate-correlated-simulations/</link>
+      <link>http://cerebralmastication.netlify.com/2010/08/even-simpler-multivariate-correlated-simulations/</link>
       <pubDate>Tue, 31 Aug 2010 15:17:27 +0000</pubDate>
       
-      <guid>http://cerebralmastication.com/2010/08/even-simpler-multivariate-correlated-simulations/</guid>
+      <guid>http://cerebralmastication.netlify.com/2010/08/even-simpler-multivariate-correlated-simulations/</guid>
       <description>So after yesterday&amp;rsquo;s post on Simple Simulation using Copulas I got a very nice email that basically begged the question, &amp;ldquo;Dude, why are you making this so hard?&amp;rdquo; The author pointed out that if what I really want is a Gaussian correlation structure for Gaussian distributions then I could simply use the mvrnorm() function from the MASS package. Well I did a quick
 ?mvrnorm and, I&amp;rsquo;ll be damned, he&amp;rsquo;s right! The advantage of using a copula is the ability to simulate correlation structures where the correlation is different for different levels of values.</description>
     </item>
     
     <item>
       <title>Stochastic Simulation With Copulas in R</title>
-      <link>http://cerebralmastication.com/2010/08/stochastic-simulation-with-copulas-in-r/</link>
+      <link>http://cerebralmastication.netlify.com/2010/08/stochastic-simulation-with-copulas-in-r/</link>
       <pubDate>Mon, 30 Aug 2010 20:12:34 +0000</pubDate>
       
-      <guid>http://cerebralmastication.com/2010/08/stochastic-simulation-with-copulas-in-r/</guid>
+      <guid>http://cerebralmastication.netlify.com/2010/08/stochastic-simulation-with-copulas-in-r/</guid>
       <description>A friend of mine gave me a call last week and was wondering if I had a little R code that could illustrate how to do a Cholesky decomposition. He ultimately wanted to build a Monte Carlo model with correlated variables. I pointed him to a number of packages that do Cholesky decomp but then I recommended he consider just using a Gaussian Copula  and R for the whole simulation.</description>
     </item>
     
     <item>
       <title>You can Hadoop it! It&#39;s elastic! Boogie woogie woog-ie!</title>
-      <link>http://cerebralmastication.com/2010/02/you-can-hadoop-it-its-elastic-boogie-woogie-woog-ie/</link>
+      <link>http://cerebralmastication.netlify.com/2010/02/you-can-hadoop-it-its-elastic-boogie-woogie-woog-ie/</link>
       <pubDate>Tue, 16 Feb 2010 18:31:23 +0000</pubDate>
       
-      <guid>http://cerebralmastication.com/2010/02/you-can-hadoop-it-its-elastic-boogie-woogie-woog-ie/</guid>
+      <guid>http://cerebralmastication.netlify.com/2010/02/you-can-hadoop-it-its-elastic-boogie-woogie-woog-ie/</guid>
       <description>[caption id=&amp;ldquo;attachment_594&amp;rdquo; align=&amp;ldquo;alignleft&amp;rdquo; width=&amp;ldquo;261&amp;rdquo; caption=&amp;ldquo;This blog&amp;rsquo;s name in Chinese! &amp;ldquo;][/caption]
 I just came back from the future and let me be the first to tell you this: Learn some Chinese. And more than just cào nǐ niáng (肏你娘) which your friend in grad school told you means &amp;ldquo;Live happy with many blessings&amp;rdquo;. Trust me, I&amp;rsquo;ve been hanging with Madam Wu and she told me it doesn&amp;rsquo;t mean that.
 So how did I travel to the future to visit with Madam Wu, you ask?</description>
@@ -101,19 +101,19 @@ So how did I travel to the future to visit with Madam Wu, you ask?</description>
     
     <item>
       <title>Using the R multicore package in Linux with wild and passionate abandon</title>
-      <link>http://cerebralmastication.com/2010/02/using-the-r-multicore-package-in-linux-with-wild-and-passionate-abandon/</link>
+      <link>http://cerebralmastication.netlify.com/2010/02/using-the-r-multicore-package-in-linux-with-wild-and-passionate-abandon/</link>
       <pubDate>Tue, 09 Feb 2010 19:57:20 +0000</pubDate>
       
-      <guid>http://cerebralmastication.com/2010/02/using-the-r-multicore-package-in-linux-with-wild-and-passionate-abandon/</guid>
+      <guid>http://cerebralmastication.netlify.com/2010/02/using-the-r-multicore-package-in-linux-with-wild-and-passionate-abandon/</guid>
       <description>One of my primary uses for R is to build stochastic simulations of insurance portfolios and reinsurance treaties. It&amp;rsquo;s not uncommon for each of my simulations to take 20 seconds or more to complete (if you&amp;rsquo;re doing the math, that&amp;rsquo;s 55 hours for 10K sims or, approximately 453 games of solitaire) . Initially I ran my sims in R running on an Oracle VirtualBox (Oracle now owns Virtualbox! gasp ) running Ubuntu.</description>
     </item>
     
     <item>
       <title>Not Just Normal... Gaussian</title>
-      <link>http://cerebralmastication.com/2009/06/not-just-normal-gaussian/</link>
+      <link>http://cerebralmastication.netlify.com/2009/06/not-just-normal-gaussian/</link>
       <pubDate>Tue, 16 Jun 2009 16:26:46 +0000</pubDate>
       
-      <guid>http://cerebralmastication.com/2009/06/not-just-normal-gaussian/</guid>
+      <guid>http://cerebralmastication.netlify.com/2009/06/not-just-normal-gaussian/</guid>
       <description>[caption id=&amp;ldquo;&amp;rdquo; align=&amp;ldquo;alignleft&amp;rdquo; width=&amp;ldquo;188&amp;rdquo; caption=&amp;ldquo;Pretty Normal&amp;rdquo;][/caption]
 Dave, over at The Revolutions Blog,posted about the big &amp;lsquo;ol list of graphs created with R that are over at Wikimedia Commons. As I was scrolling through the list I recognized the standard normal distribution from the Wikipedia article on the same topic.
 Below is the fairly simple source code with lots of comments. Here&amp;rsquo;s the source. Run it at home&amp;hellip; for fun and profit.</description>
@@ -121,10 +121,10 @@ Below is the fairly simple source code with lots of comments. Here&amp;rsquo;s t
     
     <item>
       <title>Box plot vs. Violin plot in R</title>
-      <link>http://cerebralmastication.com/2009/02/box-plot-vs-violin-plot-in-r/</link>
+      <link>http://cerebralmastication.netlify.com/2009/02/box-plot-vs-violin-plot-in-r/</link>
       <pubDate>Wed, 18 Feb 2009 19:50:15 +0000</pubDate>
       
-      <guid>http://cerebralmastication.com/2009/02/box-plot-vs-violin-plot-in-r/</guid>
+      <guid>http://cerebralmastication.netlify.com/2009/02/box-plot-vs-violin-plot-in-r/</guid>
       <description>So Andrew Gelman hates box plots. Not that you should give a buck what Gelman thinks. I&amp;rsquo;m just setting this blog post up, OK. So stick with me. Gelman also thought this XKCD cartoon was NOT funny :
 
 There&amp;rsquo;s some correlation as well as causation. I could be wrong, but I suspect that the reason Gelman does not like the XKCD cartoon is because he&amp;rsquo;s very literal, as geeks can be.</description>

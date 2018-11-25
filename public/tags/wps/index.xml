@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wps on Cerebral Mastication</title>
-    <link>http://cerebralmastication.com/tags/wps/</link>
+    <link>http://cerebralmastication.netlify.com/tags/wps/</link>
     <description>Recent content in Wps on Cerebral Mastication</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Thu, 05 Feb 2009 17:03:12 +0000</lastBuildDate>
     
-	<atom:link href="http://cerebralmastication.com/tags/wps/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://cerebralmastication.netlify.com/tags/wps/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Second Verse, Same as the First - SAS is the new Insightful</title>
-      <link>http://cerebralmastication.com/2009/02/second-verse-same-as-the-first-sas-is-the-new-insightful/</link>
+      <link>http://cerebralmastication.netlify.com/2009/02/second-verse-same-as-the-first-sas-is-the-new-insightful/</link>
       <pubDate>Thu, 05 Feb 2009 17:03:12 +0000</pubDate>
       
-      <guid>http://cerebralmastication.com/2009/02/second-verse-same-as-the-first-sas-is-the-new-insightful/</guid>
+      <guid>http://cerebralmastication.netlify.com/2009/02/second-verse-same-as-the-first-sas-is-the-new-insightful/</guid>
       <description>[caption id=&amp;ldquo;attachment_92&amp;rdquo; align=&amp;ldquo;alignleft&amp;rdquo; width=&amp;ldquo;165&amp;rdquo; caption=&amp;ldquo;I love ya, SAS! &amp;ldquo;][/caption]
 Tibco acquired Insightful last year. Many folks have reported that S-Plus (the closed source implementation of the S language) was dang near financially killed by the success of R (the open source implementation of the S language). I may be slow on the update, but today I learned that a company named World Programming is making a product, WPS, which is an alternative implementation of the SAS base language.</description>
     </item>
