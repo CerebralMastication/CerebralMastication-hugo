@@ -6,3 +6,4 @@ knitr::knit_hooks$set(class = function(before, options, envir) {
     "</div>"
   }
 })
+
