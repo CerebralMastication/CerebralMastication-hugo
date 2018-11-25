@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sqlite on Cerebral Mastication</title>
-    <link>http://cerebralmastication.netlify.com/tags/sqlite/</link>
+    <link>https://cerebralmastication.com/tags/sqlite/</link>
     <description>Recent content in Sqlite on Cerebral Mastication</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Tue, 24 Nov 2009 23:14:06 +0000</lastBuildDate>
     
-	<atom:link href="http://cerebralmastication.netlify.com/tags/sqlite/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cerebralmastication.com/tags/sqlite/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Loading Big (ish) Data into R</title>
-      <link>http://cerebralmastication.netlify.com/2009/11/loading-big-data-into-r/</link>
+      <link>https://cerebralmastication.com/2009/11/loading-big-data-into-r/</link>
       <pubDate>Tue, 24 Nov 2009 23:14:06 +0000</pubDate>
       
-      <guid>http://cerebralmastication.netlify.com/2009/11/loading-big-data-into-r/</guid>
+      <guid>https://cerebralmastication.com/2009/11/loading-big-data-into-r/</guid>
       <description>So for the rest of this conversation big data == 2 Gigs. Done. Don&amp;rsquo;t give me any of this &amp;lsquo;that&amp;rsquo;s not big, THIS is big&amp;rsquo; shit. There now, on with the cool stuff:
 This week on twitter Vince Buffalo asked about loading a 2 gig comma separated file (csv) into R (OK, he asked about tab delimited data, but I ignored that because I use mostly comma data and I wanted to test CSV.</description>
     </item>
     
     <item>
       <title>Choosing an SQL Engine for Analytics</title>
-      <link>http://cerebralmastication.netlify.com/2009/03/chosing-an-sql-engine-for-analytics/</link>
+      <link>https://cerebralmastication.com/2009/03/chosing-an-sql-engine-for-analytics/</link>
       <pubDate>Mon, 09 Mar 2009 21:37:57 +0000</pubDate>
       
-      <guid>http://cerebralmastication.netlify.com/2009/03/chosing-an-sql-engine-for-analytics/</guid>
+      <guid>https://cerebralmastication.com/2009/03/chosing-an-sql-engine-for-analytics/</guid>
       <description>I&amp;rsquo;ve been struggling for a while on which database to use for my working data. I used to use MS Access quite a lot. The problems with MS Access include but are not limited to:
  * 2 GB file size limit, at least historically * Versions change with each edition of MS Office * Sort of tough to write SQL scripts * Very little automation, ie compression, backup, etc. * Windows only  I used Oracle for a few years as a result of my previous employer being an Oracle shop.</description>
     </item>

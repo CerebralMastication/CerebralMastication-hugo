@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Aws on Cerebral Mastication</title>
-    <link>http://cerebralmastication.netlify.com/tags/aws/</link>
+    <link>https://cerebralmastication.com/tags/aws/</link>
     <description>Recent content in Aws on Cerebral Mastication</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Fri, 06 May 2011 20:57:40 +0000</lastBuildDate>
     
-	<atom:link href="http://cerebralmastication.netlify.com/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cerebralmastication.com/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Your Analogy is bad... and you should feel bad!</title>
-      <link>http://cerebralmastication.netlify.com/2011/05/shell-scripting-ec2-for-fun-and-profit/</link>
+      <link>https://cerebralmastication.com/2011/05/shell-scripting-ec2-for-fun-and-profit/</link>
       <pubDate>Fri, 06 May 2011 20:57:40 +0000</pubDate>
       
-      <guid>http://cerebralmastication.netlify.com/2011/05/shell-scripting-ec2-for-fun-and-profit/</guid>
+      <guid>https://cerebralmastication.com/2011/05/shell-scripting-ec2-for-fun-and-profit/</guid>
       <description>A bad analogy can frame an entire conversation improperly. This is one of those &amp;ldquo;anecdotes from a middle-aged man posts.&amp;rdquo; So take it with a grain of salt.
 A number of years ago I worked in the risk management team for an insurance company that sold long term care (LTC) insurance. LTC insurance is a private product that covers home health care and nursing home care if the policyholder is unable to take care of themselves on their own.</description>
     </item>
     
     <item>
       <title>Controlling Amazon Web Services using rJava and the AWS Java SDK</title>
-      <link>http://cerebralmastication.netlify.com/2010/11/controlling-amazon-web-services-using-rjava-and-the-aws-java-sdk/</link>
+      <link>https://cerebralmastication.com/2010/11/controlling-amazon-web-services-using-rjava-and-the-aws-java-sdk/</link>
       <pubDate>Tue, 30 Nov 2010 19:51:17 +0000</pubDate>
       
-      <guid>http://cerebralmastication.netlify.com/2010/11/controlling-amazon-web-services-using-rjava-and-the-aws-java-sdk/</guid>
+      <guid>https://cerebralmastication.com/2010/11/controlling-amazon-web-services-using-rjava-and-the-aws-java-sdk/</guid>
       <description>I&amp;rsquo;ve been messing around with using Amazon Web Services for a while. I&amp;rsquo;ve had some projects where I wanted to upload files to S3 or fire off EMR jobs. I&amp;rsquo;ve been controlling AWS services using a hodgepodge of command line tools and the R system() function to call the tools from the command line. This has some real disadvantages, however. Using the command line tools means each tool has to be configured individually which is painful on a new machine.</description>
     </item>
     
     <item>
       <title>Starting an EC2 Machine Then Setting Up a Socks Proxy... From R!</title>
-      <link>http://cerebralmastication.netlify.com/2010/07/starting-an-ec2-machine-then-setting-up-a-socks-proxy-from-r/</link>
+      <link>https://cerebralmastication.com/2010/07/starting-an-ec2-machine-then-setting-up-a-socks-proxy-from-r/</link>
       <pubDate>Fri, 16 Jul 2010 22:07:12 +0000</pubDate>
       
-      <guid>http://cerebralmastication.netlify.com/2010/07/starting-an-ec2-machine-then-setting-up-a-socks-proxy-from-r/</guid>
+      <guid>https://cerebralmastication.com/2010/07/starting-an-ec2-machine-then-setting-up-a-socks-proxy-from-r/</guid>
       <description>I do some work from home, some work from an office in Chicago and some work on the road. It&amp;rsquo;s not uncommon for me to want to tunnel all my web traffic through a VPN tunnel. In one of my previous blog posts I alluded to using Amazon EC2 as a way to get around your corporate IT mind control voyeurs service providers. This tunneling method is one of the 5 or so ways I have used EC2 to set up a tunnel.</description>
     </item>
     

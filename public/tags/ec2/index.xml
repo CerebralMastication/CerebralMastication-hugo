@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ec2 on Cerebral Mastication</title>
-    <link>http://cerebralmastication.netlify.com/tags/ec2/</link>
+    <link>https://cerebralmastication.com/tags/ec2/</link>
     <description>Recent content in Ec2 on Cerebral Mastication</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Fri, 06 May 2011 20:57:40 +0000</lastBuildDate>
     
-	<atom:link href="http://cerebralmastication.netlify.com/tags/ec2/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cerebralmastication.com/tags/ec2/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Your Analogy is bad... and you should feel bad!</title>
-      <link>http://cerebralmastication.netlify.com/2011/05/shell-scripting-ec2-for-fun-and-profit/</link>
+      <link>https://cerebralmastication.com/2011/05/shell-scripting-ec2-for-fun-and-profit/</link>
       <pubDate>Fri, 06 May 2011 20:57:40 +0000</pubDate>
       
-      <guid>http://cerebralmastication.netlify.com/2011/05/shell-scripting-ec2-for-fun-and-profit/</guid>
+      <guid>https://cerebralmastication.com/2011/05/shell-scripting-ec2-for-fun-and-profit/</guid>
       <description>A bad analogy can frame an entire conversation improperly. This is one of those &amp;ldquo;anecdotes from a middle-aged man posts.&amp;rdquo; So take it with a grain of salt.
 A number of years ago I worked in the risk management team for an insurance company that sold long term care (LTC) insurance. LTC insurance is a private product that covers home health care and nursing home care if the policyholder is unable to take care of themselves on their own.</description>
     </item>
     
     <item>
       <title>Details of two-way sync between two Ubuntu machines</title>
-      <link>http://cerebralmastication.netlify.com/2011/04/details-of-two-way-sync-between-two-ubuntu-machines/</link>
+      <link>https://cerebralmastication.com/2011/04/details-of-two-way-sync-between-two-ubuntu-machines/</link>
       <pubDate>Mon, 18 Apr 2011 20:48:32 +0000</pubDate>
       
-      <guid>http://cerebralmastication.netlify.com/2011/04/details-of-two-way-sync-between-two-ubuntu-machines/</guid>
+      <guid>https://cerebralmastication.com/2011/04/details-of-two-way-sync-between-two-ubuntu-machines/</guid>
       <description>In a previous post I discussed my frustrations with trying to get Dropbox or Spideroak to perform BOTH encrypted remote backup and AND fast two way file syncing. This is the detail of how I set up for two machines, both Ubuntu 10.10, to perform two way sync where a file change on either machine will result in that change being replicated on the other machine.
 I initially tried running Unison on BOTH my laptop and the server and had the server Unison set to sync with my laptop back through an SSH reverse proxy.</description>
     </item>
     
     <item>
       <title>Starting an EC2 Machine Then Setting Up a Socks Proxy... From R!</title>
-      <link>http://cerebralmastication.netlify.com/2010/07/starting-an-ec2-machine-then-setting-up-a-socks-proxy-from-r/</link>
+      <link>https://cerebralmastication.com/2010/07/starting-an-ec2-machine-then-setting-up-a-socks-proxy-from-r/</link>
       <pubDate>Fri, 16 Jul 2010 22:07:12 +0000</pubDate>
       
-      <guid>http://cerebralmastication.netlify.com/2010/07/starting-an-ec2-machine-then-setting-up-a-socks-proxy-from-r/</guid>
+      <guid>https://cerebralmastication.com/2010/07/starting-an-ec2-machine-then-setting-up-a-socks-proxy-from-r/</guid>
       <description>I do some work from home, some work from an office in Chicago and some work on the road. It&amp;rsquo;s not uncommon for me to want to tunnel all my web traffic through a VPN tunnel. In one of my previous blog posts I alluded to using Amazon EC2 as a way to get around your corporate IT mind control voyeurs service providers. This tunneling method is one of the 5 or so ways I have used EC2 to set up a tunnel.</description>
     </item>
     
     <item>
       <title>Using the R multicore package in Linux with wild and passionate abandon</title>
-      <link>http://cerebralmastication.netlify.com/2010/02/using-the-r-multicore-package-in-linux-with-wild-and-passionate-abandon/</link>
+      <link>https://cerebralmastication.com/2010/02/using-the-r-multicore-package-in-linux-with-wild-and-passionate-abandon/</link>
       <pubDate>Tue, 09 Feb 2010 19:57:20 +0000</pubDate>
       
-      <guid>http://cerebralmastication.netlify.com/2010/02/using-the-r-multicore-package-in-linux-with-wild-and-passionate-abandon/</guid>
+      <guid>https://cerebralmastication.com/2010/02/using-the-r-multicore-package-in-linux-with-wild-and-passionate-abandon/</guid>
       <description>One of my primary uses for R is to build stochastic simulations of insurance portfolios and reinsurance treaties. It&amp;rsquo;s not uncommon for each of my simulations to take 20 seconds or more to complete (if you&amp;rsquo;re doing the math, that&amp;rsquo;s 55 hours for 10K sims or, approximately 453 games of solitaire) . Initially I ran my sims in R running on an Oracle VirtualBox (Oracle now owns Virtualbox! gasp ) running Ubuntu.</description>
     </item>
     
     <item>
       <title>Using Amazon EC2 to Thwart Crappy Internal IT Services</title>
-      <link>http://cerebralmastication.netlify.com/2009/11/using-amazon-ec2-to-thwart-crappy-internal-it-services/</link>
+      <link>https://cerebralmastication.com/2009/11/using-amazon-ec2-to-thwart-crappy-internal-it-services/</link>
       <pubDate>Tue, 03 Nov 2009 15:28:26 +0000</pubDate>
       
-      <guid>http://cerebralmastication.netlify.com/2009/11/using-amazon-ec2-to-thwart-crappy-internal-it-services/</guid>
+      <guid>https://cerebralmastication.com/2009/11/using-amazon-ec2-to-thwart-crappy-internal-it-services/</guid>
       <description>The alternative title of this blog post is &amp;ldquo;How to get your sorry ass fired by violating your internal IT policies.&amp;rdquo; So keep that in mind as you read this.
 I say lots of silly crap. Twitter allows me the pleasure of sharing this blather with the world. I was a little surprised that of all the things I have said over the last few months the above Tweet received the most discussion.</description>
     </item>

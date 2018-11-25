@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mysql on Cerebral Mastication</title>
-    <link>http://cerebralmastication.netlify.com/tags/mysql/</link>
+    <link>https://cerebralmastication.com/tags/mysql/</link>
     <description>Recent content in Mysql on Cerebral Mastication</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Mon, 09 Mar 2009 21:37:57 +0000</lastBuildDate>
     
-	<atom:link href="http://cerebralmastication.netlify.com/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cerebralmastication.com/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Choosing an SQL Engine for Analytics</title>
-      <link>http://cerebralmastication.netlify.com/2009/03/chosing-an-sql-engine-for-analytics/</link>
+      <link>https://cerebralmastication.com/2009/03/chosing-an-sql-engine-for-analytics/</link>
       <pubDate>Mon, 09 Mar 2009 21:37:57 +0000</pubDate>
       
-      <guid>http://cerebralmastication.netlify.com/2009/03/chosing-an-sql-engine-for-analytics/</guid>
+      <guid>https://cerebralmastication.com/2009/03/chosing-an-sql-engine-for-analytics/</guid>
       <description>I&amp;rsquo;ve been struggling for a while on which database to use for my working data. I used to use MS Access quite a lot. The problems with MS Access include but are not limited to:
  * 2 GB file size limit, at least historically * Versions change with each edition of MS Office * Sort of tough to write SQL scripts * Very little automation, ie compression, backup, etc. * Windows only  I used Oracle for a few years as a result of my previous employer being an Oracle shop.</description>
     </item>

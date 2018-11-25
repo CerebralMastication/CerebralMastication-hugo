@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vconf on Cerebral Mastication</title>
-    <link>http://cerebralmastication.netlify.com/tags/vconf/</link>
+    <link>https://cerebralmastication.com/tags/vconf/</link>
     <description>Recent content in Vconf on Cerebral Mastication</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Tue, 04 May 2010 02:27:03 +0000</lastBuildDate>
     
-	<atom:link href="http://cerebralmastication.netlify.com/tags/vconf/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cerebralmastication.com/tags/vconf/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Virtual Conference: R the Language</title>
-      <link>http://cerebralmastication.netlify.com/2010/05/virtual-conference-r-the-language/</link>
+      <link>https://cerebralmastication.com/2010/05/virtual-conference-r-the-language/</link>
       <pubDate>Tue, 04 May 2010 02:27:03 +0000</pubDate>
       
-      <guid>http://cerebralmastication.netlify.com/2010/05/virtual-conference-r-the-language/</guid>
+      <guid>https://cerebralmastication.com/2010/05/virtual-conference-r-the-language/</guid>
       <description>On Tuesday May 4th at 9:30 PM central, 10:30 eastern, I&amp;rsquo;ll be giving a live online presentation as part of the Vconf.org open conference series. I&amp;rsquo;ll be speaking about R and why I started using R a couple years ago. This is NOT going to be a technical presentation but rather an illustration of how an R convert was created and why R became part of my daily tool set.</description>
     </item>
     
