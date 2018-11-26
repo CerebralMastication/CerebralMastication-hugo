@@ -1,5 +1,5 @@
 baseurl = "https://cerebralmastication.com/" # Make sure to end baseurl with a '/'
-title = "Cerebral Mastication"
+title = "C.M."
 author = "JD Long"
 # Shown in the side menu
 copyright = "&copy; 2018. All rights reserved."
