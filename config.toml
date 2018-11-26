@@ -13,7 +13,7 @@ topic = "topics"
 [params]
 # Shown in the home page
 subtitle = "Something to chew on..."
-brand = "Blackburn"
+brand = "Cerebral Mastication"
 googleAnalytics = "UA-129487349-1"
 disqus = "cerebralmastication"
 # CSS name for highlight.js
@@ -29,10 +29,6 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [permalinks]
     post = "/:year/:month/:day/:slug/"
     
-# [params.piwikAnalytics]
-# siteid = 2
-# piwikroot = "//analytics.example.com/"
-
 [menu]
 # Shown in the side menu.
 [[menu.main]]
