@@ -1,5 +1,5 @@
 baseurl = "https://cerebralmastication.com/" # Make sure to end baseurl with a '/'
-title = "C.M."
+title = "Cerebral Mastication"
 author = "JD Long"
 # Shown in the side menu
 copyright = "&copy; 2018. All rights reserved."
@@ -13,7 +13,7 @@ topic = "topics"
 [params]
 # Shown in the home page
 subtitle = "Something to chew on..."
-brand = "Cerebral Mastication"
+brand = "C.M."
 googleAnalytics = "UA-129487349-1"
 disqus = "cerebralmastication"
 # CSS name for highlight.js
