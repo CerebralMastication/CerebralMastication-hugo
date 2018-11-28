@@ -107,7 +107,7 @@ knitr::include_graphics("/images/airflow_log_link.png")
 In the log you should see all the output created by your R script. 
 
 If you want to start Airflow every time you log in, the easiest thing to do is create a new Automator script:
-```{r run-shell, fig.cap='Automator Run Shell Script', echo=FALSE, out.width='75%', class='image_shadow'}
+```{r run-shell, fig.cap='Automator (Run Shell Script)', echo=FALSE, out.width='75%', class='image_shadow'}
 knitr::include_graphics("/images/start_airflow_app.png")
 ```
 
@@ -122,7 +122,7 @@ airflow webserver -D
 ```
 
 Then assign that Automator script to run every time you log in:
-```{r automatorrun, fig.cap='Run every log in', echo=FALSE, out.width='75%', class='image_shadow'}
+```{r automatorrun, fig.cap='Trigger Script to run at every login', echo=FALSE, out.width='75%', class='image_shadow'}
 knitr::include_graphics("/images/airflow_startitem.png")
 ```
 
