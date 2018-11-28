@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Cerebral Mastication</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
-    <lastBuildDate>Sat, 24 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Nov 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://cerebralmastication.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Level Up from `cron` to Airflow with R on your Macbook</title>
+      <link>https://cerebralmastication.com/2018/11/28/level-up-from-cron-to-airflow-with-r-on-your-macbook/</link>
+      <pubDate>Wed, 28 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://cerebralmastication.com/2018/11/28/level-up-from-cron-to-airflow-with-r-on-your-macbook/</guid>
+      <description>I recently wanted to run Apache Airflow on my laptop as an upgrade to cron. I don’t really want all the full power and fury that Airflow brings, but I’m not one to shy away from killing a gnat with a sledge hammer.
+I use conda to manage environments on my mac and I wanted to keep airflow in a conda environment. So I ran the following which sets up a conda environment called airflow then installs airflow in that environment.</description>
+    </item>
     
     <item>
       <title>Named Excel Tables: A very good idea</title>
