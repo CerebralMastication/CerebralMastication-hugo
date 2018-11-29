@@ -12,9 +12,9 @@ tags:
 There's a charming little brain teaser that's going around the Interwebs. It's got various forms, but they all look something like this:
 
 
-<blockquote>This problem can be solved by pre-school children in 5-10 minutes, by programer – in 1 hour, by people with higher education … well, check it yourself! ![:)](http://girlsaregeeks.com/WPApp/wp-includes/images/smilies/icon_smile.gif)
+> This problem can be solved by pre-school children in 5-10 minutes, by programer – in 1 hour, by people with higher education … well, check it yourself! ![:)](http://girlsaregeeks.com/WPApp/wp-includes/images/smilies/icon_smile.gif)
 
-
+```
 8809=6
 7111=0
 2172=0
@@ -35,7 +35,8 @@ There's a charming little brain teaser that's going around the Interwebs. It's g
 6855=3
 9881=5
 5531=0
-2581=?</blockquote>
+2581=?
+```
 
 
 SPOILER ALERT...
@@ -51,7 +52,7 @@ In this format the independent variables are the digits 0-9 and their value is t
 My whole script, which you should be able to cut and paste into R, if you are so inclined, is the following:
 
 
-
+`
 
 
 
@@ -74,7 +75,24 @@ My whole script, which you should be able to cut and paste into R, if you are so
 
 
 
+```{r, message=FALSE}
+library(tidyverse)
+## read in the training data
+## more lines than it should be because of the https requirement in Github
 
+temporaryFile <- tempfile()
+download.file("https://gist.githubusercontent.com/CerebralMastication/2061284/raw/b0a477f43273d81bc21029888c2638fd8f0e04f4/problem.csv",destfile=temporaryFile, method="curl")
+series <- read.csv(temporaryFile)
+
+## munge the data to create a frequency table
+freqTable <- as.data.frame( t(apply(series[,1:4], 1, function(X) table(c(X, 0:9))-1)) )
+names(freqTable) <- c("zero","one","two","three","four","five","six","seven","eight","nine")
+freqTable$dep <- series[,5]
+
+## now a simple OLS regression with no intercept
+myModel <- lm(dep ~ 0 + zero + one + two + three + four + five + six + seven + eight + nine, data=freqTable)
+round(myModel$coefficients)
+```
 
 
 
