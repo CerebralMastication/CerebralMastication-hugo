@@ -124,3 +124,22 @@ Figure 5: Trigger Script to run at every login
 </div>
 </div>
 <p>Have fun with Airflow!</p>
+<div id="update-on-2018-12-01" class="section level2">
+<h2>Update on 2018-12-01</h2>
+<p>After writing about this I realized that making a shell script for each R script was really unnecessary.</p>
+<p>What I ended up doing was creating a shell script named <code>run_r.sh</code> in my dags directory. I want all my R jobs to run in the directory in which they are located. So my <code>run_r.sh</code> looks like this:</p>
+<pre><code>#!/usr/local/bin/Rscript
+
+args = commandArgs(trailingOnly=TRUE)
+
+setwd(dirname(args[1]))
+source(args[1])</code></pre>
+<p>As you can see, it takes one argument, the name of the R script, changes the working dir to the same directory as the R script, then sources the script.</p>
+<p>My bash operator in my dag ends up looking like this:</p>
+<pre><code>run_this = BashOperator(
+    task_id=&#39;my_r_thing&#39;,
+    bash_command=&#39;/Users/jal/airflow/dags/run_r.sh /Users/jal/Documents/my_r_thing.R &#39;,
+    dag=dag,
+)</code></pre>
+<p>for each of my DAGS I used the same <code>run_r.sh</code> and just pass them different R scripts. Don’t forget the space after the script name.</p>
+</div>

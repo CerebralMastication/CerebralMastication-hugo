@@ -127,3 +127,32 @@ knitr::include_graphics("/images/airflow_startitem.png")
 ```
 
 Have fun with Airflow! 
+
+## Update on 2018-12-01
+After writing about this I realized that making a shell script for each R script was really unnecessary. 
+
+What I ended up doing was creating a shell script named `run_r.sh` in my dags directory.  I want all my R jobs to run in the directory in which they are located. So my `run_r.sh` looks like this:
+
+```
+#!/usr/local/bin/Rscript
+
+args = commandArgs(trailingOnly=TRUE)
+
+setwd(dirname(args[1]))
+source(args[1])
+```
+As you can see, it takes one argument, the name of the R script, changes the working dir to the same directory as the R script, then sources the script.
+
+My bash operator in my dag ends up looking like this:
+
+```
+run_this = BashOperator(
+    task_id='my_r_thing',
+    bash_command='/Users/jal/airflow/dags/run_r.sh /Users/jal/Documents/my_r_thing.R ',
+    dag=dag,
+)
+```
+
+for each of my DAGS I used the same `run_r.sh` and just pass them different R scripts. Don't forget the space after the script name.
+
+
