@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R Cookbook on Cerebral Mastication</title>
+    <link>https://cerebralmastication.com/tags/r-cookbook/</link>
+    <description>Recent content in R Cookbook on Cerebral Mastication</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&amp;copy; 2018. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 02 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://cerebralmastication.com/tags/r-cookbook/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Seed Picking - Like P Hacking only More Random</title>
+      <link>https://cerebralmastication.com/2019/01/02/seed-picking-like-p-hacking-only-more-random/</link>
+      <pubDate>Wed, 02 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cerebralmastication.com/2019/01/02/seed-picking-like-p-hacking-only-more-random/</guid>
+      <description>Recently I was trying to illustrate random number generation and confidence intervals. In particular, I wanted to show that sometimes by chance our confidence bands don’t contain the true value of a parameter. I ended up with this example of of a measurement of a median where the underlying distribution has a median of 4 yet for this one sample of 1000 points, the 95% confidence interval is 4.28 to 5.</description>
+    </item>
+    
+  </channel>
+</rss>

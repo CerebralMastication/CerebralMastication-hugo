@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.51" />
 
-  <title>Cerebral Mastication</title>
+  <title>Seed Picking - Like P Hacking only More Random &middot; Cerebral Mastication</title>
 
   
   
@@ -39,8 +39,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
  
-  
-  <link rel="alternate" type="application/rss+xml" title="Cerebral Mastication" href="https://cerebralmastication.com/index.xml" />
   
 
   
@@ -111,10 +109,6 @@
   <div class="pure-menu social">
   <ul class="pure-menu-list">
 
-    
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://cerebralmastication.com/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
-    </li>
     
 
     
@@ -226,21 +220,16 @@
 
 
 <div class="header">
-  <h1>Cerebral Mastication</h1>
-  <h2>Something to chew on...</h2>
+  <h1>Seed Picking - Like P Hacking only More Random</h1>
+  <h2></h2>
 </div>
-
 <div class="content">
-  
-    <article>
-  <header>
-    <h2><a href="https://cerebralmastication.com/2009/02/mandelbrot-and-taleb-on-pbs/">Mandelbrot and Taleb on PBS</a></h2>
 
-    <div class="post-meta">
+  <div class="post-meta">
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>03 Feb 2009</time>
+    <time>02 Jan 2019</time>
   </div>
 
   
@@ -253,54 +242,9 @@
   <div>
     <i class="fa fa-tags fa-fw"></i>
     
-      <a class="post-taxonomy-tag" href="https://cerebralmastication.com/tags/risk">risk</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="https://cerebralmastication.com/tags/r">R</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="https://cerebralmastication.com/tags/video">video</a>
-    
-  </div>
-  
-  
-
-</div>
-
-  </header>
-
-  <p>
-  Let me start by saying that I like Nassim Nicholas Taleb and Benoît Mandelbrot quite a lot. I don&rsquo;t agree with them all the time, but that is generally true of people I like. I recall reading Mandelbrot&rsquo;s book The Misbehavior of Markets: A Fractal View of Financial Turbulencesome years ago and being struck by how much sense Mandelbrot makes. It helped that his early work related to markets was in cotton prices and I am an agricultural economist.
-  </p>
-
-  
-  <footer>
-    <a href="https://cerebralmastication.com/2009/02/mandelbrot-and-taleb-on-pbs/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://cerebralmastication.com/2009/02/mainstream-article-on-r-nyt/">Mainstream Article on R - NYT</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>03 Feb 2009</time>
-  </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://cerebralmastication.com/tags/news">news</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://cerebralmastication.com/tags/r">R</a>
+      <a class="post-taxonomy-tag" href="https://cerebralmastication.com/tags/r-cookbook">R-Cookbook</a>
     
   </div>
   
@@ -308,35 +252,93 @@
 
 </div>
 
-  </header>
-
-  <p>
-  Robert Gentleman, left, and Ross Ihaka, the creators of R. Picture courtesy of the New York Times
-For those of us who use R on a regular basis it was pretty neat to see a mainstream media piece on the R language. Ashlee Vance of the New York Times did a good job on the piece. It is hard to explain to your average kitchen table reader of the Grey Lady why a computer programing language is important.
-  </p>
-
-  
-  <footer>
-    <a href="https://cerebralmastication.com/2009/02/mainstream-article-on-r-nyt/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
-
   
 
 
-<nav class="pagination" role="pagination">
-  
-  <a href="https://cerebralmastication.com/page/7/"><i class="fa fa-chevron-left"></i></a>
-  
-  <span>&nbsp;8 / 8&nbsp;</span>
-  
-  <i class="fa fa-chevron-right"></i>
-  
-</nav>
+<p>Recently I was trying to illustrate random number generation and confidence intervals. In particular, I wanted to show that sometimes by chance our confidence bands don’t contain the true value of a parameter. I ended up with this example of of a measurement of a median where the underlying distribution has a median of 4 yet for this one sample of 1000 points, the 95% confidence interval is 4.28 to 5.46:</p>
+<pre class="r"><code>set.seed(35)
+medians &lt;- numeric(1000)  # empty vector of 1000 numbers
+x &lt;- rnorm(1000, 4, 10)   # create dummy data from normal(4,10) distribution
 
+for (i in 1:1000) {
+  medians[i] &lt;- median(sample(x, replace = TRUE))
+}
+
+ci &lt;- quantile(medians, c(0.025, 0.975))
+cat(&quot;95% confidence interval is (&quot;, ci, &quot;)\n&quot;)</code></pre>
+<pre><code>## 95% confidence interval is ( 4.278838 5.463355 )</code></pre>
+<div id="discussion" class="section level3">
+<h3>Discussion</h3>
+<p>We know our data was generated from a distribution with a mean &amp; median of 4. Yet our estimate of the 95% confidence interval for the median is 4.278838 to 5.463355. How did I end up with this example? I implemented a process called “seed picking” to illustrate a point. The point is that confidence intervals are probabilistic and a 95% CI, by definition, means that 1 in 20 times the real median falls outside the CI. And to illustrate this I picked a seed that resulted in the outcome we wanted to illustrate. I found candidate seeds by setting up a loop and iterating through seeds to pass to <code>random.seed</code> one at a time. When I found one that produced a CI that didn’t include the real median, and printed it out. Keep in mind that using “seed picking” like this to misrepresent research is unethical. When this is used to deceive it is immoral, but when used it educate it is invaluable. It is valuable to understanding how seed setting and seed picking can impact results.</p>
+<p>Here’s my code for finding possible seeds that produce medians outside the CI:</p>
+<pre class="r"><code>for (s in 1:100) {
+  set.seed(s)
+  medians &lt;- numeric(1000)  # empty vector of 1000 numbers
+  x &lt;- rnorm(1000, 4, 10)   # create dummy data from normal(4,10) distribution
+  
+  for (i in 1:1000) {
+    medians[i] &lt;- median(sample(x, replace = TRUE))
+  }
+  
+  ci &lt;- quantile(medians, c(0.025, 0.975))
+  
+   # TRUE if all CI values are either above or below 4
+  if ( all(ci &lt; 4)  | all(ci &gt; 4) ) {
+    print(paste(&quot;seed of&quot;, s, &quot;has CI of&quot;, paste(ci,collapse=&quot; &quot;)))
+  }
+}</code></pre>
+<pre><code>## [1] &quot;seed of 35 has CI of 4.27883824379529 5.46335461133191&quot;
+## [1] &quot;seed of 74 has CI of 2.512797604441 3.8733025362177&quot;
+## [1] &quot;seed of 85 has CI of 1.78842294978997 3.50530185265694&quot;</code></pre>
+<p>So we can see that in the first 100 random seeds, there are 3 that produce random draws where the CI of the median does not include the true median of the underlying distribution.</p>
+</div>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://cerebralmastication.com/2018/11/28/level-up-from-cron-to-airflow-with-r-on-your-macbook/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://cerebralmastication.com/2018/11/28/level-up-from-cron-to-airflow-with-r-on-your-macbook/">Level Up from `cron` to Airflow with R on your Macbook</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'cerebralmastication';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
 </div>
