@@ -1,0 +1,53 @@
+---
+title: "Seed Picking - Like P Hacking only More Random"
+author: "JD Long"
+date: '2019-01-02'
+slug: seed-picking-like-p-hacking-only-more-random
+tags:
+- R
+- R-Cookbook
+categories: R
+---
+
+Recently I was trying to illustrate random number generation and confidence intervals. In particular, I wanted to show that sometimes by chance our confidence bands don't contain the true value of a parameter. I ended up with this example of of a measurement of a median where the underlying distribution has a median of 4 yet for this one sample of 1000 points, the 95% confidence interval is 4.28 to 5.46:
+
+```{r}
+set.seed(35)
+medians <- numeric(1000)  # empty vector of 1000 numbers
+x <- rnorm(1000, 4, 10)   # create dummy data from normal(4,10) distribution
+
+for (i in 1:1000) {
+  medians[i] <- median(sample(x, replace = TRUE))
+}
+
+ci <- quantile(medians, c(0.025, 0.975))
+cat("95% confidence interval is (", ci, ")\n")
+```
+
+## Discussion
+
+We know our data was generated from a distribution with a mean & median of 4. Yet our estimate of the 95% confidence interval for the median is 4.278838 to 5.463355. How did I end up with this example? I implemented a process called "seed picking" to illustrate a point. The point is that confidence intervals are probabilistic and a 95% CI, by definition, means that 1 in 20 times the real median falls outside the CI. And to illustrate this I picked a seed that resulted in the outcome we wanted to illustrate. I found candidate seeds by setting up a loop and iterating through seeds to pass to `random.seed` one at a time. When I found one that produced a CI that didn't include the real median, and printed it out. Keep in mind that using "seed picking" like this to misrepresent research is unethical. When this is used to deceive it is immoral, but when used it educate it is invaluable. It is valuable to understanding how seed setting and seed picking can impact results. 
+
+Here's my code for finding possible seeds that produce medians outside the CI:
+
+```{r}
+for (s in 1:100) {
+  set.seed(s)
+  medians <- numeric(1000)  # empty vector of 1000 numbers
+  x <- rnorm(1000, 4, 10)   # create dummy data from normal(4,10) distribution
+  
+  for (i in 1:1000) {
+    medians[i] <- median(sample(x, replace = TRUE))
+  }
+  
+  ci <- quantile(medians, c(0.025, 0.975))
+  
+   # TRUE if all CI values are either above or below 4
+  if ( all(ci < 4)  | all(ci > 4) ) {
+    print(paste("seed of", s, "has CI of", paste(ci,collapse=" ")))
+  }
+}
+```
+
+So we can see that in the first 100 random seeds, there are 3 that produce random draws where the CI of the median does not include the true median of the underlying distribution. 
+
