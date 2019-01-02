@@ -9,7 +9,11 @@ tags:
 categories: R
 ---
 
-Recently I was trying to illustrate random number generation and confidence intervals. In particular, I wanted to show that sometimes by chance our confidence bands don't contain the true value of a parameter. I ended up with this example of of a measurement of a median where the underlying distribution has a median of 4 yet for this one sample of 1000 points, the 95% confidence interval is 4.28 to 5.46:
+> I'm working with Paul Teetor and O'Reilly Media to complete the 2nd Edition of the [R Cookbook](http://shop.oreilly.com/product/9780596809164.do). We're in the editing phase so we're cutting things left and right. This `seed picking` example is one of the things that got cut. But I found it amusing so thought I would share it here. 
+> --JD
+
+
+Recently I was trying to illustrate random number generation and confidence intervals. In particular, I wanted to show that sometimes by chance our confidence bands don't contain the true value of a parameter. I ended up with this example of a measurement of a median where the underlying distribution has a median of 4 yet for this one sample of 1000 points, the 95% confidence interval is 4.28 to 5.46:
 
 ```{r}
 set.seed(35)
