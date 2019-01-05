@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.51" />
 
-  <title>Seed Picking - Like P Hacking only More Random &middot; Cerebral Mastication</title>
+  <title>Missing Unicode Greek Characters in Bookdown LaTeX &middot; Cerebral Mastication</title>
 
   
   
@@ -220,7 +220,7 @@
 
 
 <div class="header">
-  <h1>Seed Picking - Like P Hacking only More Random</h1>
+  <h1>Missing Unicode Greek Characters in Bookdown LaTeX</h1>
   <h2></h2>
 </div>
 <div class="content">
@@ -229,7 +229,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>02 Jan 2019</time>
+    <time>05 Jan 2019</time>
   </div>
 
   
@@ -255,60 +255,50 @@
   
 
 
-<blockquote>
-<p>I’m working with Paul Teetor and O’Reilly Media to complete the 2nd Edition of the <a href="http://shop.oreilly.com/product/9780596809164.do">R Cookbook</a>. We’re in the editing phase so we’re cutting things left and right. This <code>seed picking</code> example is one of the things that got cut. But I found it amusing so thought I would share it here.
-–JD</p>
-</blockquote>
-<p>Recently I was trying to illustrate random number generation and confidence intervals. In particular, I wanted to show that sometimes by chance our confidence bands don’t contain the true value of a parameter. I ended up with this example of a measurement of a median where the underlying distribution has a median of 4 yet for this one sample of 1000 points, the 95% confidence interval is 4.28 to 5.46:</p>
-<pre class="r"><code>set.seed(35)
-medians &lt;- numeric(1000)  # empty vector of 1000 numbers
-x &lt;- rnorm(1000, 4, 10)   # create dummy data from normal(4,10) distribution
-
-for (i in 1:1000) {
-  medians[i] &lt;- median(sample(x, replace = TRUE))
-}
-
-ci &lt;- quantile(medians, c(0.025, 0.975))
-cat(&quot;95% confidence interval is (&quot;, ci, &quot;)\n&quot;)</code></pre>
-<pre><code>## 95% confidence interval is ( 4.278838 5.463355 )</code></pre>
-<div id="discussion" class="section level3">
-<h3>Discussion</h3>
-<p>We know our data was generated from a distribution with a mean &amp; median of 4. Yet our estimate of the 95% confidence interval for the median is 4.278838 to 5.463355. How did I end up with this example? I implemented a process called “seed picking” to illustrate a point. The point is that confidence intervals are probabilistic and a 95% CI, by definition, means that 1 in 20 times the real median falls outside the CI. And to illustrate this I picked a seed that resulted in the outcome we wanted to illustrate. I found candidate seeds by setting up a loop and iterating through seeds to pass to <code>random.seed</code> one at a time. When I found one that produced a CI that didn’t include the real median, and printed it out. Keep in mind that using “seed picking” like this to misrepresent research is unethical. When this is used to deceive it is immoral, but when used it educate it is invaluable. It is valuable to understanding how seed setting and seed picking can impact results.</p>
-<p>Here’s my code for finding possible seeds that produce medians outside the CI:</p>
-<pre class="r"><code>for (s in 1:100) {
-  set.seed(s)
-  medians &lt;- numeric(1000)  # empty vector of 1000 numbers
-  x &lt;- rnorm(1000, 4, 10)   # create dummy data from normal(4,10) distribution
-  
-  for (i in 1:1000) {
-    medians[i] &lt;- median(sample(x, replace = TRUE))
-  }
-  
-  ci &lt;- quantile(medians, c(0.025, 0.975))
-  
-   # TRUE if all CI values are either above or below 4
-  if ( all(ci &lt; 4)  | all(ci &gt; 4) ) {
-    print(paste(&quot;seed of&quot;, s, &quot;has CI of&quot;, paste(ci,collapse=&quot; &quot;)))
-  }
-}</code></pre>
-<pre><code>## [1] &quot;seed of 35 has CI of 4.27883824379529 5.46335461133191&quot;
-## [1] &quot;seed of 74 has CI of 2.512797604441 3.8733025362177&quot;
-## [1] &quot;seed of 85 has CI of 1.78842294978997 3.50530185265694&quot;</code></pre>
-<p>So we can see that in the first 100 random seeds, there are 3 that produce random draws where the CI of the median does not include the true median of the underlying distribution.</p>
+<p>I spent this morning fighting with Bookdown. I was going through reviewer notes for the <em>R Cookbook 2nd Edition</em> and my coauthor, Paul Teetor, had noted that some of the greek symbols we were using were not showing up in the text when the book was rendered to PDF. Oddly, it looked fine in HTML.</p>
+<p>This turned out to be a font issue. I was using <code>XeLeTeX</code> as my <span class="math inline">\(\LaTeX\)</span> engine specifically because it handles UTF-8 unicode well. But whichever font it defaults to did not contain the UTF-8 Greek characters I was looking for. Oddly neither the mono font nor the body font contained these Greek characters.</p>
+<p>I figured this out by pasting a whole host of Greek symbols from <a href="https://www.w3schools.com/charsets/ref_utf_greek.asp">this site</a> into my document and then building the book. I found that it all looked grand in HTML but in PDF some of the uppercase Greek letters were fine but none of the lowercase ones showed up.</p>
+After some struggling I discoverd that the way to change the font in the PDF output depends on the <span class="math inline">\(\LaTeX\)</span> engine. The engine is set in the <code>_output.Rmd</code> file when using Bookdown:
+<div class="image_shadow">
+<div class="figure"><span id="fig:output"></span>
+<img src="https://cerebralmastication.com/images/_output.Rmd.png" alt="_output.Rmd file" width="75%" />
+<p class="caption">
+Figure 1: _output.Rmd file
+</p>
 </div>
+</div>
+Then the font overrides are set in the <code>index.Rmd</code> file:
+<div class="image_shadow">
+<div class="figure"><span id="fig:index"></span>
+<img src="https://cerebralmastication.com/images/index.Rmd.png" alt="index.Rmd file" width="75%" />
+<p class="caption">
+Figure 2: index.Rmd file
+</p>
+</div>
+</div>
+It’s possible to not use <code>index.Rmd</code> as the first file in your document. However mine is set that way, as is standard. The files and order of chapters for a <code>bookdown</code> book is set in the <code>bookdown.yml</code> file:
+<div class="image_shadow">
+<div class="figure"><span id="fig:bookdown"></span>
+<img src="https://cerebralmastication.com/images/bookdown.yml.png" alt="bookdown.yml file" width="75%" />
+<p class="caption">
+Figure 3: bookdown.yml file
+</p>
+</div>
+</div>
+<p>After changing the font settings, my inline Greek Unicode symbols were rendering quite nicely.</p>
 
 
   
 <div class="prev-next-post pure-g">
   <div class="pure-u-1-24" style="text-align: left;">
     
-    <a href="https://cerebralmastication.com/2018/11/28/level-up-from-cron-to-airflow-with-r-on-your-macbook/"><i class="fa fa-chevron-left"></i></a>
+    <a href="https://cerebralmastication.com/2019/01/02/seed-picking-like-p-hacking-only-more-random/"><i class="fa fa-chevron-left"></i></a>
     
   </div>
   <div class="pure-u-10-24">
     
     <nav class="prev">
-      <a href="https://cerebralmastication.com/2018/11/28/level-up-from-cron-to-airflow-with-r-on-your-macbook/">Level Up from `cron` to Airflow with R on your Macbook</a>
+      <a href="https://cerebralmastication.com/2019/01/02/seed-picking-like-p-hacking-only-more-random/">Seed Picking - Like P Hacking only More Random</a>
     </nav>
     
   </div>
@@ -317,14 +307,8 @@ cat(&quot;95% confidence interval is (&quot;, ci, &quot;)\n&quot;)</code></pre>
   </div>
   <div class="pure-u-10-24">
     
-    <nav class="next">
-      <a href="https://cerebralmastication.com/2019/01/05/missing-unicode-greek-characters-in-bookdown-latex/">Missing Unicode Greek Characters in Bookdown LaTeX</a>
-    </nav>
-    
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
-    
-    <a href="https://cerebralmastication.com/2019/01/05/missing-unicode-greek-characters-in-bookdown-latex/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>

@@ -1,0 +1,33 @@
+---
+title: Missing Unicode Greek Characters in Bookdown LaTeX
+author: JD Long
+date: '2019-01-05'
+slug: missing-unicode-greek-characters-in-bookdown-latex
+categories: R
+tags: 
+  - R
+  - R-Cookbook
+---
+
+I spent this morning fighting with Bookdown. I was going through reviewer notes for the *R Cookbook 2nd Edition* and my coauthor, Paul Teetor, had noted that some of the greek symbols we were using were not showing up in the text when the book was rendered to PDF. Oddly, it looked fine in HTML. 
+
+This turned out to be a font issue. I was using `XeLeTeX` as my $\LaTeX$ engine specifically because it handles UTF-8 unicode well. But whichever font it defaults to did not contain the UTF-8 Greek characters I was looking for. Oddly neither the mono font nor the body font contained these Greek characters. 
+
+I figured this out by pasting a whole host of Greek symbols from [this site](https://www.w3schools.com/charsets/ref_utf_greek.asp) into my document and then building the book. I found that it all looked grand in HTML but in PDF some of the uppercase Greek letters were fine but none of the lowercase ones showed up. 
+
+After some struggling I discoverd that the way to change the font in the PDF output depends on the $\LaTeX$ engine. The engine is set in the `_output.Rmd` file when using Bookdown:
+```{r output, fig.cap='_output.Rmd file', echo=FALSE, out.width='75%', class='image_shadow'}
+knitr::include_graphics("/images/_output.Rmd.png")
+```
+
+Then the font overrides are set in the `index.Rmd` file:
+```{r index, fig.cap='index.Rmd file', echo=FALSE, out.width='75%', class='image_shadow'}
+knitr::include_graphics("/images/index.Rmd.png")
+```
+
+It's possible to not use `index.Rmd` as the first file in your document. However mine is set that way, as is standard. The files and order of chapters for a `bookdown` book is set in the `bookdown.yml` file:
+```{r bookdown, fig.cap='bookdown.yml file', echo=FALSE, out.width='75%', class='image_shadow'}
+knitr::include_graphics("/images/bookdown.yml.png")
+```
+
+After changing the font settings, my inline Greek Unicode symbols were rendering quite nicely. 

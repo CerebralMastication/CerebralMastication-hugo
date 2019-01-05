@@ -1,0 +1,44 @@
+---
+title: Missing Unicode Greek Characters in Bookdown LaTeX
+author: JD Long
+date: '2019-01-05'
+slug: missing-unicode-greek-characters-in-bookdown-latex
+categories: R
+tags: 
+  - R
+  - R-Cookbook
+---
+
+
+
+<p>I spent this morning fighting with Bookdown. I was going through reviewer notes for the <em>R Cookbook 2nd Edition</em> and my coauthor, Paul Teetor, had noted that some of the greek symbols we were using were not showing up in the text when the book was rendered to PDF. Oddly, it looked fine in HTML.</p>
+<p>This turned out to be a font issue. I was using <code>XeLeTeX</code> as my <span class="math inline">\(\LaTeX\)</span> engine specifically because it handles UTF-8 unicode well. But whichever font it defaults to did not contain the UTF-8 Greek characters I was looking for. Oddly neither the mono font nor the body font contained these Greek characters.</p>
+<p>I figured this out by pasting a whole host of Greek symbols from <a href="https://www.w3schools.com/charsets/ref_utf_greek.asp">this site</a> into my document and then building the book. I found that it all looked grand in HTML but in PDF some of the uppercase Greek letters were fine but none of the lowercase ones showed up.</p>
+After some struggling I discoverd that the way to change the font in the PDF output depends on the <span class="math inline">\(\LaTeX\)</span> engine. The engine is set in the <code>_output.Rmd</code> file when using Bookdown:
+<div class="image_shadow">
+<div class="figure"><span id="fig:output"></span>
+<img src="/images/_output.Rmd.png" alt="_output.Rmd file" width="75%" />
+<p class="caption">
+Figure 1: _output.Rmd file
+</p>
+</div>
+</div>
+Then the font overrides are set in the <code>index.Rmd</code> file:
+<div class="image_shadow">
+<div class="figure"><span id="fig:index"></span>
+<img src="/images/index.Rmd.png" alt="index.Rmd file" width="75%" />
+<p class="caption">
+Figure 2: index.Rmd file
+</p>
+</div>
+</div>
+It’s possible to not use <code>index.Rmd</code> as the first file in your document. However mine is set that way, as is standard. The files and order of chapters for a <code>bookdown</code> book is set in the <code>bookdown.yml</code> file:
+<div class="image_shadow">
+<div class="figure"><span id="fig:bookdown"></span>
+<img src="/images/bookdown.yml.png" alt="bookdown.yml file" width="75%" />
+<p class="caption">
+Figure 3: bookdown.yml file
+</p>
+</div>
+</div>
+<p>After changing the font settings, my inline Greek Unicode symbols were rendering quite nicely.</p>
