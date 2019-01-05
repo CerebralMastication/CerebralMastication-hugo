@@ -15,9 +15,9 @@ This turned out to be a font issue. I was using `XeLeTeX` as my $\LaTeX$ engine 
 
 I figured this out by pasting a whole host of Greek symbols from [this site](https://www.w3schools.com/charsets/ref_utf_greek.asp) into my document and then building the book. I found that it all looked grand in HTML but in PDF some of the uppercase Greek letters were fine but none of the lowercase ones showed up. 
 
-After some struggling I discoverd that the way to change the font in the PDF output depends on the $\LaTeX$ engine. The engine is set in the `_output.Rmd` file when using Bookdown:
-```{r output, fig.cap='_output.Rmd file', echo=FALSE, out.width='75%', class='image_shadow'}
-knitr::include_graphics("/images/_output.Rmd.png")
+After some struggling I discoverd that the way to change the font in the PDF output depends on the $\LaTeX$ engine. The engine is set in the `_output.yml` file when using Bookdown:
+```{r output, fig.cap='_output.yml file', echo=FALSE, out.width='75%', class='image_shadow'}
+knitr::include_graphics("/images/_output.yml.png")
 ```
 
 Then the font overrides are set in the `index.Rmd` file:
