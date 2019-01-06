@@ -24,7 +24,7 @@ My friend, Hugo Bowne-Anderson, graciously invited me to speak with him on the [
 
 ### Intro to `dplyr`
 
-In the Spring of 2018 I presented an intro to the R package `dplyr` at the NYC Open Data Science Group hosted by Google: [Intro to `dplyr` presented at Google NYC]
+In the Spring of 2018 I presented an intro to the R package `dplyr` at the NYC Open Data Science Group hosted by Google: [Intro to `dplyr` presented at Google NYC](https://www.youtube.com/watch?v=EOvN3wPdQoM&feature=youtu.be&t=11m50s)
 
 <a href="https://www.youtube.com/watch?v=EOvN3wPdQoM&feature=youtu.be&t=11m50s">
   <img src="/./about_files/Tidy_by_Nature.png" 
@@ -43,8 +43,6 @@ In March 2017 I was a guest on the rOpenSci Community Call where I presented "Th
      title="rOpenSci Community Call" 
      alt="rOpenSci Community Call">
 </a>
-
-
 
 ### Empathy as a Technical Skill
 
@@ -66,8 +64,6 @@ There are rumors circulating that in 2011 I gave a presentation at the R in Fina
      title="Segue in Seuss Rhyme" 
      alt="Segue in Seuss Rhyme">
 </a>
-
-
 
 Have questions or suggestions? [Yell at me on Twitter](https://twitter.com/CMastication). The source code for this blog is all availiable on [my Github Account](https://github.com/CerebralMastication/CerebralMastication-hugo). I'm using [Hugo](https://gohugo.io/) with [Blogdown](https://bookdown.org/yihui/blogdown/) hosted by [Netlify](https://www.netlify.com/), so when I change the contents of the Github repo, the site is rebuilt by Netlify using the latest source from Github. It's an amazing workflow and if you do websites and use *R*, it's hard to beat the Hugo/Blogdown/Netlify combination. 
 
