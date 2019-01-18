@@ -9,7 +9,9 @@ tags:
   - Presentations
 ---
 
-I had  amazingly positive feedback from my repsentation today at rstudio::conf in Austin. While I'd like to think the response was because of my fantastic choice of GIFs illustrating what analysts do for a living:
+I had amazingly positive feedback from my presentation on "Empathy in Action" today at [rstudio::conf](https://www.rstudio.com/conference/) in Austin. My main focus was emphasizing that most business users don't want to learn to code. They just want to kick ass. And coding can be a means to that end. 
+
+While I'd like to think the response was because of my fantastic choice of GIFs illustrating what analysts do for a living:
 
 ```{r g1, fig.cap='Analyst in Action file', echo=FALSE, out.width='75%', class='image_shadow'}
 knitr::include_graphics("/images/fire_deadlift.gif")
@@ -27,7 +29,4 @@ knitr::include_graphics("/images/Office-R-github.png")
 
 Thank you Allison for your cute/fun/awesome drawings! They helped make the story more fun to tell. 
 
-The slides from my presentation are [here](/prez/rstudio_conf_2019_main.html)
-
-
-
+The slides from my presentation are [here](/prez/rstudio_conf_2019_main.html)!
