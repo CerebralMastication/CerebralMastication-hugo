@@ -6,10 +6,20 @@
     <description>Recent content on Cerebral Mastication</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
-    <lastBuildDate>Sat, 05 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 18 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://cerebralmastication.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Slides from rstudio::conf 2019</title>
+      <link>https://cerebralmastication.com/2019/01/18/slides-from-rstudio-conf-2019/</link>
+      <pubDate>Fri, 18 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cerebralmastication.com/2019/01/18/slides-from-rstudio-conf-2019/</guid>
+      <description>I had amazingly positive feedback from my repsentation today at rstudio::conf in Austin. While I’d like to think the response was because of my fantastic choice of GIFs illustrating what analysts do for a living:
+ Figure 1: Analyst in Action file   The real reason it was so memorable, however, was the wonderful custom images from Allison Horst. Alison’s sad and happy apps really stole the show!</description>
+    </item>
     
     <item>
       <title>Missing Unicode Greek Characters in Bookdown LaTeX</title>

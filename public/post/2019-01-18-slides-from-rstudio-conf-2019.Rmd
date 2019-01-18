@@ -1,0 +1,33 @@
+---
+title: Slides from rstudio::conf 2019
+author: JD Long
+date: '2019-01-18'
+slug: slides-from-rstudio-conf-2019
+categories:
+  - R
+tags:
+  - Presentations
+---
+
+I had  amazingly positive feedback from my repsentation today at rstudio::conf in Austin. While I'd like to think the response was because of my fantastic choice of GIFs illustrating what analysts do for a living:
+
+```{r g1, fig.cap='Analyst in Action file', echo=FALSE, out.width='75%', class='image_shadow'}
+knitr::include_graphics("/images/fire_deadlift.gif")
+```
+
+The real reason it was so memorable, however, was the wonderful custom images from [Allison Horst](https://twitter.com/allison_horst?lang=en). Alison's sad and happy apps really stole the show! 
+
+```{r g2, fig.cap='A Sad Office', echo=FALSE, out.width='75%', class='image_shadow'}
+knitr::include_graphics("/images/Sad_Cubicles_2.png")
+```
+
+```{r g3, fig.cap='My Office', echo=FALSE, out.width='75%', class='image_shadow'}
+knitr::include_graphics("/images/Office-R-github.png")
+```
+
+Thank you Allison for your cute/fun/awesome drawings! They helped make the story more fun to tell. 
+
+The slides from my presentation are [here](/prez/rstudio_conf_2019_main.html)
+
+
+
