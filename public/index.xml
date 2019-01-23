@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Dataiku Meetup 2019-01-23</title>
+      <link>https://cerebralmastication.com/2019/01/23/dataiku-meetup-2019-01-23/</link>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cerebralmastication.com/2019/01/23/dataiku-meetup-2019-01-23/</guid>
+      <description>Tonight I’m presenting at the Dataiku Analytics and Data Science Meetup. My presentation is an adaptation of what I presented at RStudio::conf(2019) but with an emphasis towards a non-R audience. The slides are here. I have about 5-10 min more time at Dataiku than I had at RStudio::conf so I added a few slides showing off R Markdown and data exchange between R and Python. I thought those might be interesting and new to a non-R focused audience.</description>
+    </item>
+    
+    <item>
       <title>My Favorite Kathy Sierra Plot</title>
       <link>https://cerebralmastication.com/2019/01/23/my-favorite-kathy-sierra-plot/</link>
       <pubDate>Wed, 23 Jan 2019 00:00:00 +0000</pubDate>
