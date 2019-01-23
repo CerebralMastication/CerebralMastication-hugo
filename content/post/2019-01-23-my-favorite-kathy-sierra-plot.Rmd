@@ -1,0 +1,88 @@
+---
+title: My Favorite Kathy Sierra Plot
+author: JD Long
+date: '2019-01-23'
+slug: my-favorite-kathy-sierra-plot
+categories:
+  - R
+tags:
+  - plotting
+---
+
+One of my favorite graphs of all time is this one from Kathy Sierra:
+
+```{r g1, fig.cap='Kick Ass Threshold', echo=FALSE, message=FALSE, out.width='75%', class='image_shadow'}
+library(tidyverse)
+library(knitr)
+library(ggthemes)
+
+knitr::include_graphics("/images/kathy_sierra_graph.jpg")
+```
+
+I used that in my RStudio::conf(2019) presentation in Austin last week. I'm working on a related prez and I decided to create my own version of Kathy's chart using R. 
+
+I played around with some simulations and found that the cumulative *t* and *normal* distributions gave good curves if I fiddled with their parameters. I wanted my lines a little bit jagged and not overly smooth so I opted to simulate 1000 points:
+
+```{r}
+n <- 1000
+df <- data.frame(curve = 'Learn Fast',
+                 x = rt(n, 100))
+df <- rbind(df, data.frame(curve = 'Struggle Long',
+                           x = rnorm(n, 3, 2)))
+
+```
+
+Then it's an exercise in building up all the `ggplot` options that I want:
+
+```{r, out.width='75%', class='image_shadow'}
+ggplot(df, aes(x, color = curve)) +
+  stat_ecdf(geom = "step", size = 2) +
+  theme_classic(base_size = 18) +
+  scale_colour_wsj("colors6") ->
+  p
+p
+```
+That's a pretty good start but I want to blank out the axis and add labels:
+```{r, out.width='75%', class='image_shadow'}
+p +  
+  theme(
+    axis.text.x = element_blank(),
+    axis.ticks.x = element_blank(),
+    axis.text.y = element_blank(),
+    axis.ticks.y = element_blank()
+  ) +
+  theme(legend.position = c(0.75, 0.15)) +
+  theme(legend.title = element_blank()) +
+  labs(x = "Time", y = "Skill") ->
+  p
+p
+```
+
+Now I want to add the horizontal lines and their labels:
+
+```{r, out.width='75%', class='image_shadow'}
+p +
+  geom_hline(yintercept = .25,
+             color = "orangered",
+             linetype = 2) +
+  annotate(
+    "text",
+    x = -2.2,
+    y = .29,
+    label = "Suck Threshold",
+    size = 5
+  ) +
+  geom_hline(yintercept = .75,
+             color = "forestgreen",
+             linetype = 2) +
+  annotate(
+    "text",
+    x = -1.9 ,
+    y = .79,
+    label = "Kick Ass Threshold",
+    size = 5
+  )
+
+```
+
+That looks pretty good. I think I like it! 

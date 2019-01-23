@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.51" />
 
-  <title>Slides from rstudio::conf 2019 &middot; Cerebral Mastication</title>
+  <title>My Favorite Kathy Sierra Plot &middot; Cerebral Mastication</title>
 
   
   
@@ -220,7 +220,7 @@
 
 
 <div class="header">
-  <h1>Slides from rstudio::conf 2019</h1>
+  <h1>My Favorite Kathy Sierra Plot</h1>
   <h2></h2>
 </div>
 <div class="content">
@@ -229,7 +229,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>18 Jan 2019</time>
+    <time>23 Jan 2019</time>
   </div>
 
   
@@ -242,7 +242,7 @@
   <div>
     <i class="fa fa-tags fa-fw"></i>
     
-      <a class="post-taxonomy-tag" href="https://cerebralmastication.com/tags/presentations">Presentations</a>
+      <a class="post-taxonomy-tag" href="https://cerebralmastication.com/tags/plotting">plotting</a>
     
   </div>
   
@@ -253,48 +253,88 @@
   
 
 
-<p>I had amazingly positive feedback from my presentation on “Empathy in Action” today at <a href="https://www.rstudio.com/conference/">rstudio::conf</a> in Austin. My main focus was emphasizing that most business users don’t want to learn to code. They just want to kick ass. And coding can be a means to that end.</p>
-<p>While I’d like to think the response was because of my fantastic choice of GIFs illustrating what analysts do for a living:</p>
+<p>One of my favorite graphs of all time is this one from Kathy Sierra:</p>
 <div class="image_shadow">
+<pre><code>## Warning: package &#39;tibble&#39; was built under R version 3.5.2</code></pre>
 <div class="figure"><span id="fig:g1"></span>
-<img src="https://cerebralmastication.com/images/fire_deadlift.gif" alt="Analyst in Action file" width="75%" />
+<img src="https://cerebralmastication.com/images/kathy_sierra_graph.jpg" alt="Kick Ass Threshold" width="75%" />
 <p class="caption">
-Figure 1: Analyst in Action file
+Figure 1: Kick Ass Threshold
 </p>
 </div>
 </div>
-<p>The real reason it was so memorable, however, was the wonderful custom images from <a href="https://twitter.com/allison_horst?lang=en">Allison Horst</a>. Alison’s sad and happy apps really stole the show!</p>
+<p>I used that in my RStudio::conf(2019) presentation in Austin last week. I’m working on a related prez and I decided to create my own version of Kathy’s chart using R.</p>
+<p>I played around with some simulations and found that the cumulative <em>t</em> and <em>normal</em> distributions gave good curves if I fiddled with their parameters. I wanted my lines a little bit jagged and not overly smooth so I opted to simulate 1000 points:</p>
+<pre class="r"><code>n &lt;- 1000
+df &lt;- data.frame(curve = &#39;Learn Fast&#39;,
+                 x = rt(n, 100))
+df &lt;- rbind(df, data.frame(curve = &#39;Struggle Long&#39;,
+                           x = rnorm(n, 3, 2)))</code></pre>
+<p>Then it’s an exercise in building up all the <code>ggplot</code> options that I want:</p>
 <div class="image_shadow">
-<div class="figure"><span id="fig:g2"></span>
-<img src="https://cerebralmastication.com/images/Sad_Cubicles_2.png" alt="A Sad Office" width="75%" />
-<p class="caption">
-Figure 2: A Sad Office
-</p>
+<pre class="r"><code>ggplot(df, aes(x, color = curve)) +
+  stat_ecdf(geom = &quot;step&quot;, size = 2) +
+  theme_classic(base_size = 18) +
+  scale_colour_wsj(&quot;colors6&quot;) -&gt;
+  p
+p</code></pre>
+<img src="https://cerebralmastication.com/post/2019-01-23-my-favorite-kathy-sierra-plot_files/figure-html/unnamed-chunk-2-1.png" width="75%" />
 </div>
-</div>
+That’s a pretty good start but I want to blank out the axis and add labels:
 <div class="image_shadow">
-<div class="figure"><span id="fig:g3"></span>
-<img src="https://cerebralmastication.com/images/Office-R-github.png" alt="My Office" width="75%" />
-<p class="caption">
-Figure 3: My Office
-</p>
+<pre class="r"><code>p +  
+  theme(
+    axis.text.x = element_blank(),
+    axis.ticks.x = element_blank(),
+    axis.text.y = element_blank(),
+    axis.ticks.y = element_blank()
+  ) +
+  theme(legend.position = c(0.75, 0.15)) +
+  theme(legend.title = element_blank()) +
+  labs(x = &quot;Time&quot;, y = &quot;Skill&quot;) -&gt;
+  p
+p</code></pre>
+<img src="https://cerebralmastication.com/post/2019-01-23-my-favorite-kathy-sierra-plot_files/figure-html/unnamed-chunk-3-1.png" width="75%" />
 </div>
+<p>Now I want to add the horizontal lines and their labels:</p>
+<div class="image_shadow">
+<pre class="r"><code>p +
+  geom_hline(yintercept = .25,
+             color = &quot;orangered&quot;,
+             linetype = 2) +
+  annotate(
+    &quot;text&quot;,
+    x = -2.2,
+    y = .29,
+    label = &quot;Suck Threshold&quot;,
+    size = 5
+  ) +
+  geom_hline(yintercept = .75,
+             color = &quot;forestgreen&quot;,
+             linetype = 2) +
+  annotate(
+    &quot;text&quot;,
+    x = -1.9 ,
+    y = .79,
+    label = &quot;Kick Ass Threshold&quot;,
+    size = 5
+  )</code></pre>
+<img src="https://cerebralmastication.com/post/2019-01-23-my-favorite-kathy-sierra-plot_files/figure-html/unnamed-chunk-4-1.png" width="75%" />
 </div>
-<p>Thank you Allison for your cute/fun/awesome drawings! They helped make the story more fun to tell.</p>
-<p>The slides from my presentation are <a href="https://cerebralmastication.com/prez/rstudio_conf_2019_main.html">here</a>!</p>
+<p>That looks pretty good. I think I like it!</p>
 
 
   
 <div class="prev-next-post pure-g">
   <div class="pure-u-1-24" style="text-align: left;">
     
-    <a href="https://cerebralmastication.com/2019/01/05/missing-unicode-greek-characters-in-bookdown-latex/"><i class="fa fa-chevron-left"></i></a>
+    <a href="https://cerebralmastication.com/2019/01/18/slides-from-rstudio-conf-2019/"><i class="fa fa-chevron-left"></i></a>
     
   </div>
   <div class="pure-u-10-24">
     
     <nav class="prev">
-      <a href="https://cerebralmastication.com/2019/01/05/missing-unicode-greek-characters-in-bookdown-latex/">Missing Unicode Greek Characters in Bookdown LaTeX</a>
+      <a href="https://cerebralmastication.com/2019/01/18/slides-from-rstudio-conf-2019/">Slides from rstudio::conf 2019</a>
     </nav>
     
   </div>
@@ -303,14 +343,8 @@ Figure 3: My Office
   </div>
   <div class="pure-u-10-24">
     
-    <nav class="next">
-      <a href="https://cerebralmastication.com/2019/01/23/my-favorite-kathy-sierra-plot/">My Favorite Kathy Sierra Plot</a>
-    </nav>
-    
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
-    
-    <a href="https://cerebralmastication.com/2019/01/23/my-favorite-kathy-sierra-plot/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>

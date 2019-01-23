@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Cerebral Mastication</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
-    <lastBuildDate>Fri, 18 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 23 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://cerebralmastication.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My Favorite Kathy Sierra Plot</title>
+      <link>https://cerebralmastication.com/2019/01/23/my-favorite-kathy-sierra-plot/</link>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cerebralmastication.com/2019/01/23/my-favorite-kathy-sierra-plot/</guid>
+      <description>One of my favorite graphs of all time is this one from Kathy Sierra:
+## Warning: package &amp;#39;tibble&amp;#39; was built under R version 3.5.2  Figure 1: Kick Ass Threshold   I used that in my RStudio::conf(2019) presentation in Austin last week. I’m working on a related prez and I decided to create my own version of Kathy’s chart using R.
+I played around with some simulations and found that the cumulative t and normal distributions gave good curves if I fiddled with their parameters.</description>
+    </item>
     
     <item>
       <title>Slides from rstudio::conf 2019</title>
