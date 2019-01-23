@@ -19,7 +19,7 @@ library(ggthemes)
 knitr::include_graphics("/images/kathy_sierra_graph.jpg")
 ```
 
-I used that in my RStudio::conf(2019) presentation in Austin last week. I'm working on a related prez and I decided to create my own version of Kathy's chart using R. 
+I used that in my [RStudio::conf(2019)](https://cerebralmastication.com/2019/01/18/slides-from-rstudio-conf-2019/) presentation in Austin last week. I'm working on a related prez and I decided to create my own version of Kathy's chart using R. 
 
 I played around with some simulations and found that the cumulative *t* and *normal* distributions gave good curves if I fiddled with their parameters. I wanted my lines a little bit jagged and not overly smooth so I opted to simulate 1000 points:
 
