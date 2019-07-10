@@ -26,7 +26,7 @@ for (i in 1:1000) {
 
 ci &lt;- quantile(medians, c(0.025, 0.975))
 cat(&quot;95% confidence interval is (&quot;, ci, &quot;)\n&quot;)</code></pre>
-<pre><code>## 95% confidence interval is ( 4.278838 5.463355 )</code></pre>
+<pre><code>## 95% confidence interval is ( 4.290042 5.501301 )</code></pre>
 <div id="discussion" class="section level3">
 <h3>Discussion</h3>
 <p>We know our data was generated from a distribution with a mean &amp; median of 4. Yet our estimate of the 95% confidence interval for the median is 4.278838 to 5.463355. How did I end up with this example? I implemented a process called “seed picking” to illustrate a point. The point is that confidence intervals are probabilistic and a 95% CI, by definition, means that 1 in 20 times the real median falls outside the CI. And to illustrate this I picked a seed that resulted in the outcome we wanted to illustrate. I found candidate seeds by setting up a loop and iterating through seeds to pass to <code>random.seed</code> one at a time. When I found one that produced a CI that didn’t include the real median, and printed it out. Keep in mind that using “seed picking” like this to misrepresent research is unethical. When this is used to deceive it is immoral, but when used it educate it is invaluable. It is valuable to understanding how seed setting and seed picking can impact results.</p>
@@ -47,8 +47,9 @@ cat(&quot;95% confidence interval is (&quot;, ci, &quot;)\n&quot;)</code></pre>
     print(paste(&quot;seed of&quot;, s, &quot;has CI of&quot;, paste(ci,collapse=&quot; &quot;)))
   }
 }</code></pre>
-<pre><code>## [1] &quot;seed of 35 has CI of 4.27883824379529 5.46335461133191&quot;
-## [1] &quot;seed of 74 has CI of 2.512797604441 3.8733025362177&quot;
-## [1] &quot;seed of 85 has CI of 1.78842294978997 3.50530185265694&quot;</code></pre>
+<pre><code>## [1] &quot;seed of 6 has CI of 2.44962592273347 3.91445637880196&quot;
+## [1] &quot;seed of 35 has CI of 4.29004209301473 5.50130074688498&quot;
+## [1] &quot;seed of 74 has CI of 2.52118465130122 3.91377997738571&quot;
+## [1] &quot;seed of 85 has CI of 1.82271901353641 3.46822653058678&quot;</code></pre>
 <p>So we can see that in the first 100 random seeds, there are 3 that produce random draws where the CI of the median does not include the true median of the underlying distribution.</p>
 </div>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bookdown on Cerebral Mastication</title>
+    <link>https://cerebralmastication.com/tags/bookdown/</link>
+    <description>Recent content in Bookdown on Cerebral Mastication</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&amp;copy; 2018. All rights reserved.</copyright>
+    <lastBuildDate>Sat, 11 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://cerebralmastication.com/tags/bookdown/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Publishing Bookdown to Netlify (automagically)</title>
+      <link>https://cerebralmastication.com/2019/05/11/publishing-bookdown-to-netlify-automagically/</link>
+      <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cerebralmastication.com/2019/05/11/publishing-bookdown-to-netlify-automagically/</guid>
+      <description>I didn’t realize this until today, but Netlify isn’t just a great place to host Hugo based blogs (like this one), but it’s also a great place to host Bookdown based book content.
+
+Like many R Bloggers, I like to use Blogdown to publish blog posts. But as Paul Teetor and I got near completion of R Cookbook 2nd Edition, I began to give some thought to where I would host the online version of the book.</description>
+    </item>
+    
+  </channel>
+</rss>

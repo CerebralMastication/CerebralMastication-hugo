@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.51" />
+
+  <title>Starting A Digital Ocean Instance From Docker Machine &middot; Cerebral Mastication</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cerebralmastication.com/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cerebralmastication.com/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="https://cerebralmastication.com/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://cerebralmastication.com/img/favicon.ico" type="image/x-icon" />
+
+  
+    
+        <link rel="stylesheet" href="https://cerebralmastication.com/css/my.css">
+    
+  
+  
+    
+        <script src="https://cerebralmastication.com/js/my.js"></script>
+    
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="https://cerebralmastication.com/">C.M.</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://cerebralmastication.com/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://cerebralmastication.com/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://cerebralmastication.com/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/CMastication" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/jamesdlong" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/CerebralMastication" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://stackoverflow.com/users/37751" target="_blank"><i class="fa fa-stack-overflow fa-fw"></i>Stack Overflow</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2018. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Starting A Digital Ocean Instance From Docker Machine</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>10 Jul 2019</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://cerebralmastication.com/tags/digitalocean">DigitalOcean</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://cerebralmastication.com/tags/cloud">Cloud</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  
+
+
+<p>My buddy Dusty recently asked me how to set up a Digital Ocean cloud instance for RStudio using a Docker image. Below is the information he needed, but captured here for future travelers.</p>
+<p>Most people who are considering using Docker understand that Docker allows setting up something akin to a virtual machine on their local computer. What’s less widely appreciated among non dev-ops folks is that Docker comes with a tool called <code>docker-machine</code> that allows setting up a Docker virtual system on a <em>remote</em> server. This is great as it means I can test a Docker configuration locally and tweak it to get the kinks worked out, then publish the exact same machine image to a cloud host.</p>
+<p>I’m going to illustrate a Digital Ocean example, but the same idea works on many different hosting providers. To use my example, you’ll need to get ready by doing the following:</p>
+<ul>
+<li>Go to <a href="https://m.do.co/c/fadc4adce4ee">Digital Ocean</a> and set up a user account.</li>
+<li>Log in to Digital Ocean and follow <a href="https://www.digitalocean.com/docs/api/create-personal-access-token/">these instructions</a> to set up a personal access token.</li>
+<li>Set up an environment variable called (in this example) DO_PAT. If you’re on a Mac, for example, you do this by editing your <code>.bash_profile</code> to include the line <code>export DO_PAT=your_pat_string_goes_here</code>.</li>
+<li>Install Docker… <code>docker-machine</code> command line tool comes along with the Docker install. And make sure the Docker deamon is running. You shold have a docker icon on a tool bar showing that Docker is running.</li>
+</ul>
+<p>Now we’re ready to fire up a remote machine. I’ll show you the commands then give a description of what they mean at the end.</p>
+<pre><code>docker-machine create --driver digitalocean --digitalocean-size &quot;s-1vcpu-1gb&quot; --digitalocean-access-token $DO_PAT your-project-name-here
+
+eval $(docker-machine env your-project-name-here) 
+
+docker run -d -e PASSWORD=your-chosen-rstudio-password -p 8787:8787 rocker/tidyverse 
+
+docker-machine ip your-project-name-here </code></pre>
+<p>The result of the above commands look like this on my Mac:</p>
+<div class="image_shadow">
+<div class="figure"><span id="fig:g1"></span>
+<img src="https://cerebralmastication.com/images/do_docker.png" alt="docker machine output" width="85%" />
+<p class="caption">
+Figure 1: docker machine output
+</p>
+</div>
+</div>
+<p>You’ll notice at the end there’s an IP address (159.203.120.213 in my example). If you point your browser at that IP, port 8787 (<a href="http://159.203.120.213:8787" class="uri">http://159.203.120.213:8787</a> for example), you can then use the userid <code>rstudio</code> and password <code>your-chosen-rstudio-password</code> to log in:</p>
+<div class="image_shadow">
+<div class="figure"><span id="fig:g2"></span>
+<img src="https://cerebralmastication.com/images/RStudio_Sign_In.png" alt="RStudio log in" width="65%" />
+<p class="caption">
+Figure 2: RStudio log in
+</p>
+</div>
+</div>
+<p>You should be greeted by an RStudio server window:</p>
+<div class="image_shadow">
+<div class="figure"><span id="fig:g3"></span>
+<img src="https://cerebralmastication.com/images/RStudio.png" alt="RStudio Successful login" width="85%" />
+<p class="caption">
+Figure 3: RStudio Successful login
+</p>
+</div>
+</div>
+<p>and to shut down the instance and remove any trace of it from your machine, run:
+<code>docker-machine rm your-project-name-here</code></p>
+<p>Now let’s go back to the magic incantation step and describe each bit:</p>
+<p><code>docker-machine create</code> tells docker-machine we’re going to create a new machine
+<code>--driver digitalocean</code> and we’re going to use the digital ocean driver. You can get a full list of drivers in the <a href="https://docs.docker.com/machine/drivers/">Docker Docs</a>
+<code>--digitalocean-size &quot;s-1vcpu-1gb&quot;</code> set the size of the instance. The text of the size varies by cloud service
+<code>--digitalocean-access-token $DO_PAT</code> pass the driver our digital ocean access token
+<code>your-project-name-here</code> the name we choose for our project… this can be almost anything</p>
+<p><code>eval $(docker-machine env your-project-name-here)</code> This sets up some environment variables so that we can seamlessly connect. To see what it’s doing, try running <code>docker-machine env your-project-name-here</code> from the command line.</p>
+<p><code>docker run -d -e PASSWORD=your-chosen-rstudio-password -p 8787:8787 rocker/tidyverse</code> Here we fire up a specific Docker container and we open port 8787 mapped to 8787 on the remote machine. We are telling Docker to use the Docker public image <code>rocker/tidyverse</code> which includes RStudio and all of the Tidyverse.</p>
+<p><code>docker-machine ip your-project-name-here</code> this prints out the IP address so you know which IP to connect to.</p>
+<p>When you are done, don’t forget to run <code>docker-machine rm your-project-name-here</code> to stop the remote instance and also clear out all the local information about the session. If you just stop the Digital Ocean instance (a droplet in DO speak), you will not get billed, but your local machine will still think the remote machine exists so you’ll still have to run <code>docker-machine rm your-project-name-here</code>.</p>
+<p>Happy dockering!</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://cerebralmastication.com/2019/05/11/publishing-bookdown-to-netlify-automagically/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://cerebralmastication.com/2019/05/11/publishing-bookdown-to-netlify-automagically/">Publishing Bookdown to Netlify (automagically)</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'cerebralmastication';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="https://cerebralmastication.com/js/ui.js"></script>
+<script src="https://cerebralmastication.com/js/menus.js"></script>
+
+
+<script>
+  
+  if (window.location.hostname != "localhost") {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-129487349-1', 'auto');
+    ga('send', 'pageview');
+  }
+</script>
+
+
+
+
+
+</body>
+</html>
+

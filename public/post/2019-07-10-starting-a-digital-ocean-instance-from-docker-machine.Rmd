@@ -1,0 +1,77 @@
+---
+title: Starting A Digital Ocean Instance From Docker Machine
+author: JD Long
+date: '2019-07-10'
+slug: starting-a-digital-ocean-instance-from-docker-machine
+categories:
+  - Tools
+  - R
+tags:
+  - DigitalOcean
+  - Cloud
+---
+
+My buddy Dusty recently asked me how to set up a Digital Ocean cloud instance for RStudio using a Docker image. Below is the information he needed, but captured here for future travelers. 
+
+Most people who are considering using Docker understand that Docker allows setting up something akin to a virtual machine on their local computer. What's less widely appreciated among non dev-ops folks is that Docker comes with a tool called `docker-machine` that allows setting up a Docker virtual system on a *remote* server. This is great as it means I can test a Docker configuration locally and tweak it to get the kinks worked out, then publish the exact same machine image to a cloud host. 
+
+I'm going to illustrate a Digital Ocean example, but the same idea works on many different hosting providers. To use my example, you'll need to get ready by doing the following:
+
+* Go to [Digital Ocean](https://m.do.co/c/fadc4adce4ee) and set up a user account. 
+* Log in to Digital Ocean and follow [these instructions](https://www.digitalocean.com/docs/api/create-personal-access-token/) to set up a personal access token. 
+* Set up an environment variable called (in this example) DO_PAT. If you're on a Mac, for example, you do this by editing your `.bash_profile` to include the line `export DO_PAT=your_pat_string_goes_here`. 
+* Install Docker... `docker-machine` command line tool comes along with the Docker install. And make sure the Docker deamon is running. You shold have a docker icon on a tool bar showing that Docker is running. 
+
+Now we're ready to fire up a remote machine. I'll show you the commands then give a description of what they mean at the end. 
+
+```
+docker-machine create --driver digitalocean --digitalocean-size "s-1vcpu-1gb" --digitalocean-access-token $DO_PAT your-project-name-here
+
+eval $(docker-machine env your-project-name-here) 
+
+docker run -d -e PASSWORD=your-chosen-rstudio-password -p 8787:8787 rocker/tidyverse 
+
+docker-machine ip your-project-name-here 
+```
+The result of the above commands look like this on my Mac:
+
+```{r g1, fig.cap='docker machine output', echo=FALSE, out.width='85%', class='image_shadow'}
+knitr::include_graphics("/images/do_docker.png")
+```
+
+You'll notice at the end there's an IP address (159.203.120.213 in my example). If you point your browser at that IP, port 8787 (http://159.203.120.213:8787 for example), you can then use the userid `rstudio` and password `your-chosen-rstudio-password` to log in:
+
+```{r g2, fig.cap='RStudio log in', echo=FALSE, out.width='65%', class='image_shadow'}
+knitr::include_graphics("/images/RStudio_Sign_In.png")
+```
+
+You should be greeted by an RStudio server window:
+
+```{r g3, fig.cap='RStudio Successful login', echo=FALSE, out.width='85%', class='image_shadow'}
+knitr::include_graphics("/images/RStudio.png")
+```
+
+and to shut down the instance and remove any trace of it from your machine, run:
+`docker-machine rm your-project-name-here`
+
+Now let's go back to the magic incantation step and describe each bit:
+
+
+`docker-machine create                    ` tells docker-machine we're going to create a new machine
+`    --driver digitalocean                ` and we're going to use the digital ocean driver. You can get a full list of drivers in the [Docker Docs](https://docs.docker.com/machine/drivers/)
+`    --digitalocean-size "s-1vcpu-1gb"    ` set the size of the instance. The text of the size varies by cloud service
+`    --digitalocean-access-token $DO_PAT  ` pass the driver our digital ocean access token
+`    your-project-name-here               ` the name we choose for our project... this can be almost anything
+
+
+`eval $(docker-machine env your-project-name-here) ` This sets up some environment variables so that we can seamlessly connect. To see what it's doing, try running `docker-machine env your-project-name-here` from the command line. 
+
+`docker run -d -e PASSWORD=your-chosen-rstudio-password -p 8787:8787 rocker/tidyverse ` Here we fire up a specific Docker container and we open port 8787 mapped to 8787 on the remote machine. We are telling Docker to use the Docker public image `rocker/tidyverse` which includes RStudio and all of the Tidyverse. 
+
+`docker-machine ip your-project-name-here ` this prints out the IP address so you know which IP to connect to. 
+
+When you are done, don't forget to run `docker-machine rm your-project-name-here` to stop the remote instance and also clear out all the local information about the session. If you just stop the Digital Ocean instance (a droplet in DO speak), you will not get billed, but your local machine will still think the remote machine exists so you'll still have to run `docker-machine rm your-project-name-here`. 
+
+Happy dockering! 
+
+

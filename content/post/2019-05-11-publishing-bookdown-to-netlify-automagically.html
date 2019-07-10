@@ -1,0 +1,55 @@
+---
+title: Publishing Bookdown to Netlify (automagically)
+author: JD Long
+date: '2019-05-11'
+slug: publishing-bookdown-to-netlify-automagically
+categories:
+  - R
+tags:
+  - rmarkdown
+  - bookdown
+---
+
+
+
+<p>I didn’t realize this until today, but <a href="https://www.netlify.com">Netlify</a> isn’t just a great place to host Hugo based blogs (like this one), but it’s also a great place to host <a href="https://bookdown.org">Bookdown</a> based book content.</p>
+<p><a href="https://amzn.to/2LCthli"><img src="/images/book_cover.jpg" width="250" height="327" alt="R Cookbook 2nd Edition Cover image" align="right" style="margin: 0 1em 0 1em" /></a></p>
+<p>Like many R Bloggers, I like to use Blogdown to publish blog posts. But as Paul Teetor and I got near completion of <em>R Cookbook 2nd Edition</em>, I began to give some thought to where I would host the online version of the book. O’Reilly has worked with Paul and me to arrange to Creative Commons license the source and content related to our book, in the same way Hadley Wickham and Garrett Grolemund did with <a href="https://r4ds.had.co.nz"><em>R for Data Science</em></a> and Winston Chang did with <a href="https://r-graphics.org"><em>R Graphics Cookbook</em></a>. On a lark I tried setting up Netlify to publish our book using the <em>bookdown::gitbook</em> content and it was disturbingly easy to get going. Let me show you how…</p>
+<p>First I log into my Netlify account and click on “New Site from Git”:</p>
+<div class="image_shadow">
+<div class="figure"><span id="fig:g1"></span>
+<img src="/images/netlify1.png" alt="Netlify Step 1" width="75%" />
+<p class="caption">
+Figure 1: Netlify Step 1
+</p>
+</div>
+</div>
+<p>And since I’m using Github, I click on the Github link:</p>
+<div class="image_shadow">
+<div class="figure"><span id="fig:g2"></span>
+<img src="/images/netlify2.png" alt="Netlify Step 2" width="75%" />
+<p class="caption">
+Figure 2: Netlify Step 2
+</p>
+</div>
+</div>
+<p>I had already set up my Netlify account to work with my Github account for use with this blog. But I gave it access only to the one repo used for this blog. So I had to click on “configure the netlify app on GitHub” to allow Netlify to have access to my repo I’m using for our book:</p>
+<div class="image_shadow">
+<div class="figure"><span id="fig:g3"></span>
+<img src="/images/netlify3.png" alt="Netlify Step 3" width="75%" />
+<p class="caption">
+Figure 3: Netlify Step 3
+</p>
+</div>
+</div>
+<p>I had already checked all my book content (including both the source and the HTML used for the book) into the GitHub repo. So I just had to point Netlify to the <code>_book</code> folder because that’s where Bookdown sticks the HTML.</p>
+<div class="image_shadow">
+<div class="figure"><span id="fig:g4"></span>
+<img src="/images/netlify4.png" alt="Netlify Step 4" width="75%" />
+<p class="caption">
+Figure 4: Netlify Step 4
+</p>
+</div>
+</div>
+<p>And because Bookdown is polite enough to create a book site using an <code>index.html</code> and all, Netlify just copies over the <code>_book</code> directory to their servers and <strong><em>boom</em></strong> web site is up and running.</p>
+<p>And because Netlify is built on a GitHub hooks model (continuous integration), every time I check a new version of the HTML into GitHub, Netlify gets a notice from Github and then Netlify automagically updates the web content. Nothing required from me other than checking the book HTML into GitHub. This is the future I wanted, but not the future I deserve.</p>

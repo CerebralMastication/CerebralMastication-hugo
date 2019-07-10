@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Digitalocean on Cerebral Mastication</title>
+    <link>https://cerebralmastication.com/tags/digitalocean/</link>
+    <description>Recent content in Digitalocean on Cerebral Mastication</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&amp;copy; 2018. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 10 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://cerebralmastication.com/tags/digitalocean/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Starting A Digital Ocean Instance From Docker Machine</title>
+      <link>https://cerebralmastication.com/2019/07/10/starting-a-digital-ocean-instance-from-docker-machine/</link>
+      <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cerebralmastication.com/2019/07/10/starting-a-digital-ocean-instance-from-docker-machine/</guid>
+      <description>My buddy Dusty recently asked me how to set up a Digital Ocean cloud instance for RStudio using a Docker image. Below is the information he needed, but captured here for future travelers.
+Most people who are considering using Docker understand that Docker allows setting up something akin to a virtual machine on their local computer. What’s less widely appreciated among non dev-ops folks is that Docker comes with a tool called docker-machine that allows setting up a Docker virtual system on a remote server.</description>
+    </item>
+    
+  </channel>
+</rss>
