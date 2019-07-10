@@ -57,16 +57,26 @@ Figure 3: RStudio Successful login
 </p>
 </div>
 </div>
-<p>and to shut down the instance and remove any trace of it from your machine, run:
-<code>docker-machine rm your-project-name-here</code></p>
+<p>and to shut down the instance and remove any trace of it from your machine, run:</p>
+<pre><code>docker-machine rm your-project-name-here</code></pre>
 <p>Now let’s go back to the magic incantation step and describe each bit:</p>
-<p><code>docker-machine create</code> tells docker-machine we’re going to create a new machine
-<code>--driver digitalocean</code> and we’re going to use the digital ocean driver. You can get a full list of drivers in the <a href="https://docs.docker.com/machine/drivers/">Docker Docs</a>
-<code>--digitalocean-size &quot;s-1vcpu-1gb&quot;</code> set the size of the instance. The text of the size varies by cloud service
-<code>--digitalocean-access-token $DO_PAT</code> pass the driver our digital ocean access token
-<code>your-project-name-here</code> the name we choose for our project… this can be almost anything</p>
-<p><code>eval $(docker-machine env your-project-name-here)</code> This sets up some environment variables so that we can seamlessly connect. To see what it’s doing, try running <code>docker-machine env your-project-name-here</code> from the command line.</p>
-<p><code>docker run -d -e PASSWORD=your-chosen-rstudio-password -p 8787:8787 rocker/tidyverse</code> Here we fire up a specific Docker container and we open port 8787 mapped to 8787 on the remote machine. We are telling Docker to use the Docker public image <code>rocker/tidyverse</code> which includes RStudio and all of the Tidyverse.</p>
-<p><code>docker-machine ip your-project-name-here</code> this prints out the IP address so you know which IP to connect to.</p>
-<p>When you are done, don’t forget to run <code>docker-machine rm your-project-name-here</code> to stop the remote instance and also clear out all the local information about the session. If you just stop the Digital Ocean instance (a droplet in DO speak), you will not get billed, but your local machine will still think the remote machine exists so you’ll still have to run <code>docker-machine rm your-project-name-here</code>.</p>
+<pre><code>docker-machine create</code></pre>
+<p>tells docker-machine we’re going to create a new machine</p>
+<pre><code>     --driver digitalocean</code></pre>
+<p>and we’re going to use the digital ocean driver. You can get a full list of drivers in the <a href="https://docs.docker.com/machine/drivers/">Docker Docs</a></p>
+<pre><code>    --digitalocean-size &quot;s-1vcpu-1gb&quot;    </code></pre>
+<p>set the size of the instance. The text of the size varies by cloud service</p>
+<pre><code>    --digitalocean-access-token $DO_PAT  </code></pre>
+<p>pass the driver our digital ocean access token</p>
+<pre><code>    your-project-name-here               </code></pre>
+<p>the name we choose for our project… this can be almost anything</p>
+<pre><code>eval $(docker-machine env your-project-name-here) </code></pre>
+<p>This sets up some environment variables so that we can seamlessly connect. To see what it’s doing, try running <code>docker-machine env your-project-name-here</code> from the command line.</p>
+<pre><code>docker run -d -e PASSWORD=your-chosen-rstudio-password -p 8787:8787 rocker/tidyverse</code></pre>
+<p>Here we fire up a specific Docker container and we open port 8787 mapped to 8787 on the remote machine. We are telling Docker to use the Docker public image <code>rocker/tidyverse</code> which includes RStudio and all of the Tidyverse.</p>
+<pre><code>docker-machine ip your-project-name-here</code></pre>
+<p>this prints out the IP address so you know which IP to connect to.</p>
+<p>When you are done, don’t forget to run</p>
+<pre><code>docker-machine rm your-project-name-here</code></pre>
+<p>to stop the remote instance and also clear out all the local information about the session. If you just stop the Digital Ocean instance (a droplet in DO speak), you will not get billed, but your local machine will still think the remote machine exists so you’ll still have to run <code>docker-machine rm your-project-name-here</code>.</p>
 <p>Happy dockering!</p>

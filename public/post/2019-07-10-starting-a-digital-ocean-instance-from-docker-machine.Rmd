@@ -52,25 +52,60 @@ knitr::include_graphics("/images/RStudio.png")
 ```
 
 and to shut down the instance and remove any trace of it from your machine, run:
-`docker-machine rm your-project-name-here`
+```
+docker-machine rm your-project-name-here
+```
 
 Now let's go back to the magic incantation step and describe each bit:
 
+```
+docker-machine create
+``` 
+tells docker-machine we're going to create a new machine
 
-`docker-machine create                    ` tells docker-machine we're going to create a new machine
-`    --driver digitalocean                ` and we're going to use the digital ocean driver. You can get a full list of drivers in the [Docker Docs](https://docs.docker.com/machine/drivers/)
-`    --digitalocean-size "s-1vcpu-1gb"    ` set the size of the instance. The text of the size varies by cloud service
-`    --digitalocean-access-token $DO_PAT  ` pass the driver our digital ocean access token
-`    your-project-name-here               ` the name we choose for our project... this can be almost anything
+```
+     --driver digitalocean
+```
+and we're going to use the digital ocean driver. You can get a full list of drivers in the [Docker Docs](https://docs.docker.com/machine/drivers/)
 
+```
+    --digitalocean-size "s-1vcpu-1gb"    
+```
+set the size of the instance. The text of the size varies by cloud service
 
-`eval $(docker-machine env your-project-name-here) ` This sets up some environment variables so that we can seamlessly connect. To see what it's doing, try running `docker-machine env your-project-name-here` from the command line. 
+```
+    --digitalocean-access-token $DO_PAT  
+```
+pass the driver our digital ocean access token
 
-`docker run -d -e PASSWORD=your-chosen-rstudio-password -p 8787:8787 rocker/tidyverse ` Here we fire up a specific Docker container and we open port 8787 mapped to 8787 on the remote machine. We are telling Docker to use the Docker public image `rocker/tidyverse` which includes RStudio and all of the Tidyverse. 
+```
+    your-project-name-here               
+```
+the name we choose for our project... this can be almost anything
 
-`docker-machine ip your-project-name-here ` this prints out the IP address so you know which IP to connect to. 
+```
+eval $(docker-machine env your-project-name-here) 
+```
+This sets up some environment variables so that we can seamlessly connect. To see what it's doing, try running `docker-machine env your-project-name-here` from the command line. 
 
-When you are done, don't forget to run `docker-machine rm your-project-name-here` to stop the remote instance and also clear out all the local information about the session. If you just stop the Digital Ocean instance (a droplet in DO speak), you will not get billed, but your local machine will still think the remote machine exists so you'll still have to run `docker-machine rm your-project-name-here`. 
+```
+docker run -d -e PASSWORD=your-chosen-rstudio-password -p 8787:8787 rocker/tidyverse
+```
+
+Here we fire up a specific Docker container and we open port 8787 mapped to 8787 on the remote machine. We are telling Docker to use the Docker public image `rocker/tidyverse` which includes RStudio and all of the Tidyverse. 
+
+```
+docker-machine ip your-project-name-here
+```
+this prints out the IP address so you know which IP to connect to. 
+
+When you are done, don't forget to run 
+
+```
+docker-machine rm your-project-name-here
+```
+
+to stop the remote instance and also clear out all the local information about the session. If you just stop the Digital Ocean instance (a droplet in DO speak), you will not get billed, but your local machine will still think the remote machine exists so you'll still have to run `docker-machine rm your-project-name-here`. 
 
 Happy dockering! 
 
