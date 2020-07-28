@@ -1,0 +1,59 @@
+---
+title: Using Python sympy in a Python code chunk in RMarkdown
+author: JD Long
+date: '2020-07-27'
+slug: using-python-sympy-in-a-python-code-chunk-in-rmarkdown
+categories:
+  - Python
+tags:
+  - python
+  - rmarkdown
+  - sympy
+  - latex
+---
+
+
+
+<p>I was recently asked about using <code>sympy</code> in Python to print <span class="math inline">\(LaTeX\)</span> formulas in RMarkdown notebooks. I misunderstood the question at first but after some thought I realized that I didn’t know if it would work… but I should try it.</p>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+Yes, printing elements of a matrix. So it's due to the prog languages' differences ( R vs Python), not rmarkdown vs Jupyter Notebook? <a href="https://t.co/Any4qIDHS7">pic.twitter.com/Any4qIDHS7</a>
+</p>
+— Eyayaw T. Beze (<span class="citation">@EyayawBeze</span>) <a href="https://twitter.com/EyayawBeze/status/1287136564255105024?ref_src=twsrc%5Etfw">July 25, 2020</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>I knew that I could run Python chunks in an RMarkdown notebook. And I knew how to change the working conda environment so I could install <code>sympy</code>. But I wasn’t so sure about getting the <span class="math inline">\(LaTeX\)</span> produced by <code>sympy</code> to print out properly.</p>
+<p>I tend to explicitly set my conda environment in my RMD file. Here I set it to <code>r-reticulate</code> which should be the default, but I do this so that it will remind me later what environment I’m using. Because when I come back to this in a few months I’ll have forgotten.</p>
+<pre class="r"><code>library(reticulate)
+use_condaenv(condaenv = &quot;r-reticulate&quot;, required=TRUE)</code></pre>
+<p>to install conda packages from R or from your Rmd file you can do something like:</p>
+<pre class="r"><code>reticulate::conda_install(&quot;r-reticulate&quot;,&quot;sympy&quot;)</code></pre>
+<p>Or you can use conda to activate the environment and install <code>sympy</code> with <code>conda install -c anaconda sympy</code></p>
+<p>The we can do magic like this:</p>
+<p>Then we can run some Python chunks that depend on <code>sympy</code></p>
+<pre class="python"><code>from sympy import *
+x = symbols(&#39;x&#39;)
+a = Integral(cos(x)*exp(x), x)
+output = Eq(a, a.doit()) 
+print(&#39;$&#39; + latex(output) + &#39;$&#39;)</code></pre>
+<p><span class="math inline">\(\int e^{x} \cos{\left(x \right)}\, dx = \frac{e^{x} \sin{\left(x \right)}}{2} + \frac{e^{x} \cos{\left(x \right)}}{2}\)</span></p>
+<p>This works because of two pieces of code. One of which you can’t see above. In the code chunk that runs above I set the language to python and told it to print out the results <code>asis</code>:</p>
+<p><code>{python, results='asis'}</code></p>
+<p>The <code>asis</code> flag tells <code>knitr</code> not to molest the resulting text string, just send it straight to the display. When I did that at first I ended up with this:</p>
+<pre class="python"><code>from sympy import *
+x = symbols(&#39;x&#39;)
+a = Integral(cos(x)*exp(x), x)
+output = Eq(a, a.doit()) 
+print( latex(output)  )</code></pre>
+<p>e^{x} , dx =  + </p>
+<p>Which baffled me because that’s <span class="math inline">\(LaTeX\)</span> but it’s not rendered… then (with some google help) I realized that in RMarkdown if we have stand alone <span class="math inline">\(LaTeX\)</span> we wrap them in dollar signs to tell <code>knitr</code> to render them… in this case using MathJax. So I just added <code>$</code> around the content like this:</p>
+<pre><code>print(&#39;$&#39; + latex(output) + &#39;$&#39;)</code></pre>
+<p>Of course if I were going to do this more than once I’d make a function to do it like this:</p>
+<pre class="python"><code>from sympy import *
+def latex_rmd_print(input_string):
+   print(&#39;$&#39; + latex(input_string) + &#39;$&#39;)</code></pre>
+<p>Which then makes the earlier example a lot simpler… but don’t forget the <code>results='asis'</code> in any code chunk that calls <code>latex_rmd_print</code>:</p>
+<pre class="python"><code>x = symbols(&#39;x&#39;)
+a = Integral( cos(x)*exp(x), x )
+latex_rmd_print( Eq(a, a.doit()) )</code></pre>
+<p><span class="math inline">\(\int e^{x} \cos{\left(x \right)}\, dx = \frac{e^{x} \sin{\left(x \right)}}{2} + \frac{e^{x} \cos{\left(x \right)}}{2}\)</span></p>

@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Odbc on Cerebral Mastication</title>
+    <title>odbc on Cerebral Mastication</title>
     <link>https://cerebralmastication.com/tags/odbc/</link>
-    <description>Recent content in Odbc on Cerebral Mastication</description>
+    <description>Recent content in odbc on Cerebral Mastication</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Thu, 31 Jan 2013 21:14:33 +0000</lastBuildDate>
@@ -17,7 +17,7 @@
       <pubDate>Thu, 31 Jan 2013 21:14:33 +0000</pubDate>
       
       <guid>https://cerebralmastication.com/2013/01/installing-debugging-odbc-on-mac-os-x/</guid>
-      <description>[](https://www.cerebralmastication.com/wp-content/uploads/2013/01/Screenshot_1_31_13_10_06_AM1.png)I just spent nearly two full days in a bare knuckle brawl with my Macbook Pro trying to get it to talk to a corporate MS SQL Server. I had abandoned MSSQL more than a year ago in favor of PostgreSQL because of how much easier it is to work with PostgreSQL from a non-Microsoft stack. At that point I was R running on Linux and soon R running on OS X.</description>
+      <description>I just spent nearly two full days in a bare knuckle brawl with my Macbook Pro trying to get it to talk to a corporate MS SQL Server. I had abandoned MSSQL more than a year ago in favor of PostgreSQL because of how much easier it is to work with PostgreSQL from a non-Microsoft stack. At that point I was R running on Linux and soon R running on OS X.</description>
     </item>
     
   </channel>

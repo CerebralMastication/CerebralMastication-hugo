@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.51" />
+  <meta name="generator" content="Hugo 0.74.3" />
 
   <title>Remote Backup Fail and How to Silently Copy Files &middot; Cerebral Mastication</title>
 
@@ -256,48 +256,31 @@
 
 </div>
 
-  <p><a href="https://www.cerebralmastication.com/wp-content/uploads/2010/01/pee-on-iron-mountain.jpg"><img src="https://www.cerebralmastication.com/wp-content/uploads/2010/01/pee-on-iron-mountain.jpg" alt="" />
+  <p><a href="https://www.cerebralmastication.com/wp-content/uploads/2010/01/pee-on-iron-mountain.jpg"><img src="https://www.cerebralmastication.com/wp-content/uploads/2010/01/pee-on-iron-mountain.jpg" alt="">
 </a>Recently I&rsquo;ve run into frustrations with <a href="http://backup.ironmountain.com/">Iron Mountain Connected Backup</a> so I&rsquo;ve been looking for alternatives.</p>
-
 <p><strong>Alternatives:</strong> I&rsquo;ve been running <a href="http://www.jungledisk.com/">Jungle Disk</a> at home and really like it. I could use that at work except I have not set up an Amazon or RackSpace account with my work credit card. But I am in Chicago and my database server/ file server is in Dallas TX. So I decided to just create a mirror on my laptop onto a shared drive on my server. There&rsquo;s lots of ways to do this, but the path I chose was to use <a href="http://en.wikipedia.org/wiki/Robocopy">RoboCopy, a command line copy tool from Microsoft</a> that is part of the Windows Server 2003 Resource Kit. I&rsquo;m running XP and I wanted the mirroring of my machine to be invisible, silent, and scheduled. To do this I found I needed to take the following steps:</p>
-
 <pre><code>  1. Install RoboCopy
   2. Create a batch file to mirror the directory I wanted
   3. Create a windows script to call the batch silently
   4. Schedule the windows script to run automagically
 </code></pre>
-
 <p><strong>Install RoboCopy:</strong> Download the <a href="http://www.microsoft.com/downloads/details.aspx?familyid=9d467a69-57ff-4ae7-96ee-b18c4790cffd&amp;displaylang=en">Windows Server 2003 Resource Kit</a> and install it. Very easy.</p>
-
 <p><strong>Create a batch file to run RoboCopy</strong>: I named mine c:/backup.bat and it looks something like this:</p>
-
+<!-- raw HTML omitted -->
 <blockquote>
-
-> 
-> Set Source="C:\Documents and Settings\jdlong"
-> 
-> 
-
-> 
-> Set Dest="\\myDallasServer\backup\jdlong"
-> 
-> 
-
-> 
-> Robocopy %Source% %Dest% /MIR /Z /R:0  >nul
-> 
-> </blockquote>
-
+<p>Set Source=&quot;C:\Documents and Settings\jdlong&rdquo;</p>
+</blockquote>
+<blockquote>
+<p>Set Dest=&rdquo;\myDallasServer\backup\jdlong&rdquo;</p>
+</blockquote>
+<blockquote>
+<p>Robocopy %Source% %Dest% /MIR /Z /R:0  &gt;nul</p>
+<!-- raw HTML omitted -->
+</blockquote>
 <p>This simply sets the source and destination and then runs RoboCopy with the /MIR (mirror) and /Z (restartable) switches invoked</p>
-
 <p><strong>Create a windows script</strong>: The problem with the batch file is that it is noisy when it runs. Even piping the output to nul it still produces a CMD window that stays up until it finishes running. That&rsquo;s where the Windows Script file comes into play. It calls the batch file but hides the CMD window. I created a file called c:\runBackup.vbs that has this in it:</p>
-
-<blockquote>Set WshShell = CreateObject("WScript.Shell")
-WshShell.Run chr(34) & "C:\backup.bat" & Chr(34), 0
-Set WshShell = Nothing</blockquote>
-
+<!-- raw HTML omitted -->
 <p><strong>Schedule the windows script:</strong> Control Panel -&gt; Scheduled Tasks. Then I created a new task that runs  c:\runBackup.vbs every night at 11PM. The only down side is that when I change my password I have to remember to change the password associated with the scheduled task or it will fail.</p>
-
 <p>The only upside is that I figured out that Iron Mountain sucks prior to having data loss. I got lucky. Next week I am going to test my backup. And then test it every quarter after that. And I won&rsquo;t depend on my corporate IT do to my backups.</p>
 
 

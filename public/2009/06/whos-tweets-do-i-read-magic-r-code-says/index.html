@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.51" />
+  <meta name="generator" content="Hugo 0.74.3" />
 
   <title>Who&#39;s Tweets Do I Read... Magic R Code Says... &middot; Cerebral Mastication</title>
 
@@ -252,69 +252,56 @@
 
 </div>
 
-  <p><img src="https://www.cerebralmastication.com/wp-content/uploads/2009/06/tweetingme.png" alt="tweetingme" /></p>
-
+  <p><img src="https://www.cerebralmastication.com/wp-content/uploads/2009/06/tweetingme.png" alt="tweetingme"></p>
 <p>So one glace at my user logs shows the truth: no one gives a rat&rsquo;s rump that<a href="https://www.cerebralmastication.com/?p=284"> I just quit my job</a>; you just <a href="https://www.cerebralmastication.com/?p=274">love you some Twitter R code</a>. And I&rsquo;m nothing but an attention whore, so come get some!</p>
-
 <p>So in my<a href="https://www.cerebralmastication.com/?p=274"> last &lsquo;Twitter with R&rsquo; post</a> I gave you some code I&rsquo;d written ripped off that allowed you to update your status from R. That&rsquo;s kinda cool, but really just for annoying your friends, tweeting when your code is finished running or, as Eva pointed out in the comments, maybe Tweeting the outcome of a routine. But R is good for analyzing data, plotting graphics, and cool stuff like that. Seems like under kill to just Tweet from it.</p>
-
 <p>So let&rsquo;s make some pretty pictures and stuff. Or more specifically, let&rsquo;s plot a histogram of the last 200 Tweets you received and the people who sent them. An example of said histogram is above.</p>
-
 <p>If you don&rsquo;t already have the libraries XML, lattice, and RCurl, you will need them:
-<code>install.packages('RCurl')
-install.packages('XML')
-install.packages('lattice')</code></p>
-
+<code>install.packages('RCurl') install.packages('XML') install.packages('lattice')</code></p>
 <p>Then once you get those bad boys, you can run this code:</p>
-
-<p><code>library(&quot;RCurl&quot;)
-library(&quot;XML&quot;)
-library(&quot;lattice&quot;)
-#
-#be sure and put your username and passy here
-username&lt;-&quot;YourUserName&quot;
-passy&lt;-&quot;YourPass&quot;
-#
-#This sets up the options for curl
+<p>`library(&ldquo;RCurl&rdquo;)
+library(&ldquo;XML&rdquo;)
+library(&ldquo;lattice&rdquo;)</p>
+<h1 id="heading"></h1>
+<p>#be sure and put your username and passy here
+username&lt;-&ldquo;YourUserName&rdquo;
+passy&lt;-&ldquo;YourPass&rdquo;</p>
+<h1 id="heading-1"></h1>
+<p>#This sets up the options for curl
 #then makes the request from the Twitter API
 #the count=200 option pulls the last 200 tweets from your friends
-#the twitter api limits you to a max of 200.... yeah, well that's life
-#
-opts &lt;- curlOptions(header = FALSE, userpwd = paste(username,&quot;:&quot;,passy,sep=&quot;&quot;))
-request &lt;- &quot;http://twitter.com/statuses/friends_timeline.xml?count=200&quot;
-timeline &lt;- getURL(request,.opts = opts)
-#
-#Now let's beat up on the XML like it owes us money
-doc &lt;- xmlInternalTreeParse(timeline, useInternalNodes = TRUE)
-#
-#grab only the screen_names and make a list
-xml_names_of_posters &lt;- getNodeSet(doc, &quot;/statuses/status/user/screen_name&quot;)
-text_names_of_posters &lt;- lapply(xml_names_of_posters,xmlValue)
-#
-#let's take it out of a list... just for kicks
-Twitterbaters &lt;- unlist(text_names_of_posters)
-#
-#and shove it into a data frame... seems like going around my</code><code>
+#the twitter api limits you to a max of 200&hellip;. yeah, well that&rsquo;s life</p>
+<h1 id="heading-2"></h1>
+<p>opts &lt;- curlOptions(header = FALSE, userpwd = paste(username,&quot;:&quot;,passy,sep=&rdquo;&quot;))
+request &lt;- &ldquo;<a href="http://twitter.com/statuses/friends_timeline.xml?count=200%22">http://twitter.com/statuses/friends_timeline.xml?count=200&quot;</a>
+timeline &lt;- getURL(request,.opts = opts)</p>
+<h1 id="heading-3"></h1>
+<p>#Now let&rsquo;s beat up on the XML like it owes us money
+doc &lt;- xmlInternalTreeParse(timeline, useInternalNodes = TRUE)</p>
+<h1 id="heading-4"></h1>
+<p>#grab only the screen_names and make a list
+xml_names_of_posters &lt;- getNodeSet(doc, &ldquo;/statuses/status/user/screen_name&rdquo;)
+text_names_of_posters &lt;- lapply(xml_names_of_posters,xmlValue)</p>
+<h1 id="heading-5"></h1>
+<p>#let&rsquo;s take it out of a list&hellip; just for kicks
+Twitterbaters &lt;- unlist(text_names_of_posters)</p>
+<h1 id="heading-6"></h1>
+<p>#and shove it into a data frame&hellip; seems like going around my``
 #ass to get to my elbow, but I want to put it in a table eventually
 #table is kinda like a cross tab. It calcs the frequency for me
 posters_list_df&lt;-as.data.frame(Twitterbaters)
-Tweets = table(posters_list_df)
-#
-#lets graph this monkey business with lattice
-#
-NiftyChart&lt;-barchart(~sort(Tweets), main=list(&quot;Who's Tweets Am I Getting?&quot; ,cex=1),xlab=list(&quot;Number of Tweets&quot;,cex=1))
+Tweets = table(posters_list_df)</p>
+<h1 id="heading-7"></h1>
+<p>#lets graph this monkey business with lattice</p>
+<h1 id="heading-8"></h1>
+<p>NiftyChart&lt;-barchart(~sort(Tweets), main=list(&ldquo;Who&rsquo;s Tweets Am I Getting?&rdquo; ,cex=1),xlab=list(&ldquo;Number of Tweets&rdquo;,cex=1))
 NiftyChart
-update(NiftyChart, col=&quot;brown&quot;)
-#</code></p>
-
+update(NiftyChart, col=&quot;brown&rdquo;)
+#`</p>
 <p><strong>EDIT:</strong> Look in the comments for a great base graphics solution from Paolo. He makes the same graph without Lattice.</p>
-
 <p>**Now be sure and change the username and password **then run that mofo. So now you have a pretty picture like the one I made above. Pretty slick, no?</p>
-
 <p>Special credit goes to @gappy3000 who tipped me off to making this with Lattice instead of ggplot because of the difficulty sorting with ggplot. @HarlanH for helping me know that my struggles with ggplot were not of my own making but were systemic.</p>
-
 <p>The Twitter syntax I hacked together is from the <a href="http://apiwiki.twitter.com/Twitter-API-Documentation">Twitter API documentation</a>. Have fun! And come back later for more attenion whoring blogging from your&rsquo;s truly, @CMastication.</p>
-
 <p>BTW, the reason I didn&rsquo;t structure this as a function is that you should be stepping through this one line at a time to figure out how it works. That&rsquo;s just harder with a function. So I did this for your own good. One day you&rsquo;ll thank me.</p>
 
 

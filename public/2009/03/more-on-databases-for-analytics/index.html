@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.51" />
+  <meta name="generator" content="Hugo 0.74.3" />
 
   <title>More on Databases for Analytics &middot; Cerebral Mastication</title>
 
@@ -259,18 +259,13 @@
 </div>
 
   <p>Lately I have been <a href="https://www.cerebralmastication.com/?p=212">struggling for what type of database </a>to use for my analytics work. SQL Server is a really good database but I always get the feeling it was<a href="http://"> </a>built for stuff other than what I want to do with it. I keep feeling like I am digging post holes with a spade and I keep thinking, &ldquo;there should be a tool that does this better.&rdquo;</p>
-
 <p>Yesterday I was listening to the IT Conversations Podcast and heard a presentation given by <a href="http://itc.conversationsnetwork.org/shows/detail4009.html">Michael Stonebraker from the Money:Tech conference</a>. Stonebraker (I keep wanting to call him Ballbuster) talks about how the elephant database engines (SQL Server, Oracle, DB2, etc) are never going to make it in financial trading engines because their approach to databasing (like freebasing only with data) is antiquated. It hit me when I was listening to the presentation that I don&rsquo;t really know about the different types of databases. I&rsquo;ve always wondered why SAS can be so damn fast at certain database functions and Oracle or SQL Server so slow at the same thing. I understand a little better now. I&rsquo;ve been trying to <a href="http://stackoverflow.com/questions/571750/make-sql-server-faster-at-manipulating-data-turn-off-transaction-logging">get SQL Server to act </a>like some other kind of DB, when in reality I just need a different type of DB&hellip; like a column oriented DB, maybe.</p>
-
 <p>Since I don&rsquo;t need the type of super high performance DB that Ballbuster talks about, I am wondering if I can efficiently use some type of open source <a href="http://en.wikipedia.org/wiki/Column-oriented_DBMS">Column Oriented DB</a>. But I have a lot of investment in learning SQL which I would like to not lose. Looks like I need to research my options.</p>
-
 <p>Below are some sources for database technology information beyond the big three elephants:</p>
-
 <pre><code>  * [John Sichi's blog](http://thinkwaitfast.blogspot.com/). He is the co-founder of [LucidDB](http://www.luciddb.org/)
   * [Julian Hyde's Blog ](http://julianhyde.blogspot.com/)- Founder of the [Mondrian ](http://sourceforge.net/projects/mondrian/)open-source OLAP engine, and chief architect of the [SQLstream ](http://www.sqlstream.com/index.html)streaming SQL engine
   * [The Database Column ](http://www.databasecolumn.com/)- A multi-author blog on database technology and innovation.
 </code></pre>
-
 <p>More to come on this topic&hellip;</p>
 
 

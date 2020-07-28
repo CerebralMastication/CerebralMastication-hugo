@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.51" />
+  <meta name="generator" content="Hugo 0.74.3" />
 
   <title>Box plot vs. Violin plot in R &middot; Cerebral Mastication</title>
 
@@ -253,51 +253,26 @@
 </div>
 
   <p>So Andrew Gelman hates box plots. Not that you should give a buck what Gelman thinks. I&rsquo;m just setting this blog post up, OK. So stick with me. Gelman also thought this XKCD cartoon <a href="http://www.stat.columbia.edu/~cook/movabletype/archives/2009/02/cartoon.html">was NOT funny</a> :</p>
-
-<p><a href="http://xkcd.com/539/"><img src="http://imgs.xkcd.com/comics/boyfriend.png" alt="" />
+<p><a href="http://xkcd.com/539/"><img src="http://imgs.xkcd.com/comics/boyfriend.png" alt="">
 </a></p>
-
 <p>There&rsquo;s some correlation as well as causation. I could be wrong, but I suspect that the reason Gelman does not like the XKCD cartoon is because he&rsquo;s very literal, as geeks can be. Trust me, my wife is married to a geek. It probably also has something to do with how much Gelman hates box plots. He hates them so much that he is holding a contest to see if anyone can prove to him that a box plot is an <a href="http://www.stat.columbia.edu/~cook/movabletype/archives/2009/02/boxplot-challen.html">appropriate way to show something</a>. I don&rsquo;t think I can persuade him that box plots are &lsquo;appropriate&rsquo; as that sounds like a matter of taste&hellip; like when I break wind at the breakfast table and my wife says, &lsquo;that&rsquo;s not appropriate.&rsquo; However I can demonstrate the ease at which one can make box plots, and my preferred violin plots using R.</p>
-
-<p>So stick with me and I&rsquo;ll give you some free code to take home and try!<!-- more --></p>
-
+<p>So stick with me and I&rsquo;ll give you some free code to take home and try!<!-- raw HTML omitted --></p>
 <p>Here&rsquo;s the type of thing you see a lot with box plots:</p>
-
-<blockquote>x <- rnorm(200)
-y <- rlnorm(200)
-plot(x, y, xlim=c(-5,5), ylim=c(-2,8))
-boxplot(x, col="gold", horizontal=TRUE, at=-1, add=TRUE,lty=2, rectCol="gray")
-boxplot(y, col="blue", horizontal=FALSE, at=-4, add=TRUE,lty=2)</blockquote>
-
+<!-- raw HTML omitted -->
 <p>That produces output like this:</p>
-
-<p>[caption id=&ldquo;attachment_163&rdquo; align=&ldquo;alignnone&rdquo; width=&ldquo;300&rdquo; caption=&ldquo;Box Plot&rdquo;]<img src="https://www.cerebralmastication.com/wp-content/uploads/2009/02/tdbox1-300x282.png" alt="Box Plot" />
+<p>[caption id=&quot;attachment_163&rdquo; align=&quot;alignnone&rdquo; width=&quot;300&rdquo; caption=&quot;Box Plot&rdquo;]<img src="https://www.cerebralmastication.com/wp-content/uploads/2009/02/tdbox1-300x282.png" alt="Box Plot">
 [/caption]</p>
-
 <p>That&rsquo;s kinda cute. You can see the log normal shape of y and the normal shape of x.  An alternative would be to use a violin chart using the following syntax:</p>
-
-<blockquote>library(vioplot)
-plot(x, y, xlim=c(-5,5), ylim=c(-2,8))
-vioplot(x, col="gold", horizontal=TRUE, at=-1, add=TRUE,lty=2, rectCol="gray")
-vioplot(y, col="blue", horizontal=FALSE, at=-4, add=TRUE,lty=2)</blockquote>
-
+<!-- raw HTML omitted -->
 <p>I kept the values for X and Y the same, but the new plot looks like this:</p>
-
-<p>[caption id=&ldquo;attachment_164&rdquo; align=&ldquo;alignnone&rdquo; width=&ldquo;300&rdquo; caption=&ldquo;Violin Plot&rdquo;]<img src="https://www.cerebralmastication.com/wp-content/uploads/2009/02/vdbox1-300x282.png" alt="Violin Plot" />
+<p>[caption id=&quot;attachment_164&rdquo; align=&quot;alignnone&rdquo; width=&quot;300&rdquo; caption=&quot;Violin Plot&rdquo;]<img src="https://www.cerebralmastication.com/wp-content/uploads/2009/02/vdbox1-300x282.png" alt="Violin Plot">
 [/caption]</p>
-
 <p>I like that a little better. The violin plot captures the shape of the density mass function (PDF). But in both of these examples we would probably be just as well off if we simply plotted the PDF instead of either the violin plot or the box plot. So they aren&rsquo;t really adding anything. So is Gelman right, the box/violin plot is useless? Here&rsquo;s what I think it IS good for:</p>
-
-<p><img src="https://www.cerebralmastication.com/wp-content/uploads/2009/02/vioplot.png" alt="vioplot" /></p>
-
+<p><img src="https://www.cerebralmastication.com/wp-content/uploads/2009/02/vioplot.png" alt="vioplot"></p>
 <p>These are plots of state crop yields in terms of deviation from an expected trend. So 0 on the Y axis means no deviation from trend and 2 is 200% better than trend and you just can&rsquo;t do any worse than -100% below trend. I look at this type of stuff all the time, and a box or violin chart is really nice because I can lay out a bunch of states along the X axis and look at how they compare. It&rsquo;s easy to compare all the moments of the distributions visually. We can easily see that most states have a mean around 0, but Kansas has MUCH more dispersion as well as a lot of skew. And since you are wondering, no, I didn&rsquo;t force the symmetry you see in the graph, it just turned out that way. Luck put Kansas in the middle and luck gave MO and IL the same relative tail. <em>shrug</em> sometimes this stuff just looks good. Kinda like me!</p>
-
 <p>Here&rsquo;s the same info as above but in a box plot:</p>
-
-<p><img src="https://www.cerebralmastication.com/wp-content/uploads/2009/02/boxplot.png" alt="boxplot" /></p>
-
+<p><img src="https://www.cerebralmastication.com/wp-content/uploads/2009/02/boxplot.png" alt="boxplot"></p>
 <p>I think the violin plot is more elegant, but the box plot is still OK, albeit rather noisy and less elegant.</p>
-
 <p>So that&rsquo;s all the free code you get from me today. Try not to spend it all on candy this time, OK?</p>
 
 

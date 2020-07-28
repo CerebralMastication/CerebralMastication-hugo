@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.51" />
+  <meta name="generator" content="Hugo 0.74.3" />
 
   <title>Twitter from R... Sure, why not! &middot; Cerebral Mastication</title>
 
@@ -252,41 +252,30 @@
 
 </div>
 
-  <p><img src="http://www.bit-101.com/blog/wp-content/uploads/2008/07/whale.png" alt="" /></p>
-
+  <p><img src="http://www.bit-101.com/blog/wp-content/uploads/2008/07/whale.png" alt=""></p>
 <p>So I have started following the #RStats tag in twitter. Prior to a week ago I had never Twitterbated so I thought I would give it a go since I am not one to shy away from new technology&hellip; much. I think of Twitter like a call in radio show where I get to cut off callers when they annoy me.</p>
-
 <p>Well one of the interesting things I ran across was <a href="http://twitter.com/JoFrhwld/statuses/2012755202">this tweet </a>that pointed to <a href="http://pastie.org/367741">this page about posting tweets from R</a>.  The code example was missing a couple of things, so here&rsquo;s the cleaned up version:</p>
-
+<!-- raw HTML omitted -->
 <blockquote>
-
->     
->     
->     
->     
->     <span class="status-body"><span class="entry-content">install.packages("RCurl")
->     library("RCurl")</span></span>
->     <span class="meta meta_paragraph meta_paragraph_text">opts = curlOptions(header = FALSE, userpwd = "username:password", netrc = FALSE)
->     </span>
->     <span class="meta meta_paragraph meta_paragraph_text">update <- function(status){
->       method <- "<span class="markup markup_underline markup_underline_link">http://twitter.com/statuses/update.xml?status=</span>"
->       encoded_status <- URLencode(status)
->       request <- paste(method,encoded_status,sep = "")
->       postForm(request,.opts = opts)
->     }
->     update("My first tweet from R! @CMastication is my daddy! #RStats")
->     </span>
-> 
-> 
-
-> 
-> 
+<pre><code>&lt;span class=&quot;status-body&quot;&gt;&lt;span class=&quot;entry-content&quot;&gt;install.packages(&quot;RCurl&quot;)
+library(&quot;RCurl&quot;)&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;meta meta_paragraph meta_paragraph_text&quot;&gt;opts = curlOptions(header = FALSE, userpwd = &quot;username:password&quot;, netrc = FALSE)
+&lt;/span&gt;
+&lt;span class=&quot;meta meta_paragraph meta_paragraph_text&quot;&gt;update &lt;- function(status){
+  method &lt;- &quot;&lt;span class=&quot;markup markup_underline markup_underline_link&quot;&gt;http://twitter.com/statuses/update.xml?status=&lt;/span&gt;&quot;
+  encoded_status &lt;- URLencode(status)
+  request &lt;- paste(method,encoded_status,sep = &quot;&quot;)
+  postForm(request,.opts = opts)
+}
+update(&quot;My first tweet from R! @CMastication is my daddy! #RStats&quot;)
+&lt;/span&gt;
+</code></pre>
 </blockquote>
-
+<blockquote>
+</blockquote>
+<!-- raw HTML omitted -->
 <p>This is a pretty good, and fairly self explanatory example of how to use RCurl to spew out some data. Don&rsquo;t be a scriptard and try to run this without changing &lsquo;username&rsquo; and &lsquo;password.&rsquo; If you do, I&rsquo;m coming to your house and going to beat you with your own keyboard until you admit that I am, indeed, your daddy.</p>
-
 <p>Am I planning on Tweeting from R? You have to be kidding. That&rsquo;s just silly. But I might need to use RCurl again. Although for long running scripts I may very well put code at the end of my scripts that sends out a Tweet when the code has finished running. Waaaay easier than setting up email and trying to ensure it runs from EC2 as well as my home machine, etc. The more I think about that, the more I am sure I&rsquo;m a friggin genius. And of course, on every one of my script completion tweets I&rsquo;m going to use the #RStats tag so everyone in twitterland will know that I am amazing. And a prick. All at the same time. I&rsquo;m complex like that.</p>
-
 <p>Oh yeah, I&rsquo;m @CMastication on Twitter.</p>
 
 

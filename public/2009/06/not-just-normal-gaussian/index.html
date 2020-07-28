@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.51" />
+  <meta name="generator" content="Hugo 0.74.3" />
 
   <title>Not Just Normal... Gaussian &middot; Cerebral Mastication</title>
 
@@ -254,57 +254,53 @@
 
 </div>
 
-  <p>[caption id=&ldquo;&rdquo; align=&ldquo;alignleft&rdquo; width=&ldquo;188&rdquo; caption=&ldquo;Pretty Normal&rdquo;]<a href="http://en.wikipedia.org/wiki/Normal_distribution#Standard_deviation_and_confidence_intervals"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Standard_deviation_diagram.svg/325px-Standard_deviation_diagram.svg.png" alt="Pretty Normal" />
+  <p>[caption id=&rdquo;&rdquo; align=&quot;alignleft&rdquo; width=&quot;188&rdquo; caption=&quot;Pretty Normal&rdquo;]<a href="http://en.wikipedia.org/wiki/Normal_distribution#Standard_deviation_and_confidence_intervals"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Standard_deviation_diagram.svg/325px-Standard_deviation_diagram.svg.png" alt="Pretty Normal">
 </a>[/caption]</p>
-
 <p>Dave, over at The Revolutions Blog,<a href="http://blog.revolution-computing.com/2009/06/graphs-created-with-r-on-wikimedia-commons.html"> posted about the big &lsquo;ol list of graphs</a> created with R that are over at <a href="http://commons.wikimedia.org/wiki/Category:Created_with_R">Wikimedia Commons</a>. As I was scrolling through the list I recognized the standard normal distribution from the <a href="http://en.wikipedia.org/wiki/Normal_distribution#Standard_deviation_and_confidence_intervals">Wikipedia article on the same topic</a>.</p>
-
 <p>Below is the fairly simple source code with lots of comments. <a href="http://commons.wikimedia.org/wiki/File:Standard_deviation_diagram.svg">Here&rsquo;s the source</a>. Run it at home&hellip; for fun and profit.</p>
-
+<!-- raw HTML omitted -->
 <blockquote>
+<pre><code># # External package to generate four shades of blue
+# library(RColorBrewer)
+# cols &lt;- rev(brewer.pal(4, &quot;Blues&quot;))
+cols &lt;- c(&quot;#2171B5&quot;, &quot;#6BAED6&quot;, &quot;#BDD7E7&quot;, &quot;#EFF3FF&quot;)
 
->     
->     # # External package to generate four shades of blue
->     # library(RColorBrewer)
->     # cols <- rev(brewer.pal(4, "Blues"))
->     cols <- c("#2171B5", "#6BAED6", "#BDD7E7", "#EFF3FF")
->     
->     # Sequence between -4 and 4 with 0.1 steps
->     x <- seq(-4, 4, 0.1)
->     
->     # Plot an empty chart with tight axis boundaries, and axis lines on bottom and left
->     plot(x, type="n", xaxs="i", yaxs="i", xlim=c(-4, 4), ylim=c(0, 0.4),
->          bty="l", xaxt="n", xlab="x-value", ylab="probability density")
->     
->     # Function to plot each coloured portion of the curve, between "a" and "b" as a
->     # polygon; the function "dnorm" is the normal probability density function
->     polysection <- function(a, b, col, n=11){
->         dx <- seq(a, b, length.out=n)
->         polygon(c(a, dx, b), c(0, dnorm(dx), 0), col=col, border=NA)
->         # draw a white vertical line on "inside" side to separate each section
->         segments(a, 0, a, dnorm(a), col="white")
->     }
->     
->     # Build the four left and right portions of this bell curve
->     for(i in 0:3){
->         polysection(   i, i+1,  col=cols[i+1]) # Right side of 0
->         polysection(-i-1,  -i,  col=cols[i+1]) # Left right of 0
->     }
->     
->     # Black outline of bell curve
->     lines(x, dnorm(x))
->     
->     # Bottom axis values, where sigma represents standard deviation and mu is the mean
->     axis(1, at=-3:3, labels=expression(-3*sigma, -2*sigma, -1*sigma, mu,
->                                         1*sigma,  2*sigma,  3*sigma))
->     
->     # Add percent densities to each division, between x and x+1
->     pd <- sprintf("%.1f%%", 100*(pnorm(1:4) - pnorm(0:3)))
->     text(c((0:3)+0.5,(0:-3)-0.5), c(0.16, 0.05, 0.04, 0.02), pd, col=c("white","white","black","black"))
->     segments(c(-2.5, -3.5, 2.5, 3.5), dnorm(c(2.5, 3.5)), c(-2.5, -3.5, 2.5, 3.5), c(0.03, 0.01))
-> 
-> 
+# Sequence between -4 and 4 with 0.1 steps
+x &lt;- seq(-4, 4, 0.1)
+
+# Plot an empty chart with tight axis boundaries, and axis lines on bottom and left
+plot(x, type=&quot;n&quot;, xaxs=&quot;i&quot;, yaxs=&quot;i&quot;, xlim=c(-4, 4), ylim=c(0, 0.4),
+     bty=&quot;l&quot;, xaxt=&quot;n&quot;, xlab=&quot;x-value&quot;, ylab=&quot;probability density&quot;)
+
+# Function to plot each coloured portion of the curve, between &quot;a&quot; and &quot;b&quot; as a
+# polygon; the function &quot;dnorm&quot; is the normal probability density function
+polysection &lt;- function(a, b, col, n=11){
+    dx &lt;- seq(a, b, length.out=n)
+    polygon(c(a, dx, b), c(0, dnorm(dx), 0), col=col, border=NA)
+    # draw a white vertical line on &quot;inside&quot; side to separate each section
+    segments(a, 0, a, dnorm(a), col=&quot;white&quot;)
+}
+
+# Build the four left and right portions of this bell curve
+for(i in 0:3){
+    polysection(   i, i+1,  col=cols[i+1]) # Right side of 0
+    polysection(-i-1,  -i,  col=cols[i+1]) # Left right of 0
+}
+
+# Black outline of bell curve
+lines(x, dnorm(x))
+
+# Bottom axis values, where sigma represents standard deviation and mu is the mean
+axis(1, at=-3:3, labels=expression(-3*sigma, -2*sigma, -1*sigma, mu,
+                                    1*sigma,  2*sigma,  3*sigma))
+
+# Add percent densities to each division, between x and x+1
+pd &lt;- sprintf(&quot;%.1f%%&quot;, 100*(pnorm(1:4) - pnorm(0:3)))
+text(c((0:3)+0.5,(0:-3)-0.5), c(0.16, 0.05, 0.04, 0.02), pd, col=c(&quot;white&quot;,&quot;white&quot;,&quot;black&quot;,&quot;black&quot;))
+segments(c(-2.5, -3.5, 2.5, 3.5), dnorm(c(2.5, 3.5)), c(-2.5, -3.5, 2.5, 3.5), c(0.03, 0.01))
+</code></pre>
 </blockquote>
+<!-- raw HTML omitted -->
 
 
   

@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Howto on Cerebral Mastication</title>
+    <title>howto on Cerebral Mastication</title>
     <link>https://cerebralmastication.com/tags/howto/</link>
-    <description>Recent content in Howto on Cerebral Mastication</description>
+    <description>Recent content in howto on Cerebral Mastication</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Thu, 12 May 2011 20:31:31 +0000</lastBuildDate>
@@ -65,7 +65,7 @@ I felt like this a number of times in my life. Many of my classes were focused o
       <pubDate>Thu, 02 Sep 2010 18:03:21 +0000</pubDate>
       
       <guid>https://cerebralmastication.com/2010/09/cholesk-post-on-correlated-random-normal-generation/</guid>
-      <description>[caption id=&amp;ldquo;attachment_825&amp;rdquo; align=&amp;ldquo;alignleft&amp;rdquo; width=&amp;ldquo;250&amp;rdquo; caption=&amp;ldquo;André-Louis Cholesky is my homeboy&amp;rdquo;][/caption]
+      <description>[caption id=&amp;quot;attachment_825&amp;rdquo; align=&amp;quot;alignleft&amp;rdquo; width=&amp;quot;250&amp;rdquo; caption=&amp;quot;André-Louis Cholesky is my homeboy&amp;rdquo;][/caption]
 When I did a brief post three days ago I had no plans on writing two more posts on correlated random number generation. But I&amp;rsquo;ve gotten a couple of emails, a few comments, and some Twitter feedback. In response to my first post, Gappy, calls me out and says, &amp;ldquo;the way mensches do multivariate (log)normal variates is via Cholesky. It’s simple, instructive, and fast.</description>
     </item>
     
@@ -76,7 +76,7 @@ When I did a brief post three days ago I had no plans on writing two more posts 
       
       <guid>https://cerebralmastication.com/2010/08/even-simpler-multivariate-correlated-simulations/</guid>
       <description>So after yesterday&amp;rsquo;s post on Simple Simulation using Copulas I got a very nice email that basically begged the question, &amp;ldquo;Dude, why are you making this so hard?&amp;rdquo; The author pointed out that if what I really want is a Gaussian correlation structure for Gaussian distributions then I could simply use the mvrnorm() function from the MASS package. Well I did a quick
-?mvrnorm and, I&amp;rsquo;ll be damned, he&amp;rsquo;s right! The advantage of using a copula is the ability to simulate correlation structures where the correlation is different for different levels of values.</description>
+and, I&amp;rsquo;ll be damned, he&amp;rsquo;s right! The advantage of using a copula is the ability to simulate correlation structures where the correlation is different for different levels of values.</description>
     </item>
     
     <item>
@@ -94,7 +94,7 @@ When I did a brief post three days ago I had no plans on writing two more posts 
       <pubDate>Tue, 16 Feb 2010 18:31:23 +0000</pubDate>
       
       <guid>https://cerebralmastication.com/2010/02/you-can-hadoop-it-its-elastic-boogie-woogie-woog-ie/</guid>
-      <description>[caption id=&amp;ldquo;attachment_594&amp;rdquo; align=&amp;ldquo;alignleft&amp;rdquo; width=&amp;ldquo;261&amp;rdquo; caption=&amp;ldquo;This blog&amp;rsquo;s name in Chinese! &amp;ldquo;][/caption]
+      <description>[caption id=&amp;quot;attachment_594&amp;rdquo; align=&amp;quot;alignleft&amp;rdquo; width=&amp;quot;261&amp;rdquo; caption=&amp;quot;This blog&amp;rsquo;s name in Chinese! &amp;ldquo;][/caption]
 I just came back from the future and let me be the first to tell you this: Learn some Chinese. And more than just cào nǐ niáng (肏你娘) which your friend in grad school told you means &amp;ldquo;Live happy with many blessings&amp;rdquo;. Trust me, I&amp;rsquo;ve been hanging with Madam Wu and she told me it doesn&amp;rsquo;t mean that.
 So how did I travel to the future to visit with Madam Wu, you ask?</description>
     </item>
@@ -114,7 +114,7 @@ So how did I travel to the future to visit with Madam Wu, you ask?</description>
       <pubDate>Tue, 16 Jun 2009 16:26:46 +0000</pubDate>
       
       <guid>https://cerebralmastication.com/2009/06/not-just-normal-gaussian/</guid>
-      <description>[caption id=&amp;ldquo;&amp;rdquo; align=&amp;ldquo;alignleft&amp;rdquo; width=&amp;ldquo;188&amp;rdquo; caption=&amp;ldquo;Pretty Normal&amp;rdquo;][/caption]
+      <description>[caption id=&amp;rdquo;&amp;rdquo; align=&amp;quot;alignleft&amp;rdquo; width=&amp;quot;188&amp;rdquo; caption=&amp;quot;Pretty Normal&amp;rdquo;][/caption]
 Dave, over at The Revolutions Blog,posted about the big &amp;lsquo;ol list of graphs created with R that are over at Wikimedia Commons. As I was scrolling through the list I recognized the standard normal distribution from the Wikipedia article on the same topic.
 Below is the fairly simple source code with lots of comments. Here&amp;rsquo;s the source. Run it at home&amp;hellip; for fun and profit.</description>
     </item>

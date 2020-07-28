@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Rockstars on Cerebral Mastication</title>
+    <title>rockstars on Cerebral Mastication</title>
     <link>https://cerebralmastication.com/tags/rockstars/</link>
-    <description>Recent content in Rockstars on Cerebral Mastication</description>
+    <description>Recent content in rockstars on Cerebral Mastication</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Wed, 17 Feb 2010 16:54:32 +0000</lastBuildDate>
@@ -19,7 +19,7 @@
       <guid>https://cerebralmastication.com/2010/02/real-world-real-time-analytics/</guid>
       <description>Stop wasting time reading my drivel. You need to head over the the DataWrangling.com blog and read Peter Skomoroch&amp;rsquo;s interview with Bradford Cross of FlightCaster.
 Peter wrote up this interview back in August 2009, so I&amp;rsquo;m a little late to this party. There&amp;rsquo;s some really great quotes in this interview. Here&amp;rsquo;s a few of my fav quotes from Cross:
-At Google, the research scientists prototype in python and R, and then port to C++ for the real scalable map reduce runs.</description>
+Here&amp;rsquo;s a problem I think anyone who works with data and models can relate to:</description>
     </item>
     
     <item>
@@ -38,7 +38,7 @@ So part of Ada Lovelace day is to blog about women in technology. I love technol
       <pubDate>Fri, 06 Feb 2009 16:21:37 +0000</pubDate>
       
       <guid>https://cerebralmastication.com/2009/02/hal-varian-googles-chief-economist-thinks-i-am-sexy/</guid>
-      <description>[caption id=&amp;ldquo;attachment_100&amp;rdquo; align=&amp;ldquo;alignleft&amp;rdquo; width=&amp;ldquo;200&amp;rdquo; caption=&amp;ldquo;Hal Varian - Superstar&amp;rdquo;][/caption]
+      <description>[caption id=&amp;quot;attachment_100&amp;rdquo; align=&amp;quot;alignleft&amp;rdquo; width=&amp;quot;200&amp;rdquo; caption=&amp;quot;Hal Varian - Superstar&amp;rdquo;][/caption]
 So one of the top jobs in the world has to be the friggin&amp;rsquo; gig that Hal Varian has. He&amp;rsquo;s the chief economist at Google. He might as well have business cards that read &amp;ldquo;Hal Varian, Mother Friggin Rock Star.&amp;rdquo; Plus he did his BS at MIT and got his MA in math and his PhD in econ at Berkeley. According to Wikipedia (aka digitalgod) he finished his education at MIT in &amp;lsquo;69 and his PhD at Berkeley in &amp;lsquo;73.</description>
     </item>
     

@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.51" />
+  <meta name="generator" content="Hugo 0.74.3" />
 
   <title>Fitting Distribution X to Data From Distribution Y &middot; Cerebral Mastication</title>
 
@@ -252,40 +252,36 @@
 
 </div>
 
-  <p><a href="https://www.cerebralmastication.com/wp-content/uploads/2011/05/rstudio-plot.png"><img src="https://www.cerebralmastication.com/wp-content/uploads/2011/05/rstudio-plot-300x240.png" alt="" />
+  <p><a href="https://www.cerebralmastication.com/wp-content/uploads/2011/05/rstudio-plot.png"><img src="https://www.cerebralmastication.com/wp-content/uploads/2011/05/rstudio-plot-300x240.png" alt="">
 </a>I had someone ask me about fitting a beta distribution to data drawn from a gamma distribution and how well the distribution would fit. I&rsquo;m not a &ldquo;closed form&rdquo; kinda guy. I&rsquo;m more of a &ldquo;numerical simulation&rdquo; type of fellow. So I whipped up a little R code to illustrate the process then we changed the parameters of the gamma distribution to see how it impacted fit. An exercise like this is what I call building a &ldquo;toy model&rdquo; and I think this is invaluable as a method for building intuition and a visceral understanding of data.
 Here&rsquo;s some example code which we played with:</p>
-
+<!-- raw HTML omitted -->
 <blockquote>
-
->     
->     <a href="http://inside-r.org/r-doc/base/set.seed"><span style="color: #003399; font-weight: bold;">set.seed</span></a><span style="color: #009900;">(</span><span style="color: #cc66cc;">3</span><span style="color: #009900;">)</span>
->     x <span style=""><-</span> <a href="http://inside-r.org/r-doc/stats/rgamma"><span style="color: #003399; font-weight: bold;">rgamma</span></a><span style="color: #009900;">(</span>1e5<span style="color: #339933;">,</span> <span style="color: #cc66cc;">2</span><span style="color: #339933;">,</span> <span style="color: #cc66cc;">.2</span><span style="color: #009900;">)</span>
->     <a href="http://inside-r.org/r-doc/graphics/plot"><span style="color: #003399; font-weight: bold;">plot</span></a><span style="color: #009900;">(</span><a href="http://inside-r.org/r-doc/stats/density"><span style="color: #003399; font-weight: bold;">density</span></a><span style="color: #009900;">(</span>x<span style="color: #009900;">)</span><span style="color: #009900;">)</span>
->      
->     <span style="color: #666666; font-style: italic;"># normalize the gamma so it's between 0 & 1</span>
->     <span style="color: #666666; font-style: italic;"># .0001 added because having exactly 1 causes fail</span>
->     xt <span style=""><-</span> x <span style="">/</span> <span style="color: #009900;">(</span> <a href="http://inside-r.org/r-doc/base/max"><span style="color: #003399; font-weight: bold;">max</span></a><span style="color: #009900;">(</span> x <span style="color: #009900;">)</span> <span style="">+</span> <span style="color: #cc66cc;">.0001</span> <span style="color: #009900;">)</span>
->      
->     <span style="color: #666666; font-style: italic;"># fit a beta distribution to xt</span>
->     <a href="http://inside-r.org/r-doc/base/library"><span style="color: #003399; font-weight: bold;">library</span></a><span style="color: #009900;">(</span> <a href="http://inside-r.org/packages/cran/MASS"><span style="">MASS</span></a> <span style="color: #009900;">)</span>
->     fit.beta <span style=""><-</span> <a href="http://inside-r.org/r-doc/MASS/fitdistr"><span style="color: #003399; font-weight: bold;">fitdistr</span></a><span style="color: #009900;">(</span> xt<span style="color: #339933;">,</span> <span style="color: #0000ff;">"beta"</span><span style="color: #339933;">,</span> <a href="http://inside-r.org/r-doc/stats/start"><span style="color: #003399; font-weight: bold;">start</span></a> = <a href="http://inside-r.org/r-doc/base/list"><span style="color: #003399; font-weight: bold;">list</span></a><span style="color: #009900;">(</span> shape1=<span style="color: #cc66cc;">2</span><span style="color: #339933;">,</span> shape2=<span style="color: #cc66cc;">5</span> <span style="color: #009900;">)</span> <span style="color: #009900;">)</span>
->      
->     x.beta <span style=""><-</span> <a href="http://inside-r.org/r-doc/stats/rbeta"><span style="color: #003399; font-weight: bold;">rbeta</span></a><span style="color: #009900;">(</span>1e5<span style="color: #339933;">,</span>fit.beta<span style="">$</span>estimate<span style="color: #009900;">[</span><span style="color: #009900;">[</span><span style="color: #cc66cc;">1</span><span style="color: #009900;">]</span><span style="color: #009900;">]</span><span style="color: #339933;">,</span>fit.beta<span style="">$</span>estimate<span style="color: #009900;">[</span><span style="color: #009900;">[</span><span style="color: #cc66cc;">2</span><span style="color: #009900;">]</span><span style="color: #009900;">]</span><span style="color: #009900;">)</span>
->      
->     <span style="color: #666666; font-style: italic;">## plot the pdfs on top of each other</span>
->     <a href="http://inside-r.org/r-doc/graphics/plot"><span style="color: #003399; font-weight: bold;">plot</span></a><span style="color: #009900;">(</span><a href="http://inside-r.org/r-doc/stats/density"><span style="color: #003399; font-weight: bold;">density</span></a><span style="color: #009900;">(</span>xt<span style="color: #009900;">)</span><span style="color: #009900;">)</span>
->     <a href="http://inside-r.org/r-doc/graphics/lines"><span style="color: #003399; font-weight: bold;">lines</span></a><span style="color: #009900;">(</span><a href="http://inside-r.org/r-doc/stats/density"><span style="color: #003399; font-weight: bold;">density</span></a><span style="color: #009900;">(</span>x.beta<span style="color: #009900;">)</span><span style="color: #339933;">,</span> <a href="http://inside-r.org/r-doc/base/col"><span style="color: #003399; font-weight: bold;">col</span></a>=<span style="color: #0000ff;">"red"</span> <span style="color: #009900;">)</span>
->      
->     <span style="color: #666666; font-style: italic;">## plot the qqplots</span>
->     <a href="http://inside-r.org/r-doc/stats/qqplot"><span style="color: #003399; font-weight: bold;">qqplot</span></a><span style="color: #009900;">(</span>xt<span style="color: #339933;">,</span> x.beta<span style="color: #009900;">)</span>
-> 
-> [Created by Pretty R at inside-R.org](http://www.inside-r.org/pretty-r)
-> 
-> </blockquote>
-
+<pre><code>&lt;a href=&quot;http://inside-r.org/r-doc/base/set.seed&quot;&gt;&lt;span style=&quot;color: #003399; font-weight: bold;&quot;&gt;set.seed&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;color: #009900;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #cc66cc;&quot;&gt;3&lt;/span&gt;&lt;span style=&quot;color: #009900;&quot;&gt;)&lt;/span&gt;
+x &lt;span style=&quot;&quot;&gt;&lt;-&lt;/span&gt; &lt;a href=&quot;http://inside-r.org/r-doc/stats/rgamma&quot;&gt;&lt;span style=&quot;color: #003399; font-weight: bold;&quot;&gt;rgamma&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;color: #009900;&quot;&gt;(&lt;/span&gt;1e5&lt;span style=&quot;color: #339933;&quot;&gt;,&lt;/span&gt; &lt;span style=&quot;color: #cc66cc;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot;color: #339933;&quot;&gt;,&lt;/span&gt; &lt;span style=&quot;color: #cc66cc;&quot;&gt;.2&lt;/span&gt;&lt;span style=&quot;color: #009900;&quot;&gt;)&lt;/span&gt;
+&lt;a href=&quot;http://inside-r.org/r-doc/graphics/plot&quot;&gt;&lt;span style=&quot;color: #003399; font-weight: bold;&quot;&gt;plot&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;color: #009900;&quot;&gt;(&lt;/span&gt;&lt;a href=&quot;http://inside-r.org/r-doc/stats/density&quot;&gt;&lt;span style=&quot;color: #003399; font-weight: bold;&quot;&gt;density&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;color: #009900;&quot;&gt;(&lt;/span&gt;x&lt;span style=&quot;color: #009900;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;color: #009900;&quot;&gt;)&lt;/span&gt;
+ 
+&lt;span style=&quot;color: #666666; font-style: italic;&quot;&gt;# normalize the gamma so it's between 0 &amp; 1&lt;/span&gt;
+&lt;span style=&quot;color: #666666; font-style: italic;&quot;&gt;# .0001 added because having exactly 1 causes fail&lt;/span&gt;
+xt &lt;span style=&quot;&quot;&gt;&lt;-&lt;/span&gt; x &lt;span style=&quot;&quot;&gt;/&lt;/span&gt; &lt;span style=&quot;color: #009900;&quot;&gt;(&lt;/span&gt; &lt;a href=&quot;http://inside-r.org/r-doc/base/max&quot;&gt;&lt;span style=&quot;color: #003399; font-weight: bold;&quot;&gt;max&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;color: #009900;&quot;&gt;(&lt;/span&gt; x &lt;span style=&quot;color: #009900;&quot;&gt;)&lt;/span&gt; &lt;span style=&quot;&quot;&gt;+&lt;/span&gt; &lt;span style=&quot;color: #cc66cc;&quot;&gt;.0001&lt;/span&gt; &lt;span style=&quot;color: #009900;&quot;&gt;)&lt;/span&gt;
+ 
+&lt;span style=&quot;color: #666666; font-style: italic;&quot;&gt;# fit a beta distribution to xt&lt;/span&gt;
+&lt;a href=&quot;http://inside-r.org/r-doc/base/library&quot;&gt;&lt;span style=&quot;color: #003399; font-weight: bold;&quot;&gt;library&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;color: #009900;&quot;&gt;(&lt;/span&gt; &lt;a href=&quot;http://inside-r.org/packages/cran/MASS&quot;&gt;&lt;span style=&quot;&quot;&gt;MASS&lt;/span&gt;&lt;/a&gt; &lt;span style=&quot;color: #009900;&quot;&gt;)&lt;/span&gt;
+fit.beta &lt;span style=&quot;&quot;&gt;&lt;-&lt;/span&gt; &lt;a href=&quot;http://inside-r.org/r-doc/MASS/fitdistr&quot;&gt;&lt;span style=&quot;color: #003399; font-weight: bold;&quot;&gt;fitdistr&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;color: #009900;&quot;&gt;(&lt;/span&gt; xt&lt;span style=&quot;color: #339933;&quot;&gt;,&lt;/span&gt; &lt;span style=&quot;color: #0000ff;&quot;&gt;&quot;beta&quot;&lt;/span&gt;&lt;span style=&quot;color: #339933;&quot;&gt;,&lt;/span&gt; &lt;a href=&quot;http://inside-r.org/r-doc/stats/start&quot;&gt;&lt;span style=&quot;color: #003399; font-weight: bold;&quot;&gt;start&lt;/span&gt;&lt;/a&gt; = &lt;a href=&quot;http://inside-r.org/r-doc/base/list&quot;&gt;&lt;span style=&quot;color: #003399; font-weight: bold;&quot;&gt;list&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;color: #009900;&quot;&gt;(&lt;/span&gt; shape1=&lt;span style=&quot;color: #cc66cc;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot;color: #339933;&quot;&gt;,&lt;/span&gt; shape2=&lt;span style=&quot;color: #cc66cc;&quot;&gt;5&lt;/span&gt; &lt;span style=&quot;color: #009900;&quot;&gt;)&lt;/span&gt; &lt;span style=&quot;color: #009900;&quot;&gt;)&lt;/span&gt;
+ 
+x.beta &lt;span style=&quot;&quot;&gt;&lt;-&lt;/span&gt; &lt;a href=&quot;http://inside-r.org/r-doc/stats/rbeta&quot;&gt;&lt;span style=&quot;color: #003399; font-weight: bold;&quot;&gt;rbeta&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;color: #009900;&quot;&gt;(&lt;/span&gt;1e5&lt;span style=&quot;color: #339933;&quot;&gt;,&lt;/span&gt;fit.beta&lt;span style=&quot;&quot;&gt;$&lt;/span&gt;estimate&lt;span style=&quot;color: #009900;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #009900;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #cc66cc;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot;color: #009900;&quot;&gt;]&lt;/span&gt;&lt;span style=&quot;color: #009900;&quot;&gt;]&lt;/span&gt;&lt;span style=&quot;color: #339933;&quot;&gt;,&lt;/span&gt;fit.beta&lt;span style=&quot;&quot;&gt;$&lt;/span&gt;estimate&lt;span style=&quot;color: #009900;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #009900;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #cc66cc;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot;color: #009900;&quot;&gt;]&lt;/span&gt;&lt;span style=&quot;color: #009900;&quot;&gt;]&lt;/span&gt;&lt;span style=&quot;color: #009900;&quot;&gt;)&lt;/span&gt;
+ 
+&lt;span style=&quot;color: #666666; font-style: italic;&quot;&gt;## plot the pdfs on top of each other&lt;/span&gt;
+&lt;a href=&quot;http://inside-r.org/r-doc/graphics/plot&quot;&gt;&lt;span style=&quot;color: #003399; font-weight: bold;&quot;&gt;plot&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;color: #009900;&quot;&gt;(&lt;/span&gt;&lt;a href=&quot;http://inside-r.org/r-doc/stats/density&quot;&gt;&lt;span style=&quot;color: #003399; font-weight: bold;&quot;&gt;density&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;color: #009900;&quot;&gt;(&lt;/span&gt;xt&lt;span style=&quot;color: #009900;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;color: #009900;&quot;&gt;)&lt;/span&gt;
+&lt;a href=&quot;http://inside-r.org/r-doc/graphics/lines&quot;&gt;&lt;span style=&quot;color: #003399; font-weight: bold;&quot;&gt;lines&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;color: #009900;&quot;&gt;(&lt;/span&gt;&lt;a href=&quot;http://inside-r.org/r-doc/stats/density&quot;&gt;&lt;span style=&quot;color: #003399; font-weight: bold;&quot;&gt;density&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;color: #009900;&quot;&gt;(&lt;/span&gt;x.beta&lt;span style=&quot;color: #009900;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;color: #339933;&quot;&gt;,&lt;/span&gt; &lt;a href=&quot;http://inside-r.org/r-doc/base/col&quot;&gt;&lt;span style=&quot;color: #003399; font-weight: bold;&quot;&gt;col&lt;/span&gt;&lt;/a&gt;=&lt;span style=&quot;color: #0000ff;&quot;&gt;&quot;red&quot;&lt;/span&gt; &lt;span style=&quot;color: #009900;&quot;&gt;)&lt;/span&gt;
+ 
+&lt;span style=&quot;color: #666666; font-style: italic;&quot;&gt;## plot the qqplots&lt;/span&gt;
+&lt;a href=&quot;http://inside-r.org/r-doc/stats/qqplot&quot;&gt;&lt;span style=&quot;color: #003399; font-weight: bold;&quot;&gt;qqplot&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;color: #009900;&quot;&gt;(&lt;/span&gt;xt&lt;span style=&quot;color: #339933;&quot;&gt;,&lt;/span&gt; x.beta&lt;span style=&quot;color: #009900;&quot;&gt;)&lt;/span&gt;
+</code></pre>
+<p><a href="http://www.inside-r.org/pretty-r">Created by Pretty R at inside-R.org</a></p>
+<!-- raw HTML omitted -->
+</blockquote>
 <p>It&rsquo;s not illustrated above, but it&rsquo;s probably useful to transform the simulated data (x.beta) back into pre normalized space by multiplying by max( x ) + .0001 . (I swore I&rsquo;d never say this but I lied) I&rsquo;ll leave that as an exercise for the reader.</p>
-
 <p>Another very useful tool in building a mental road map of distributions is the <a href="http://www.johndcook.com/distribution_chart.html">graphical chart of distribution relationships that John Cook introduced me to</a>.</p>
 
 

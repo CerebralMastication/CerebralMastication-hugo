@@ -1,10 +1,65 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://cerebralmastication.com/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/latex/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/post/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/python/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/rmarkdown/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/sympy/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/2020/07/27/using-python-sympy-in-a-python-code-chunk-in-rmarkdown/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/cloud/</loc>
+    <lastmod>2019-07-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/digitalocean/</loc>
+    <lastmod>2019-07-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cerebralmastication.com/2019/07/10/starting-a-digital-ocean-instance-from-docker-machine/</loc>
     <lastmod>2019-07-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/bookdown/</loc>
+    <lastmod>2019-05-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -23,12 +78,32 @@
   </url>
   
   <url>
+    <loc>https://cerebralmastication.com/tags/plotting/</loc>
+    <lastmod>2019-01-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/presentations/</loc>
+    <lastmod>2019-01-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cerebralmastication.com/2019/01/18/slides-from-rstudio-conf-2019/</loc>
     <lastmod>2019-01-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://cerebralmastication.com/2019/01/05/missing-unicode-greek-characters-in-bookdown-latex/</loc>
+    <lastmod>2019-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/r/</loc>
+    <lastmod>2019-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/r-cookbook/</loc>
     <lastmod>2019-01-05T00:00:00+00:00</lastmod>
   </url>
   
@@ -43,6 +118,11 @@
   </url>
   
   <url>
+    <loc>https://cerebralmastication.com/tags/excel/</loc>
+    <lastmod>2018-11-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cerebralmastication.com/2018/11/24/named-excel-tables-a-very-good-idea/</loc>
     <lastmod>2018-11-24T00:00:00+00:00</lastmod>
   </url>
@@ -53,12 +133,37 @@
   </url>
   
   <url>
+    <loc>https://cerebralmastication.com/tags/books/</loc>
+    <lastmod>2014-05-23T12:56:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/rant/</loc>
+    <lastmod>2014-05-23T12:56:15+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cerebralmastication.com/2014/05/teens-and-the-internet/</loc>
     <lastmod>2014-05-23T12:56:15+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://cerebralmastication.com/2013/01/installing-debugging-odbc-on-mac-os-x/</loc>
+    <lastmod>2013-01-31T21:14:33+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/odbc/</loc>
+    <lastmod>2013-01-31T21:14:33+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/pandas/</loc>
+    <lastmod>2013-01-31T21:14:33+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/sql/</loc>
     <lastmod>2013-01-31T21:14:33+00:00</lastmod>
   </url>
   
@@ -73,8 +178,28 @@
   </url>
   
   <url>
+    <loc>https://cerebralmastication.com/tags/howto/</loc>
+    <lastmod>2011-05-12T20:31:31+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/aws/</loc>
+    <lastmod>2011-05-06T20:57:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/ec2/</loc>
+    <lastmod>2011-05-06T20:57:40+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cerebralmastication.com/2011/05/shell-scripting-ec2-for-fun-and-profit/</loc>
     <lastmod>2011-05-06T20:57:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/risk/</loc>
+    <lastmod>2011-04-20T15:33:17+00:00</lastmod>
   </url>
   
   <url>
@@ -88,7 +213,17 @@
   </url>
   
   <url>
+    <loc>https://cerebralmastication.com/tags/workflow/</loc>
+    <lastmod>2011-04-18T20:48:32+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cerebralmastication.com/2011/04/fast-two-way-sync-in-ubuntu/</loc>
+    <lastmod>2011-04-09T15:32:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/sync/</loc>
     <lastmod>2011-04-09T15:32:48+00:00</lastmod>
   </url>
   
@@ -103,13 +238,43 @@
   </url>
   
   <url>
+    <loc>https://cerebralmastication.com/tags/rjava/</loc>
+    <lastmod>2010-11-30T19:51:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/s3/</loc>
+    <lastmod>2010-11-30T19:51:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/strategy/</loc>
+    <lastmod>2010-11-11T22:15:54+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cerebralmastication.com/2010/11/the-oreilly-safari-books-online-app-broke-my-heart/</loc>
+    <lastmod>2010-11-11T22:15:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/video/</loc>
     <lastmod>2010-11-11T22:15:54+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://cerebralmastication.com/2010/09/connecting-to-sql-server-from-r-using-rjdbc/</loc>
     <lastmod>2010-09-22T18:00:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/sql-server/</loc>
+    <lastmod>2010-09-22T18:00:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/analysis/</loc>
+    <lastmod>2010-09-16T17:11:27+00:00</lastmod>
   </url>
   
   <url>
@@ -138,6 +303,16 @@
   </url>
   
   <url>
+    <loc>https://cerebralmastication.com/tags/hardware/</loc>
+    <lastmod>2010-08-19T15:02:06+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/proxy/</loc>
+    <lastmod>2010-07-16T22:07:12+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cerebralmastication.com/2010/07/starting-an-ec2-machine-then-setting-up-a-socks-proxy-from-r/</loc>
     <lastmod>2010-07-16T22:07:12+00:00</lastmod>
   </url>
@@ -148,8 +323,23 @@
   </url>
   
   <url>
+    <loc>https://cerebralmastication.com/tags/emr/</loc>
+    <lastmod>2010-06-28T15:38:42+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cerebralmastication.com/2010/05/chicago-r-meetup-healthier-than-drinking-alone/</loc>
     <lastmod>2010-05-24T20:20:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/meetup/</loc>
+    <lastmod>2010-05-24T20:20:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/vconf/</loc>
+    <lastmod>2010-05-04T02:27:03+00:00</lastmod>
   </url>
   
   <url>
@@ -158,8 +348,18 @@
   </url>
   
   <url>
+    <loc>https://cerebralmastication.com/tags/darts/</loc>
+    <lastmod>2010-04-16T18:05:20+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cerebralmastication.com/2010/04/simulating-dart-throws-in-r-part-1-of-many/</loc>
     <lastmod>2010-04-16T18:05:20+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/descisions/</loc>
+    <lastmod>2010-04-12T15:21:29+00:00</lastmod>
   </url>
   
   <url>
@@ -173,6 +373,21 @@
   </url>
   
   <url>
+    <loc>https://cerebralmastication.com/tags/rug/</loc>
+    <lastmod>2010-04-09T16:42:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/statistics/</loc>
+    <lastmod>2010-04-09T16:01:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/ted/</loc>
+    <lastmod>2010-04-09T16:01:40+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cerebralmastication.com/2010/04/the-future-of-math-is-statistics/</loc>
     <lastmod>2010-04-09T16:01:40+00:00</lastmod>
   </url>
@@ -183,8 +398,23 @@
   </url>
   
   <url>
+    <loc>https://cerebralmastication.com/tags/interview/</loc>
+    <lastmod>2010-02-17T16:54:32+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cerebralmastication.com/2010/02/real-world-real-time-analytics/</loc>
     <lastmod>2010-02-17T16:54:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/rockstars/</loc>
+    <lastmod>2010-02-17T16:54:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/hadoop/</loc>
+    <lastmod>2010-02-16T18:31:23+00:00</lastmod>
   </url>
   
   <url>
@@ -198,8 +428,33 @@
   </url>
   
   <url>
+    <loc>https://cerebralmastication.com/tags/backup/</loc>
+    <lastmod>2010-01-19T23:33:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/batch-files/</loc>
+    <lastmod>2010-01-19T23:33:01+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cerebralmastication.com/2010/01/remote-backup-fail-and-how-to-silently-copy-files/</loc>
     <lastmod>2010-01-19T23:33:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/windows/</loc>
+    <lastmod>2010-01-19T23:33:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/apply/</loc>
+    <lastmod>2009-12-11T19:30:55+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/plyr/</loc>
+    <lastmod>2009-12-11T19:30:55+00:00</lastmod>
   </url>
   
   <url>
@@ -210,6 +465,21 @@
   <url>
     <loc>https://cerebralmastication.com/2009/11/loading-big-data-into-r/</loc>
     <lastmod>2009-11-24T23:14:06+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/sqldf/</loc>
+    <lastmod>2009-11-24T23:14:06+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/sqlite/</loc>
+    <lastmod>2009-11-24T23:14:06+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/it/</loc>
+    <lastmod>2009-11-03T15:28:26+00:00</lastmod>
   </url>
   
   <url>
@@ -233,8 +503,18 @@
   </url>
   
   <url>
+    <loc>https://cerebralmastication.com/tags/agriculture/</loc>
+    <lastmod>2009-06-30T17:00:27+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cerebralmastication.com/2009/06/tolstoy-dichotomy-part-two/</loc>
     <lastmod>2009-06-30T17:00:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/twitter/</loc>
+    <lastmod>2009-06-22T14:14:55+00:00</lastmod>
   </url>
   
   <url>
@@ -243,12 +523,27 @@
   </url>
   
   <url>
+    <loc>https://cerebralmastication.com/tags/graph/</loc>
+    <lastmod>2009-06-16T16:26:46+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cerebralmastication.com/2009/06/not-just-normal-gaussian/</loc>
     <lastmod>2009-06-16T16:26:46+00:00</lastmod>
   </url>
   
   <url>
+    <loc>https://cerebralmastication.com/tags/career/</loc>
+    <lastmod>2009-06-16T15:58:17+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cerebralmastication.com/2009/06/keeping-technical-talent-or-why-i-just-quit-my-job/</loc>
+    <lastmod>2009-06-16T15:58:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/personal/</loc>
     <lastmod>2009-06-16T15:58:17+00:00</lastmod>
   </url>
   
@@ -268,6 +563,16 @@
   </url>
   
   <url>
+    <loc>https://cerebralmastication.com/tags/finance/</loc>
+    <lastmod>2009-03-26T21:06:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/open-source/</loc>
+    <lastmod>2009-03-26T21:06:51+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cerebralmastication.com/2009/03/open-source-banking/</loc>
     <lastmod>2009-03-26T21:06:51+00:00</lastmod>
   </url>
@@ -278,8 +583,38 @@
   </url>
   
   <url>
+    <loc>https://cerebralmastication.com/tags/women/</loc>
+    <lastmod>2009-03-24T23:27:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/econ/</loc>
+    <lastmod>2009-03-24T18:30:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/technical/</loc>
+    <lastmod>2009-03-24T18:30:18+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cerebralmastication.com/2009/03/the-anna-karenina-yield-anomaly/</loc>
     <lastmod>2009-03-24T18:30:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/column-oriented/</loc>
+    <lastmod>2009-03-18T13:56:56+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/database/</loc>
+    <lastmod>2009-03-18T13:56:56+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/luciddb/</loc>
+    <lastmod>2009-03-18T13:56:56+00:00</lastmod>
   </url>
   
   <url>
@@ -288,8 +623,23 @@
   </url>
   
   <url>
+    <loc>https://cerebralmastication.com/tags/sas/</loc>
+    <lastmod>2009-03-18T13:56:56+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cerebralmastication.com/2009/03/programmer-quotes/</loc>
     <lastmod>2009-03-10T23:34:10+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/programming/</loc>
+    <lastmod>2009-03-10T23:34:10+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/flow/</loc>
+    <lastmod>2009-03-10T15:41:01+00:00</lastmod>
   </url>
   
   <url>
@@ -303,13 +653,33 @@
   </url>
   
   <url>
+    <loc>https://cerebralmastication.com/tags/firebird/</loc>
+    <lastmod>2009-03-09T21:37:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/mysql/</loc>
+    <lastmod>2009-03-09T21:37:57+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cerebralmastication.com/2009/03/dr-hal-varian-saying-stuff/</loc>
     <lastmod>2009-03-03T19:04:36+00:00</lastmod>
   </url>
   
   <url>
+    <loc>https://cerebralmastication.com/tags/event/</loc>
+    <lastmod>2009-02-27T14:43:16+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cerebralmastication.com/2009/02/r-in-the-windy-city/</loc>
     <lastmod>2009-02-27T14:43:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/copula/</loc>
+    <lastmod>2009-02-27T14:41:36+00:00</lastmod>
   </url>
   
   <url>
@@ -328,7 +698,22 @@
   </url>
   
   <url>
+    <loc>https://cerebralmastication.com/tags/beer/</loc>
+    <lastmod>2009-02-19T14:37:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/commerce-thursday/</loc>
+    <lastmod>2009-02-19T14:37:28+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cerebralmastication.com/2009/02/commerce-thursday-2/</loc>
+    <lastmod>2009-02-19T14:37:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/multiple-monitors/</loc>
     <lastmod>2009-02-19T14:37:28+00:00</lastmod>
   </url>
   
@@ -339,6 +724,21 @@
   
   <url>
     <loc>https://cerebralmastication.com/2009/02/it-just-works/</loc>
+    <lastmod>2009-02-17T14:51:11+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/linux/</loc>
+    <lastmod>2009-02-17T14:51:11+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/technology/</loc>
+    <lastmod>2009-02-17T14:51:11+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/ui/</loc>
     <lastmod>2009-02-17T14:51:11+00:00</lastmod>
   </url>
   
@@ -358,6 +758,11 @@
   </url>
   
   <url>
+    <loc>https://cerebralmastication.com/tags/data/</loc>
+    <lastmod>2009-02-12T14:23:46+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cerebralmastication.com/2009/02/data-its-currency/</loc>
     <lastmod>2009-02-12T14:23:46+00:00</lastmod>
   </url>
@@ -373,13 +778,38 @@
   </url>
   
   <url>
+    <loc>https://cerebralmastication.com/tags/stats/</loc>
+    <lastmod>2009-02-06T16:21:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/bi/</loc>
+    <lastmod>2009-02-05T17:03:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/s/</loc>
+    <lastmod>2009-02-05T17:03:12+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cerebralmastication.com/2009/02/second-verse-same-as-the-first-sas-is-the-new-insightful/</loc>
+    <lastmod>2009-02-05T17:03:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/wps/</loc>
     <lastmod>2009-02-05T17:03:12+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://cerebralmastication.com/2009/02/commerce-thursday/</loc>
     <lastmod>2009-02-05T13:45:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cerebralmastication.com/tags/fractal/</loc>
+    <lastmod>2009-02-04T14:53:50+00:00</lastmod>
   </url>
   
   <url>
@@ -398,512 +828,12 @@
   </url>
   
   <url>
-    <loc>https://cerebralmastication.com/tags/agriculture/</loc>
-    <lastmod>2009-06-30T17:00:27+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/analysis/</loc>
-    <lastmod>2010-09-16T17:11:27+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/apply/</loc>
-    <lastmod>2009-12-11T19:30:55+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/aws/</loc>
-    <lastmod>2011-05-06T20:57:40+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/backup/</loc>
-    <lastmod>2010-01-19T23:33:01+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/batch-files/</loc>
-    <lastmod>2010-01-19T23:33:01+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/beer/</loc>
-    <lastmod>2009-02-19T14:37:28+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/bi/</loc>
-    <lastmod>2009-02-05T17:03:12+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/bookdown/</loc>
-    <lastmod>2019-05-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/books/</loc>
-    <lastmod>2014-05-23T12:56:15+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/career/</loc>
-    <lastmod>2009-06-16T15:58:17+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/</loc>
-    <lastmod>2019-07-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/cloud/</loc>
-    <lastmod>2019-07-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/column-oriented/</loc>
-    <lastmod>2009-03-18T13:56:56+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/commerce-thursday/</loc>
-    <lastmod>2009-02-19T14:37:28+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/copula/</loc>
-    <lastmod>2009-02-27T14:41:36+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/darts/</loc>
-    <lastmod>2010-04-16T18:05:20+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/data/</loc>
-    <lastmod>2009-02-12T14:23:46+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/database/</loc>
-    <lastmod>2009-03-18T13:56:56+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/descisions/</loc>
-    <lastmod>2010-04-12T15:21:29+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/digitalocean/</loc>
-    <lastmod>2019-07-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/ec2/</loc>
-    <lastmod>2011-05-06T20:57:40+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/econ/</loc>
-    <lastmod>2009-03-24T18:30:18+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/emr/</loc>
-    <lastmod>2010-06-28T15:38:42+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/event/</loc>
-    <lastmod>2009-02-27T14:43:16+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/excel/</loc>
-    <lastmod>2018-11-24T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/finance/</loc>
-    <lastmod>2009-03-26T21:06:51+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/firebird/</loc>
-    <lastmod>2009-03-09T21:37:57+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/flow/</loc>
-    <lastmod>2009-03-10T15:41:01+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/fractal/</loc>
-    <lastmod>2009-02-04T14:53:50+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/graph/</loc>
-    <lastmod>2009-06-16T16:26:46+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/hadoop/</loc>
-    <lastmod>2010-02-16T18:31:23+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/hardware/</loc>
-    <lastmod>2010-08-19T15:02:06+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/howto/</loc>
-    <lastmod>2011-05-12T20:31:31+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/interview/</loc>
-    <lastmod>2010-02-17T16:54:32+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/it/</loc>
-    <lastmod>2009-11-03T15:28:26+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/linux/</loc>
-    <lastmod>2009-02-17T14:51:11+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/luciddb/</loc>
-    <lastmod>2009-03-18T13:56:56+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/meetup/</loc>
-    <lastmod>2010-05-24T20:20:34+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/multiple-monitors/</loc>
-    <lastmod>2009-02-19T14:37:28+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/mysql/</loc>
-    <lastmod>2009-03-09T21:37:57+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://cerebralmastication.com/tags/news/</loc>
     <lastmod>2009-02-03T15:35:33+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/odbc/</loc>
-    <lastmod>2013-01-31T21:14:33+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/open-source/</loc>
-    <lastmod>2009-03-26T21:06:51+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/pandas/</loc>
-    <lastmod>2013-01-31T21:14:33+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/personal/</loc>
-    <lastmod>2009-06-16T15:58:17+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/plotting/</loc>
-    <lastmod>2019-01-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/plyr/</loc>
-    <lastmod>2009-12-11T19:30:55+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/post/</loc>
-    <lastmod>2019-07-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/presentations/</loc>
-    <lastmod>2019-01-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/programming/</loc>
-    <lastmod>2009-03-10T23:34:10+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/proxy/</loc>
-    <lastmod>2010-07-16T22:07:12+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/python/</loc>
-    <lastmod>2013-01-31T21:14:33+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/r/</loc>
-    <lastmod>2019-01-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/r-cookbook/</loc>
-    <lastmod>2019-01-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/rant/</loc>
-    <lastmod>2014-05-23T12:56:15+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/risk/</loc>
-    <lastmod>2011-04-20T15:33:17+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/rjava/</loc>
-    <lastmod>2010-11-30T19:51:17+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/rmarkdown/</loc>
-    <lastmod>2019-05-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/rockstars/</loc>
-    <lastmod>2010-02-17T16:54:32+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/rug/</loc>
-    <lastmod>2010-04-09T16:42:07+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/s/</loc>
-    <lastmod>2009-02-05T17:03:12+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/s3/</loc>
-    <lastmod>2010-11-30T19:51:17+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/sas/</loc>
-    <lastmod>2009-03-18T13:56:56+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/sql/</loc>
-    <lastmod>2013-01-31T21:14:33+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/sql-server/</loc>
-    <lastmod>2010-09-22T18:00:26+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/sqldf/</loc>
-    <lastmod>2009-11-24T23:14:06+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/sqlite/</loc>
-    <lastmod>2009-11-24T23:14:06+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/statistics/</loc>
-    <lastmod>2010-04-09T16:01:40+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/stats/</loc>
-    <lastmod>2009-02-06T16:21:37+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/strategy/</loc>
-    <lastmod>2010-11-11T22:15:54+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/sync/</loc>
-    <lastmod>2011-04-09T15:32:48+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/</loc>
-    <lastmod>2009-06-30T17:00:27+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/technical/</loc>
-    <lastmod>2009-03-24T18:30:18+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/technology/</loc>
-    <lastmod>2009-02-17T14:51:11+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/ted/</loc>
-    <lastmod>2010-04-09T16:01:40+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://cerebralmastication.com/topics/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/twitter/</loc>
-    <lastmod>2009-06-22T14:14:55+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/ui/</loc>
-    <lastmod>2009-02-17T14:51:11+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/vconf/</loc>
-    <lastmod>2010-05-04T02:27:03+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/video/</loc>
-    <lastmod>2010-11-11T22:15:54+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/windows/</loc>
-    <lastmod>2010-01-19T23:33:01+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/women/</loc>
-    <lastmod>2009-03-24T23:27:09+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/workflow/</loc>
-    <lastmod>2011-04-18T20:48:32+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cerebralmastication.com/tags/wps/</loc>
-    <lastmod>2009-02-05T17:03:12+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
 </urlset>

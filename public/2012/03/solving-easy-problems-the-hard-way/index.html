@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.51" />
+  <meta name="generator" content="Hugo 0.74.3" />
 
   <title>Solving easy problems the hard way &middot; Cerebral Mastication</title>
 
@@ -251,11 +251,8 @@
 </div>
 
   <p>There&rsquo;s a charming little brain teaser that&rsquo;s going around the Interwebs. It&rsquo;s got various forms, but they all look something like this:</p>
-
-<blockquote>This problem can be solved by pre-school children in 5-10 minutes, by programer – in 1 hour, by people with higher education … well, check it yourself! ![:)](http://girlsaregeeks.com/WPApp/wp-includes/images/smilies/icon_smile.gif)
-
-
-8809=6
+<!-- raw HTML omitted -->
+<p>8809=6
 7111=0
 2172=0
 6666=4
@@ -275,20 +272,13 @@
 6855=3
 9881=5
 5531=0
-2581=?</blockquote>
-
+2581=?<!-- raw HTML omitted --></p>
 <p>SPOILER ALERT&hellip;</p>
-
 <p>The answer has to do with how many circles are in each number. So the number 8 has two circles in its shape so it counts as two. And 0 is one big circle, so it counts as 1. So 2581=2. Ok, that&rsquo;s cute, it&rsquo;s an alternative mapping of values with implied addition.</p>
-
 <p>What bugged me was how might I solve this if the mapping of values was not based on shape. So how could I program a computer to solve this puzzle? I gave it a little thought and since I like to pretend I&rsquo;m an econometrician, this looked a LOT like a series of equations that could be solved with an OLS regression. So how can I refactor the problem and data into a trivial OLS? I really need to convert each row of the training data into a frequency of occurrence chart. So instead of 8809=6 I need to refactor that into something like:</p>
-
 <p>1,0,0,0,0,0,0,0,2,1 = 6</p>
-
 <p>In this format the independent variables are the digits 0-9 and their value is the number of times they occur in each row of the training data. I couldn&rsquo;t figure out how to do the freq table so, as is my custom, I created a concise simplification of the problem and <a href="http://stackoverflow.com/q/9728038/37751">put it on StackOverflow.com </a>which  yielded a great solution. Once I had the frequency table built, it was simple a matter of a linear regression with 10 independent variables and a dependent with no intercept term.</p>
-
 <p>My whole script, which you should be able to cut and paste into R, if you are so inclined, is the following:</p>
-
 <pre><code>&lt;span style=&quot;color: #666666; font-style: italic;&quot;&gt;## read in the training data&lt;/span&gt;
 &lt;span style=&quot;color: #666666; font-style: italic;&quot;&gt;## more lines than it should be because of the https requirement in Github&lt;/span&gt;
 temporaryFile &lt;span&gt;&lt;-&lt;/span&gt; &lt;a href=&quot;http://inside-r.org/r-doc/base/tempfile&quot;&gt;&lt;span style=&quot;color: #003399; font-weight: bold;&quot;&gt;tempfile&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;color: #009900;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #009900;&quot;&gt;)&lt;/span&gt;
@@ -304,18 +294,13 @@ freqTable&lt;span&gt;$&lt;/span&gt;dep &lt;span&gt;&lt;-&lt;/span&gt; series&lt;
 myModel &lt;span&gt;&lt;-&lt;/span&gt; &lt;a href=&quot;http://inside-r.org/r-doc/stats/lm&quot;&gt;&lt;span style=&quot;color: #003399; font-weight: bold;&quot;&gt;lm&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;color: #009900;&quot;&gt;(&lt;/span&gt;dep &lt;span&gt;~&lt;/span&gt; &lt;span style=&quot;color: #cc66cc;&quot;&gt;0&lt;/span&gt; &lt;span&gt;+&lt;/span&gt; zero &lt;span&gt;+&lt;/span&gt; one &lt;span&gt;+&lt;/span&gt; two &lt;span&gt;+&lt;/span&gt; three &lt;span&gt;+&lt;/span&gt; four &lt;span&gt;+&lt;/span&gt; five &lt;span&gt;+&lt;/span&gt; six &lt;span&gt;+&lt;/span&gt; seven &lt;span&gt;+&lt;/span&gt; eight &lt;span&gt;+&lt;/span&gt; nine&lt;span style=&quot;color: #339933;&quot;&gt;,&lt;/span&gt; &lt;a href=&quot;http://inside-r.org/r-doc/utils/data&quot;&gt;&lt;span style=&quot;color: #003399; font-weight: bold;&quot;&gt;data&lt;/span&gt;&lt;/a&gt;=freqTable&lt;span style=&quot;color: #009900;&quot;&gt;)&lt;/span&gt;
 &lt;a href=&quot;http://inside-r.org/r-doc/base/round&quot;&gt;&lt;span style=&quot;color: #003399; font-weight: bold;&quot;&gt;round&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;color: #009900;&quot;&gt;(&lt;/span&gt;myModel&lt;span&gt;$&lt;/span&gt;coefficients&lt;span style=&quot;color: #009900;&quot;&gt;)&lt;/span&gt;
 </code></pre>
-
 <p><a href="http://www.inside-r.org/pretty-r">Created by Pretty R at inside-R.org</a></p>
-
 <p>The final result looks like this:</p>
-
 <pre><code>&lt;div id=&quot;_mcePaste&quot;&gt;&gt; round(myModel$coefficients)&lt;/div&gt;
 &lt;div id=&quot;_mcePaste&quot;&gt;zero   one   two three  four  five   six seven eight  nine&lt;/div&gt;
 &lt;div id=&quot;_mcePaste&quot;&gt;   1     0     0     0    NA     0     1     0     2     1&lt;/div&gt;
 </code></pre>
-
 <p>So we can see that zero, six, and nine all get mapped to 1 and eight gets mapped to 2. Everything else is zero. And four is NA because there were no fours in the training data.</p>
-
 <p>There. I&rsquo;m as smart as a preschooler. And I have code to prove it.</p>
 
 

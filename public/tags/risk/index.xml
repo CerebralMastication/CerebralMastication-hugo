@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Risk on Cerebral Mastication</title>
+    <title>risk on Cerebral Mastication</title>
     <link>https://cerebralmastication.com/tags/risk/</link>
-    <description>Recent content in Risk on Cerebral Mastication</description>
+    <description>Recent content in risk on Cerebral Mastication</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Wed, 20 Apr 2011 15:33:17 +0000</lastBuildDate>
@@ -26,7 +26,7 @@
       <pubDate>Thu, 02 Sep 2010 18:03:21 +0000</pubDate>
       
       <guid>https://cerebralmastication.com/2010/09/cholesk-post-on-correlated-random-normal-generation/</guid>
-      <description>[caption id=&amp;ldquo;attachment_825&amp;rdquo; align=&amp;ldquo;alignleft&amp;rdquo; width=&amp;ldquo;250&amp;rdquo; caption=&amp;ldquo;André-Louis Cholesky is my homeboy&amp;rdquo;][/caption]
+      <description>[caption id=&amp;quot;attachment_825&amp;rdquo; align=&amp;quot;alignleft&amp;rdquo; width=&amp;quot;250&amp;rdquo; caption=&amp;quot;André-Louis Cholesky is my homeboy&amp;rdquo;][/caption]
 When I did a brief post three days ago I had no plans on writing two more posts on correlated random number generation. But I&amp;rsquo;ve gotten a couple of emails, a few comments, and some Twitter feedback. In response to my first post, Gappy, calls me out and says, &amp;ldquo;the way mensches do multivariate (log)normal variates is via Cholesky. It’s simple, instructive, and fast.</description>
     </item>
     
@@ -37,7 +37,7 @@ When I did a brief post three days ago I had no plans on writing two more posts 
       
       <guid>https://cerebralmastication.com/2010/08/even-simpler-multivariate-correlated-simulations/</guid>
       <description>So after yesterday&amp;rsquo;s post on Simple Simulation using Copulas I got a very nice email that basically begged the question, &amp;ldquo;Dude, why are you making this so hard?&amp;rdquo; The author pointed out that if what I really want is a Gaussian correlation structure for Gaussian distributions then I could simply use the mvrnorm() function from the MASS package. Well I did a quick
-?mvrnorm and, I&amp;rsquo;ll be damned, he&amp;rsquo;s right! The advantage of using a copula is the ability to simulate correlation structures where the correlation is different for different levels of values.</description>
+and, I&amp;rsquo;ll be damned, he&amp;rsquo;s right! The advantage of using a copula is the ability to simulate correlation structures where the correlation is different for different levels of values.</description>
     </item>
     
     <item>
@@ -55,7 +55,7 @@ When I did a brief post three days ago I had no plans on writing two more posts 
       <pubDate>Mon, 12 Apr 2010 15:21:29 +0000</pubDate>
       
       <guid>https://cerebralmastication.com/2010/04/i-dont-even-know-how-wrong-i-am/</guid>
-      <description>[caption id=&amp;ldquo;attachment_705&amp;rdquo; align=&amp;ldquo;alignleft&amp;rdquo; width=&amp;ldquo;283&amp;rdquo; caption=&amp;ldquo;&amp;ldquo;as we know, there are known knowns; there are things we know we know. We also know there are known unknowns; that is to say we know there are some things we do not know. But there are also unknown unknowns &amp;ndash; the ones we don&amp;rsquo;t know we don&amp;rsquo;t know.&amp;rdquo; US Defense Secretary Donald Rumsfeld, February 12, 2002&amp;rdquo;][/caption]
+      <description>[caption id=&amp;quot;attachment_705&amp;rdquo; align=&amp;quot;alignleft&amp;rdquo; width=&amp;quot;283&amp;rdquo; caption=&amp;quot;&amp;ldquo;as we know, there are known knowns; there are things we know we know. We also know there are known unknowns; that is to say we know there are some things we do not know. But there are also unknown unknowns &amp;ndash; the ones we don&amp;rsquo;t know we don&amp;rsquo;t know.&amp;rdquo; US Defense Secretary Donald Rumsfeld, February 12, 2002&amp;rdquo;][/caption]
 I&amp;rsquo;ve been a long time reader of the blog &amp;ldquo;Messy Matters&amp;rdquo; (which invokes terrible images now that I am potty training a toddler).</description>
     </item>
     
@@ -65,7 +65,7 @@ I&amp;rsquo;ve been a long time reader of the blog &amp;ldquo;Messy Matters&amp;
       <pubDate>Tue, 17 Feb 2009 14:04:15 +0000</pubDate>
       
       <guid>https://cerebralmastication.com/2009/02/poultry-house-risk/</guid>
-      <description>[caption id=&amp;ldquo;&amp;rdquo; align=&amp;ldquo;alignleft&amp;rdquo; width=&amp;ldquo;224&amp;rdquo; caption=&amp;ldquo;Plymouth Rock&amp;hellip; or something&amp;rdquo;][/caption]
+      <description>[caption id=&amp;rdquo;&amp;rdquo; align=&amp;quot;alignleft&amp;rdquo; width=&amp;quot;224&amp;rdquo; caption=&amp;quot;Plymouth Rock&amp;hellip; or something&amp;rdquo;][/caption]
 There&amp;rsquo;s an interesting article in the WSJ this week about poultry farmers who grow for Pilgrim&amp;rsquo;s Pride (PPC). PPC is in bankruptcy and have canceled grower contracts with 400+ poultry growers. In poultry farming the farmers own the chicken houses and provide the labor but the poultry company (Pilgrim&amp;rsquo;s Pride, Tyson, Perdue, etc) own the birds and provide the feed. The producers get paid for every pound they put on the flock and they get extra bonuses for efficiency.</description>
     </item>
     

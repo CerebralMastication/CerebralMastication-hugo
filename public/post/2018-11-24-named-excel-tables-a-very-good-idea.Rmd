@@ -15,7 +15,7 @@ Excel has this construct they call and "Excel Table" which is about as helpful a
 Excel Tables are the things we get when we click on "Format as Table" in Excel: 
 
 ```{r excel-table-make, fig.cap='Format as an Excel Table', echo=FALSE, out.width='75%', class='image_shadow'}
-knitr::include_graphics("/images/Format_as_Table.png")
+knitr::include_graphics("/images/Format_as_Table.png", error = FALSE)
 ```
 Although "Format as Table" is as misleading as the name because putting your data in an Excel Table does more than just change the formatting. It puts the data in an object that will help you considerably in the future, make your formulas easier to read, and keep you from shooting your toes off. So, despite the poor name choice using Excel Tables is a "Very Good Idea". 
 
@@ -25,7 +25,7 @@ Let's look at a few of the benefits:
 
 When you use Excel Tables you can build formulas that refer to other columns in the Table by name:
 ```{r excel-table, fig.cap='Excel Table', echo=FALSE, out.width='75%', class='image_shadow'}
-knitr::include_graphics("/images/excel_table.png")
+knitr::include_graphics("/images/excel_table.png", error = FALSE)
 ```
 This is considerably easier to read and debug than cell references. 
 
@@ -33,7 +33,7 @@ This is considerably easier to read and debug than cell references.
 
 Not sure if "auto scaling" is the right phrase, but when you reference an entire column using a Table formula, that reference stays valid even if the table shrinks or grows later:
 ```{r excel-table-col, fig.cap='Excel Table Formula Column Ref', echo=FALSE, out.width='75%', class='image_shadow'}
-knitr::include_graphics("/images/table_col.png")
+knitr::include_graphics("images/table_col.png")
 ```
 In addition to being easier to read, this is a **HUGE** maintenance benefit when you update your source data later. I've seen spreadsheets in the wild that used explicitly coded references to cells and the data was updated, adding more rows, and the formula only picked up the original number of cells. This produces wrong results but without any error or information to let you know there's a problem. Excel Table formulas help prevent this. 
 

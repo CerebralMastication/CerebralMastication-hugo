@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.51" />
+  <meta name="generator" content="Hugo 0.74.3" />
 
   <title>Stochastic Simulation With Copulas in R &middot; Cerebral Mastication</title>
 
@@ -254,16 +254,12 @@
 
 </div>
 
-  <p><a href="http://www.cafepress.com/+ringer_t,350602392"><img src="https://www.cerebralmastication.com/wp-content/uploads/2010/08/econModels.jpg" alt="You know we do! " />
+  <p><a href="http://www.cafepress.com/+ringer_t,350602392"><img src="https://www.cerebralmastication.com/wp-content/uploads/2010/08/econModels.jpg" alt="You know we do! ">
 </a>A friend of mine gave me a call last week and was wondering if I had a little R code that could illustrate how to do a <a href="http://en.wikipedia.org/wiki/Cholesky_decomposition">Cholesky decomposition</a>. He ultimately wanted to build a Monte Carlo model with correlated variables. I pointed him to a number of packages that do Cholesky decomp but then I recommended he consider just using a Gaussian <a href="http://en.wikipedia.org/wiki/Copula_%28statistics%29">Copula </a> and R for the whole simulation. For most of my copula needs in R, I use the <a href="http://cran.r-project.org/web/packages/QRMlib/index.html">QRMlib package</a> which is a code companion to the book <a href="http://www.amazon.com/gp/product/0691122555?ie=UTF8&amp;tag=riskthou-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0691122555">Quantitative Risk Management: Concepts, Techniques and Tools</a> by Alexander J. McNeil, Rudiger Frey and Paul Embrechts. The book is only loosely coupled (pun intended) with the code in the QRMlib package. I really wish the book had been written with code examples and tight linkage between the book and the code. Of course I&rsquo;m the type of guy who prefers code snip-its to mathematical notation.</p>
-
 <p>I had some code where I used the QRMlib package, but it was really messy and fairly specific to my use case. So I whipped up very simple example of how to create correlated random draws from a multivariate distribution. In this example I used normally distributed marginals and Gaussian correlation to keep things simple and easy to follow. Rather than blogging through the code, I added a shit load (metric ass ton, if you&rsquo;re in Canada) of comments. The code is designed to be stepped through. So don&rsquo;t just run the whole blob and wonder what happened.</p>
-
 <p>Walk through the code and if you find any errors be sure and let me know.</p>
-
 <p>The code is embedded in a Github gist below, but if you are reading this in an aggregator (shout out to <a href="http://www.r-bloggers.com/">R-Bloggers</a>) you&rsquo;ll need to <a href="http://gist.github.com/557900">manually go to the gist</a>.</p>
-
-<p>[gist id=&ldquo;557900&rdquo;]</p>
+<p>[gist id=&quot;557900&rdquo;]</p>
 
 
   

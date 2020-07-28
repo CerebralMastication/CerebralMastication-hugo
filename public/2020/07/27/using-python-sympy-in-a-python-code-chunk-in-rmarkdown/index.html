@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <title>Using Python sympy in a Python code chunk in RMarkdown &middot; Cerebral Mastication</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cerebralmastication.com/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cerebralmastication.com/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="https://cerebralmastication.com/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://cerebralmastication.com/img/favicon.ico" type="image/x-icon" />
+
+  
+    
+        <link rel="stylesheet" href="https://cerebralmastication.com/css/my.css">
+    
+  
+  
+    
+        <script src="https://cerebralmastication.com/js/my.js"></script>
+    
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="https://cerebralmastication.com/">C.M.</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://cerebralmastication.com/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://cerebralmastication.com/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://cerebralmastication.com/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/CMastication" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/jamesdlong" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/CerebralMastication" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://stackoverflow.com/users/37751" target="_blank"><i class="fa fa-stack-overflow fa-fw"></i>Stack Overflow</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2018. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Using Python sympy in a Python code chunk in RMarkdown</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>27 Jul 2020</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://cerebralmastication.com/tags/python">python</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://cerebralmastication.com/tags/rmarkdown">rmarkdown</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://cerebralmastication.com/tags/sympy">sympy</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://cerebralmastication.com/tags/latex">latex</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  
+
+
+<p>I was recently asked about using <code>sympy</code> in Python to print <span class="math inline">\(LaTeX\)</span> formulas in RMarkdown notebooks. I misunderstood the question at first but after some thought I realized that I didn’t know if it would work… but I should try it.</p>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+Yes, printing elements of a matrix. So it's due to the prog languages' differences ( R vs Python), not rmarkdown vs Jupyter Notebook? <a href="https://t.co/Any4qIDHS7">pic.twitter.com/Any4qIDHS7</a>
+</p>
+— Eyayaw T. Beze (<span class="citation">@EyayawBeze</span>) <a href="https://twitter.com/EyayawBeze/status/1287136564255105024?ref_src=twsrc%5Etfw">July 25, 2020</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>I knew that I could run Python chunks in an RMarkdown notebook. And I knew how to change the working conda environment so I could install <code>sympy</code>. But I wasn’t so sure about getting the <span class="math inline">\(LaTeX\)</span> produced by <code>sympy</code> to print out properly.</p>
+<p>I tend to explicitly set my conda environment in my RMD file. Here I set it to <code>r-reticulate</code> which should be the default, but I do this so that it will remind me later what environment I’m using. Because when I come back to this in a few months I’ll have forgotten.</p>
+<pre class="r"><code>library(reticulate)
+use_condaenv(condaenv = &quot;r-reticulate&quot;, required=TRUE)</code></pre>
+<p>to install conda packages from R or from your Rmd file you can do something like:</p>
+<pre class="r"><code>reticulate::conda_install(&quot;r-reticulate&quot;,&quot;sympy&quot;)</code></pre>
+<p>Or you can use conda to activate the environment and install <code>sympy</code> with <code>conda install -c anaconda sympy</code></p>
+<p>The we can do magic like this:</p>
+<p>Then we can run some Python chunks that depend on <code>sympy</code></p>
+<pre class="python"><code>from sympy import *
+x = symbols(&#39;x&#39;)
+a = Integral(cos(x)*exp(x), x)
+output = Eq(a, a.doit()) 
+print(&#39;$&#39; + latex(output) + &#39;$&#39;)</code></pre>
+<p><span class="math inline">\(\int e^{x} \cos{\left(x \right)}\, dx = \frac{e^{x} \sin{\left(x \right)}}{2} + \frac{e^{x} \cos{\left(x \right)}}{2}\)</span></p>
+<p>This works because of two pieces of code. One of which you can’t see above. In the code chunk that runs above I set the language to python and told it to print out the results <code>asis</code>:</p>
+<p><code>{python, results='asis'}</code></p>
+<p>The <code>asis</code> flag tells <code>knitr</code> not to molest the resulting text string, just send it straight to the display. When I did that at first I ended up with this:</p>
+<pre class="python"><code>from sympy import *
+x = symbols(&#39;x&#39;)
+a = Integral(cos(x)*exp(x), x)
+output = Eq(a, a.doit()) 
+print( latex(output)  )</code></pre>
+<p>e^{x} , dx =  + </p>
+<p>Which baffled me because that’s <span class="math inline">\(LaTeX\)</span> but it’s not rendered… then (with some google help) I realized that in RMarkdown if we have stand alone <span class="math inline">\(LaTeX\)</span> we wrap them in dollar signs to tell <code>knitr</code> to render them… in this case using MathJax. So I just added <code>$</code> around the content like this:</p>
+<pre><code>print(&#39;$&#39; + latex(output) + &#39;$&#39;)</code></pre>
+<p>Of course if I were going to do this more than once I’d make a function to do it like this:</p>
+<pre class="python"><code>from sympy import *
+def latex_rmd_print(input_string):
+   print(&#39;$&#39; + latex(input_string) + &#39;$&#39;)</code></pre>
+<p>Which then makes the earlier example a lot simpler… but don’t forget the <code>results='asis'</code> in any code chunk that calls <code>latex_rmd_print</code>:</p>
+<pre class="python"><code>x = symbols(&#39;x&#39;)
+a = Integral( cos(x)*exp(x), x )
+latex_rmd_print( Eq(a, a.doit()) )</code></pre>
+<p><span class="math inline">\(\int e^{x} \cos{\left(x \right)}\, dx = \frac{e^{x} \sin{\left(x \right)}}{2} + \frac{e^{x} \cos{\left(x \right)}}{2}\)</span></p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://cerebralmastication.com/2019/07/10/starting-a-digital-ocean-instance-from-docker-machine/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://cerebralmastication.com/2019/07/10/starting-a-digital-ocean-instance-from-docker-machine/">Starting A Digital Ocean Instance From Docker Machine</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'cerebralmastication';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="https://cerebralmastication.com/js/ui.js"></script>
+<script src="https://cerebralmastication.com/js/menus.js"></script>
+
+
+<script>
+  
+  if (window.location.hostname != "localhost") {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-129487349-1', 'auto');
+    ga('send', 'pageview');
+  }
+</script>
+
+
+
+
+
+</body>
+</html>
+

@@ -1,15 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Rmarkdown on Cerebral Mastication</title>
+    <title>rmarkdown on Cerebral Mastication</title>
     <link>https://cerebralmastication.com/tags/rmarkdown/</link>
-    <description>Recent content in Rmarkdown on Cerebral Mastication</description>
+    <description>Recent content in rmarkdown on Cerebral Mastication</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
-    <lastBuildDate>Sat, 11 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://cerebralmastication.com/tags/rmarkdown/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Using Python sympy in a Python code chunk in RMarkdown</title>
+      <link>https://cerebralmastication.com/2020/07/27/using-python-sympy-in-a-python-code-chunk-in-rmarkdown/</link>
+      <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cerebralmastication.com/2020/07/27/using-python-sympy-in-a-python-code-chunk-in-rmarkdown/</guid>
+      <description>I was recently asked about using sympy in Python to print \(LaTeX\) formulas in RMarkdown notebooks. I misunderstood the question at first but after some thought I realized that I didn’t know if it would work… but I should try it.
+Yes, printing elements of a matrix. So it&#39;s due to the prog languages&#39; differences ( R vs Python), not rmarkdown vs Jupyter Notebook? pic.twitter.com/Any4qIDHS7 — Eyayaw T. Beze (@EyayawBeze) July 25, 2020   I knew that I could run Python chunks in an RMarkdown notebook.</description>
+    </item>
     
     <item>
       <title>Publishing Bookdown to Netlify (automagically)</title>

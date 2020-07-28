@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Open Source on Cerebral Mastication</title>
+    <title>open source on Cerebral Mastication</title>
     <link>https://cerebralmastication.com/tags/open-source/</link>
-    <description>Recent content in Open Source on Cerebral Mastication</description>
+    <description>Recent content in open source on Cerebral Mastication</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
     <lastBuildDate>Thu, 26 Mar 2009 21:06:51 +0000</lastBuildDate>
@@ -18,7 +18,7 @@
       
       <guid>https://cerebralmastication.com/2009/03/open-source-banking/</guid>
       <description>As an economist who has a fascination with open source software, I found this article in Wired about microfinance lending for open source hardware totally engaging. Regulatory issues are clearly an issue for these guys. From the article:
-Zopa&#39;s Pitts agrees that the Open Source Hardware Bank needs to figure out how to navigate through the financial rules of the U.S. market. &#34;These guys do not have a regulatory strategy and they need one,&#34;</description>
+Hacking hardware is totally unregulated. As soon as they start organized finance it starts getting hard fast. I hope someone who understands regulation can help these guys out. They have a very interesting idea.</description>
     </item>
     
   </channel>
